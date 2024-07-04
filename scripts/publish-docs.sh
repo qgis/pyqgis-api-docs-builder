@@ -2,12 +2,8 @@
 
 set -e
 
-QGIS_VERSION=$1
-DATA_PATH=$2
+VERSIONS=$1
 
-if [[ ${QGIS_VERSION} == "FIX_VERSION" ]]; then
-  FIX_VERSION=TRUE
-fi;
 
 # GNU prefix command for mac os support (gsed, gsplit)
 GP=
@@ -28,11 +24,9 @@ OUTPUT=${QGIS_VERSION}
 if [[ ${RUNS_ON_CI} =~ true ]]; then
   git config --global user.email "qgisninja@gmail.com"
   git config --global user.name "Geo-Ninja"
-  git clone https://${GH_TOKEN}@github.com/qgis/pyqgis.git --depth 1 --branch gh-pages
-  # temp output to avoid overwriting if build is not cron
-  if [[ ${BUILD_TESTING} -ne false ]]; then
-    OUTPUT=${OUTPUT}_PR${BUILD_TESTING}
-  fi
+  git clone https://${GH_TOKEN}@github.com/qgis/pyqgis.git --depth 100 --branch gh-pages
+  git reset --hard HEAD~99
+  git merge --squash HEAD@{1}
 else
   git clone git@github.com:qgis/pyqgis.git --depth 1 --branch gh-pages
 fi
@@ -50,9 +44,19 @@ if [[ -n ${FIX_VERSION} ]]; then
   export LC_ALL=en_US.UTF-8
   find . -type f -iname "*.html" -exec perl -i -p0e "s@<dl>(\s*)<dt>Versions</dt>.*</dl>@<dl>\1<dt>Versions</dt>${HTML}\n      \n    </dl>@smg" {} \;
 else
-  rm -rf ${OUTPUT}
-  mkdir "${OUTPUT}"
-  cp -R ${DATA_PATH}/* ${OUTPUT}/
+  # temp output to avoid overwriting if build is not cron
+  if [[ ${BUILD_TESTING} -ne false ]]; then
+     echo "create folder for PR with master only"
+     mkdir "PR${BUILD_TESTING}"
+     cp -R html/master/* PR${BUILD_TESTING}/
+  else
+    for VERSION in "${VERSIONS[@]}"; do
+      echo "get ${VERSION}"
+      rm -rf ${VERSION}
+      mkdir "${VERSION}"
+      cp -R html/${VERSION}/* ${VERSION}/
+    done
+  fi
 fi
 
 echo "##[group] Git commit"
@@ -61,8 +65,6 @@ git add --all
 git commit -m "Update docs for QGIS ${QGIS_VERSION}"
 echo "##[endgroup]"
 if [[ ${RUNS_ON_CI} =~ true ]]; then
-  echo "pull and rebase if some builds are running in parallel"
-  git pull --rebase
   echo "pushing from CI without confirmation"
   git push -v
 else

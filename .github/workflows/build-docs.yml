@@ -35,8 +35,8 @@ jobs:
         name: determine version
         run: |
           import yaml, os
-          def set_output(name, value):
-            with open(os.environ['GITHUB_OUTPUT'], 'a') as fh:
+          def add_to_env(name, value):
+            with open(os.environ['GITHUB_ENV'], 'a') as fh:
                 print(f'{name}={value}', file=fh)
           with open('pyqgis_conf.yml', 'r') as f:
               cfg = yaml.safe_load(f)
@@ -48,42 +48,63 @@ jobs:
           }
           version = versions['${{ matrix.qgis_version }}']
           print(f'version: {version}')
-          set_output('version', version)
+          add_to_env('QGIS_VERSION', version)
+          add_to_env('QGIS_VERSIONS_LIST', '("' + '" "'.join(versions) + '")')
 
       - name: Build PyQGIS docs
+        if: ${{ github.event_name != 'pull_request' || matrix.qgis_version == 'master' }}
         env:
-          QGIS_VERSION:  ${{ steps.version.outputs.version }}
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          PUBLISH: true
           RUNS_ON_CI: true
-          BUILD_TESTING: ${{ github.event_name == 'pull_request' && github.event.pull_request.number || false }}
+          BUILD_OPTIONS: '-c QgsVectorLayer -c QgsFeature'  # TODO: REMOVE!!!!
         run: |
           echo "QGIS_VERSION: ${QGIS_VERSION}"
-          echo "PUBLISH: ${PUBLISH}"
           echo "BUILD_TESTING: ${BUILD_TESTING}"
           ./scripts/run-docker.sh
-          
-      - name: "Initialize matrix lock to publish only one version at once"
-        if: matrix.qgis_version == 'master'
-        uses: rakles/matrix-lock@v1.0.0
-        with:
-          step: init
-          order: "master,stable,ltr"
 
-      - name: "Wait for matrix lock"
-        uses: rakles/matrix-lock@v1.0.0
+      - uses: actions/upload-artifact@v4
+        if: ${{ github.event_name != 'pull_request' || matrix.qgis_version == 'master' }}
         with:
-          step: wait
-          id: ${{ matrix.qgis_version }}
+          name: ${{ matrix.qgis_version }}
+          path: ./build/
 
-      - name: Publish
+  publish-docs:
+    name: Publish HTML
+    runs-on: ubuntu-latest
+    needs: build-docs
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Get artifact for master
+        uses: actions/download-artifact@v4
+        with:
+          name: master
+          path: html
+
+      - name: Get artifact for stable
+        if: ${{ github.event_name != 'pull_request' }}
+        uses: actions/download-artifact@v4
+        with:
+          name: stable
+          path: html
+
+      - name: Get artifact for ltr
+        if: ${{ github.event_name != 'pull_request' }}
+        uses: actions/download-artifact@v4
+        with:
+          name: ltr
+          path: html
+
+      - name: Push to git
+        env:
+          BUILD_TESTING: ${{ github.event_name == 'pull_request' && github.event.pull_request.number || false }}
+          VERSIONS: ${{ github.event_name == 'pull_request' && '("master")' || needs.build-docs.steps.version.outputs.QGIS_VERSIONS_LIST }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           if [[ ${PUBLISH} != "false" ]]; then
-            ./scripts/publish-docs.sh ${QGIS_VERSION} ${DIR}/build/${QGIS_VERSION}/html
+            ./scripts/publish-docs.sh ${VERSIONS}
           fi
 
-      - name: "Continue matrix lock"
-        uses: rakles/matrix-lock@v1.0.0
-        with:
-          step: continue
-          id: ${{ matrix.qgis_version }}
+      - name: tmate
+        uses: mxschmitt/action-tmate@v3
+        if: always()

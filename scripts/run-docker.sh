@@ -22,7 +22,7 @@ QGIS_DOCKER_TAG="${QGIS_VERSION//master/latest}"
 echo "QGIS Docker tag: ${QGIS_DOCKER_TAG}"
 echo "Building for QGIS: ${QGIS_VERSION}"
 
-echo "##[group] Pull QGIS"
+echo "##[group] Pull QGIS"96+3
 docker pull "qgis/qgis:${QGIS_DOCKER_TAG}"
 echo "##[endgroup]"
 
@@ -34,10 +34,7 @@ echo "##[group] Docker run"
 docker rm -f pyqgis || true
 docker run --name pyqgis \
   -e "QGIS_VERSION=${QGIS_VERSION}" \
-  -e "BUILD_TESTING=${BUILD_TESTING}" \
   -e "BUILD_OPTIONS=${BUILD_OPTIONS}" \
-  -e "GH_TOKEN=${GH_TOKEN}" \
-  -e "RUNS_ON_CI=${RUNS_ON_CI}" \
   qgis/qgis-python-api-doc:${QGIS_DOCKER_TAG}
 echo "##[endgroup]"
 
