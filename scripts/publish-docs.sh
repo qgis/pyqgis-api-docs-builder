@@ -47,19 +47,12 @@ if [[ -n ${FIX_VERSION} ]]; then
   export LC_ALL=en_US.UTF-8
   find . -type f -iname "*.html" -exec perl -i -p0e "s@<dl>(\s*)<dt>Versions</dt>.*</dl>@<dl>\1<dt>Versions</dt>${HTML}\n      \n    </dl>@smg" {} \;
 else
-  # temp output to avoid overwriting if build is not cron
-  if [[ ${BUILD_TESTING} -ne false ]]; then
-     echo "create folder for PR with master only"
-     mkdir "PR${BUILD_TESTING}"
-     cp -R ../../master/html/* PR${BUILD_TESTING}/
-  else
-    for VERSION in "${VERSIONS[@]}"; do
-      echo "get ${VERSION}"
-      rm -rf ${VERSION}
-      mkdir "${VERSION}"
-      cp -R ../../${VERSION}/html/* ${VERSION}/
-    done
-  fi
+  for VERSION in "${VERSIONS[@]}"; do
+    echo "get ${VERSION}"
+    rm -rf ${VERSION}
+    mkdir "${VERSION}"
+    cp -R ../../${VERSION}/html/* ${VERSION}/
+  done
 fi
 
 echo "##[group] Git commit"

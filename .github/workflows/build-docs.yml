@@ -100,13 +100,9 @@ jobs:
           name: ltr
           merge-multiple: true
 
-      - name: Push to git
+      - name: Deploy
+        if: ${{ github.event_name != 'pull_request' }}
         env:
-          BUILD_TESTING: ${{ github.event_name == 'pull_request' && github.event.pull_request.number || false }}
-          VERSIONS: ${{ github.event_name == 'pull_request' && '("master")' || needs.build-docs.outputs.QGIS_VERSIONS_LIST }}
+          VERSIONS: ${{ needs.build-docs.outputs.QGIS_VERSIONS_LIST }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: |
-          echo $(ls -l)
-          if [[ ${PUBLISH} != "false" ]]; then
-            ./scripts/publish-docs.sh ${VERSIONS}
-          fi
+        run: ./scripts/publish-docs.sh ${VERSIONS}
