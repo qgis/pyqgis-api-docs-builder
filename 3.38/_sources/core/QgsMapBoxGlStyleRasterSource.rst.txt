@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsMapBoxGlStyleRasterSource
+...............................................
+
+.. py:module:: QgsMapBoxGlStyleRasterSource
+
+.. autoclass:: qgis.core.QgsMapBoxGlStyleRasterSource
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsMapBoxGlStyleRasterSource
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapBoxGlStyleRasterSource
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapBoxGlStyleRasterSource
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapBoxGlStyleRasterSource
+        :attributes:
+

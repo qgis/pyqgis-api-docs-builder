@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsMapToolEdit
+...............................................
+
+.. py:module:: QgsMapToolEdit
+
+.. autoclass:: qgis.gui.QgsMapToolEdit
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsMapToolEdit
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMapToolEdit
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMapToolEdit
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMapToolEdit
+        :attributes:
+

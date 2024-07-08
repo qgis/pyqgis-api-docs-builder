@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsMapLayerModel
+...............................................
+
+.. py:module:: QgsMapLayerModel
+
+.. autoclass:: qgis.core.QgsMapLayerModel
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsMapLayerModel
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapLayerModel
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapLayerModel
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapLayerModel
+        :attributes:
+

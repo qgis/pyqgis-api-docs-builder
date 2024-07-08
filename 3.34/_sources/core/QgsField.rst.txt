@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsField
+...............................................
+
+.. py:module:: QgsField
+
+.. autoclass:: qgis.core.QgsField
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsField
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsField
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsField
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsField
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsLayoutItemTextTable
+...............................................
+
+.. py:module:: QgsLayoutItemTextTable
+
+.. autoclass:: qgis.core.QgsLayoutItemTextTable
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsLayoutItemTextTable
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutItemTextTable
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutItemTextTable
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutItemTextTable
+        :attributes:
+

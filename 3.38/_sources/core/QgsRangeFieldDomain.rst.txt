@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsRangeFieldDomain
+...............................................
+
+.. py:module:: QgsRangeFieldDomain
+
+.. autoclass:: qgis.core.QgsRangeFieldDomain
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsRangeFieldDomain
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRangeFieldDomain
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRangeFieldDomain
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRangeFieldDomain
+        :attributes:
+

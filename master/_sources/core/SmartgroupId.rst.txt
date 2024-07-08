@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: SmartgroupId
+...............................................
+
+.. py:module:: SmartgroupId
+
+.. autoclass:: qgis.core.SmartgroupId
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.SmartgroupId
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.SmartgroupId
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.SmartgroupId
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.SmartgroupId
+        :attributes:
+

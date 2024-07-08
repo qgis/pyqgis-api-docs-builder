@@ -1,0 +1,27 @@
+.. package: qgis\.analysis
+
+Class: QgsKernelDensityEstimation
+...............................................
+
+.. py:module:: QgsKernelDensityEstimation
+
+.. autoclass:: qgis.analysis.QgsKernelDensityEstimation
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.analysis.QgsKernelDensityEstimation
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsKernelDensityEstimation
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsKernelDensityEstimation
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsKernelDensityEstimation
+        :attributes:
+

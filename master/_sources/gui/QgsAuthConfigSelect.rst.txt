@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsAuthConfigSelect
+...............................................
+
+.. py:module:: QgsAuthConfigSelect
+
+.. autoclass:: qgis.gui.QgsAuthConfigSelect
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsAuthConfigSelect
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAuthConfigSelect
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAuthConfigSelect
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAuthConfigSelect
+        :attributes:
+

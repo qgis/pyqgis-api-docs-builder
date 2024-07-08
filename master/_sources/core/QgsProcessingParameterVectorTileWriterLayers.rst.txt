@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsProcessingParameterVectorTileWriterLayers
+...............................................
+
+.. py:module:: QgsProcessingParameterVectorTileWriterLayers
+
+.. autoclass:: qgis.core.QgsProcessingParameterVectorTileWriterLayers
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterVectorTileWriterLayers
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterVectorTileWriterLayers
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterVectorTileWriterLayers
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterVectorTileWriterLayers
+        :attributes:
+

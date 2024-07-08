@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsRangeFieldFormatter
+...............................................
+
+.. py:module:: QgsRangeFieldFormatter
+
+.. autoclass:: qgis.core.QgsRangeFieldFormatter
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsRangeFieldFormatter
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRangeFieldFormatter
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRangeFieldFormatter
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRangeFieldFormatter
+        :attributes:
+

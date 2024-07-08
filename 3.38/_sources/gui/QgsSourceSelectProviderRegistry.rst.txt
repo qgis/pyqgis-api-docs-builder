@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsSourceSelectProviderRegistry
+...............................................
+
+.. py:module:: QgsSourceSelectProviderRegistry
+
+.. autoclass:: qgis.gui.QgsSourceSelectProviderRegistry
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsSourceSelectProviderRegistry
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSourceSelectProviderRegistry
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSourceSelectProviderRegistry
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSourceSelectProviderRegistry
+        :attributes:
+

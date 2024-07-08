@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsMapTip
+...............................................
+
+.. py:module:: QgsMapTip
+
+.. autoclass:: qgis.gui.QgsMapTip
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsMapTip
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMapTip
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMapTip
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMapTip
+        :attributes:
+

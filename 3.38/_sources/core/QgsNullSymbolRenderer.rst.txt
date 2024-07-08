@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsNullSymbolRenderer
+...............................................
+
+.. py:module:: QgsNullSymbolRenderer
+
+.. autoclass:: qgis.core.QgsNullSymbolRenderer
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsNullSymbolRenderer
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsNullSymbolRenderer
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsNullSymbolRenderer
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsNullSymbolRenderer
+        :attributes:
+

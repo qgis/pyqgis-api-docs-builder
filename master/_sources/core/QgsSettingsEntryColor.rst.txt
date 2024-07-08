@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsSettingsEntryColor
+...............................................
+
+.. py:module:: QgsSettingsEntryColor
+
+.. autoclass:: qgis.core.QgsSettingsEntryColor
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsSettingsEntryColor
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSettingsEntryColor
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSettingsEntryColor
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSettingsEntryColor
+        :attributes:
+

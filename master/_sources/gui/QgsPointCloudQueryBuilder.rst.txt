@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsPointCloudQueryBuilder
+...............................................
+
+.. py:module:: QgsPointCloudQueryBuilder
+
+.. autoclass:: qgis.gui.QgsPointCloudQueryBuilder
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsPointCloudQueryBuilder
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsPointCloudQueryBuilder
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsPointCloudQueryBuilder
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsPointCloudQueryBuilder
+        :attributes:
+

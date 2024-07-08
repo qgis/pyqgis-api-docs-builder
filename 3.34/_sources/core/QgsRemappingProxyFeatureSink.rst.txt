@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsRemappingProxyFeatureSink
+...............................................
+
+.. py:module:: QgsRemappingProxyFeatureSink
+
+.. autoclass:: qgis.core.QgsRemappingProxyFeatureSink
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsRemappingProxyFeatureSink
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRemappingProxyFeatureSink
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRemappingProxyFeatureSink
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRemappingProxyFeatureSink
+        :attributes:
+

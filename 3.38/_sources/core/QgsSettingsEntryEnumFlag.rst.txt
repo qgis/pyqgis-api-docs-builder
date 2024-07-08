@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsSettingsEntryEnumFlag
+...............................................
+
+.. py:module:: QgsSettingsEntryEnumFlag
+
+.. autoclass:: qgis.core.QgsSettingsEntryEnumFlag
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsSettingsEntryEnumFlag
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSettingsEntryEnumFlag
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSettingsEntryEnumFlag
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSettingsEntryEnumFlag
+        :attributes:
+

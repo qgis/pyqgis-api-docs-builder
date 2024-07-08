@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsProcessingParameterAggregate
+...............................................
+
+.. py:module:: QgsProcessingParameterAggregate
+
+.. autoclass:: qgis.core.QgsProcessingParameterAggregate
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterAggregate
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterAggregate
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterAggregate
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterAggregate
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsFontUtils
+...............................................
+
+.. py:module:: QgsFontUtils
+
+.. autoclass:: qgis.core.QgsFontUtils
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsFontUtils
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsFontUtils
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsFontUtils
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsFontUtils
+        :attributes:
+

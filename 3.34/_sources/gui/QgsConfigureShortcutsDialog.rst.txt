@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsConfigureShortcutsDialog
+...............................................
+
+.. py:module:: QgsConfigureShortcutsDialog
+
+.. autoclass:: qgis.gui.QgsConfigureShortcutsDialog
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsConfigureShortcutsDialog
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsConfigureShortcutsDialog
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsConfigureShortcutsDialog
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsConfigureShortcutsDialog
+        :attributes:
+

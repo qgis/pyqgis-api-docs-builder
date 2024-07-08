@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsRasterResamplerV2
+...............................................
+
+.. py:module:: QgsRasterResamplerV2
+
+.. autoclass:: qgis.core.QgsRasterResamplerV2
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsRasterResamplerV2
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRasterResamplerV2
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRasterResamplerV2
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRasterResamplerV2
+        :attributes:
+

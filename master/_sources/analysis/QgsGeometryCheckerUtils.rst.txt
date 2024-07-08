@@ -1,0 +1,27 @@
+.. package: qgis\.analysis
+
+Class: QgsGeometryCheckerUtils
+...............................................
+
+.. py:module:: QgsGeometryCheckerUtils
+
+.. autoclass:: qgis.analysis.QgsGeometryCheckerUtils
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.analysis.QgsGeometryCheckerUtils
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsGeometryCheckerUtils
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsGeometryCheckerUtils
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsGeometryCheckerUtils
+        :attributes:
+

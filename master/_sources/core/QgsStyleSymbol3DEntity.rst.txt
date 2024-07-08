@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsStyleSymbol3DEntity
+...............................................
+
+.. py:module:: QgsStyleSymbol3DEntity
+
+.. autoclass:: qgis.core.QgsStyleSymbol3DEntity
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsStyleSymbol3DEntity
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsStyleSymbol3DEntity
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsStyleSymbol3DEntity
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsStyleSymbol3DEntity
+        :attributes:
+

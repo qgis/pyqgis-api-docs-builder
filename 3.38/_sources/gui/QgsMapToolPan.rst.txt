@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsMapToolPan
+...............................................
+
+.. py:module:: QgsMapToolPan
+
+.. autoclass:: qgis.gui.QgsMapToolPan
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsMapToolPan
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMapToolPan
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMapToolPan
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMapToolPan
+        :attributes:
+

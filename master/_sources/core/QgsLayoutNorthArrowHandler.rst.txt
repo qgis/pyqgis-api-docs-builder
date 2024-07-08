@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsLayoutNorthArrowHandler
+...............................................
+
+.. py:module:: QgsLayoutNorthArrowHandler
+
+.. autoclass:: qgis.core.QgsLayoutNorthArrowHandler
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsLayoutNorthArrowHandler
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutNorthArrowHandler
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutNorthArrowHandler
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutNorthArrowHandler
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsProxyProgressTask
+...............................................
+
+.. py:module:: QgsProxyProgressTask
+
+.. autoclass:: qgis.core.QgsProxyProgressTask
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsProxyProgressTask
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProxyProgressTask
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProxyProgressTask
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProxyProgressTask
+        :attributes:
+

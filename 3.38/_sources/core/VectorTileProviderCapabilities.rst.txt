@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: VectorTileProviderCapabilities
+...............................................
+
+.. py:module:: VectorTileProviderCapabilities
+
+.. autoclass:: qgis.core.VectorTileProviderCapabilities
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.VectorTileProviderCapabilities
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.VectorTileProviderCapabilities
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.VectorTileProviderCapabilities
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.VectorTileProviderCapabilities
+        :attributes:
+

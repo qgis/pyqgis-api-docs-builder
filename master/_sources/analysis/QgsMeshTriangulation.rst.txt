@@ -1,0 +1,27 @@
+.. package: qgis\.analysis
+
+Class: QgsMeshTriangulation
+...............................................
+
+.. py:module:: QgsMeshTriangulation
+
+.. autoclass:: qgis.analysis.QgsMeshTriangulation
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.analysis.QgsMeshTriangulation
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsMeshTriangulation
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsMeshTriangulation
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsMeshTriangulation
+        :attributes:
+

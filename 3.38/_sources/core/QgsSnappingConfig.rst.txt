@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsSnappingConfig
+...............................................
+
+.. py:module:: QgsSnappingConfig
+
+.. autoclass:: qgis.core.QgsSnappingConfig
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsSnappingConfig
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSnappingConfig
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSnappingConfig
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSnappingConfig
+        :attributes:
+

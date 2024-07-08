@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsLayoutConfigObject
+...............................................
+
+.. py:module:: QgsLayoutConfigObject
+
+.. autoclass:: qgis.gui.QgsLayoutConfigObject
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsLayoutConfigObject
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayoutConfigObject
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayoutConfigObject
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayoutConfigObject
+        :attributes:
+

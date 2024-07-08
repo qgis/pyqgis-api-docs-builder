@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsDefaultPointCloudLayerLegend
+...............................................
+
+.. py:module:: QgsDefaultPointCloudLayerLegend
+
+.. autoclass:: qgis.core.QgsDefaultPointCloudLayerLegend
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsDefaultPointCloudLayerLegend
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDefaultPointCloudLayerLegend
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDefaultPointCloudLayerLegend
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDefaultPointCloudLayerLegend
+        :attributes:
+

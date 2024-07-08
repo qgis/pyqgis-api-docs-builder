@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsMessageBar
+...............................................
+
+.. py:module:: QgsMessageBar
+
+.. autoclass:: qgis.gui.QgsMessageBar
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsMessageBar
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMessageBar
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMessageBar
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMessageBar
+        :attributes:
+

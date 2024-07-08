@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsBasicNumericFormatWidget
+...............................................
+
+.. py:module:: QgsBasicNumericFormatWidget
+
+.. autoclass:: qgis.gui.QgsBasicNumericFormatWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsBasicNumericFormatWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsBasicNumericFormatWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsBasicNumericFormatWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsBasicNumericFormatWidget
+        :attributes:
+

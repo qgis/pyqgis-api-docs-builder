@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: AnnotationItemGuiFlags
+...............................................
+
+.. py:module:: AnnotationItemGuiFlags
+
+.. autoclass:: qgis.core.AnnotationItemGuiFlags
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.AnnotationItemGuiFlags
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.AnnotationItemGuiFlags
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.AnnotationItemGuiFlags
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.AnnotationItemGuiFlags
+        :attributes:
+

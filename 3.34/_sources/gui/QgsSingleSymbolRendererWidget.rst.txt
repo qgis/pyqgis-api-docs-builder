@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsSingleSymbolRendererWidget
+...............................................
+
+.. py:module:: QgsSingleSymbolRendererWidget
+
+.. autoclass:: qgis.gui.QgsSingleSymbolRendererWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsSingleSymbolRendererWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSingleSymbolRendererWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSingleSymbolRendererWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSingleSymbolRendererWidget
+        :attributes:
+

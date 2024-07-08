@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsMapRendererJob
+...............................................
+
+.. py:module:: QgsMapRendererJob
+
+.. autoclass:: qgis.core.QgsMapRendererJob
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsMapRendererJob
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapRendererJob
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapRendererJob
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapRendererJob
+        :attributes:
+

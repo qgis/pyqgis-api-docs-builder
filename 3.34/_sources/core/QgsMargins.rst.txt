@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsMargins
+...............................................
+
+.. py:module:: QgsMargins
+
+.. autoclass:: qgis.core.QgsMargins
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsMargins
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMargins
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMargins
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMargins
+        :attributes:
+

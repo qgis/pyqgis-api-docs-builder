@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsLayerMetadataProviderResult
+...............................................
+
+.. py:module:: QgsLayerMetadataProviderResult
+
+.. autoclass:: qgis.core.QgsLayerMetadataProviderResult
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsLayerMetadataProviderResult
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayerMetadataProviderResult
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayerMetadataProviderResult
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayerMetadataProviderResult
+        :attributes:
+

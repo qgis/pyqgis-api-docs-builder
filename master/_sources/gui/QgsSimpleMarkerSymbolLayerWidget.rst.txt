@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsSimpleMarkerSymbolLayerWidget
+...............................................
+
+.. py:module:: QgsSimpleMarkerSymbolLayerWidget
+
+.. autoclass:: qgis.gui.QgsSimpleMarkerSymbolLayerWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsSimpleMarkerSymbolLayerWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSimpleMarkerSymbolLayerWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSimpleMarkerSymbolLayerWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSimpleMarkerSymbolLayerWidget
+        :attributes:
+

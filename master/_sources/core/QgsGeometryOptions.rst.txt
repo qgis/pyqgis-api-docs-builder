@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsGeometryOptions
+...............................................
+
+.. py:module:: QgsGeometryOptions
+
+.. autoclass:: qgis.core.QgsGeometryOptions
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsGeometryOptions
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsGeometryOptions
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsGeometryOptions
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsGeometryOptions
+        :attributes:
+

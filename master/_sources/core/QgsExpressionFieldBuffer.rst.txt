@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsExpressionFieldBuffer
+...............................................
+
+.. py:module:: QgsExpressionFieldBuffer
+
+.. autoclass:: qgis.core.QgsExpressionFieldBuffer
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsExpressionFieldBuffer
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsExpressionFieldBuffer
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsExpressionFieldBuffer
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsExpressionFieldBuffer
+        :attributes:
+

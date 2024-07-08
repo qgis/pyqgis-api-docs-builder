@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsRangeintBase
+...............................................
+
+.. py:module:: QgsRangeintBase
+
+.. autoclass:: qgis.core.QgsRangeintBase
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsRangeintBase
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRangeintBase
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRangeintBase
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRangeintBase
+        :attributes:
+

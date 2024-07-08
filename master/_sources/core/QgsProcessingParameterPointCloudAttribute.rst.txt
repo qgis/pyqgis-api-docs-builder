@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsProcessingParameterPointCloudAttribute
+...............................................
+
+.. py:module:: QgsProcessingParameterPointCloudAttribute
+
+.. autoclass:: qgis.core.QgsProcessingParameterPointCloudAttribute
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterPointCloudAttribute
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterPointCloudAttribute
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterPointCloudAttribute
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterPointCloudAttribute
+        :attributes:
+

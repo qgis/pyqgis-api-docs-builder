@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsGeometryRubberBand
+...............................................
+
+.. py:module:: QgsGeometryRubberBand
+
+.. autoclass:: qgis.gui.QgsGeometryRubberBand
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsGeometryRubberBand
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsGeometryRubberBand
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsGeometryRubberBand
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsGeometryRubberBand
+        :attributes:
+

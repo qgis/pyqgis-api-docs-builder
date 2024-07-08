@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: CadCapacities
+...............................................
+
+.. py:module:: CadCapacities
+
+.. autoclass:: qgis.gui.CadCapacities
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.CadCapacities
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.CadCapacities
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.CadCapacities
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.CadCapacities
+        :attributes:
+

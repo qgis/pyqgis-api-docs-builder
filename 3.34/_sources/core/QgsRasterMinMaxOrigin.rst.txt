@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsRasterMinMaxOrigin
+...............................................
+
+.. py:module:: QgsRasterMinMaxOrigin
+
+.. autoclass:: qgis.core.QgsRasterMinMaxOrigin
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsRasterMinMaxOrigin
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRasterMinMaxOrigin
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRasterMinMaxOrigin
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRasterMinMaxOrigin
+        :attributes:
+

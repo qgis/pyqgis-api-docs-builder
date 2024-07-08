@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsLayerItem
+...............................................
+
+.. py:module:: QgsLayerItem
+
+.. autoclass:: qgis.core.QgsLayerItem
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsLayerItem
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayerItem
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayerItem
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayerItem
+        :attributes:
+

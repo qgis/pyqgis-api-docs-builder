@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsRasterTransparencyWidget
+...............................................
+
+.. py:module:: QgsRasterTransparencyWidget
+
+.. autoclass:: qgis.gui.QgsRasterTransparencyWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsRasterTransparencyWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsRasterTransparencyWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsRasterTransparencyWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsRasterTransparencyWidget
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsGmlSchema
+...............................................
+
+.. py:module:: QgsGmlSchema
+
+.. autoclass:: qgis.core.QgsGmlSchema
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsGmlSchema
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsGmlSchema
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsGmlSchema
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsGmlSchema
+        :attributes:
+

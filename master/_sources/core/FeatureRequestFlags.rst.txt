@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: FeatureRequestFlags
+...............................................
+
+.. py:module:: FeatureRequestFlags
+
+.. autoclass:: qgis.core.FeatureRequestFlags
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.FeatureRequestFlags
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.FeatureRequestFlags
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.FeatureRequestFlags
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.FeatureRequestFlags
+        :attributes:
+

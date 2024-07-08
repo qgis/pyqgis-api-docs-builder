@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsFeaturePickerModelBase
+...............................................
+
+.. py:module:: QgsFeaturePickerModelBase
+
+.. autoclass:: qgis.core.QgsFeaturePickerModelBase
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsFeaturePickerModelBase
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsFeaturePickerModelBase
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsFeaturePickerModelBase
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsFeaturePickerModelBase
+        :attributes:
+

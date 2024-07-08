@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsUnsetAttributeValue
+...............................................
+
+.. py:module:: QgsUnsetAttributeValue
+
+.. autoclass:: qgis.core.QgsUnsetAttributeValue
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsUnsetAttributeValue
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsUnsetAttributeValue
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsUnsetAttributeValue
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsUnsetAttributeValue
+        :attributes:
+

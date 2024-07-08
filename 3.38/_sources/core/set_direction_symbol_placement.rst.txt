@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: set_direction_symbol_placement
+...............................................
+
+.. py:module:: set_direction_symbol_placement
+
+.. autoclass:: qgis.core.set_direction_symbol_placement
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.set_direction_symbol_placement
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.set_direction_symbol_placement
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.set_direction_symbol_placement
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.set_direction_symbol_placement
+        :attributes:
+

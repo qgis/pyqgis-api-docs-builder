@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsReferencedRectangle
+...............................................
+
+.. py:module:: QgsReferencedRectangle
+
+.. autoclass:: qgis.core.QgsReferencedRectangle
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsReferencedRectangle
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsReferencedRectangle
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsReferencedRectangle
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsReferencedRectangle
+        :attributes:
+

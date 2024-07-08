@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsLayoutViewToolEditNodes
+...............................................
+
+.. py:module:: QgsLayoutViewToolEditNodes
+
+.. autoclass:: qgis.gui.QgsLayoutViewToolEditNodes
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsLayoutViewToolEditNodes
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayoutViewToolEditNodes
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayoutViewToolEditNodes
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayoutViewToolEditNodes
+        :attributes:
+

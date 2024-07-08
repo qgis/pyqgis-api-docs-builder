@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsTiledSceneTextureRenderer
+...............................................
+
+.. py:module:: QgsTiledSceneTextureRenderer
+
+.. autoclass:: qgis.core.QgsTiledSceneTextureRenderer
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsTiledSceneTextureRenderer
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTiledSceneTextureRenderer
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTiledSceneTextureRenderer
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTiledSceneTextureRenderer
+        :attributes:
+

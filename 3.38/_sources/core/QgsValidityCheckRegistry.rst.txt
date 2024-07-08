@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsValidityCheckRegistry
+...............................................
+
+.. py:module:: QgsValidityCheckRegistry
+
+.. autoclass:: qgis.core.QgsValidityCheckRegistry
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsValidityCheckRegistry
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsValidityCheckRegistry
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsValidityCheckRegistry
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsValidityCheckRegistry
+        :attributes:
+

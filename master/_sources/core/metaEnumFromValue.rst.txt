@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: metaEnumFromValue
+...............................................
+
+.. py:module:: metaEnumFromValue
+
+.. autoclass:: qgis.core.metaEnumFromValue
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.metaEnumFromValue
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.metaEnumFromValue
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.metaEnumFromValue
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.metaEnumFromValue
+        :attributes:
+

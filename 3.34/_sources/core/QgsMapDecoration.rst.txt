@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsMapDecoration
+...............................................
+
+.. py:module:: QgsMapDecoration
+
+.. autoclass:: qgis.core.QgsMapDecoration
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsMapDecoration
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapDecoration
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapDecoration
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapDecoration
+        :attributes:
+

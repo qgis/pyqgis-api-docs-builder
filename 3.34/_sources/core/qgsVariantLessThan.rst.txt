@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: qgsVariantLessThan
+...............................................
+
+.. py:module:: qgsVariantLessThan
+
+.. autoclass:: qgis.core.qgsVariantLessThan
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.qgsVariantLessThan
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.qgsVariantLessThan
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.qgsVariantLessThan
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.qgsVariantLessThan
+        :attributes:
+

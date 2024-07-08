@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsRendererRangeLabelFormat
+...............................................
+
+.. py:module:: QgsRendererRangeLabelFormat
+
+.. autoclass:: qgis.core.QgsRendererRangeLabelFormat
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsRendererRangeLabelFormat
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRendererRangeLabelFormat
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRendererRangeLabelFormat
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRendererRangeLabelFormat
+        :attributes:
+

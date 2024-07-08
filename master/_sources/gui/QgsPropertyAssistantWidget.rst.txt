@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsPropertyAssistantWidget
+...............................................
+
+.. py:module:: QgsPropertyAssistantWidget
+
+.. autoclass:: qgis.gui.QgsPropertyAssistantWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsPropertyAssistantWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsPropertyAssistantWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsPropertyAssistantWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsPropertyAssistantWidget
+        :attributes:
+

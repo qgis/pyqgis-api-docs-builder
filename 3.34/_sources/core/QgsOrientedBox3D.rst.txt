@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsOrientedBox3D
+...............................................
+
+.. py:module:: QgsOrientedBox3D
+
+.. autoclass:: qgis.core.QgsOrientedBox3D
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsOrientedBox3D
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsOrientedBox3D
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsOrientedBox3D
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsOrientedBox3D
+        :attributes:
+

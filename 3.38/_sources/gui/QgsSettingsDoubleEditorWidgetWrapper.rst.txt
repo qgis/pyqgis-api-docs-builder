@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsSettingsDoubleEditorWidgetWrapper
+...............................................
+
+.. py:module:: QgsSettingsDoubleEditorWidgetWrapper
+
+.. autoclass:: qgis.gui.QgsSettingsDoubleEditorWidgetWrapper
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsSettingsDoubleEditorWidgetWrapper
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSettingsDoubleEditorWidgetWrapper
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSettingsDoubleEditorWidgetWrapper
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSettingsDoubleEditorWidgetWrapper
+        :attributes:
+

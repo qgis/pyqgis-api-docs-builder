@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsAttributeTableModel
+...............................................
+
+.. py:module:: QgsAttributeTableModel
+
+.. autoclass:: qgis.gui.QgsAttributeTableModel
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsAttributeTableModel
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAttributeTableModel
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAttributeTableModel
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAttributeTableModel
+        :attributes:
+

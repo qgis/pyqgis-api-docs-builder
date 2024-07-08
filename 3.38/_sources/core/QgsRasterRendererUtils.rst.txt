@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsRasterRendererUtils
+...............................................
+
+.. py:module:: QgsRasterRendererUtils
+
+.. autoclass:: qgis.core.QgsRasterRendererUtils
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsRasterRendererUtils
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRasterRendererUtils
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRasterRendererUtils
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRasterRendererUtils
+        :attributes:
+

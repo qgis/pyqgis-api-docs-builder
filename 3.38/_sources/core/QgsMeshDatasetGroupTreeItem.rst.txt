@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsMeshDatasetGroupTreeItem
+...............................................
+
+.. py:module:: QgsMeshDatasetGroupTreeItem
+
+.. autoclass:: qgis.core.QgsMeshDatasetGroupTreeItem
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsMeshDatasetGroupTreeItem
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMeshDatasetGroupTreeItem
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMeshDatasetGroupTreeItem
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMeshDatasetGroupTreeItem
+        :attributes:
+

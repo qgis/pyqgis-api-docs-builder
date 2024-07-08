@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsVectorFileWriter
+...............................................
+
+.. py:module:: QgsVectorFileWriter
+
+.. autoclass:: qgis.core.QgsVectorFileWriter
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsVectorFileWriter
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVectorFileWriter
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVectorFileWriter
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVectorFileWriter
+        :attributes:
+

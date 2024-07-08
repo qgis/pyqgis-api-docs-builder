@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsMeshRelativeHeightAveragingMethod
+...............................................
+
+.. py:module:: QgsMeshRelativeHeightAveragingMethod
+
+.. autoclass:: qgis.core.QgsMeshRelativeHeightAveragingMethod
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsMeshRelativeHeightAveragingMethod
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMeshRelativeHeightAveragingMethod
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMeshRelativeHeightAveragingMethod
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMeshRelativeHeightAveragingMethod
+        :attributes:
+

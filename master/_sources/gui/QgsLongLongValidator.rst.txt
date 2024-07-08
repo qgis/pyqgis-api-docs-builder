@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsLongLongValidator
+...............................................
+
+.. py:module:: QgsLongLongValidator
+
+.. autoclass:: qgis.gui.QgsLongLongValidator
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsLongLongValidator
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLongLongValidator
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLongLongValidator
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLongLongValidator
+        :attributes:
+

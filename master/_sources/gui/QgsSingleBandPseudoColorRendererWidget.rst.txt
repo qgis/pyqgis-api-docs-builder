@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsSingleBandPseudoColorRendererWidget
+...............................................
+
+.. py:module:: QgsSingleBandPseudoColorRendererWidget
+
+.. autoclass:: qgis.gui.QgsSingleBandPseudoColorRendererWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsSingleBandPseudoColorRendererWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSingleBandPseudoColorRendererWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSingleBandPseudoColorRendererWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSingleBandPseudoColorRendererWidget
+        :attributes:
+

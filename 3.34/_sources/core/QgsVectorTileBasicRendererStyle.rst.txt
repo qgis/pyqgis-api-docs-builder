@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsVectorTileBasicRendererStyle
+...............................................
+
+.. py:module:: QgsVectorTileBasicRendererStyle
+
+.. autoclass:: qgis.core.QgsVectorTileBasicRendererStyle
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsVectorTileBasicRendererStyle
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVectorTileBasicRendererStyle
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVectorTileBasicRendererStyle
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVectorTileBasicRendererStyle
+        :attributes:
+

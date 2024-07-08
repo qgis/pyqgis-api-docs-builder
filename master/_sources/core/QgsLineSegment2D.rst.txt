@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsLineSegment2D
+...............................................
+
+.. py:module:: QgsLineSegment2D
+
+.. autoclass:: qgis.core.QgsLineSegment2D
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsLineSegment2D
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLineSegment2D
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLineSegment2D
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLineSegment2D
+        :attributes:
+

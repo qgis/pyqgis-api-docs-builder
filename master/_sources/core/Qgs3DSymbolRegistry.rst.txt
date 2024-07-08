@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: Qgs3DSymbolRegistry
+...............................................
+
+.. py:module:: Qgs3DSymbolRegistry
+
+.. autoclass:: qgis.core.Qgs3DSymbolRegistry
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.Qgs3DSymbolRegistry
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.Qgs3DSymbolRegistry
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.Qgs3DSymbolRegistry
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.Qgs3DSymbolRegistry
+        :attributes:
+

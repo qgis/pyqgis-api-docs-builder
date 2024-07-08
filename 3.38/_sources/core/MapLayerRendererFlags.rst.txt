@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: MapLayerRendererFlags
+...............................................
+
+.. py:module:: MapLayerRendererFlags
+
+.. autoclass:: qgis.core.MapLayerRendererFlags
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.MapLayerRendererFlags
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.MapLayerRendererFlags
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.MapLayerRendererFlags
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.MapLayerRendererFlags
+        :attributes:
+

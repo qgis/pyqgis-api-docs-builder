@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsLayerPropertiesDialog
+...............................................
+
+.. py:module:: QgsLayerPropertiesDialog
+
+.. autoclass:: qgis.gui.QgsLayerPropertiesDialog
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsLayerPropertiesDialog
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayerPropertiesDialog
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayerPropertiesDialog
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayerPropertiesDialog
+        :attributes:
+

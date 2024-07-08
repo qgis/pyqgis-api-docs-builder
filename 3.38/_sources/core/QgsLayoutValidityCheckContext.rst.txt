@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsLayoutValidityCheckContext
+...............................................
+
+.. py:module:: QgsLayoutValidityCheckContext
+
+.. autoclass:: qgis.core.QgsLayoutValidityCheckContext
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsLayoutValidityCheckContext
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutValidityCheckContext
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutValidityCheckContext
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutValidityCheckContext
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsConstWkbPtr
+...............................................
+
+.. py:module:: QgsConstWkbPtr
+
+.. autoclass:: qgis.core.QgsConstWkbPtr
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsConstWkbPtr
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsConstWkbPtr
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsConstWkbPtr
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsConstWkbPtr
+        :attributes:
+

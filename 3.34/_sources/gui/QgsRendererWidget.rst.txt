@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsRendererWidget
+...............................................
+
+.. py:module:: QgsRendererWidget
+
+.. autoclass:: qgis.gui.QgsRendererWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsRendererWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsRendererWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsRendererWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsRendererWidget
+        :attributes:
+

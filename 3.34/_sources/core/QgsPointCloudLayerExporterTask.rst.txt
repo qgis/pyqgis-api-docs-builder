@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsPointCloudLayerExporterTask
+...............................................
+
+.. py:module:: QgsPointCloudLayerExporterTask
+
+.. autoclass:: qgis.core.QgsPointCloudLayerExporterTask
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsPointCloudLayerExporterTask
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsPointCloudLayerExporterTask
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsPointCloudLayerExporterTask
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsPointCloudLayerExporterTask
+        :attributes:
+

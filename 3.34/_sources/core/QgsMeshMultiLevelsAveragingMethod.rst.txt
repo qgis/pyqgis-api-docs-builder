@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsMeshMultiLevelsAveragingMethod
+...............................................
+
+.. py:module:: QgsMeshMultiLevelsAveragingMethod
+
+.. autoclass:: qgis.core.QgsMeshMultiLevelsAveragingMethod
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsMeshMultiLevelsAveragingMethod
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMeshMultiLevelsAveragingMethod
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMeshMultiLevelsAveragingMethod
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMeshMultiLevelsAveragingMethod
+        :attributes:
+

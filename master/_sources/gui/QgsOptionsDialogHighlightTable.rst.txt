@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsOptionsDialogHighlightTable
+...............................................
+
+.. py:module:: QgsOptionsDialogHighlightTable
+
+.. autoclass:: qgis.gui.QgsOptionsDialogHighlightTable
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsOptionsDialogHighlightTable
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsOptionsDialogHighlightTable
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsOptionsDialogHighlightTable
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsOptionsDialogHighlightTable
+        :attributes:
+

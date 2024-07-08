@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsColorRampButton
+...............................................
+
+.. py:module:: QgsColorRampButton
+
+.. autoclass:: qgis.gui.QgsColorRampButton
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsColorRampButton
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsColorRampButton
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsColorRampButton
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsColorRampButton
+        :attributes:
+

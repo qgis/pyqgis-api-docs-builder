@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsLayerNotesUtils
+...............................................
+
+.. py:module:: QgsLayerNotesUtils
+
+.. autoclass:: qgis.core.QgsLayerNotesUtils
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsLayerNotesUtils
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayerNotesUtils
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayerNotesUtils
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayerNotesUtils
+        :attributes:
+

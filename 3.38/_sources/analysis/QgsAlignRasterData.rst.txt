@@ -1,0 +1,27 @@
+.. package: qgis\.analysis
+
+Class: QgsAlignRasterData
+...............................................
+
+.. py:module:: QgsAlignRasterData
+
+.. autoclass:: qgis.analysis.QgsAlignRasterData
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.analysis.QgsAlignRasterData
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsAlignRasterData
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsAlignRasterData
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsAlignRasterData
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsDataDefinedSizeDialog
+...............................................
+
+.. py:module:: QgsDataDefinedSizeDialog
+
+.. autoclass:: qgis.gui.QgsDataDefinedSizeDialog
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsDataDefinedSizeDialog
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsDataDefinedSizeDialog
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsDataDefinedSizeDialog
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsDataDefinedSizeDialog
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsSimplifyMethod
+...............................................
+
+.. py:module:: QgsSimplifyMethod
+
+.. autoclass:: qgis.core.QgsSimplifyMethod
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsSimplifyMethod
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSimplifyMethod
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSimplifyMethod
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSimplifyMethod
+        :attributes:
+

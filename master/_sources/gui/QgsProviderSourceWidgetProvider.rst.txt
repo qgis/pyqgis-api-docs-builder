@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsProviderSourceWidgetProvider
+...............................................
+
+.. py:module:: QgsProviderSourceWidgetProvider
+
+.. autoclass:: qgis.gui.QgsProviderSourceWidgetProvider
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsProviderSourceWidgetProvider
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProviderSourceWidgetProvider
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProviderSourceWidgetProvider
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProviderSourceWidgetProvider
+        :attributes:
+

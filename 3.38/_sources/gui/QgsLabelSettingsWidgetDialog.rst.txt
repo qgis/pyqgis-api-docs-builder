@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsLabelSettingsWidgetDialog
+...............................................
+
+.. py:module:: QgsLabelSettingsWidgetDialog
+
+.. autoclass:: qgis.gui.QgsLabelSettingsWidgetDialog
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsLabelSettingsWidgetDialog
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLabelSettingsWidgetDialog
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLabelSettingsWidgetDialog
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLabelSettingsWidgetDialog
+        :attributes:
+

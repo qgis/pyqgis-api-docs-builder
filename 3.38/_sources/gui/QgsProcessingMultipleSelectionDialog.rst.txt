@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsProcessingMultipleSelectionDialog
+...............................................
+
+.. py:module:: QgsProcessingMultipleSelectionDialog
+
+.. autoclass:: qgis.gui.QgsProcessingMultipleSelectionDialog
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsProcessingMultipleSelectionDialog
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProcessingMultipleSelectionDialog
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProcessingMultipleSelectionDialog
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProcessingMultipleSelectionDialog
+        :attributes:
+

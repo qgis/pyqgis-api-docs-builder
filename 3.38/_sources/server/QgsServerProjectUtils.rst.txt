@@ -1,0 +1,27 @@
+.. package: qgis\.server
+
+Class: QgsServerProjectUtils
+...............................................
+
+.. py:module:: QgsServerProjectUtils
+
+.. autoclass:: qgis.server.QgsServerProjectUtils
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.server.QgsServerProjectUtils
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.server.QgsServerProjectUtils
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.server.QgsServerProjectUtils
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.server.QgsServerProjectUtils
+        :attributes:
+

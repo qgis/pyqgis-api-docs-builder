@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsProfilePlotRenderer
+...............................................
+
+.. py:module:: QgsProfilePlotRenderer
+
+.. autoclass:: qgis.core.QgsProfilePlotRenderer
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsProfilePlotRenderer
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProfilePlotRenderer
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProfilePlotRenderer
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProfilePlotRenderer
+        :attributes:
+

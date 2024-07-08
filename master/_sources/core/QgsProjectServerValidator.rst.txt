@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsProjectServerValidator
+...............................................
+
+.. py:module:: QgsProjectServerValidator
+
+.. autoclass:: qgis.core.QgsProjectServerValidator
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsProjectServerValidator
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProjectServerValidator
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProjectServerValidator
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProjectServerValidator
+        :attributes:
+

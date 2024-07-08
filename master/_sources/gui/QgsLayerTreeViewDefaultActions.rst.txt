@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsLayerTreeViewDefaultActions
+...............................................
+
+.. py:module:: QgsLayerTreeViewDefaultActions
+
+.. autoclass:: qgis.gui.QgsLayerTreeViewDefaultActions
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsLayerTreeViewDefaultActions
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayerTreeViewDefaultActions
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayerTreeViewDefaultActions
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayerTreeViewDefaultActions
+        :attributes:
+

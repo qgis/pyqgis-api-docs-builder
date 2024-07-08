@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsMessageOutput
+...............................................
+
+.. py:module:: QgsMessageOutput
+
+.. autoclass:: qgis.core.QgsMessageOutput
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsMessageOutput
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMessageOutput
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMessageOutput
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMessageOutput
+        :attributes:
+

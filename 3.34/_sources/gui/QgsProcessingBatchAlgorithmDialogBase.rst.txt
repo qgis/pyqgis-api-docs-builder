@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsProcessingBatchAlgorithmDialogBase
+...............................................
+
+.. py:module:: QgsProcessingBatchAlgorithmDialogBase
+
+.. autoclass:: qgis.gui.QgsProcessingBatchAlgorithmDialogBase
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsProcessingBatchAlgorithmDialogBase
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProcessingBatchAlgorithmDialogBase
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProcessingBatchAlgorithmDialogBase
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProcessingBatchAlgorithmDialogBase
+        :attributes:
+

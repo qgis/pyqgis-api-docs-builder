@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsVectorTileLayerProperties
+...............................................
+
+.. py:module:: QgsVectorTileLayerProperties
+
+.. autoclass:: qgis.gui.QgsVectorTileLayerProperties
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsVectorTileLayerProperties
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsVectorTileLayerProperties
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsVectorTileLayerProperties
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsVectorTileLayerProperties
+        :attributes:
+

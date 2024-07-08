@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsDiagramInterpolationSettings
+...............................................
+
+.. py:module:: QgsDiagramInterpolationSettings
+
+.. autoclass:: qgis.core.QgsDiagramInterpolationSettings
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsDiagramInterpolationSettings
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDiagramInterpolationSettings
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDiagramInterpolationSettings
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDiagramInterpolationSettings
+        :attributes:
+

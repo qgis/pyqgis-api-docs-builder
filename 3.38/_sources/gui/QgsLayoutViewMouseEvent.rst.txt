@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsLayoutViewMouseEvent
+...............................................
+
+.. py:module:: QgsLayoutViewMouseEvent
+
+.. autoclass:: qgis.gui.QgsLayoutViewMouseEvent
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsLayoutViewMouseEvent
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayoutViewMouseEvent
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayoutViewMouseEvent
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayoutViewMouseEvent
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsVirtualLayerTask
+...............................................
+
+.. py:module:: QgsVirtualLayerTask
+
+.. autoclass:: qgis.core.QgsVirtualLayerTask
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsVirtualLayerTask
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVirtualLayerTask
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVirtualLayerTask
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVirtualLayerTask
+        :attributes:
+

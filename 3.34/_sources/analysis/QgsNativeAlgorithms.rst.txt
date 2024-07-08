@@ -1,0 +1,27 @@
+.. package: qgis\.analysis
+
+Class: QgsNativeAlgorithms
+...............................................
+
+.. py:module:: QgsNativeAlgorithms
+
+.. autoclass:: qgis.analysis.QgsNativeAlgorithms
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.analysis.QgsNativeAlgorithms
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsNativeAlgorithms
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsNativeAlgorithms
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsNativeAlgorithms
+        :attributes:
+

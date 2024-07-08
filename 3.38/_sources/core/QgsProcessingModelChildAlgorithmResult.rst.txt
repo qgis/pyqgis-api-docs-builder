@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsProcessingModelChildAlgorithmResult
+...............................................
+
+.. py:module:: QgsProcessingModelChildAlgorithmResult
+
+.. autoclass:: qgis.core.QgsProcessingModelChildAlgorithmResult
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsProcessingModelChildAlgorithmResult
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingModelChildAlgorithmResult
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingModelChildAlgorithmResult
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingModelChildAlgorithmResult
+        :attributes:
+

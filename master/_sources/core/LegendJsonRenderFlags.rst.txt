@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: LegendJsonRenderFlags
+...............................................
+
+.. py:module:: LegendJsonRenderFlags
+
+.. autoclass:: qgis.core.LegendJsonRenderFlags
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.LegendJsonRenderFlags
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.LegendJsonRenderFlags
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.LegendJsonRenderFlags
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.LegendJsonRenderFlags
+        :attributes:
+

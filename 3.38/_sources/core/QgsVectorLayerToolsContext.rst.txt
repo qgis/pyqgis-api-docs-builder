@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsVectorLayerToolsContext
+...............................................
+
+.. py:module:: QgsVectorLayerToolsContext
+
+.. autoclass:: qgis.core.QgsVectorLayerToolsContext
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsVectorLayerToolsContext
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVectorLayerToolsContext
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVectorLayerToolsContext
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVectorLayerToolsContext
+        :attributes:
+

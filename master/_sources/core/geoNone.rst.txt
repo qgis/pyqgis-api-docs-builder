@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: geoNone
+...............................................
+
+.. py:module:: geoNone
+
+.. autoclass:: qgis.core.geoNone
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.geoNone
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.geoNone
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.geoNone
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.geoNone
+        :attributes:
+

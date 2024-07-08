@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsMaskMarkerSymbolLayer
+...............................................
+
+.. py:module:: QgsMaskMarkerSymbolLayer
+
+.. autoclass:: qgis.core.QgsMaskMarkerSymbolLayer
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsMaskMarkerSymbolLayer
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMaskMarkerSymbolLayer
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMaskMarkerSymbolLayer
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMaskMarkerSymbolLayer
+        :attributes:
+

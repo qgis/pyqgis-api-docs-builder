@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsLegendSymbolItem
+...............................................
+
+.. py:module:: QgsLegendSymbolItem
+
+.. autoclass:: qgis.core.QgsLegendSymbolItem
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsLegendSymbolItem
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLegendSymbolItem
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLegendSymbolItem
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLegendSymbolItem
+        :attributes:
+

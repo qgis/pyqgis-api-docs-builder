@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: LayerFilters
+...............................................
+
+.. py:module:: LayerFilters
+
+.. autoclass:: qgis.core.LayerFilters
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.LayerFilters
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.LayerFilters
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.LayerFilters
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.LayerFilters
+        :attributes:
+

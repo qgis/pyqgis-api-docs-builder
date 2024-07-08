@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsMapClippingRegion
+...............................................
+
+.. py:module:: QgsMapClippingRegion
+
+.. autoclass:: qgis.core.QgsMapClippingRegion
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsMapClippingRegion
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapClippingRegion
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapClippingRegion
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapClippingRegion
+        :attributes:
+

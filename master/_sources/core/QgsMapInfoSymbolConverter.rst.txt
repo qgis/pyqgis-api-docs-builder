@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsMapInfoSymbolConverter
+...............................................
+
+.. py:module:: QgsMapInfoSymbolConverter
+
+.. autoclass:: qgis.core.QgsMapInfoSymbolConverter
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsMapInfoSymbolConverter
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapInfoSymbolConverter
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapInfoSymbolConverter
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapInfoSymbolConverter
+        :attributes:
+

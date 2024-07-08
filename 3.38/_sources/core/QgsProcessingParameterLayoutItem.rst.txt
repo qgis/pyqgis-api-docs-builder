@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsProcessingParameterLayoutItem
+...............................................
+
+.. py:module:: QgsProcessingParameterLayoutItem
+
+.. autoclass:: qgis.core.QgsProcessingParameterLayoutItem
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterLayoutItem
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterLayoutItem
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterLayoutItem
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterLayoutItem
+        :attributes:
+

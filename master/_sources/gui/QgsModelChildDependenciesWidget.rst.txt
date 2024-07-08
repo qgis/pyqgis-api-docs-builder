@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsModelChildDependenciesWidget
+...............................................
+
+.. py:module:: QgsModelChildDependenciesWidget
+
+.. autoclass:: qgis.gui.QgsModelChildDependenciesWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsModelChildDependenciesWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsModelChildDependenciesWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsModelChildDependenciesWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsModelChildDependenciesWidget
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: qgsNanCompatibleEquals
+...............................................
+
+.. py:module:: qgsNanCompatibleEquals
+
+.. autoclass:: qgis.core.qgsNanCompatibleEquals
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.qgsNanCompatibleEquals
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.qgsNanCompatibleEquals
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.qgsNanCompatibleEquals
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.qgsNanCompatibleEquals
+        :attributes:
+

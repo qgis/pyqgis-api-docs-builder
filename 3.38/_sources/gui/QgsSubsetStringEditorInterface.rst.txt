@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsSubsetStringEditorInterface
+...............................................
+
+.. py:module:: QgsSubsetStringEditorInterface
+
+.. autoclass:: qgis.gui.QgsSubsetStringEditorInterface
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsSubsetStringEditorInterface
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSubsetStringEditorInterface
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSubsetStringEditorInterface
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSubsetStringEditorInterface
+        :attributes:
+

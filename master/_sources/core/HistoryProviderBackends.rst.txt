@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: HistoryProviderBackends
+...............................................
+
+.. py:module:: HistoryProviderBackends
+
+.. autoclass:: qgis.core.HistoryProviderBackends
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.HistoryProviderBackends
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.HistoryProviderBackends
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.HistoryProviderBackends
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.HistoryProviderBackends
+        :attributes:
+

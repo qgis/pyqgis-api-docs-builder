@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsMapThemeCollection
+...............................................
+
+.. py:module:: QgsMapThemeCollection
+
+.. autoclass:: qgis.core.QgsMapThemeCollection
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsMapThemeCollection
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapThemeCollection
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapThemeCollection
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapThemeCollection
+        :attributes:
+

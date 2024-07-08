@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsMapLayerConfigWidgetContext
+...............................................
+
+.. py:module:: QgsMapLayerConfigWidgetContext
+
+.. autoclass:: qgis.gui.QgsMapLayerConfigWidgetContext
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsMapLayerConfigWidgetContext
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMapLayerConfigWidgetContext
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMapLayerConfigWidgetContext
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMapLayerConfigWidgetContext
+        :attributes:
+

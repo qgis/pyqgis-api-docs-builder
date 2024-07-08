@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsFeaturePickerWidget
+...............................................
+
+.. py:module:: QgsFeaturePickerWidget
+
+.. autoclass:: qgis.gui.QgsFeaturePickerWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsFeaturePickerWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsFeaturePickerWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsFeaturePickerWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsFeaturePickerWidget
+        :attributes:
+

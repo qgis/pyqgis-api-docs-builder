@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsOwsConnection
+...............................................
+
+.. py:module:: QgsOwsConnection
+
+.. autoclass:: qgis.core.QgsOwsConnection
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsOwsConnection
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsOwsConnection
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsOwsConnection
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsOwsConnection
+        :attributes:
+

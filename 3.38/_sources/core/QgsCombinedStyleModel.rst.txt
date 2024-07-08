@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsCombinedStyleModel
+...............................................
+
+.. py:module:: QgsCombinedStyleModel
+
+.. autoclass:: qgis.core.QgsCombinedStyleModel
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsCombinedStyleModel
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsCombinedStyleModel
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsCombinedStyleModel
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsCombinedStyleModel
+        :attributes:
+

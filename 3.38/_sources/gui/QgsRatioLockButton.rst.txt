@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsRatioLockButton
+...............................................
+
+.. py:module:: QgsRatioLockButton
+
+.. autoclass:: qgis.gui.QgsRatioLockButton
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsRatioLockButton
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsRatioLockButton
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsRatioLockButton
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsRatioLockButton
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsMapLayerServerProperties
+...............................................
+
+.. py:module:: QgsMapLayerServerProperties
+
+.. autoclass:: qgis.core.QgsMapLayerServerProperties
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsMapLayerServerProperties
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapLayerServerProperties
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapLayerServerProperties
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapLayerServerProperties
+        :attributes:
+

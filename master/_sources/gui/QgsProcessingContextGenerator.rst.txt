@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsProcessingContextGenerator
+...............................................
+
+.. py:module:: QgsProcessingContextGenerator
+
+.. autoclass:: qgis.gui.QgsProcessingContextGenerator
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsProcessingContextGenerator
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProcessingContextGenerator
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProcessingContextGenerator
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProcessingContextGenerator
+        :attributes:
+

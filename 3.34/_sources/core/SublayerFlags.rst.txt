@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: SublayerFlags
+...............................................
+
+.. py:module:: SublayerFlags
+
+.. autoclass:: qgis.core.SublayerFlags
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.SublayerFlags
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.SublayerFlags
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.SublayerFlags
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.SublayerFlags
+        :attributes:
+

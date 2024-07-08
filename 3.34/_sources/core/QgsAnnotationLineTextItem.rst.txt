@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsAnnotationLineTextItem
+...............................................
+
+.. py:module:: QgsAnnotationLineTextItem
+
+.. autoclass:: qgis.core.QgsAnnotationLineTextItem
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsAnnotationLineTextItem
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsAnnotationLineTextItem
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsAnnotationLineTextItem
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsAnnotationLineTextItem
+        :attributes:
+

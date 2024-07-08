@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: FloaterItem
+...............................................
+
+.. py:module:: FloaterItem
+
+.. autoclass:: qgis.gui.FloaterItem
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.FloaterItem
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.FloaterItem
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.FloaterItem
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.FloaterItem
+        :attributes:
+

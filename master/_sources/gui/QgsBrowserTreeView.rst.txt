@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsBrowserTreeView
+...............................................
+
+.. py:module:: QgsBrowserTreeView
+
+.. autoclass:: qgis.gui.QgsBrowserTreeView
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsBrowserTreeView
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsBrowserTreeView
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsBrowserTreeView
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsBrowserTreeView
+        :attributes:
+

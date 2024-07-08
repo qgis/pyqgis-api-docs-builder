@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsElevationControllerSettingsAction
+...............................................
+
+.. py:module:: QgsElevationControllerSettingsAction
+
+.. autoclass:: qgis.gui.QgsElevationControllerSettingsAction
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsElevationControllerSettingsAction
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsElevationControllerSettingsAction
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsElevationControllerSettingsAction
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsElevationControllerSettingsAction
+        :attributes:
+

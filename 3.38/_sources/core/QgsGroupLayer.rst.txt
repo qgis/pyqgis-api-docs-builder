@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsGroupLayer
+...............................................
+
+.. py:module:: QgsGroupLayer
+
+.. autoclass:: qgis.core.QgsGroupLayer
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsGroupLayer
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsGroupLayer
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsGroupLayer
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsGroupLayer
+        :attributes:
+

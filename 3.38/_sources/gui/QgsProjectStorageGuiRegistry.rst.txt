@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsProjectStorageGuiRegistry
+...............................................
+
+.. py:module:: QgsProjectStorageGuiRegistry
+
+.. autoclass:: qgis.gui.QgsProjectStorageGuiRegistry
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsProjectStorageGuiRegistry
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProjectStorageGuiRegistry
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProjectStorageGuiRegistry
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProjectStorageGuiRegistry
+        :attributes:
+

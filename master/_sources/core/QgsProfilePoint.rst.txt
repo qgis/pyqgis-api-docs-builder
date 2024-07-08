@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsProfilePoint
+...............................................
+
+.. py:module:: QgsProfilePoint
+
+.. autoclass:: qgis.core.QgsProfilePoint
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsProfilePoint
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProfilePoint
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProfilePoint
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProfilePoint
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsDefaultSearchWidgetWrapper
+...............................................
+
+.. py:module:: QgsDefaultSearchWidgetWrapper
+
+.. autoclass:: qgis.gui.QgsDefaultSearchWidgetWrapper
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsDefaultSearchWidgetWrapper
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsDefaultSearchWidgetWrapper
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsDefaultSearchWidgetWrapper
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsDefaultSearchWidgetWrapper
+        :attributes:
+

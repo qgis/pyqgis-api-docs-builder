@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsProcessingFeatureSource
+...............................................
+
+.. py:module:: QgsProcessingFeatureSource
+
+.. autoclass:: qgis.core.QgsProcessingFeatureSource
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsProcessingFeatureSource
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingFeatureSource
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingFeatureSource
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingFeatureSource
+        :attributes:
+

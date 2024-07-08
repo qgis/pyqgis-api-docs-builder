@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsLayerMetadataSearchResults
+...............................................
+
+.. py:module:: QgsLayerMetadataSearchResults
+
+.. autoclass:: qgis.core.QgsLayerMetadataSearchResults
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsLayerMetadataSearchResults
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayerMetadataSearchResults
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayerMetadataSearchResults
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayerMetadataSearchResults
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: GEOCRS_ID
+...............................................
+
+.. py:module:: GEOCRS_ID
+
+.. autoclass:: qgis.core.GEOCRS_ID
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.GEOCRS_ID
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.GEOCRS_ID
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.GEOCRS_ID
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.GEOCRS_ID
+        :attributes:
+

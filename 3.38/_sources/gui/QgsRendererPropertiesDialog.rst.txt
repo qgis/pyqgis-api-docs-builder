@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsRendererPropertiesDialog
+...............................................
+
+.. py:module:: QgsRendererPropertiesDialog
+
+.. autoclass:: qgis.gui.QgsRendererPropertiesDialog
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsRendererPropertiesDialog
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsRendererPropertiesDialog
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsRendererPropertiesDialog
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsRendererPropertiesDialog
+        :attributes:
+

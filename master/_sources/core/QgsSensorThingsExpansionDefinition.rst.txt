@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsSensorThingsExpansionDefinition
+...............................................
+
+.. py:module:: QgsSensorThingsExpansionDefinition
+
+.. autoclass:: qgis.core.QgsSensorThingsExpansionDefinition
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsSensorThingsExpansionDefinition
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSensorThingsExpansionDefinition
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSensorThingsExpansionDefinition
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSensorThingsExpansionDefinition
+        :attributes:
+

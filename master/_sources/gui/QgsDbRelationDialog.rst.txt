@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsDbRelationDialog
+...............................................
+
+.. py:module:: QgsDbRelationDialog
+
+.. autoclass:: qgis.gui.QgsDbRelationDialog
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsDbRelationDialog
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsDbRelationDialog
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsDbRelationDialog
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsDbRelationDialog
+        :attributes:
+

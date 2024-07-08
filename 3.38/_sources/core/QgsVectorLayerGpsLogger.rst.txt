@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsVectorLayerGpsLogger
+...............................................
+
+.. py:module:: QgsVectorLayerGpsLogger
+
+.. autoclass:: qgis.core.QgsVectorLayerGpsLogger
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsVectorLayerGpsLogger
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVectorLayerGpsLogger
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVectorLayerGpsLogger
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVectorLayerGpsLogger
+        :attributes:
+

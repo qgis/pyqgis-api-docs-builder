@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsProviderSqlQueryBuilder
+...............................................
+
+.. py:module:: QgsProviderSqlQueryBuilder
+
+.. autoclass:: qgis.core.QgsProviderSqlQueryBuilder
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsProviderSqlQueryBuilder
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProviderSqlQueryBuilder
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProviderSqlQueryBuilder
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProviderSqlQueryBuilder
+        :attributes:
+

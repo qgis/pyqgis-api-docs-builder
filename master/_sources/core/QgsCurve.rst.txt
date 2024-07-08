@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsCurve
+...............................................
+
+.. py:module:: QgsCurve
+
+.. autoclass:: qgis.core.QgsCurve
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsCurve
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsCurve
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsCurve
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsCurve
+        :attributes:
+

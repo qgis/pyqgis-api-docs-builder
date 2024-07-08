@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsRasterHistogramWidget
+...............................................
+
+.. py:module:: QgsRasterHistogramWidget
+
+.. autoclass:: qgis.gui.QgsRasterHistogramWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsRasterHistogramWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsRasterHistogramWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsRasterHistogramWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsRasterHistogramWidget
+        :attributes:
+

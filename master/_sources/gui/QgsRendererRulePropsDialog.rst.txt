@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsRendererRulePropsDialog
+...............................................
+
+.. py:module:: QgsRendererRulePropsDialog
+
+.. autoclass:: qgis.gui.QgsRendererRulePropsDialog
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsRendererRulePropsDialog
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsRendererRulePropsDialog
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsRendererRulePropsDialog
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsRendererRulePropsDialog
+        :attributes:
+

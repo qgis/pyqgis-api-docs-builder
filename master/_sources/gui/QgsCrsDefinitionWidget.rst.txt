@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsCrsDefinitionWidget
+...............................................
+
+.. py:module:: QgsCrsDefinitionWidget
+
+.. autoclass:: qgis.gui.QgsCrsDefinitionWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsCrsDefinitionWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsCrsDefinitionWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsCrsDefinitionWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsCrsDefinitionWidget
+        :attributes:
+

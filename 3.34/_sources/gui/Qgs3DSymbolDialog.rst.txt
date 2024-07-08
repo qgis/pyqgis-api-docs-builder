@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: Qgs3DSymbolDialog
+...............................................
+
+.. py:module:: Qgs3DSymbolDialog
+
+.. autoclass:: qgis.gui.Qgs3DSymbolDialog
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.Qgs3DSymbolDialog
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.Qgs3DSymbolDialog
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.Qgs3DSymbolDialog
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.Qgs3DSymbolDialog
+        :attributes:
+

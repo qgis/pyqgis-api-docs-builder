@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: VectorLayerTypeFlags
+...............................................
+
+.. py:module:: VectorLayerTypeFlags
+
+.. autoclass:: qgis.core.VectorLayerTypeFlags
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.VectorLayerTypeFlags
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.VectorLayerTypeFlags
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.VectorLayerTypeFlags
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.VectorLayerTypeFlags
+        :attributes:
+

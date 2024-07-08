@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsRasterLayerTemporalProperties
+...............................................
+
+.. py:module:: QgsRasterLayerTemporalProperties
+
+.. autoclass:: qgis.core.QgsRasterLayerTemporalProperties
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsRasterLayerTemporalProperties
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRasterLayerTemporalProperties
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRasterLayerTemporalProperties
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRasterLayerTemporalProperties
+        :attributes:
+

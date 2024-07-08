@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsEffectStackPropertiesDialog
+...............................................
+
+.. py:module:: QgsEffectStackPropertiesDialog
+
+.. autoclass:: qgis.gui.QgsEffectStackPropertiesDialog
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsEffectStackPropertiesDialog
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsEffectStackPropertiesDialog
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsEffectStackPropertiesDialog
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsEffectStackPropertiesDialog
+        :attributes:
+

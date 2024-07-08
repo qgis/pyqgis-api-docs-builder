@@ -1,0 +1,27 @@
+.. package: qgis\.analysis
+
+Class: QgsMeshZValueDatasetGroup
+...............................................
+
+.. py:module:: QgsMeshZValueDatasetGroup
+
+.. autoclass:: qgis.analysis.QgsMeshZValueDatasetGroup
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.analysis.QgsMeshZValueDatasetGroup
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsMeshZValueDatasetGroup
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsMeshZValueDatasetGroup
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsMeshZValueDatasetGroup
+        :attributes:
+

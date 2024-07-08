@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsProcessingParameterAuthConfig
+...............................................
+
+.. py:module:: QgsProcessingParameterAuthConfig
+
+.. autoclass:: qgis.core.QgsProcessingParameterAuthConfig
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterAuthConfig
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterAuthConfig
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterAuthConfig
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterAuthConfig
+        :attributes:
+

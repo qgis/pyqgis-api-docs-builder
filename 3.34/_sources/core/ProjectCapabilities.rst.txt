@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: ProjectCapabilities
+...............................................
+
+.. py:module:: ProjectCapabilities
+
+.. autoclass:: qgis.core.ProjectCapabilities
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.ProjectCapabilities
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.ProjectCapabilities
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.ProjectCapabilities
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.ProjectCapabilities
+        :attributes:
+

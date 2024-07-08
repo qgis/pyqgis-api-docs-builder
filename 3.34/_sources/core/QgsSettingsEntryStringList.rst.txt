@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsSettingsEntryStringList
+...............................................
+
+.. py:module:: QgsSettingsEntryStringList
+
+.. autoclass:: qgis.core.QgsSettingsEntryStringList
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsSettingsEntryStringList
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSettingsEntryStringList
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSettingsEntryStringList
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSettingsEntryStringList
+        :attributes:
+

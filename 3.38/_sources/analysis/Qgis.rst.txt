@@ -1,0 +1,27 @@
+.. package: qgis\.analysis
+
+Class: Qgis
+...............................................
+
+.. py:module:: Qgis
+
+.. autoclass:: qgis.analysis.Qgis
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.analysis.Qgis
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.Qgis
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.Qgis
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.Qgis
+        :attributes:
+

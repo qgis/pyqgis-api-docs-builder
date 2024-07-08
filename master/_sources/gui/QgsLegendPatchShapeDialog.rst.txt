@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsLegendPatchShapeDialog
+...............................................
+
+.. py:module:: QgsLegendPatchShapeDialog
+
+.. autoclass:: qgis.gui.QgsLegendPatchShapeDialog
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsLegendPatchShapeDialog
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLegendPatchShapeDialog
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLegendPatchShapeDialog
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLegendPatchShapeDialog
+        :attributes:
+

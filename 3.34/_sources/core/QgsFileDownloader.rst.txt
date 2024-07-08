@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsFileDownloader
+...............................................
+
+.. py:module:: QgsFileDownloader
+
+.. autoclass:: qgis.core.QgsFileDownloader
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsFileDownloader
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsFileDownloader
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsFileDownloader
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsFileDownloader
+        :attributes:
+

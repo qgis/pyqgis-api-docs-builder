@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsZipItem
+...............................................
+
+.. py:module:: QgsZipItem
+
+.. autoclass:: qgis.core.QgsZipItem
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsZipItem
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsZipItem
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsZipItem
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsZipItem
+        :attributes:
+

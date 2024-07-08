@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsAnimatedImageSourceLineEdit
+...............................................
+
+.. py:module:: QgsAnimatedImageSourceLineEdit
+
+.. autoclass:: qgis.gui.QgsAnimatedImageSourceLineEdit
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsAnimatedImageSourceLineEdit
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAnimatedImageSourceLineEdit
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAnimatedImageSourceLineEdit
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAnimatedImageSourceLineEdit
+        :attributes:
+

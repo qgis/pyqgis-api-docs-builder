@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsAbstractDbTableModel
+...............................................
+
+.. py:module:: QgsAbstractDbTableModel
+
+.. autoclass:: qgis.core.QgsAbstractDbTableModel
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsAbstractDbTableModel
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsAbstractDbTableModel
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsAbstractDbTableModel
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsAbstractDbTableModel
+        :attributes:
+

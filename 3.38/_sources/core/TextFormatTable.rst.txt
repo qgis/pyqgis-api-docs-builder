@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: TextFormatTable
+...............................................
+
+.. py:module:: TextFormatTable
+
+.. autoclass:: qgis.core.TextFormatTable
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.TextFormatTable
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.TextFormatTable
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.TextFormatTable
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.TextFormatTable
+        :attributes:
+

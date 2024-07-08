@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsTopologyPreservingSimplifier
+...............................................
+
+.. py:module:: QgsTopologyPreservingSimplifier
+
+.. autoclass:: qgis.core.QgsTopologyPreservingSimplifier
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsTopologyPreservingSimplifier
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTopologyPreservingSimplifier
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTopologyPreservingSimplifier
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTopologyPreservingSimplifier
+        :attributes:
+

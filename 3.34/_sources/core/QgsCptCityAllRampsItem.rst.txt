@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsCptCityAllRampsItem
+...............................................
+
+.. py:module:: QgsCptCityAllRampsItem
+
+.. autoclass:: qgis.core.QgsCptCityAllRampsItem
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsCptCityAllRampsItem
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsCptCityAllRampsItem
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsCptCityAllRampsItem
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsCptCityAllRampsItem
+        :attributes:
+

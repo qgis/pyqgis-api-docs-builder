@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsLayoutUnitsComboBox
+...............................................
+
+.. py:module:: QgsLayoutUnitsComboBox
+
+.. autoclass:: qgis.gui.QgsLayoutUnitsComboBox
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsLayoutUnitsComboBox
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayoutUnitsComboBox
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayoutUnitsComboBox
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayoutUnitsComboBox
+        :attributes:
+

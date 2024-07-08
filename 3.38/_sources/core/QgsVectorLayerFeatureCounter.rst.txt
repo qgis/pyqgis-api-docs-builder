@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsVectorLayerFeatureCounter
+...............................................
+
+.. py:module:: QgsVectorLayerFeatureCounter
+
+.. autoclass:: qgis.core.QgsVectorLayerFeatureCounter
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsVectorLayerFeatureCounter
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVectorLayerFeatureCounter
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVectorLayerFeatureCounter
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVectorLayerFeatureCounter
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsProcessingParameterAnnotationLayer
+...............................................
+
+.. py:module:: QgsProcessingParameterAnnotationLayer
+
+.. autoclass:: qgis.core.QgsProcessingParameterAnnotationLayer
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterAnnotationLayer
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterAnnotationLayer
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterAnnotationLayer
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterAnnotationLayer
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsProcessingToolboxProxyModel
+...............................................
+
+.. py:module:: QgsProcessingToolboxProxyModel
+
+.. autoclass:: qgis.gui.QgsProcessingToolboxProxyModel
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsProcessingToolboxProxyModel
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProcessingToolboxProxyModel
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProcessingToolboxProxyModel
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProcessingToolboxProxyModel
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsFloatingWidget
+...............................................
+
+.. py:module:: QgsFloatingWidget
+
+.. autoclass:: qgis.gui.QgsFloatingWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsFloatingWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsFloatingWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsFloatingWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsFloatingWidget
+        :attributes:
+

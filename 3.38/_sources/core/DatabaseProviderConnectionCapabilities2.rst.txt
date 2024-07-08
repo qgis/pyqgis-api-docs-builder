@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: DatabaseProviderConnectionCapabilities2
+...............................................
+
+.. py:module:: DatabaseProviderConnectionCapabilities2
+
+.. autoclass:: qgis.core.DatabaseProviderConnectionCapabilities2
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.DatabaseProviderConnectionCapabilities2
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.DatabaseProviderConnectionCapabilities2
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.DatabaseProviderConnectionCapabilities2
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.DatabaseProviderConnectionCapabilities2
+        :attributes:
+

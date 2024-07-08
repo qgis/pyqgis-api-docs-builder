@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsDateTimeStatisticalSummary
+...............................................
+
+.. py:module:: QgsDateTimeStatisticalSummary
+
+.. autoclass:: qgis.core.QgsDateTimeStatisticalSummary
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsDateTimeStatisticalSummary
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDateTimeStatisticalSummary
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDateTimeStatisticalSummary
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDateTimeStatisticalSummary
+        :attributes:
+

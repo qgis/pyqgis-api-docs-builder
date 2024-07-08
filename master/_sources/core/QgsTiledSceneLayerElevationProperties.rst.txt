@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsTiledSceneLayerElevationProperties
+...............................................
+
+.. py:module:: QgsTiledSceneLayerElevationProperties
+
+.. autoclass:: qgis.core.QgsTiledSceneLayerElevationProperties
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsTiledSceneLayerElevationProperties
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTiledSceneLayerElevationProperties
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTiledSceneLayerElevationProperties
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTiledSceneLayerElevationProperties
+        :attributes:
+

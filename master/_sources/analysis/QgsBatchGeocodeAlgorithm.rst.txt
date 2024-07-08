@@ -1,0 +1,27 @@
+.. package: qgis\.analysis
+
+Class: QgsBatchGeocodeAlgorithm
+...............................................
+
+.. py:module:: QgsBatchGeocodeAlgorithm
+
+.. autoclass:: qgis.analysis.QgsBatchGeocodeAlgorithm
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.analysis.QgsBatchGeocodeAlgorithm
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsBatchGeocodeAlgorithm
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsBatchGeocodeAlgorithm
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsBatchGeocodeAlgorithm
+        :attributes:
+

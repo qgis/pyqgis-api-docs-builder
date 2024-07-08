@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsTextShadowSettings
+...............................................
+
+.. py:module:: QgsTextShadowSettings
+
+.. autoclass:: qgis.core.QgsTextShadowSettings
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsTextShadowSettings
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTextShadowSettings
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTextShadowSettings
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTextShadowSettings
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsMapSettings
+...............................................
+
+.. py:module:: QgsMapSettings
+
+.. autoclass:: qgis.core.QgsMapSettings
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsMapSettings
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapSettings
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapSettings
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapSettings
+        :attributes:
+

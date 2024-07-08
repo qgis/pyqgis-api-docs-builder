@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsProcessingParameterTinInputLayers
+...............................................
+
+.. py:module:: QgsProcessingParameterTinInputLayers
+
+.. autoclass:: qgis.core.QgsProcessingParameterTinInputLayers
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterTinInputLayers
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterTinInputLayers
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterTinInputLayers
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterTinInputLayers
+        :attributes:
+

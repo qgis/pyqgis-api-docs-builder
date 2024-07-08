@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: set_is_obstacle
+...............................................
+
+.. py:module:: set_is_obstacle
+
+.. autoclass:: qgis.core.set_is_obstacle
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.set_is_obstacle
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.set_is_obstacle
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.set_is_obstacle
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.set_is_obstacle
+        :attributes:
+

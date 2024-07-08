@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsNetworkContentFetcherTask
+...............................................
+
+.. py:module:: QgsNetworkContentFetcherTask
+
+.. autoclass:: qgis.core.QgsNetworkContentFetcherTask
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsNetworkContentFetcherTask
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsNetworkContentFetcherTask
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsNetworkContentFetcherTask
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsNetworkContentFetcherTask
+        :attributes:
+

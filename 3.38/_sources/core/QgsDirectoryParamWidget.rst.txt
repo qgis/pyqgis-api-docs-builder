@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsDirectoryParamWidget
+...............................................
+
+.. py:module:: QgsDirectoryParamWidget
+
+.. autoclass:: qgis.core.QgsDirectoryParamWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsDirectoryParamWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDirectoryParamWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDirectoryParamWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDirectoryParamWidget
+        :attributes:
+

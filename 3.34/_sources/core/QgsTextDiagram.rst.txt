@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsTextDiagram
+...............................................
+
+.. py:module:: QgsTextDiagram
+
+.. autoclass:: qgis.core.QgsTextDiagram
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsTextDiagram
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTextDiagram
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTextDiagram
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTextDiagram
+        :attributes:
+

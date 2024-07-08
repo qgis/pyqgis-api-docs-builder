@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsAbstractGeocoderLocatorFilter
+...............................................
+
+.. py:module:: QgsAbstractGeocoderLocatorFilter
+
+.. autoclass:: qgis.core.QgsAbstractGeocoderLocatorFilter
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsAbstractGeocoderLocatorFilter
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsAbstractGeocoderLocatorFilter
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsAbstractGeocoderLocatorFilter
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsAbstractGeocoderLocatorFilter
+        :attributes:
+

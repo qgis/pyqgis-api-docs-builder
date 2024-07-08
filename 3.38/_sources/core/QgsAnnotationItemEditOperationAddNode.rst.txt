@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsAnnotationItemEditOperationAddNode
+...............................................
+
+.. py:module:: QgsAnnotationItemEditOperationAddNode
+
+.. autoclass:: qgis.core.QgsAnnotationItemEditOperationAddNode
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsAnnotationItemEditOperationAddNode
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsAnnotationItemEditOperationAddNode
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsAnnotationItemEditOperationAddNode
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsAnnotationItemEditOperationAddNode
+        :attributes:
+

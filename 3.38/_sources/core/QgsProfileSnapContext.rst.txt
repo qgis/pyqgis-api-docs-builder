@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsProfileSnapContext
+...............................................
+
+.. py:module:: QgsProfileSnapContext
+
+.. autoclass:: qgis.core.QgsProfileSnapContext
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsProfileSnapContext
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProfileSnapContext
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProfileSnapContext
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProfileSnapContext
+        :attributes:
+

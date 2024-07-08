@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsGpsInformation
+...............................................
+
+.. py:module:: QgsGpsInformation
+
+.. autoclass:: qgis.core.QgsGpsInformation
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsGpsInformation
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsGpsInformation
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsGpsInformation
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsGpsInformation
+        :attributes:
+

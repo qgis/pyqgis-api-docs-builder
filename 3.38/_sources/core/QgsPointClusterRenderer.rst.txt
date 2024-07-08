@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsPointClusterRenderer
+...............................................
+
+.. py:module:: QgsPointClusterRenderer
+
+.. autoclass:: qgis.core.QgsPointClusterRenderer
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsPointClusterRenderer
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsPointClusterRenderer
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsPointClusterRenderer
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsPointClusterRenderer
+        :attributes:
+

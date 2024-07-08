@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsSymbolLayerWidget
+...............................................
+
+.. py:module:: QgsSymbolLayerWidget
+
+.. autoclass:: qgis.gui.QgsSymbolLayerWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsSymbolLayerWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSymbolLayerWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSymbolLayerWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSymbolLayerWidget
+        :attributes:
+

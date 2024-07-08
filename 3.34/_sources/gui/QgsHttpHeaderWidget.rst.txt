@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsHttpHeaderWidget
+...............................................
+
+.. py:module:: QgsHttpHeaderWidget
+
+.. autoclass:: qgis.gui.QgsHttpHeaderWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsHttpHeaderWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsHttpHeaderWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsHttpHeaderWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsHttpHeaderWidget
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsAbstractMapToolHandler
+...............................................
+
+.. py:module:: QgsAbstractMapToolHandler
+
+.. autoclass:: qgis.gui.QgsAbstractMapToolHandler
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsAbstractMapToolHandler
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAbstractMapToolHandler
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAbstractMapToolHandler
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAbstractMapToolHandler
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: qgsDoubleToString
+...............................................
+
+.. py:module:: qgsDoubleToString
+
+.. autoclass:: qgis.core.qgsDoubleToString
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.qgsDoubleToString
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.qgsDoubleToString
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.qgsDoubleToString
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.qgsDoubleToString
+        :attributes:
+

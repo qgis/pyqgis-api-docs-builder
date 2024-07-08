@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsPostgresStringUtils
+...............................................
+
+.. py:module:: QgsPostgresStringUtils
+
+.. autoclass:: qgis.core.QgsPostgresStringUtils
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsPostgresStringUtils
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsPostgresStringUtils
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsPostgresStringUtils
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsPostgresStringUtils
+        :attributes:
+

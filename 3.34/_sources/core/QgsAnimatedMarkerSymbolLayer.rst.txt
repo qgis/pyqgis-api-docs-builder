@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsAnimatedMarkerSymbolLayer
+...............................................
+
+.. py:module:: QgsAnimatedMarkerSymbolLayer
+
+.. autoclass:: qgis.core.QgsAnimatedMarkerSymbolLayer
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsAnimatedMarkerSymbolLayer
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsAnimatedMarkerSymbolLayer
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsAnimatedMarkerSymbolLayer
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsAnimatedMarkerSymbolLayer
+        :attributes:
+

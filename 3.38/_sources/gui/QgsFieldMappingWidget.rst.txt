@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsFieldMappingWidget
+...............................................
+
+.. py:module:: QgsFieldMappingWidget
+
+.. autoclass:: qgis.gui.QgsFieldMappingWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsFieldMappingWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsFieldMappingWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsFieldMappingWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsFieldMappingWidget
+        :attributes:
+

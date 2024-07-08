@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: NULL
+...............................................
+
+.. py:module:: NULL
+
+.. autoclass:: qgis.core.NULL
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.NULL
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.NULL
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.NULL
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.NULL
+        :attributes:
+

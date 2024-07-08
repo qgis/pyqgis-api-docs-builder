@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: SymbolTable
+...............................................
+
+.. py:module:: SymbolTable
+
+.. autoclass:: qgis.core.SymbolTable
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.SymbolTable
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.SymbolTable
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.SymbolTable
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.SymbolTable
+        :attributes:
+

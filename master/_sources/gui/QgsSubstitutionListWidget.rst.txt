@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsSubstitutionListWidget
+...............................................
+
+.. py:module:: QgsSubstitutionListWidget
+
+.. autoclass:: qgis.gui.QgsSubstitutionListWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsSubstitutionListWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSubstitutionListWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSubstitutionListWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSubstitutionListWidget
+        :attributes:
+

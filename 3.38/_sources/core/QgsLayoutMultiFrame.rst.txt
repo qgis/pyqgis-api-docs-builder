@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsLayoutMultiFrame
+...............................................
+
+.. py:module:: QgsLayoutMultiFrame
+
+.. autoclass:: qgis.core.QgsLayoutMultiFrame
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsLayoutMultiFrame
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutMultiFrame
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutMultiFrame
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutMultiFrame
+        :attributes:
+

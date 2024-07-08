@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsCrsSelectionWidget
+...............................................
+
+.. py:module:: QgsCrsSelectionWidget
+
+.. autoclass:: qgis.gui.QgsCrsSelectionWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsCrsSelectionWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsCrsSelectionWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsCrsSelectionWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsCrsSelectionWidget
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsVectorLayerUndoPassthroughCommandAddAttribute
+...............................................
+
+.. py:module:: QgsVectorLayerUndoPassthroughCommandAddAttribute
+
+.. autoclass:: qgis.core.QgsVectorLayerUndoPassthroughCommandAddAttribute
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsVectorLayerUndoPassthroughCommandAddAttribute
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVectorLayerUndoPassthroughCommandAddAttribute
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVectorLayerUndoPassthroughCommandAddAttribute
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVectorLayerUndoPassthroughCommandAddAttribute
+        :attributes:
+

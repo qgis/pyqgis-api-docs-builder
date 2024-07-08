@@ -1,0 +1,27 @@
+.. package: qgis\._3d
+
+Class: QgsColorRampPointCloud3DSymbol
+...............................................
+
+.. py:module:: QgsColorRampPointCloud3DSymbol
+
+.. autoclass:: qgis._3d.QgsColorRampPointCloud3DSymbol
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis._3d.QgsColorRampPointCloud3DSymbol
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis._3d.QgsColorRampPointCloud3DSymbol
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis._3d.QgsColorRampPointCloud3DSymbol
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis._3d.QgsColorRampPointCloud3DSymbol
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsDatabaseQueryLogEntry
+...............................................
+
+.. py:module:: QgsDatabaseQueryLogEntry
+
+.. autoclass:: qgis.core.QgsDatabaseQueryLogEntry
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsDatabaseQueryLogEntry
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDatabaseQueryLogEntry
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDatabaseQueryLogEntry
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDatabaseQueryLogEntry
+        :attributes:
+

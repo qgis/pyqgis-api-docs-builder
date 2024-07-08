@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsAbstractProfileGenerator
+...............................................
+
+.. py:module:: QgsAbstractProfileGenerator
+
+.. autoclass:: qgis.core.QgsAbstractProfileGenerator
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsAbstractProfileGenerator
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsAbstractProfileGenerator
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsAbstractProfileGenerator
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsAbstractProfileGenerator
+        :attributes:
+

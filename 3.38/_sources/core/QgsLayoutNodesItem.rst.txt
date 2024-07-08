@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsLayoutNodesItem
+...............................................
+
+.. py:module:: QgsLayoutNodesItem
+
+.. autoclass:: qgis.core.QgsLayoutNodesItem
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsLayoutNodesItem
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutNodesItem
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutNodesItem
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutNodesItem
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsLabelingEngineSettings
+...............................................
+
+.. py:module:: QgsLabelingEngineSettings
+
+.. autoclass:: qgis.core.QgsLabelingEngineSettings
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsLabelingEngineSettings
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLabelingEngineSettings
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLabelingEngineSettings
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLabelingEngineSettings
+        :attributes:
+

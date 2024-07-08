@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsMeshRendererVectorArrowSettings
+...............................................
+
+.. py:module:: QgsMeshRendererVectorArrowSettings
+
+.. autoclass:: qgis.core.QgsMeshRendererVectorArrowSettings
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsMeshRendererVectorArrowSettings
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMeshRendererVectorArrowSettings
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMeshRendererVectorArrowSettings
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMeshRendererVectorArrowSettings
+        :attributes:
+

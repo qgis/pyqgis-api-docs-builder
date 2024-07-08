@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsMapLayerSelectionProperties
+...............................................
+
+.. py:module:: QgsMapLayerSelectionProperties
+
+.. autoclass:: qgis.core.QgsMapLayerSelectionProperties
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsMapLayerSelectionProperties
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapLayerSelectionProperties
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapLayerSelectionProperties
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapLayerSelectionProperties
+        :attributes:
+

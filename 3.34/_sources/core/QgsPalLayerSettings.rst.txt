@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsPalLayerSettings
+...............................................
+
+.. py:module:: QgsPalLayerSettings
+
+.. autoclass:: qgis.core.QgsPalLayerSettings
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsPalLayerSettings
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsPalLayerSettings
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsPalLayerSettings
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsPalLayerSettings
+        :attributes:
+

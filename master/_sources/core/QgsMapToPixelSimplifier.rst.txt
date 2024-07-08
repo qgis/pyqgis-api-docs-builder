@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsMapToPixelSimplifier
+...............................................
+
+.. py:module:: QgsMapToPixelSimplifier
+
+.. autoclass:: qgis.core.QgsMapToPixelSimplifier
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsMapToPixelSimplifier
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapToPixelSimplifier
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapToPixelSimplifier
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapToPixelSimplifier
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsMeshDatasetValue
+...............................................
+
+.. py:module:: QgsMeshDatasetValue
+
+.. autoclass:: qgis.core.QgsMeshDatasetValue
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsMeshDatasetValue
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMeshDatasetValue
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMeshDatasetValue
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMeshDatasetValue
+        :attributes:
+

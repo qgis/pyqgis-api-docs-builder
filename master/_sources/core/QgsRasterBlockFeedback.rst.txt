@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsRasterBlockFeedback
+...............................................
+
+.. py:module:: QgsRasterBlockFeedback
+
+.. autoclass:: qgis.core.QgsRasterBlockFeedback
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsRasterBlockFeedback
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRasterBlockFeedback
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRasterBlockFeedback
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRasterBlockFeedback
+        :attributes:
+

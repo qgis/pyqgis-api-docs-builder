@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsVariableEditorWidget
+...............................................
+
+.. py:module:: QgsVariableEditorWidget
+
+.. autoclass:: qgis.gui.QgsVariableEditorWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsVariableEditorWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsVariableEditorWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsVariableEditorWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsVariableEditorWidget
+        :attributes:
+

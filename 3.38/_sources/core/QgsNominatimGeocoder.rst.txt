@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsNominatimGeocoder
+...............................................
+
+.. py:module:: QgsNominatimGeocoder
+
+.. autoclass:: qgis.core.QgsNominatimGeocoder
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsNominatimGeocoder
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsNominatimGeocoder
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsNominatimGeocoder
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsNominatimGeocoder
+        :attributes:
+

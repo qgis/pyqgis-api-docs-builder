@@ -1,0 +1,27 @@
+.. package: qgis\._3d
+
+Class: QgsDirectionalLightSettings
+...............................................
+
+.. py:module:: QgsDirectionalLightSettings
+
+.. autoclass:: qgis._3d.QgsDirectionalLightSettings
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis._3d.QgsDirectionalLightSettings
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis._3d.QgsDirectionalLightSettings
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis._3d.QgsDirectionalLightSettings
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis._3d.QgsDirectionalLightSettings
+        :attributes:
+

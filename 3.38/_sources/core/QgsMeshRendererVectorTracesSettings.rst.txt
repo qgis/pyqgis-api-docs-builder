@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsMeshRendererVectorTracesSettings
+...............................................
+
+.. py:module:: QgsMeshRendererVectorTracesSettings
+
+.. autoclass:: qgis.core.QgsMeshRendererVectorTracesSettings
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsMeshRendererVectorTracesSettings
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMeshRendererVectorTracesSettings
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMeshRendererVectorTracesSettings
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMeshRendererVectorTracesSettings
+        :attributes:
+

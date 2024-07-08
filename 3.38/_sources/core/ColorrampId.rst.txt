@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: ColorrampId
+...............................................
+
+.. py:module:: ColorrampId
+
+.. autoclass:: qgis.core.ColorrampId
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.ColorrampId
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.ColorrampId
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.ColorrampId
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.ColorrampId
+        :attributes:
+

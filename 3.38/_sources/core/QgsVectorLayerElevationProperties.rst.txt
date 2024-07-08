@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsVectorLayerElevationProperties
+...............................................
+
+.. py:module:: QgsVectorLayerElevationProperties
+
+.. autoclass:: qgis.core.QgsVectorLayerElevationProperties
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsVectorLayerElevationProperties
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVectorLayerElevationProperties
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVectorLayerElevationProperties
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVectorLayerElevationProperties
+        :attributes:
+

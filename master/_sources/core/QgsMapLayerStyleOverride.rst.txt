@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsMapLayerStyleOverride
+...............................................
+
+.. py:module:: QgsMapLayerStyleOverride
+
+.. autoclass:: qgis.core.QgsMapLayerStyleOverride
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsMapLayerStyleOverride
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapLayerStyleOverride
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapLayerStyleOverride
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapLayerStyleOverride
+        :attributes:
+

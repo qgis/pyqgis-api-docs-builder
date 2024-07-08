@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsLocatorContext
+...............................................
+
+.. py:module:: QgsLocatorContext
+
+.. autoclass:: qgis.core.QgsLocatorContext
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsLocatorContext
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLocatorContext
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLocatorContext
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLocatorContext
+        :attributes:
+

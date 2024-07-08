@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsVectorLayerUndoPassthroughCommandChangeGeometry
+...............................................
+
+.. py:module:: QgsVectorLayerUndoPassthroughCommandChangeGeometry
+
+.. autoclass:: qgis.core.QgsVectorLayerUndoPassthroughCommandChangeGeometry
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsVectorLayerUndoPassthroughCommandChangeGeometry
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVectorLayerUndoPassthroughCommandChangeGeometry
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVectorLayerUndoPassthroughCommandChangeGeometry
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVectorLayerUndoPassthroughCommandChangeGeometry
+        :attributes:
+

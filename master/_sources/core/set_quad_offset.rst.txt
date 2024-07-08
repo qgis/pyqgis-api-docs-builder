@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: set_quad_offset
+...............................................
+
+.. py:module:: set_quad_offset
+
+.. autoclass:: qgis.core.set_quad_offset
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.set_quad_offset
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.set_quad_offset
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.set_quad_offset
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.set_quad_offset
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: ProcessingParameterTypeFlags
+...............................................
+
+.. py:module:: ProcessingParameterTypeFlags
+
+.. autoclass:: qgis.core.ProcessingParameterTypeFlags
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.ProcessingParameterTypeFlags
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.ProcessingParameterTypeFlags
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.ProcessingParameterTypeFlags
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.ProcessingParameterTypeFlags
+        :attributes:
+

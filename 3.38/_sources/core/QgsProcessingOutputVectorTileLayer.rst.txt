@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsProcessingOutputVectorTileLayer
+...............................................
+
+.. py:module:: QgsProcessingOutputVectorTileLayer
+
+.. autoclass:: qgis.core.QgsProcessingOutputVectorTileLayer
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsProcessingOutputVectorTileLayer
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingOutputVectorTileLayer
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingOutputVectorTileLayer
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingOutputVectorTileLayer
+        :attributes:
+

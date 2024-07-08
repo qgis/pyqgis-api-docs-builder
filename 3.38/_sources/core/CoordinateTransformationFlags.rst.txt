@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: CoordinateTransformationFlags
+...............................................
+
+.. py:module:: CoordinateTransformationFlags
+
+.. autoclass:: qgis.core.CoordinateTransformationFlags
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.CoordinateTransformationFlags
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.CoordinateTransformationFlags
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.CoordinateTransformationFlags
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.CoordinateTransformationFlags
+        :attributes:
+

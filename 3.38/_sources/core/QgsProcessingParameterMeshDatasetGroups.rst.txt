@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsProcessingParameterMeshDatasetGroups
+...............................................
+
+.. py:module:: QgsProcessingParameterMeshDatasetGroups
+
+.. autoclass:: qgis.core.QgsProcessingParameterMeshDatasetGroups
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterMeshDatasetGroups
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterMeshDatasetGroups
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterMeshDatasetGroups
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterMeshDatasetGroups
+        :attributes:
+

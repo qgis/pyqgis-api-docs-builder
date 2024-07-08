@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: qgsDoubleNear
+...............................................
+
+.. py:module:: qgsDoubleNear
+
+.. autoclass:: qgis.core.qgsDoubleNear
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.qgsDoubleNear
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.qgsDoubleNear
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.qgsDoubleNear
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.qgsDoubleNear
+        :attributes:
+

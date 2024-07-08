@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsSettingsEditorWidgetWrapperTemplateQgsSettingsEntryIntegerQSpinBoxintBase
+...............................................
+
+.. py:module:: QgsSettingsEditorWidgetWrapperTemplateQgsSettingsEntryIntegerQSpinBoxintBase
+
+.. autoclass:: qgis.gui.QgsSettingsEditorWidgetWrapperTemplateQgsSettingsEntryIntegerQSpinBoxintBase
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsSettingsEditorWidgetWrapperTemplateQgsSettingsEntryIntegerQSpinBoxintBase
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSettingsEditorWidgetWrapperTemplateQgsSettingsEntryIntegerQSpinBoxintBase
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSettingsEditorWidgetWrapperTemplateQgsSettingsEntryIntegerQSpinBoxintBase
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSettingsEditorWidgetWrapperTemplateQgsSettingsEntryIntegerQSpinBoxintBase
+        :attributes:
+

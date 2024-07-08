@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsProfileIdentifyContext
+...............................................
+
+.. py:module:: QgsProfileIdentifyContext
+
+.. autoclass:: qgis.core.QgsProfileIdentifyContext
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsProfileIdentifyContext
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProfileIdentifyContext
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProfileIdentifyContext
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProfileIdentifyContext
+        :attributes:
+

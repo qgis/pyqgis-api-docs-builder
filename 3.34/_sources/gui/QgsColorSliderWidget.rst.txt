@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsColorSliderWidget
+...............................................
+
+.. py:module:: QgsColorSliderWidget
+
+.. autoclass:: qgis.gui.QgsColorSliderWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsColorSliderWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsColorSliderWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsColorSliderWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsColorSliderWidget
+        :attributes:
+

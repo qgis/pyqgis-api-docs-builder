@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsMenuHeader
+...............................................
+
+.. py:module:: QgsMenuHeader
+
+.. autoclass:: qgis.gui.QgsMenuHeader
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsMenuHeader
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMenuHeader
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMenuHeader
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMenuHeader
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsReportSectionLayout
+...............................................
+
+.. py:module:: QgsReportSectionLayout
+
+.. autoclass:: qgis.core.QgsReportSectionLayout
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsReportSectionLayout
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsReportSectionLayout
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsReportSectionLayout
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsReportSectionLayout
+        :attributes:
+

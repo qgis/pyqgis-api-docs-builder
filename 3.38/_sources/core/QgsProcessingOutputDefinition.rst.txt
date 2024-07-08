@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsProcessingOutputDefinition
+...............................................
+
+.. py:module:: QgsProcessingOutputDefinition
+
+.. autoclass:: qgis.core.QgsProcessingOutputDefinition
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsProcessingOutputDefinition
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingOutputDefinition
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingOutputDefinition
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingOutputDefinition
+        :attributes:
+

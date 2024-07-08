@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsTiledSceneRendererMetadata
+...............................................
+
+.. py:module:: QgsTiledSceneRendererMetadata
+
+.. autoclass:: qgis.core.QgsTiledSceneRendererMetadata
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsTiledSceneRendererMetadata
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTiledSceneRendererMetadata
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTiledSceneRendererMetadata
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTiledSceneRendererMetadata
+        :attributes:
+

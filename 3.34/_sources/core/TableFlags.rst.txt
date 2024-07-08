@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: TableFlags
+...............................................
+
+.. py:module:: TableFlags
+
+.. autoclass:: qgis.core.TableFlags
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.TableFlags
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.TableFlags
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.TableFlags
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.TableFlags
+        :attributes:
+

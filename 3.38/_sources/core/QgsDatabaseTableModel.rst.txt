@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsDatabaseTableModel
+...............................................
+
+.. py:module:: QgsDatabaseTableModel
+
+.. autoclass:: qgis.core.QgsDatabaseTableModel
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsDatabaseTableModel
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDatabaseTableModel
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDatabaseTableModel
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDatabaseTableModel
+        :attributes:
+

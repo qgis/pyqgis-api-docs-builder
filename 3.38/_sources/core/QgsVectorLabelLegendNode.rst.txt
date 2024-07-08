@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsVectorLabelLegendNode
+...............................................
+
+.. py:module:: QgsVectorLabelLegendNode
+
+.. autoclass:: qgis.core.QgsVectorLabelLegendNode
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsVectorLabelLegendNode
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVectorLabelLegendNode
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVectorLabelLegendNode
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVectorLabelLegendNode
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsScreenProperties
+...............................................
+
+.. py:module:: QgsScreenProperties
+
+.. autoclass:: qgis.core.QgsScreenProperties
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsScreenProperties
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsScreenProperties
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsScreenProperties
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsScreenProperties
+        :attributes:
+

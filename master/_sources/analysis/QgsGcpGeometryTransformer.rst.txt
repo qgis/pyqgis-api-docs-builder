@@ -1,0 +1,27 @@
+.. package: qgis\.analysis
+
+Class: QgsGcpGeometryTransformer
+...............................................
+
+.. py:module:: QgsGcpGeometryTransformer
+
+.. autoclass:: qgis.analysis.QgsGcpGeometryTransformer
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.analysis.QgsGcpGeometryTransformer
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsGcpGeometryTransformer
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsGcpGeometryTransformer
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsGcpGeometryTransformer
+        :attributes:
+

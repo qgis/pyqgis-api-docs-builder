@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsProviderConnectionComboBox
+...............................................
+
+.. py:module:: QgsProviderConnectionComboBox
+
+.. autoclass:: qgis.gui.QgsProviderConnectionComboBox
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsProviderConnectionComboBox
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProviderConnectionComboBox
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProviderConnectionComboBox
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProviderConnectionComboBox
+        :attributes:
+

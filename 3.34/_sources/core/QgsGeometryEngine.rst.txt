@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsGeometryEngine
+...............................................
+
+.. py:module:: QgsGeometryEngine
+
+.. autoclass:: qgis.core.QgsGeometryEngine
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsGeometryEngine
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsGeometryEngine
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsGeometryEngine
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsGeometryEngine
+        :attributes:
+

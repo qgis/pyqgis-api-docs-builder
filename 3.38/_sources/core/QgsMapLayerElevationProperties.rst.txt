@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsMapLayerElevationProperties
+...............................................
+
+.. py:module:: QgsMapLayerElevationProperties
+
+.. autoclass:: qgis.core.QgsMapLayerElevationProperties
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsMapLayerElevationProperties
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapLayerElevationProperties
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapLayerElevationProperties
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapLayerElevationProperties
+        :attributes:
+

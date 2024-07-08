@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsProcessingToolboxModelAlgorithmNode
+...............................................
+
+.. py:module:: QgsProcessingToolboxModelAlgorithmNode
+
+.. autoclass:: qgis.gui.QgsProcessingToolboxModelAlgorithmNode
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsProcessingToolboxModelAlgorithmNode
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProcessingToolboxModelAlgorithmNode
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProcessingToolboxModelAlgorithmNode
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProcessingToolboxModelAlgorithmNode
+        :attributes:
+

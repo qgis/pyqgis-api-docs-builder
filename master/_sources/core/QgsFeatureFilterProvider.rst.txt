@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsFeatureFilterProvider
+...............................................
+
+.. py:module:: QgsFeatureFilterProvider
+
+.. autoclass:: qgis.core.QgsFeatureFilterProvider
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsFeatureFilterProvider
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsFeatureFilterProvider
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsFeatureFilterProvider
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsFeatureFilterProvider
+        :attributes:
+

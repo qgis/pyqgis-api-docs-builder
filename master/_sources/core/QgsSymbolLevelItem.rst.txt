@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsSymbolLevelItem
+...............................................
+
+.. py:module:: QgsSymbolLevelItem
+
+.. autoclass:: qgis.core.QgsSymbolLevelItem
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsSymbolLevelItem
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSymbolLevelItem
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSymbolLevelItem
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSymbolLevelItem
+        :attributes:
+

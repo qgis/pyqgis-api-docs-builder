@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsMultiEditToolButton
+...............................................
+
+.. py:module:: QgsMultiEditToolButton
+
+.. autoclass:: qgis.gui.QgsMultiEditToolButton
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsMultiEditToolButton
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMultiEditToolButton
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMultiEditToolButton
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMultiEditToolButton
+        :attributes:
+

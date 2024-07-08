@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsInputControllerManager
+...............................................
+
+.. py:module:: QgsInputControllerManager
+
+.. autoclass:: qgis.gui.QgsInputControllerManager
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsInputControllerManager
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsInputControllerManager
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsInputControllerManager
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsInputControllerManager
+        :attributes:
+

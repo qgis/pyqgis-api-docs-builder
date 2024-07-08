@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsRendererRulePropsWidget
+...............................................
+
+.. py:module:: QgsRendererRulePropsWidget
+
+.. autoclass:: qgis.gui.QgsRendererRulePropsWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsRendererRulePropsWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsRendererRulePropsWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsRendererRulePropsWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsRendererRulePropsWidget
+        :attributes:
+

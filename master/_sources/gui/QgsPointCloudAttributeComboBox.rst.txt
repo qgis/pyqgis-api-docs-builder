@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsPointCloudAttributeComboBox
+...............................................
+
+.. py:module:: QgsPointCloudAttributeComboBox
+
+.. autoclass:: qgis.gui.QgsPointCloudAttributeComboBox
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsPointCloudAttributeComboBox
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsPointCloudAttributeComboBox
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsPointCloudAttributeComboBox
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsPointCloudAttributeComboBox
+        :attributes:
+

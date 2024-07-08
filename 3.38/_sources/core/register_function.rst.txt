@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: register_function
+...............................................
+
+.. py:module:: register_function
+
+.. autoclass:: qgis.core.register_function
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.register_function
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.register_function
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.register_function
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.register_function
+        :attributes:
+

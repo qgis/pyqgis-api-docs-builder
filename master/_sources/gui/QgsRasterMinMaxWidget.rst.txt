@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsRasterMinMaxWidget
+...............................................
+
+.. py:module:: QgsRasterMinMaxWidget
+
+.. autoclass:: qgis.gui.QgsRasterMinMaxWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsRasterMinMaxWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsRasterMinMaxWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsRasterMinMaxWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsRasterMinMaxWidget
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: RasterInterfaceCapabilities
+...............................................
+
+.. py:module:: RasterInterfaceCapabilities
+
+.. autoclass:: qgis.core.RasterInterfaceCapabilities
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.RasterInterfaceCapabilities
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.RasterInterfaceCapabilities
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.RasterInterfaceCapabilities
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.RasterInterfaceCapabilities
+        :attributes:
+

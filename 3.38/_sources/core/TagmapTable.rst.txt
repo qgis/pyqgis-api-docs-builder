@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: TagmapTable
+...............................................
+
+.. py:module:: TagmapTable
+
+.. autoclass:: qgis.core.TagmapTable
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.TagmapTable
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.TagmapTable
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.TagmapTable
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.TagmapTable
+        :attributes:
+

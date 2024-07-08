@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsDiagramLayerSettings
+...............................................
+
+.. py:module:: QgsDiagramLayerSettings
+
+.. autoclass:: qgis.core.QgsDiagramLayerSettings
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsDiagramLayerSettings
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDiagramLayerSettings
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDiagramLayerSettings
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDiagramLayerSettings
+        :attributes:
+

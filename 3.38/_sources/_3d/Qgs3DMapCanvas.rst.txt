@@ -1,0 +1,27 @@
+.. package: qgis\._3d
+
+Class: Qgs3DMapCanvas
+...............................................
+
+.. py:module:: Qgs3DMapCanvas
+
+.. autoclass:: qgis._3d.Qgs3DMapCanvas
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis._3d.Qgs3DMapCanvas
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis._3d.Qgs3DMapCanvas
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis._3d.Qgs3DMapCanvas
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis._3d.Qgs3DMapCanvas
+        :attributes:
+

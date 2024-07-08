@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsProviderSublayerProxyModel
+...............................................
+
+.. py:module:: QgsProviderSublayerProxyModel
+
+.. autoclass:: qgis.core.QgsProviderSublayerProxyModel
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsProviderSublayerProxyModel
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProviderSublayerProxyModel
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProviderSublayerProxyModel
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProviderSublayerProxyModel
+        :attributes:
+

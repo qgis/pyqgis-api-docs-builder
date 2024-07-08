@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: LabelSettingsTable
+...............................................
+
+.. py:module:: LabelSettingsTable
+
+.. autoclass:: qgis.core.LabelSettingsTable
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.LabelSettingsTable
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.LabelSettingsTable
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.LabelSettingsTable
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.LabelSettingsTable
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsMessageViewer
+...............................................
+
+.. py:module:: QgsMessageViewer
+
+.. autoclass:: qgis.gui.QgsMessageViewer
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsMessageViewer
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMessageViewer
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMessageViewer
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMessageViewer
+        :attributes:
+

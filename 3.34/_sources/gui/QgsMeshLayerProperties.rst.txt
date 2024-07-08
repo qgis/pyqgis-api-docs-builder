@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsMeshLayerProperties
+...............................................
+
+.. py:module:: QgsMeshLayerProperties
+
+.. autoclass:: qgis.gui.QgsMeshLayerProperties
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsMeshLayerProperties
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMeshLayerProperties
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMeshLayerProperties
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMeshLayerProperties
+        :attributes:
+

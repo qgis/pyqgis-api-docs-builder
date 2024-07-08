@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsHtmlWidgetWrapper
+...............................................
+
+.. py:module:: QgsHtmlWidgetWrapper
+
+.. autoclass:: qgis.gui.QgsHtmlWidgetWrapper
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsHtmlWidgetWrapper
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsHtmlWidgetWrapper
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsHtmlWidgetWrapper
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsHtmlWidgetWrapper
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsLayoutItemElevationProfile
+...............................................
+
+.. py:module:: QgsLayoutItemElevationProfile
+
+.. autoclass:: qgis.core.QgsLayoutItemElevationProfile
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsLayoutItemElevationProfile
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutItemElevationProfile
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutItemElevationProfile
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutItemElevationProfile
+        :attributes:
+

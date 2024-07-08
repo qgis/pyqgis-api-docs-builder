@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: SymbolId
+...............................................
+
+.. py:module:: SymbolId
+
+.. autoclass:: qgis.core.SymbolId
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.SymbolId
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.SymbolId
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.SymbolId
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.SymbolId
+        :attributes:
+

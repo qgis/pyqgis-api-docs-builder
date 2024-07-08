@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsProcessingParameterAlignRasterLayers
+...............................................
+
+.. py:module:: QgsProcessingParameterAlignRasterLayers
+
+.. autoclass:: qgis.core.QgsProcessingParameterAlignRasterLayers
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterAlignRasterLayers
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterAlignRasterLayers
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterAlignRasterLayers
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterAlignRasterLayers
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.server
+
+Class: QgsBufferServerRequest
+...............................................
+
+.. py:module:: QgsBufferServerRequest
+
+.. autoclass:: qgis.server.QgsBufferServerRequest
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.server.QgsBufferServerRequest
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.server.QgsBufferServerRequest
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.server.QgsBufferServerRequest
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.server.QgsBufferServerRequest
+        :attributes:
+

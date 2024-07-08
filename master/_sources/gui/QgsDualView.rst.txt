@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsDualView
+...............................................
+
+.. py:module:: QgsDualView
+
+.. autoclass:: qgis.gui.QgsDualView
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsDualView
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsDualView
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsDualView
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsDualView
+        :attributes:
+

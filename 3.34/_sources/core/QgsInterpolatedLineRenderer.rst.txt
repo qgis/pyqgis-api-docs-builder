@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsInterpolatedLineRenderer
+...............................................
+
+.. py:module:: QgsInterpolatedLineRenderer
+
+.. autoclass:: qgis.core.QgsInterpolatedLineRenderer
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsInterpolatedLineRenderer
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsInterpolatedLineRenderer
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsInterpolatedLineRenderer
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsInterpolatedLineRenderer
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsVectorLayerCache
+...............................................
+
+.. py:module:: QgsVectorLayerCache
+
+.. autoclass:: qgis.core.QgsVectorLayerCache
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsVectorLayerCache
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVectorLayerCache
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVectorLayerCache
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVectorLayerCache
+        :attributes:
+

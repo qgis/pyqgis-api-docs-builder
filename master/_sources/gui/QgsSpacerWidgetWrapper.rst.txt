@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsSpacerWidgetWrapper
+...............................................
+
+.. py:module:: QgsSpacerWidgetWrapper
+
+.. autoclass:: qgis.gui.QgsSpacerWidgetWrapper
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsSpacerWidgetWrapper
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSpacerWidgetWrapper
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSpacerWidgetWrapper
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSpacerWidgetWrapper
+        :attributes:
+

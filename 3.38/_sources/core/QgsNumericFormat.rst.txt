@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsNumericFormat
+...............................................
+
+.. py:module:: QgsNumericFormat
+
+.. autoclass:: qgis.core.QgsNumericFormat
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsNumericFormat
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsNumericFormat
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsNumericFormat
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsNumericFormat
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsElevationShadingRenderer
+...............................................
+
+.. py:module:: QgsElevationShadingRenderer
+
+.. autoclass:: qgis.core.QgsElevationShadingRenderer
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsElevationShadingRenderer
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsElevationShadingRenderer
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsElevationShadingRenderer
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsElevationShadingRenderer
+        :attributes:
+

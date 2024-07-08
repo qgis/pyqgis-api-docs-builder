@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsPercentageWidget
+...............................................
+
+.. py:module:: QgsPercentageWidget
+
+.. autoclass:: qgis.gui.QgsPercentageWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsPercentageWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsPercentageWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsPercentageWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsPercentageWidget
+        :attributes:
+

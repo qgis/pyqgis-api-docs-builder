@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsTiledSceneBoundingVolume
+...............................................
+
+.. py:module:: QgsTiledSceneBoundingVolume
+
+.. autoclass:: qgis.core.QgsTiledSceneBoundingVolume
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsTiledSceneBoundingVolume
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTiledSceneBoundingVolume
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTiledSceneBoundingVolume
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTiledSceneBoundingVolume
+        :attributes:
+

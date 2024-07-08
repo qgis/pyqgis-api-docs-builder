@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsElevationControllerWidget
+...............................................
+
+.. py:module:: QgsElevationControllerWidget
+
+.. autoclass:: qgis.gui.QgsElevationControllerWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsElevationControllerWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsElevationControllerWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsElevationControllerWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsElevationControllerWidget
+        :attributes:
+

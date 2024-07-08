@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsPlotRectangularRubberBand
+...............................................
+
+.. py:module:: QgsPlotRectangularRubberBand
+
+.. autoclass:: qgis.gui.QgsPlotRectangularRubberBand
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsPlotRectangularRubberBand
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsPlotRectangularRubberBand
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsPlotRectangularRubberBand
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsPlotRectangularRubberBand
+        :attributes:
+

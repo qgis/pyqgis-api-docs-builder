@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsSldExportContext
+...............................................
+
+.. py:module:: QgsSldExportContext
+
+.. autoclass:: qgis.core.QgsSldExportContext
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsSldExportContext
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSldExportContext
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSldExportContext
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSldExportContext
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: ColorrampXML
+...............................................
+
+.. py:module:: ColorrampXML
+
+.. autoclass:: qgis.core.ColorrampXML
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.ColorrampXML
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.ColorrampXML
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.ColorrampXML
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.ColorrampXML
+        :attributes:
+

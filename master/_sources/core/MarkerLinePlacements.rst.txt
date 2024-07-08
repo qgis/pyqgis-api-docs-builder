@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: MarkerLinePlacements
+...............................................
+
+.. py:module:: MarkerLinePlacements
+
+.. autoclass:: qgis.core.MarkerLinePlacements
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.MarkerLinePlacements
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.MarkerLinePlacements
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.MarkerLinePlacements
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.MarkerLinePlacements
+        :attributes:
+

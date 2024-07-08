@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsProjectItem
+...............................................
+
+.. py:module:: QgsProjectItem
+
+.. autoclass:: qgis.core.QgsProjectItem
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsProjectItem
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProjectItem
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProjectItem
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProjectItem
+        :attributes:
+

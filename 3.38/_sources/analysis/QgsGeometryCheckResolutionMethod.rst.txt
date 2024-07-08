@@ -1,0 +1,27 @@
+.. package: qgis\.analysis
+
+Class: QgsGeometryCheckResolutionMethod
+...............................................
+
+.. py:module:: QgsGeometryCheckResolutionMethod
+
+.. autoclass:: qgis.analysis.QgsGeometryCheckResolutionMethod
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.analysis.QgsGeometryCheckResolutionMethod
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsGeometryCheckResolutionMethod
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsGeometryCheckResolutionMethod
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsGeometryCheckResolutionMethod
+        :attributes:
+

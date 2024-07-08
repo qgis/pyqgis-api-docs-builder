@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsAttributeEditorElement
+...............................................
+
+.. py:module:: QgsAttributeEditorElement
+
+.. autoclass:: qgis.core.QgsAttributeEditorElement
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsAttributeEditorElement
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsAttributeEditorElement
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsAttributeEditorElement
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsAttributeEditorElement
+        :attributes:
+

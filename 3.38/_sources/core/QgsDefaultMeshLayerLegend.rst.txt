@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsDefaultMeshLayerLegend
+...............................................
+
+.. py:module:: QgsDefaultMeshLayerLegend
+
+.. autoclass:: qgis.core.QgsDefaultMeshLayerLegend
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsDefaultMeshLayerLegend
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDefaultMeshLayerLegend
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDefaultMeshLayerLegend
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDefaultMeshLayerLegend
+        :attributes:
+

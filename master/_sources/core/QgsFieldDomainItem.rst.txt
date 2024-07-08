@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsFieldDomainItem
+...............................................
+
+.. py:module:: QgsFieldDomainItem
+
+.. autoclass:: qgis.core.QgsFieldDomainItem
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsFieldDomainItem
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsFieldDomainItem
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsFieldDomainItem
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsFieldDomainItem
+        :attributes:
+

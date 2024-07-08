@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsDatabaseFilterProxyModel
+...............................................
+
+.. py:module:: QgsDatabaseFilterProxyModel
+
+.. autoclass:: qgis.core.QgsDatabaseFilterProxyModel
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsDatabaseFilterProxyModel
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDatabaseFilterProxyModel
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDatabaseFilterProxyModel
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDatabaseFilterProxyModel
+        :attributes:
+

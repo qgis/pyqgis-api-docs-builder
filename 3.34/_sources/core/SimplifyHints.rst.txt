@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: SimplifyHints
+...............................................
+
+.. py:module:: SimplifyHints
+
+.. autoclass:: qgis.core.SimplifyHints
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.SimplifyHints
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.SimplifyHints
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.SimplifyHints
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.SimplifyHints
+        :attributes:
+

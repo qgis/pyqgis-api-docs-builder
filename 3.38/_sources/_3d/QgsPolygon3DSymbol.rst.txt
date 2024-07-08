@@ -1,0 +1,27 @@
+.. package: qgis\._3d
+
+Class: QgsPolygon3DSymbol
+...............................................
+
+.. py:module:: QgsPolygon3DSymbol
+
+.. autoclass:: qgis._3d.QgsPolygon3DSymbol
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis._3d.QgsPolygon3DSymbol
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis._3d.QgsPolygon3DSymbol
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis._3d.QgsPolygon3DSymbol
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis._3d.QgsPolygon3DSymbol
+        :attributes:
+

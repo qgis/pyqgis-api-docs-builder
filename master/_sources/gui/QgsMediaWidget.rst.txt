@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsMediaWidget
+...............................................
+
+.. py:module:: QgsMediaWidget
+
+.. autoclass:: qgis.gui.QgsMediaWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsMediaWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMediaWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMediaWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMediaWidget
+        :attributes:
+

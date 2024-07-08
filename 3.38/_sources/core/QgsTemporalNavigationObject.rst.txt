@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsTemporalNavigationObject
+...............................................
+
+.. py:module:: QgsTemporalNavigationObject
+
+.. autoclass:: qgis.core.QgsTemporalNavigationObject
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsTemporalNavigationObject
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTemporalNavigationObject
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTemporalNavigationObject
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTemporalNavigationObject
+        :attributes:
+

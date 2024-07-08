@@ -1,0 +1,27 @@
+.. package: qgis\.processing
+
+Class: alg
+...............................................
+
+.. py:module:: alg
+
+.. autoclass:: qgis.processing.alg
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.processing.alg
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.processing.alg
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.processing.alg
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.processing.alg
+        :attributes:
+

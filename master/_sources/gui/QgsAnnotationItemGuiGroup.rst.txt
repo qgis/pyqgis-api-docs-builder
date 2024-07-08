@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsAnnotationItemGuiGroup
+...............................................
+
+.. py:module:: QgsAnnotationItemGuiGroup
+
+.. autoclass:: qgis.gui.QgsAnnotationItemGuiGroup
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsAnnotationItemGuiGroup
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAnnotationItemGuiGroup
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAnnotationItemGuiGroup
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAnnotationItemGuiGroup
+        :attributes:
+

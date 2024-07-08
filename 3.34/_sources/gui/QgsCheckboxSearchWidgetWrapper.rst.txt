@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsCheckboxSearchWidgetWrapper
+...............................................
+
+.. py:module:: QgsCheckboxSearchWidgetWrapper
+
+.. autoclass:: qgis.gui.QgsCheckboxSearchWidgetWrapper
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsCheckboxSearchWidgetWrapper
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsCheckboxSearchWidgetWrapper
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsCheckboxSearchWidgetWrapper
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsCheckboxSearchWidgetWrapper
+        :attributes:
+

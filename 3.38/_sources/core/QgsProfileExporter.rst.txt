@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsProfileExporter
+...............................................
+
+.. py:module:: QgsProfileExporter
+
+.. autoclass:: qgis.core.QgsProfileExporter
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsProfileExporter
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProfileExporter
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProfileExporter
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProfileExporter
+        :attributes:
+

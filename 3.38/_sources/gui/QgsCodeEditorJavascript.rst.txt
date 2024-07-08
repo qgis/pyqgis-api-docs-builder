@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsCodeEditorJavascript
+...............................................
+
+.. py:module:: QgsCodeEditorJavascript
+
+.. autoclass:: qgis.gui.QgsCodeEditorJavascript
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsCodeEditorJavascript
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsCodeEditorJavascript
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsCodeEditorJavascript
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsCodeEditorJavascript
+        :attributes:
+

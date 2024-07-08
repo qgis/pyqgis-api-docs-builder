@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsGeocoderInterface
+...............................................
+
+.. py:module:: QgsGeocoderInterface
+
+.. autoclass:: qgis.core.QgsGeocoderInterface
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsGeocoderInterface
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsGeocoderInterface
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsGeocoderInterface
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsGeocoderInterface
+        :attributes:
+

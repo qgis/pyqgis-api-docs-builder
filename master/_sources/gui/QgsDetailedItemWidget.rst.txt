@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsDetailedItemWidget
+...............................................
+
+.. py:module:: QgsDetailedItemWidget
+
+.. autoclass:: qgis.gui.QgsDetailedItemWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsDetailedItemWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsDetailedItemWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsDetailedItemWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsDetailedItemWidget
+        :attributes:
+

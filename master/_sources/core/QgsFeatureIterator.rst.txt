@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsFeatureIterator
+...............................................
+
+.. py:module:: QgsFeatureIterator
+
+.. autoclass:: qgis.core.QgsFeatureIterator
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsFeatureIterator
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsFeatureIterator
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsFeatureIterator
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsFeatureIterator
+        :attributes:
+

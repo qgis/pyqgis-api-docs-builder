@@ -1,0 +1,27 @@
+.. package: qgis\.server
+
+Class: QgsServiceRegistry
+...............................................
+
+.. py:module:: QgsServiceRegistry
+
+.. autoclass:: qgis.server.QgsServiceRegistry
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.server.QgsServiceRegistry
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.server.QgsServiceRegistry
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.server.QgsServiceRegistry
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.server.QgsServiceRegistry
+        :attributes:
+

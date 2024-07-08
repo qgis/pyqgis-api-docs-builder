@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsPenJoinStyleComboBox
+...............................................
+
+.. py:module:: QgsPenJoinStyleComboBox
+
+.. autoclass:: qgis.gui.QgsPenJoinStyleComboBox
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsPenJoinStyleComboBox
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsPenJoinStyleComboBox
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsPenJoinStyleComboBox
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsPenJoinStyleComboBox
+        :attributes:
+

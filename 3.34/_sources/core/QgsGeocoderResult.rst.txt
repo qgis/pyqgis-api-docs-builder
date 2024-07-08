@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsGeocoderResult
+...............................................
+
+.. py:module:: QgsGeocoderResult
+
+.. autoclass:: qgis.core.QgsGeocoderResult
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsGeocoderResult
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsGeocoderResult
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsGeocoderResult
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsGeocoderResult
+        :attributes:
+

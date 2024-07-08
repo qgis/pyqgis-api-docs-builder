@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsStackedBarDiagram
+...............................................
+
+.. py:module:: QgsStackedBarDiagram
+
+.. autoclass:: qgis.core.QgsStackedBarDiagram
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsStackedBarDiagram
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsStackedBarDiagram
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsStackedBarDiagram
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsStackedBarDiagram
+        :attributes:
+

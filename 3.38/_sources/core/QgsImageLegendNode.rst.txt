@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsImageLegendNode
+...............................................
+
+.. py:module:: QgsImageLegendNode
+
+.. autoclass:: qgis.core.QgsImageLegendNode
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsImageLegendNode
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsImageLegendNode
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsImageLegendNode
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsImageLegendNode
+        :attributes:
+

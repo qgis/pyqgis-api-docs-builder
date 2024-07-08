@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsGpsDetector
+...............................................
+
+.. py:module:: QgsGpsDetector
+
+.. autoclass:: qgis.core.QgsGpsDetector
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsGpsDetector
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsGpsDetector
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsGpsDetector
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsGpsDetector
+        :attributes:
+

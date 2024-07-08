@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsSvgSelectorDialog
+...............................................
+
+.. py:module:: QgsSvgSelectorDialog
+
+.. autoclass:: qgis.gui.QgsSvgSelectorDialog
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsSvgSelectorDialog
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSvgSelectorDialog
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSvgSelectorDialog
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSvgSelectorDialog
+        :attributes:
+

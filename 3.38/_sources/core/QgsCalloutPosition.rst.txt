@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsCalloutPosition
+...............................................
+
+.. py:module:: QgsCalloutPosition
+
+.. autoclass:: qgis.core.QgsCalloutPosition
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsCalloutPosition
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsCalloutPosition
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsCalloutPosition
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsCalloutPosition
+        :attributes:
+

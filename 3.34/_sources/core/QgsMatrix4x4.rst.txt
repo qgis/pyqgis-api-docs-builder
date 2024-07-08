@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsMatrix4x4
+...............................................
+
+.. py:module:: QgsMatrix4x4
+
+.. autoclass:: qgis.core.QgsMatrix4x4
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsMatrix4x4
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMatrix4x4
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMatrix4x4
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMatrix4x4
+        :attributes:
+

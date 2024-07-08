@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsDataSourceSelectDialog
+...............................................
+
+.. py:module:: QgsDataSourceSelectDialog
+
+.. autoclass:: qgis.gui.QgsDataSourceSelectDialog
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsDataSourceSelectDialog
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsDataSourceSelectDialog
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsDataSourceSelectDialog
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsDataSourceSelectDialog
+        :attributes:
+

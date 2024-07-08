@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsAuthConfigUriEdit
+...............................................
+
+.. py:module:: QgsAuthConfigUriEdit
+
+.. autoclass:: qgis.gui.QgsAuthConfigUriEdit
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsAuthConfigUriEdit
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAuthConfigUriEdit
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAuthConfigUriEdit
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAuthConfigUriEdit
+        :attributes:
+

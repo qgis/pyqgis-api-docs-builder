@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsProcessingModelerParameterWidget
+...............................................
+
+.. py:module:: QgsProcessingModelerParameterWidget
+
+.. autoclass:: qgis.gui.QgsProcessingModelerParameterWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsProcessingModelerParameterWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProcessingModelerParameterWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProcessingModelerParameterWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProcessingModelerParameterWidget
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsSettingsStringEditorWidgetWrapper
+...............................................
+
+.. py:module:: QgsSettingsStringEditorWidgetWrapper
+
+.. autoclass:: qgis.gui.QgsSettingsStringEditorWidgetWrapper
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsSettingsStringEditorWidgetWrapper
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSettingsStringEditorWidgetWrapper
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSettingsStringEditorWidgetWrapper
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSettingsStringEditorWidgetWrapper
+        :attributes:
+

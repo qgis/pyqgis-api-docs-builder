@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: geoWkt
+...............................................
+
+.. py:module:: geoWkt
+
+.. autoclass:: qgis.core.geoWkt
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.geoWkt
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.geoWkt
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.geoWkt
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.geoWkt
+        :attributes:
+

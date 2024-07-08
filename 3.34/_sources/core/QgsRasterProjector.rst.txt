@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsRasterProjector
+...............................................
+
+.. py:module:: QgsRasterProjector
+
+.. autoclass:: qgis.core.QgsRasterProjector
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsRasterProjector
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRasterProjector
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRasterProjector
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRasterProjector
+        :attributes:
+

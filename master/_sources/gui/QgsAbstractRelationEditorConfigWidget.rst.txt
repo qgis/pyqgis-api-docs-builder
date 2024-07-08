@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsAbstractRelationEditorConfigWidget
+...............................................
+
+.. py:module:: QgsAbstractRelationEditorConfigWidget
+
+.. autoclass:: qgis.gui.QgsAbstractRelationEditorConfigWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsAbstractRelationEditorConfigWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAbstractRelationEditorConfigWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAbstractRelationEditorConfigWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAbstractRelationEditorConfigWidget
+        :attributes:
+

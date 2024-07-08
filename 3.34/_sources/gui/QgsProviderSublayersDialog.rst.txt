@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsProviderSublayersDialog
+...............................................
+
+.. py:module:: QgsProviderSublayersDialog
+
+.. autoclass:: qgis.gui.QgsProviderSublayersDialog
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsProviderSublayersDialog
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProviderSublayersDialog
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProviderSublayersDialog
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProviderSublayersDialog
+        :attributes:
+

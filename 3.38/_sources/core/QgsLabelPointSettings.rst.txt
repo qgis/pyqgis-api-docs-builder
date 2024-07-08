@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsLabelPointSettings
+...............................................
+
+.. py:module:: QgsLabelPointSettings
+
+.. autoclass:: qgis.core.QgsLabelPointSettings
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsLabelPointSettings
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLabelPointSettings
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLabelPointSettings
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLabelPointSettings
+        :attributes:
+

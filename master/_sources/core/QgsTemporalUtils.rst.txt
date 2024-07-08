@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsTemporalUtils
+...............................................
+
+.. py:module:: QgsTemporalUtils
+
+.. autoclass:: qgis.core.QgsTemporalUtils
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsTemporalUtils
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTemporalUtils
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTemporalUtils
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTemporalUtils
+        :attributes:
+

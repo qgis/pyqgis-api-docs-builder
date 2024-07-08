@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsAbstractCacheIndex
+...............................................
+
+.. py:module:: QgsAbstractCacheIndex
+
+.. autoclass:: qgis.core.QgsAbstractCacheIndex
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsAbstractCacheIndex
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsAbstractCacheIndex
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsAbstractCacheIndex
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsAbstractCacheIndex
+        :attributes:
+

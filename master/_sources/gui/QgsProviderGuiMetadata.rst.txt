@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsProviderGuiMetadata
+...............................................
+
+.. py:module:: QgsProviderGuiMetadata
+
+.. autoclass:: qgis.gui.QgsProviderGuiMetadata
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsProviderGuiMetadata
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProviderGuiMetadata
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProviderGuiMetadata
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProviderGuiMetadata
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsExpressionNodeColumnRef
+...............................................
+
+.. py:module:: QgsExpressionNodeColumnRef
+
+.. autoclass:: qgis.core.QgsExpressionNodeColumnRef
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsExpressionNodeColumnRef
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsExpressionNodeColumnRef
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsExpressionNodeColumnRef
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsExpressionNodeColumnRef
+        :attributes:
+

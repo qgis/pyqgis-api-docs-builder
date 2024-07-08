@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsPropertyCollection
+...............................................
+
+.. py:module:: QgsPropertyCollection
+
+.. autoclass:: qgis.core.QgsPropertyCollection
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsPropertyCollection
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsPropertyCollection
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsPropertyCollection
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsPropertyCollection
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsTextFormatWidget
+...............................................
+
+.. py:module:: QgsTextFormatWidget
+
+.. autoclass:: qgis.gui.QgsTextFormatWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsTextFormatWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsTextFormatWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsTextFormatWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsTextFormatWidget
+        :attributes:
+

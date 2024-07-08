@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsHighlightableLineEdit
+...............................................
+
+.. py:module:: QgsHighlightableLineEdit
+
+.. autoclass:: qgis.gui.QgsHighlightableLineEdit
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsHighlightableLineEdit
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsHighlightableLineEdit
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsHighlightableLineEdit
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsHighlightableLineEdit
+        :attributes:
+

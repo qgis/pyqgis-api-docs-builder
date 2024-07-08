@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsSettingsTreeModel
+...............................................
+
+.. py:module:: QgsSettingsTreeModel
+
+.. autoclass:: qgis.gui.QgsSettingsTreeModel
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsSettingsTreeModel
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSettingsTreeModel
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSettingsTreeModel
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSettingsTreeModel
+        :attributes:
+

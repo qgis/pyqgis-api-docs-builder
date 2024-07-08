@@ -1,0 +1,27 @@
+.. package: qgis\.analysis
+
+Class: QgsAspectFilter
+...............................................
+
+.. py:module:: QgsAspectFilter
+
+.. autoclass:: qgis.analysis.QgsAspectFilter
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.analysis.QgsAspectFilter
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsAspectFilter
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsAspectFilter
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsAspectFilter
+        :attributes:
+

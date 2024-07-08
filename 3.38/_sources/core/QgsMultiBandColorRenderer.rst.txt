@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsMultiBandColorRenderer
+...............................................
+
+.. py:module:: QgsMultiBandColorRenderer
+
+.. autoclass:: qgis.core.QgsMultiBandColorRenderer
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsMultiBandColorRenderer
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMultiBandColorRenderer
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMultiBandColorRenderer
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMultiBandColorRenderer
+        :attributes:
+

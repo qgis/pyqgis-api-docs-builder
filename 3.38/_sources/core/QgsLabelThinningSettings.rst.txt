@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsLabelThinningSettings
+...............................................
+
+.. py:module:: QgsLabelThinningSettings
+
+.. autoclass:: qgis.core.QgsLabelThinningSettings
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsLabelThinningSettings
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLabelThinningSettings
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLabelThinningSettings
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLabelThinningSettings
+        :attributes:
+

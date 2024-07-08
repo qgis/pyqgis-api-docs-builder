@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsProjectStyleDatabaseModel
+...............................................
+
+.. py:module:: QgsProjectStyleDatabaseModel
+
+.. autoclass:: qgis.core.QgsProjectStyleDatabaseModel
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsProjectStyleDatabaseModel
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProjectStyleDatabaseModel
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProjectStyleDatabaseModel
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProjectStyleDatabaseModel
+        :attributes:
+

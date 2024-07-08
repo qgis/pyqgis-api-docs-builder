@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsRasterLayerElevationProperties
+...............................................
+
+.. py:module:: QgsRasterLayerElevationProperties
+
+.. autoclass:: qgis.core.QgsRasterLayerElevationProperties
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsRasterLayerElevationProperties
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRasterLayerElevationProperties
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRasterLayerElevationProperties
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRasterLayerElevationProperties
+        :attributes:
+

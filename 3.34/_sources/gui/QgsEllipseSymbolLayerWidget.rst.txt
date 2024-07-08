@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsEllipseSymbolLayerWidget
+...............................................
+
+.. py:module:: QgsEllipseSymbolLayerWidget
+
+.. autoclass:: qgis.gui.QgsEllipseSymbolLayerWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsEllipseSymbolLayerWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsEllipseSymbolLayerWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsEllipseSymbolLayerWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsEllipseSymbolLayerWidget
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsTileXYZ
+...............................................
+
+.. py:module:: QgsTileXYZ
+
+.. autoclass:: qgis.core.QgsTileXYZ
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsTileXYZ
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTileXYZ
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTileXYZ
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTileXYZ
+        :attributes:
+

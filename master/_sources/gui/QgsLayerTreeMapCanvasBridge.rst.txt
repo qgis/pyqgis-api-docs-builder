@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsLayerTreeMapCanvasBridge
+...............................................
+
+.. py:module:: QgsLayerTreeMapCanvasBridge
+
+.. autoclass:: qgis.gui.QgsLayerTreeMapCanvasBridge
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsLayerTreeMapCanvasBridge
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayerTreeMapCanvasBridge
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayerTreeMapCanvasBridge
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayerTreeMapCanvasBridge
+        :attributes:
+

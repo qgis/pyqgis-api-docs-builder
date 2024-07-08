@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsPluginLayer
+...............................................
+
+.. py:module:: QgsPluginLayer
+
+.. autoclass:: qgis.core.QgsPluginLayer
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsPluginLayer
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsPluginLayer
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsPluginLayer
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsPluginLayer
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.analysis
+
+Class: QgsVectorLayerDirector
+...............................................
+
+.. py:module:: QgsVectorLayerDirector
+
+.. autoclass:: qgis.analysis.QgsVectorLayerDirector
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.analysis.QgsVectorLayerDirector
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsVectorLayerDirector
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsVectorLayerDirector
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsVectorLayerDirector
+        :attributes:
+

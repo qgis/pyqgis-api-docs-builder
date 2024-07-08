@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsCentroidFillSymbolLayer
+...............................................
+
+.. py:module:: QgsCentroidFillSymbolLayer
+
+.. autoclass:: qgis.core.QgsCentroidFillSymbolLayer
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsCentroidFillSymbolLayer
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsCentroidFillSymbolLayer
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsCentroidFillSymbolLayer
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsCentroidFillSymbolLayer
+        :attributes:
+

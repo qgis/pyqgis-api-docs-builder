@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsProcessingParameterDatabaseSchema
+...............................................
+
+.. py:module:: QgsProcessingParameterDatabaseSchema
+
+.. autoclass:: qgis.core.QgsProcessingParameterDatabaseSchema
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterDatabaseSchema
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterDatabaseSchema
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterDatabaseSchema
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterDatabaseSchema
+        :attributes:
+

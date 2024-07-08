@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsTileMatrix
+...............................................
+
+.. py:module:: QgsTileMatrix
+
+.. autoclass:: qgis.core.QgsTileMatrix
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsTileMatrix
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTileMatrix
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTileMatrix
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTileMatrix
+        :attributes:
+

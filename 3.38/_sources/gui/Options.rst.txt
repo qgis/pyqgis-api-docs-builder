@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: Options
+...............................................
+
+.. py:module:: Options
+
+.. autoclass:: qgis.gui.Options
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.Options
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.Options
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.Options
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.Options
+        :attributes:
+

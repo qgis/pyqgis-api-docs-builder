@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsInterpolatedLineColor
+...............................................
+
+.. py:module:: QgsInterpolatedLineColor
+
+.. autoclass:: qgis.core.QgsInterpolatedLineColor
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsInterpolatedLineColor
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsInterpolatedLineColor
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsInterpolatedLineColor
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsInterpolatedLineColor
+        :attributes:
+

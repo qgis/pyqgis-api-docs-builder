@@ -1,0 +1,27 @@
+.. package: qgis\.analysis
+
+Class: QgsGeometryCheckErrorSingle
+...............................................
+
+.. py:module:: QgsGeometryCheckErrorSingle
+
+.. autoclass:: qgis.analysis.QgsGeometryCheckErrorSingle
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.analysis.QgsGeometryCheckErrorSingle
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsGeometryCheckErrorSingle
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsGeometryCheckErrorSingle
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsGeometryCheckErrorSingle
+        :attributes:
+

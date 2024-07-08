@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsProcessingException
+...............................................
+
+.. py:module:: QgsProcessingException
+
+.. autoclass:: qgis.core.QgsProcessingException
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsProcessingException
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingException
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingException
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingException
+        :attributes:
+

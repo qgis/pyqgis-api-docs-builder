@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsLayoutItemBaseWidget
+...............................................
+
+.. py:module:: QgsLayoutItemBaseWidget
+
+.. autoclass:: qgis.gui.QgsLayoutItemBaseWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsLayoutItemBaseWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayoutItemBaseWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayoutItemBaseWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayoutItemBaseWidget
+        :attributes:
+

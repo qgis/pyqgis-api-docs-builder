@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsBearingNumericFormatWidget
+...............................................
+
+.. py:module:: QgsBearingNumericFormatWidget
+
+.. autoclass:: qgis.gui.QgsBearingNumericFormatWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsBearingNumericFormatWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsBearingNumericFormatWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsBearingNumericFormatWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsBearingNumericFormatWidget
+        :attributes:
+

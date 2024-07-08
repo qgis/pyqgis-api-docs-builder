@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: BabelFormatCapabilities
+...............................................
+
+.. py:module:: BabelFormatCapabilities
+
+.. autoclass:: qgis.core.BabelFormatCapabilities
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.BabelFormatCapabilities
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.BabelFormatCapabilities
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.BabelFormatCapabilities
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.BabelFormatCapabilities
+        :attributes:
+

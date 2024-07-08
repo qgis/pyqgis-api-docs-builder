@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsValidityCheckResultsWidget
+...............................................
+
+.. py:module:: QgsValidityCheckResultsWidget
+
+.. autoclass:: qgis.gui.QgsValidityCheckResultsWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsValidityCheckResultsWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsValidityCheckResultsWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsValidityCheckResultsWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsValidityCheckResultsWidget
+        :attributes:
+

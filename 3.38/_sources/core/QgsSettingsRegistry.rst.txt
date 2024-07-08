@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsSettingsRegistry
+...............................................
+
+.. py:module:: QgsSettingsRegistry
+
+.. autoclass:: qgis.core.QgsSettingsRegistry
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsSettingsRegistry
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSettingsRegistry
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSettingsRegistry
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSettingsRegistry
+        :attributes:
+

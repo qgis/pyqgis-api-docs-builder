@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsVectorTileWriter
+...............................................
+
+.. py:module:: QgsVectorTileWriter
+
+.. autoclass:: qgis.core.QgsVectorTileWriter
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsVectorTileWriter
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVectorTileWriter
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVectorTileWriter
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVectorTileWriter
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: qgsfunction
+...............................................
+
+.. py:module:: qgsfunction
+
+.. autoclass:: qgis.core.qgsfunction
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.qgsfunction
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.qgsfunction
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.qgsfunction
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.qgsfunction
+        :attributes:
+

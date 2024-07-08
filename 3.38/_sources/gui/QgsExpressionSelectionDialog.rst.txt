@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsExpressionSelectionDialog
+...............................................
+
+.. py:module:: QgsExpressionSelectionDialog
+
+.. autoclass:: qgis.gui.QgsExpressionSelectionDialog
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsExpressionSelectionDialog
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsExpressionSelectionDialog
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsExpressionSelectionDialog
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsExpressionSelectionDialog
+        :attributes:
+

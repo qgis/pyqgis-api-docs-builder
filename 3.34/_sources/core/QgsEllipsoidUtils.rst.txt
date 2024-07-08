@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsEllipsoidUtils
+...............................................
+
+.. py:module:: QgsEllipsoidUtils
+
+.. autoclass:: qgis.core.QgsEllipsoidUtils
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsEllipsoidUtils
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsEllipsoidUtils
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsEllipsoidUtils
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsEllipsoidUtils
+        :attributes:
+

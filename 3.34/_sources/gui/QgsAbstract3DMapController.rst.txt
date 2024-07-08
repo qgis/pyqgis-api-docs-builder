@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsAbstract3DMapController
+...............................................
+
+.. py:module:: QgsAbstract3DMapController
+
+.. autoclass:: qgis.gui.QgsAbstract3DMapController
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsAbstract3DMapController
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAbstract3DMapController
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAbstract3DMapController
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAbstract3DMapController
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsLayoutViewToolSelect
+...............................................
+
+.. py:module:: QgsLayoutViewToolSelect
+
+.. autoclass:: qgis.gui.QgsLayoutViewToolSelect
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsLayoutViewToolSelect
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayoutViewToolSelect
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayoutViewToolSelect
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayoutViewToolSelect
+        :attributes:
+

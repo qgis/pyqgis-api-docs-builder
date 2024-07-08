@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsFilledLineSymbolLayerWidget
+...............................................
+
+.. py:module:: QgsFilledLineSymbolLayerWidget
+
+.. autoclass:: qgis.gui.QgsFilledLineSymbolLayerWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsFilledLineSymbolLayerWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsFilledLineSymbolLayerWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsFilledLineSymbolLayerWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsFilledLineSymbolLayerWidget
+        :attributes:
+

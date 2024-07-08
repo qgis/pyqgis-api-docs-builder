@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsPresetColorRampWidget
+...............................................
+
+.. py:module:: QgsPresetColorRampWidget
+
+.. autoclass:: qgis.gui.QgsPresetColorRampWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsPresetColorRampWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsPresetColorRampWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsPresetColorRampWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsPresetColorRampWidget
+        :attributes:
+

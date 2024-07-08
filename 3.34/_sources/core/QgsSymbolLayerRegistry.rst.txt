@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsSymbolLayerRegistry
+...............................................
+
+.. py:module:: QgsSymbolLayerRegistry
+
+.. autoclass:: qgis.core.QgsSymbolLayerRegistry
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsSymbolLayerRegistry
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSymbolLayerRegistry
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSymbolLayerRegistry
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSymbolLayerRegistry
+        :attributes:
+

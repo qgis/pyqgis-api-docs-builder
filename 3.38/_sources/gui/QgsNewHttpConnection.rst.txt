@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsNewHttpConnection
+...............................................
+
+.. py:module:: QgsNewHttpConnection
+
+.. autoclass:: qgis.gui.QgsNewHttpConnection
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsNewHttpConnection
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsNewHttpConnection
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsNewHttpConnection
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsNewHttpConnection
+        :attributes:
+

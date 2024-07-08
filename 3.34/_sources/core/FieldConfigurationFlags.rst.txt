@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: FieldConfigurationFlags
+...............................................
+
+.. py:module:: FieldConfigurationFlags
+
+.. autoclass:: qgis.core.FieldConfigurationFlags
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.FieldConfigurationFlags
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.FieldConfigurationFlags
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.FieldConfigurationFlags
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.FieldConfigurationFlags
+        :attributes:
+

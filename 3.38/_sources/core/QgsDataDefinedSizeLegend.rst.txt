@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsDataDefinedSizeLegend
+...............................................
+
+.. py:module:: QgsDataDefinedSizeLegend
+
+.. autoclass:: qgis.core.QgsDataDefinedSizeLegend
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsDataDefinedSizeLegend
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDataDefinedSizeLegend
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDataDefinedSizeLegend
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDataDefinedSizeLegend
+        :attributes:
+

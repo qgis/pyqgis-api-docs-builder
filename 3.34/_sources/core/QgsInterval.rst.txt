@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsInterval
+...............................................
+
+.. py:module:: QgsInterval
+
+.. autoclass:: qgis.core.QgsInterval
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsInterval
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsInterval
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsInterval
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsInterval
+        :attributes:
+

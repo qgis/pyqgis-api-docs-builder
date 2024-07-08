@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: LabelPolygonPlacementFlags
+...............................................
+
+.. py:module:: LabelPolygonPlacementFlags
+
+.. autoclass:: qgis.core.LabelPolygonPlacementFlags
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.LabelPolygonPlacementFlags
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.LabelPolygonPlacementFlags
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.LabelPolygonPlacementFlags
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.LabelPolygonPlacementFlags
+        :attributes:
+

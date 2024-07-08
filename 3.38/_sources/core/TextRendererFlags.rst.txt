@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: TextRendererFlags
+...............................................
+
+.. py:module:: TextRendererFlags
+
+.. autoclass:: qgis.core.TextRendererFlags
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.TextRendererFlags
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.TextRendererFlags
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.TextRendererFlags
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.TextRendererFlags
+        :attributes:
+

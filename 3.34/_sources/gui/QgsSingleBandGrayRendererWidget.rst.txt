@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsSingleBandGrayRendererWidget
+...............................................
+
+.. py:module:: QgsSingleBandGrayRendererWidget
+
+.. autoclass:: qgis.gui.QgsSingleBandGrayRendererWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsSingleBandGrayRendererWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSingleBandGrayRendererWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSingleBandGrayRendererWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSingleBandGrayRendererWidget
+        :attributes:
+

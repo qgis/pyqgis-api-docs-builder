@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsExternalStorageRegistry
+...............................................
+
+.. py:module:: QgsExternalStorageRegistry
+
+.. autoclass:: qgis.core.QgsExternalStorageRegistry
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsExternalStorageRegistry
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsExternalStorageRegistry
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsExternalStorageRegistry
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsExternalStorageRegistry
+        :attributes:
+

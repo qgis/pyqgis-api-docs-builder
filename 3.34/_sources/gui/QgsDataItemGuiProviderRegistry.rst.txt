@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsDataItemGuiProviderRegistry
+...............................................
+
+.. py:module:: QgsDataItemGuiProviderRegistry
+
+.. autoclass:: qgis.gui.QgsDataItemGuiProviderRegistry
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsDataItemGuiProviderRegistry
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsDataItemGuiProviderRegistry
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsDataItemGuiProviderRegistry
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsDataItemGuiProviderRegistry
+        :attributes:
+

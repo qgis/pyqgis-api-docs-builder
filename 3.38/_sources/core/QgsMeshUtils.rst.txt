@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsMeshUtils
+...............................................
+
+.. py:module:: QgsMeshUtils
+
+.. autoclass:: qgis.core.QgsMeshUtils
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsMeshUtils
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMeshUtils
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMeshUtils
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMeshUtils
+        :attributes:
+

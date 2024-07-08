@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsManageConnectionsDialog
+...............................................
+
+.. py:module:: QgsManageConnectionsDialog
+
+.. autoclass:: qgis.gui.QgsManageConnectionsDialog
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsManageConnectionsDialog
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsManageConnectionsDialog
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsManageConnectionsDialog
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsManageConnectionsDialog
+        :attributes:
+

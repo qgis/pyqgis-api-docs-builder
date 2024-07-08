@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsMapToolIdentify
+...............................................
+
+.. py:module:: QgsMapToolIdentify
+
+.. autoclass:: qgis.gui.QgsMapToolIdentify
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsMapToolIdentify
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMapToolIdentify
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMapToolIdentify
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMapToolIdentify
+        :attributes:
+

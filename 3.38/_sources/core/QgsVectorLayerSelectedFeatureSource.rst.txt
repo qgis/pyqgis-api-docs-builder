@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsVectorLayerSelectedFeatureSource
+...............................................
+
+.. py:module:: QgsVectorLayerSelectedFeatureSource
+
+.. autoclass:: qgis.core.QgsVectorLayerSelectedFeatureSource
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsVectorLayerSelectedFeatureSource
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVectorLayerSelectedFeatureSource
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVectorLayerSelectedFeatureSource
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVectorLayerSelectedFeatureSource
+        :attributes:
+

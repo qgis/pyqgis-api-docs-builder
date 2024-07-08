@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: ProjectReadFlags
+...............................................
+
+.. py:module:: ProjectReadFlags
+
+.. autoclass:: qgis.core.ProjectReadFlags
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.ProjectReadFlags
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.ProjectReadFlags
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.ProjectReadFlags
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.ProjectReadFlags
+        :attributes:
+

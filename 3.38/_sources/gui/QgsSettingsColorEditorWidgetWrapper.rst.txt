@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsSettingsColorEditorWidgetWrapper
+...............................................
+
+.. py:module:: QgsSettingsColorEditorWidgetWrapper
+
+.. autoclass:: qgis.gui.QgsSettingsColorEditorWidgetWrapper
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsSettingsColorEditorWidgetWrapper
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSettingsColorEditorWidgetWrapper
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSettingsColorEditorWidgetWrapper
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSettingsColorEditorWidgetWrapper
+        :attributes:
+

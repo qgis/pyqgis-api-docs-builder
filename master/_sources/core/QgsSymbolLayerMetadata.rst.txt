@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsSymbolLayerMetadata
+...............................................
+
+.. py:module:: QgsSymbolLayerMetadata
+
+.. autoclass:: qgis.core.QgsSymbolLayerMetadata
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsSymbolLayerMetadata
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSymbolLayerMetadata
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSymbolLayerMetadata
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSymbolLayerMetadata
+        :attributes:
+

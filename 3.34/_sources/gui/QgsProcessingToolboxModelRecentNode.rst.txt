@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsProcessingToolboxModelRecentNode
+...............................................
+
+.. py:module:: QgsProcessingToolboxModelRecentNode
+
+.. autoclass:: qgis.gui.QgsProcessingToolboxModelRecentNode
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsProcessingToolboxModelRecentNode
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProcessingToolboxModelRecentNode
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProcessingToolboxModelRecentNode
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProcessingToolboxModelRecentNode
+        :attributes:
+

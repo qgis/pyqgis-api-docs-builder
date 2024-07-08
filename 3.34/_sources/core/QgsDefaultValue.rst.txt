@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsDefaultValue
+...............................................
+
+.. py:module:: QgsDefaultValue
+
+.. autoclass:: qgis.core.QgsDefaultValue
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsDefaultValue
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDefaultValue
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDefaultValue
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDefaultValue
+        :attributes:
+

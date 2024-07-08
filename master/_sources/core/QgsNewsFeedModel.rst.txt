@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsNewsFeedModel
+...............................................
+
+.. py:module:: QgsNewsFeedModel
+
+.. autoclass:: qgis.core.QgsNewsFeedModel
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsNewsFeedModel
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsNewsFeedModel
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsNewsFeedModel
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsNewsFeedModel
+        :attributes:
+

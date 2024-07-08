@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsModelDesignerFlatButtonGraphicItem
+...............................................
+
+.. py:module:: QgsModelDesignerFlatButtonGraphicItem
+
+.. autoclass:: qgis.gui.QgsModelDesignerFlatButtonGraphicItem
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsModelDesignerFlatButtonGraphicItem
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsModelDesignerFlatButtonGraphicItem
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsModelDesignerFlatButtonGraphicItem
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsModelDesignerFlatButtonGraphicItem
+        :attributes:
+

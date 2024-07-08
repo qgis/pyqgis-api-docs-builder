@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsExpressionBuilderWidget
+...............................................
+
+.. py:module:: QgsExpressionBuilderWidget
+
+.. autoclass:: qgis.gui.QgsExpressionBuilderWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsExpressionBuilderWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsExpressionBuilderWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsExpressionBuilderWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsExpressionBuilderWidget
+        :attributes:
+

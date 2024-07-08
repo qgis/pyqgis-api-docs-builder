@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: SqlLayerDefinitionCapabilities
+...............................................
+
+.. py:module:: SqlLayerDefinitionCapabilities
+
+.. autoclass:: qgis.core.SqlLayerDefinitionCapabilities
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.SqlLayerDefinitionCapabilities
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.SqlLayerDefinitionCapabilities
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.SqlLayerDefinitionCapabilities
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.SqlLayerDefinitionCapabilities
+        :attributes:
+

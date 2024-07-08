@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: ProcessingAlgorithmFlags
+...............................................
+
+.. py:module:: ProcessingAlgorithmFlags
+
+.. autoclass:: qgis.core.ProcessingAlgorithmFlags
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.ProcessingAlgorithmFlags
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.ProcessingAlgorithmFlags
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.ProcessingAlgorithmFlags
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.ProcessingAlgorithmFlags
+        :attributes:
+

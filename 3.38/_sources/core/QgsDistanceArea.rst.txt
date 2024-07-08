@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsDistanceArea
+...............................................
+
+.. py:module:: QgsDistanceArea
+
+.. autoclass:: qgis.core.QgsDistanceArea
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsDistanceArea
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDistanceArea
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDistanceArea
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDistanceArea
+        :attributes:
+

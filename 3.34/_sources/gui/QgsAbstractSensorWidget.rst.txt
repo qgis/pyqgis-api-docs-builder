@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsAbstractSensorWidget
+...............................................
+
+.. py:module:: QgsAbstractSensorWidget
+
+.. autoclass:: qgis.gui.QgsAbstractSensorWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsAbstractSensorWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAbstractSensorWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAbstractSensorWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAbstractSensorWidget
+        :attributes:
+

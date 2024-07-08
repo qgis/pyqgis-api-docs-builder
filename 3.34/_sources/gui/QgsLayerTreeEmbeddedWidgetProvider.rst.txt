@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsLayerTreeEmbeddedWidgetProvider
+...............................................
+
+.. py:module:: QgsLayerTreeEmbeddedWidgetProvider
+
+.. autoclass:: qgis.gui.QgsLayerTreeEmbeddedWidgetProvider
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsLayerTreeEmbeddedWidgetProvider
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayerTreeEmbeddedWidgetProvider
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayerTreeEmbeddedWidgetProvider
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayerTreeEmbeddedWidgetProvider
+        :attributes:
+

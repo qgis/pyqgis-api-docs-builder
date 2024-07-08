@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsLayoutItemRegistry
+...............................................
+
+.. py:module:: QgsLayoutItemRegistry
+
+.. autoclass:: qgis.core.QgsLayoutItemRegistry
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsLayoutItemRegistry
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutItemRegistry
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutItemRegistry
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutItemRegistry
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsLabelObstacleSettings
+...............................................
+
+.. py:module:: QgsLabelObstacleSettings
+
+.. autoclass:: qgis.core.QgsLabelObstacleSettings
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsLabelObstacleSettings
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLabelObstacleSettings
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLabelObstacleSettings
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLabelObstacleSettings
+        :attributes:
+

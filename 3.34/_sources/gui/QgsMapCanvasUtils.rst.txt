@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsMapCanvasUtils
+...............................................
+
+.. py:module:: QgsMapCanvasUtils
+
+.. autoclass:: qgis.gui.QgsMapCanvasUtils
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsMapCanvasUtils
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMapCanvasUtils
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMapCanvasUtils
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMapCanvasUtils
+        :attributes:
+

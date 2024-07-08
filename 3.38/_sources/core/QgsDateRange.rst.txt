@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsDateRange
+...............................................
+
+.. py:module:: QgsDateRange
+
+.. autoclass:: qgis.core.QgsDateRange
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsDateRange
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDateRange
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDateRange
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDateRange
+        :attributes:
+

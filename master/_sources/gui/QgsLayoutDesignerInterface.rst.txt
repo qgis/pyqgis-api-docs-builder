@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsLayoutDesignerInterface
+...............................................
+
+.. py:module:: QgsLayoutDesignerInterface
+
+.. autoclass:: qgis.gui.QgsLayoutDesignerInterface
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsLayoutDesignerInterface
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayoutDesignerInterface
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayoutDesignerInterface
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayoutDesignerInterface
+        :attributes:
+

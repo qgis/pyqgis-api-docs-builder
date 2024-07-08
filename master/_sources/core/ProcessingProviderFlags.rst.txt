@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: ProcessingProviderFlags
+...............................................
+
+.. py:module:: ProcessingProviderFlags
+
+.. autoclass:: qgis.core.ProcessingProviderFlags
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.ProcessingProviderFlags
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.ProcessingProviderFlags
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.ProcessingProviderFlags
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.ProcessingProviderFlags
+        :attributes:
+

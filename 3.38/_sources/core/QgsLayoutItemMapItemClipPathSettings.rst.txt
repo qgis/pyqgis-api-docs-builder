@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsLayoutItemMapItemClipPathSettings
+...............................................
+
+.. py:module:: QgsLayoutItemMapItemClipPathSettings
+
+.. autoclass:: qgis.core.QgsLayoutItemMapItemClipPathSettings
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsLayoutItemMapItemClipPathSettings
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutItemMapItemClipPathSettings
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutItemMapItemClipPathSettings
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutItemMapItemClipPathSettings
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsNullPaintDevice
+...............................................
+
+.. py:module:: QgsNullPaintDevice
+
+.. autoclass:: qgis.core.QgsNullPaintDevice
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsNullPaintDevice
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsNullPaintDevice
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsNullPaintDevice
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsNullPaintDevice
+        :attributes:
+

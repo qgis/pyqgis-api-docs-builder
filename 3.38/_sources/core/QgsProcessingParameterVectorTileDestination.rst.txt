@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsProcessingParameterVectorTileDestination
+...............................................
+
+.. py:module:: QgsProcessingParameterVectorTileDestination
+
+.. autoclass:: qgis.core.QgsProcessingParameterVectorTileDestination
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterVectorTileDestination
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterVectorTileDestination
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterVectorTileDestination
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterVectorTileDestination
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsColorUtils
+...............................................
+
+.. py:module:: QgsColorUtils
+
+.. autoclass:: qgis.core.QgsColorUtils
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsColorUtils
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsColorUtils
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsColorUtils
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsColorUtils
+        :attributes:
+

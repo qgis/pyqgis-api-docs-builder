@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsOgcUtils
+...............................................
+
+.. py:module:: QgsOgcUtils
+
+.. autoclass:: qgis.core.QgsOgcUtils
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsOgcUtils
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsOgcUtils
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsOgcUtils
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsOgcUtils
+        :attributes:
+

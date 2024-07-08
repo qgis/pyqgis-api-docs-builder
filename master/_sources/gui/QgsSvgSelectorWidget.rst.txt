@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsSvgSelectorWidget
+...............................................
+
+.. py:module:: QgsSvgSelectorWidget
+
+.. autoclass:: qgis.gui.QgsSvgSelectorWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsSvgSelectorWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSvgSelectorWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSvgSelectorWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSvgSelectorWidget
+        :attributes:
+

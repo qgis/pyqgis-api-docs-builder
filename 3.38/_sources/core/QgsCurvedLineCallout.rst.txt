@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsCurvedLineCallout
+...............................................
+
+.. py:module:: QgsCurvedLineCallout
+
+.. autoclass:: qgis.core.QgsCurvedLineCallout
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsCurvedLineCallout
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsCurvedLineCallout
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsCurvedLineCallout
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsCurvedLineCallout
+        :attributes:
+

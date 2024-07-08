@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsLayoutItemGuiGroup
+...............................................
+
+.. py:module:: QgsLayoutItemGuiGroup
+
+.. autoclass:: qgis.gui.QgsLayoutItemGuiGroup
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsLayoutItemGuiGroup
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayoutItemGuiGroup
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayoutItemGuiGroup
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayoutItemGuiGroup
+        :attributes:
+

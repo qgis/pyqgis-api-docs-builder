@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsCoordinateReferenceSystemModel
+...............................................
+
+.. py:module:: QgsCoordinateReferenceSystemModel
+
+.. autoclass:: qgis.gui.QgsCoordinateReferenceSystemModel
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsCoordinateReferenceSystemModel
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsCoordinateReferenceSystemModel
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsCoordinateReferenceSystemModel
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsCoordinateReferenceSystemModel
+        :attributes:
+

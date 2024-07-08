@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsDashSpaceWidget
+...............................................
+
+.. py:module:: QgsDashSpaceWidget
+
+.. autoclass:: qgis.gui.QgsDashSpaceWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsDashSpaceWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsDashSpaceWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsDashSpaceWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsDashSpaceWidget
+        :attributes:
+

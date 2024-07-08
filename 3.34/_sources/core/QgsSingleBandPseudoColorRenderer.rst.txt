@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsSingleBandPseudoColorRenderer
+...............................................
+
+.. py:module:: QgsSingleBandPseudoColorRenderer
+
+.. autoclass:: qgis.core.QgsSingleBandPseudoColorRenderer
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsSingleBandPseudoColorRenderer
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSingleBandPseudoColorRenderer
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSingleBandPseudoColorRenderer
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSingleBandPseudoColorRenderer
+        :attributes:
+

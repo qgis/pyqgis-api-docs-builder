@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsShadowEffect
+...............................................
+
+.. py:module:: QgsShadowEffect
+
+.. autoclass:: qgis.core.QgsShadowEffect
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsShadowEffect
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsShadowEffect
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsShadowEffect
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsShadowEffect
+        :attributes:
+

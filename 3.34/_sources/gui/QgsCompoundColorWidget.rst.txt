@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsCompoundColorWidget
+...............................................
+
+.. py:module:: QgsCompoundColorWidget
+
+.. autoclass:: qgis.gui.QgsCompoundColorWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsCompoundColorWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsCompoundColorWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsCompoundColorWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsCompoundColorWidget
+        :attributes:
+

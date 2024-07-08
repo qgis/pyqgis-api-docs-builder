@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsBrowserDockWidget
+...............................................
+
+.. py:module:: QgsBrowserDockWidget
+
+.. autoclass:: qgis.gui.QgsBrowserDockWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsBrowserDockWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsBrowserDockWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsBrowserDockWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsBrowserDockWidget
+        :attributes:
+

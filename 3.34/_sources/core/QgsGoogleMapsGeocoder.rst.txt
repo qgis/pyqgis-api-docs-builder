@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsGoogleMapsGeocoder
+...............................................
+
+.. py:module:: QgsGoogleMapsGeocoder
+
+.. autoclass:: qgis.core.QgsGoogleMapsGeocoder
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsGoogleMapsGeocoder
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsGoogleMapsGeocoder
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsGoogleMapsGeocoder
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsGoogleMapsGeocoder
+        :attributes:
+

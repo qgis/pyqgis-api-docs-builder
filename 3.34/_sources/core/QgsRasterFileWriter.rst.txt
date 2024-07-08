@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsRasterFileWriter
+...............................................
+
+.. py:module:: QgsRasterFileWriter
+
+.. autoclass:: qgis.core.QgsRasterFileWriter
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsRasterFileWriter
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRasterFileWriter
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRasterFileWriter
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRasterFileWriter
+        :attributes:
+

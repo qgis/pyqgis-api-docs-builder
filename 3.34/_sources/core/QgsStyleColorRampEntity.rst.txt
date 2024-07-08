@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsStyleColorRampEntity
+...............................................
+
+.. py:module:: QgsStyleColorRampEntity
+
+.. autoclass:: qgis.core.QgsStyleColorRampEntity
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsStyleColorRampEntity
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsStyleColorRampEntity
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsStyleColorRampEntity
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsStyleColorRampEntity
+        :attributes:
+

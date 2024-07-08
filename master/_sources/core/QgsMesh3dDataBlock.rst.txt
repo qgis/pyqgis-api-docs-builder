@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsMesh3dDataBlock
+...............................................
+
+.. py:module:: QgsMesh3dDataBlock
+
+.. autoclass:: qgis.core.QgsMesh3dDataBlock
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsMesh3dDataBlock
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMesh3dDataBlock
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMesh3dDataBlock
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMesh3dDataBlock
+        :attributes:
+

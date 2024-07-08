@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsPenCapStyleComboBox
+...............................................
+
+.. py:module:: QgsPenCapStyleComboBox
+
+.. autoclass:: qgis.gui.QgsPenCapStyleComboBox
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsPenCapStyleComboBox
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsPenCapStyleComboBox
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsPenCapStyleComboBox
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsPenCapStyleComboBox
+        :attributes:
+

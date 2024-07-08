@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsVectorLayerTemporalPropertiesWidget
+...............................................
+
+.. py:module:: QgsVectorLayerTemporalPropertiesWidget
+
+.. autoclass:: qgis.gui.QgsVectorLayerTemporalPropertiesWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsVectorLayerTemporalPropertiesWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsVectorLayerTemporalPropertiesWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsVectorLayerTemporalPropertiesWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsVectorLayerTemporalPropertiesWidget
+        :attributes:
+

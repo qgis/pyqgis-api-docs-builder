@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsRay3D
+...............................................
+
+.. py:module:: QgsRay3D
+
+.. autoclass:: qgis.core.QgsRay3D
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsRay3D
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRay3D
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRay3D
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRay3D
+        :attributes:
+

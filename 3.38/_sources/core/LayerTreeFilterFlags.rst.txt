@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: LayerTreeFilterFlags
+...............................................
+
+.. py:module:: LayerTreeFilterFlags
+
+.. autoclass:: qgis.core.LayerTreeFilterFlags
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.LayerTreeFilterFlags
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.LayerTreeFilterFlags
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.LayerTreeFilterFlags
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.LayerTreeFilterFlags
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsProcessingParameterMultipleLayers
+...............................................
+
+.. py:module:: QgsProcessingParameterMultipleLayers
+
+.. autoclass:: qgis.core.QgsProcessingParameterMultipleLayers
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterMultipleLayers
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterMultipleLayers
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterMultipleLayers
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterMultipleLayers
+        :attributes:
+

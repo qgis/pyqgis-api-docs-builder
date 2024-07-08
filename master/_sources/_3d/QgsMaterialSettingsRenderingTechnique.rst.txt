@@ -1,0 +1,27 @@
+.. package: qgis\._3d
+
+Class: QgsMaterialSettingsRenderingTechnique
+...............................................
+
+.. py:module:: QgsMaterialSettingsRenderingTechnique
+
+.. autoclass:: qgis._3d.QgsMaterialSettingsRenderingTechnique
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis._3d.QgsMaterialSettingsRenderingTechnique
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis._3d.QgsMaterialSettingsRenderingTechnique
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis._3d.QgsMaterialSettingsRenderingTechnique
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis._3d.QgsMaterialSettingsRenderingTechnique
+        :attributes:
+

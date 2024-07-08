@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsTaskWrapper
+...............................................
+
+.. py:module:: QgsTaskWrapper
+
+.. autoclass:: qgis.core.QgsTaskWrapper
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsTaskWrapper
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTaskWrapper
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTaskWrapper
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTaskWrapper
+        :attributes:
+

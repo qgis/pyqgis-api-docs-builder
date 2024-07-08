@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsSettingsBoolEditorWidgetWrapper
+...............................................
+
+.. py:module:: QgsSettingsBoolEditorWidgetWrapper
+
+.. autoclass:: qgis.gui.QgsSettingsBoolEditorWidgetWrapper
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsSettingsBoolEditorWidgetWrapper
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSettingsBoolEditorWidgetWrapper
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSettingsBoolEditorWidgetWrapper
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSettingsBoolEditorWidgetWrapper
+        :attributes:
+

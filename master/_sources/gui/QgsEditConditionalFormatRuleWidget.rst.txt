@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsEditConditionalFormatRuleWidget
+...............................................
+
+.. py:module:: QgsEditConditionalFormatRuleWidget
+
+.. autoclass:: qgis.gui.QgsEditConditionalFormatRuleWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsEditConditionalFormatRuleWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsEditConditionalFormatRuleWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsEditConditionalFormatRuleWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsEditConditionalFormatRuleWidget
+        :attributes:
+

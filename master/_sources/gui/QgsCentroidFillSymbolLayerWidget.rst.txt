@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsCentroidFillSymbolLayerWidget
+...............................................
+
+.. py:module:: QgsCentroidFillSymbolLayerWidget
+
+.. autoclass:: qgis.gui.QgsCentroidFillSymbolLayerWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsCentroidFillSymbolLayerWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsCentroidFillSymbolLayerWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsCentroidFillSymbolLayerWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsCentroidFillSymbolLayerWidget
+        :attributes:
+

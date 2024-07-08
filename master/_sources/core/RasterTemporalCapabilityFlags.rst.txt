@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: RasterTemporalCapabilityFlags
+...............................................
+
+.. py:module:: RasterTemporalCapabilityFlags
+
+.. autoclass:: qgis.core.RasterTemporalCapabilityFlags
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.RasterTemporalCapabilityFlags
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.RasterTemporalCapabilityFlags
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.RasterTemporalCapabilityFlags
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.RasterTemporalCapabilityFlags
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsMapLayerActionRegistry
+...............................................
+
+.. py:module:: QgsMapLayerActionRegistry
+
+.. autoclass:: qgis.gui.QgsMapLayerActionRegistry
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsMapLayerActionRegistry
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMapLayerActionRegistry
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMapLayerActionRegistry
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMapLayerActionRegistry
+        :attributes:
+

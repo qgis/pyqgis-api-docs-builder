@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: edit
+...............................................
+
+.. py:module:: edit
+
+.. autoclass:: qgis.core.edit
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.edit
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.edit
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.edit
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.edit
+        :attributes:
+

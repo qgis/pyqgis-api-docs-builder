@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsShortcutsManager
+...............................................
+
+.. py:module:: QgsShortcutsManager
+
+.. autoclass:: qgis.gui.QgsShortcutsManager
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsShortcutsManager
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsShortcutsManager
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsShortcutsManager
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsShortcutsManager
+        :attributes:
+

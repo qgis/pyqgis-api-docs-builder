@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsBlurWidget
+...............................................
+
+.. py:module:: QgsBlurWidget
+
+.. autoclass:: qgis.gui.QgsBlurWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsBlurWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsBlurWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsBlurWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsBlurWidget
+        :attributes:
+

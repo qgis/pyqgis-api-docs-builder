@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsAttributeFormRelationEditorWidget
+...............................................
+
+.. py:module:: QgsAttributeFormRelationEditorWidget
+
+.. autoclass:: qgis.gui.QgsAttributeFormRelationEditorWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsAttributeFormRelationEditorWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAttributeFormRelationEditorWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAttributeFormRelationEditorWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAttributeFormRelationEditorWidget
+        :attributes:
+

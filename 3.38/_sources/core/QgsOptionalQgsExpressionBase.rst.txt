@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsOptionalQgsExpressionBase
+...............................................
+
+.. py:module:: QgsOptionalQgsExpressionBase
+
+.. autoclass:: qgis.core.QgsOptionalQgsExpressionBase
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsOptionalQgsExpressionBase
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsOptionalQgsExpressionBase
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsOptionalQgsExpressionBase
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsOptionalQgsExpressionBase
+        :attributes:
+

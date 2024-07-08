@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsProcessingParameterFolderDestination
+...............................................
+
+.. py:module:: QgsProcessingParameterFolderDestination
+
+.. autoclass:: qgis.core.QgsProcessingParameterFolderDestination
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterFolderDestination
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterFolderDestination
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterFolderDestination
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterFolderDestination
+        :attributes:
+

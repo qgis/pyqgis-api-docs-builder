@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsFeatureRendererGenerator
+...............................................
+
+.. py:module:: QgsFeatureRendererGenerator
+
+.. autoclass:: qgis.core.QgsFeatureRendererGenerator
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsFeatureRendererGenerator
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsFeatureRendererGenerator
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsFeatureRendererGenerator
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsFeatureRendererGenerator
+        :attributes:
+

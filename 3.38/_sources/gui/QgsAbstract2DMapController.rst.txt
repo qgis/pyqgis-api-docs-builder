@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsAbstract2DMapController
+...............................................
+
+.. py:module:: QgsAbstract2DMapController
+
+.. autoclass:: qgis.gui.QgsAbstract2DMapController
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsAbstract2DMapController
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAbstract2DMapController
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAbstract2DMapController
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAbstract2DMapController
+        :attributes:
+

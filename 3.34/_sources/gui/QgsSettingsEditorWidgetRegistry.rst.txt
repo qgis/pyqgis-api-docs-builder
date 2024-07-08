@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsSettingsEditorWidgetRegistry
+...............................................
+
+.. py:module:: QgsSettingsEditorWidgetRegistry
+
+.. autoclass:: qgis.gui.QgsSettingsEditorWidgetRegistry
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsSettingsEditorWidgetRegistry
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSettingsEditorWidgetRegistry
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSettingsEditorWidgetRegistry
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSettingsEditorWidgetRegistry
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsTextBackgroundSettings
+...............................................
+
+.. py:module:: QgsTextBackgroundSettings
+
+.. autoclass:: qgis.core.QgsTextBackgroundSettings
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsTextBackgroundSettings
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTextBackgroundSettings
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTextBackgroundSettings
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTextBackgroundSettings
+        :attributes:
+

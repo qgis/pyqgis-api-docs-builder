@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsProcessingParameterDxfLayers
+...............................................
+
+.. py:module:: QgsProcessingParameterDxfLayers
+
+.. autoclass:: qgis.core.QgsProcessingParameterDxfLayers
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterDxfLayers
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterDxfLayers
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterDxfLayers
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterDxfLayers
+        :attributes:
+

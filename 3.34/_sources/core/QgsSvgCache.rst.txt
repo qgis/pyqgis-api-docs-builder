@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsSvgCache
+...............................................
+
+.. py:module:: QgsSvgCache
+
+.. autoclass:: qgis.core.QgsSvgCache
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsSvgCache
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSvgCache
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSvgCache
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSvgCache
+        :attributes:
+

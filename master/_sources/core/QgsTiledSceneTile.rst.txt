@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsTiledSceneTile
+...............................................
+
+.. py:module:: QgsTiledSceneTile
+
+.. autoclass:: qgis.core.QgsTiledSceneTile
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsTiledSceneTile
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTiledSceneTile
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTiledSceneTile
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTiledSceneTile
+        :attributes:
+

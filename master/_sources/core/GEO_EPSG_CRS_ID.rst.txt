@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: GEO_EPSG_CRS_ID
+...............................................
+
+.. py:module:: GEO_EPSG_CRS_ID
+
+.. autoclass:: qgis.core.GEO_EPSG_CRS_ID
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.GEO_EPSG_CRS_ID
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.GEO_EPSG_CRS_ID
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.GEO_EPSG_CRS_ID
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.GEO_EPSG_CRS_ID
+        :attributes:
+

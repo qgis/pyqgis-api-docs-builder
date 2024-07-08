@@ -1,0 +1,27 @@
+.. package: qgis\.analysis
+
+Class: QgsFeaturePool
+...............................................
+
+.. py:module:: QgsFeaturePool
+
+.. autoclass:: qgis.analysis.QgsFeaturePool
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.analysis.QgsFeaturePool
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsFeaturePool
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsFeaturePool
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsFeaturePool
+        :attributes:
+

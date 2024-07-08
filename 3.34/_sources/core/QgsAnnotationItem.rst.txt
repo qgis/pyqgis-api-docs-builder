@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsAnnotationItem
+...............................................
+
+.. py:module:: QgsAnnotationItem
+
+.. autoclass:: qgis.core.QgsAnnotationItem
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsAnnotationItem
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsAnnotationItem
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsAnnotationItem
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsAnnotationItem
+        :attributes:
+

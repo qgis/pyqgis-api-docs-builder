@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsValueMapFieldFormatter
+...............................................
+
+.. py:module:: QgsValueMapFieldFormatter
+
+.. autoclass:: qgis.core.QgsValueMapFieldFormatter
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsValueMapFieldFormatter
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsValueMapFieldFormatter
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsValueMapFieldFormatter
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsValueMapFieldFormatter
+        :attributes:
+

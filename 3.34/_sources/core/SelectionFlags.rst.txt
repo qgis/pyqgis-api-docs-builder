@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: SelectionFlags
+...............................................
+
+.. py:module:: SelectionFlags
+
+.. autoclass:: qgis.core.SelectionFlags
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.SelectionFlags
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.SelectionFlags
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.SelectionFlags
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.SelectionFlags
+        :attributes:
+

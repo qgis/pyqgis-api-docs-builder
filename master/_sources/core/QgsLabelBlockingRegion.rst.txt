@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsLabelBlockingRegion
+...............................................
+
+.. py:module:: QgsLabelBlockingRegion
+
+.. autoclass:: qgis.core.QgsLabelBlockingRegion
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsLabelBlockingRegion
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLabelBlockingRegion
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLabelBlockingRegion
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLabelBlockingRegion
+        :attributes:
+

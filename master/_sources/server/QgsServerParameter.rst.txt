@@ -1,0 +1,27 @@
+.. package: qgis\.server
+
+Class: QgsServerParameter
+...............................................
+
+.. py:module:: QgsServerParameter
+
+.. autoclass:: qgis.server.QgsServerParameter
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.server.QgsServerParameter
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.server.QgsServerParameter
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.server.QgsServerParameter
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.server.QgsServerParameter
+        :attributes:
+

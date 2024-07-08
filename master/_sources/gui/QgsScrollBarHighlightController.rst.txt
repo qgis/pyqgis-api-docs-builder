@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsScrollBarHighlightController
+...............................................
+
+.. py:module:: QgsScrollBarHighlightController
+
+.. autoclass:: qgis.gui.QgsScrollBarHighlightController
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsScrollBarHighlightController
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsScrollBarHighlightController
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsScrollBarHighlightController
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsScrollBarHighlightController
+        :attributes:
+

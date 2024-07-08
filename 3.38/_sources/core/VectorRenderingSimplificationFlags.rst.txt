@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: VectorRenderingSimplificationFlags
+...............................................
+
+.. py:module:: VectorRenderingSimplificationFlags
+
+.. autoclass:: qgis.core.VectorRenderingSimplificationFlags
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.VectorRenderingSimplificationFlags
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.VectorRenderingSimplificationFlags
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.VectorRenderingSimplificationFlags
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.VectorRenderingSimplificationFlags
+        :attributes:
+

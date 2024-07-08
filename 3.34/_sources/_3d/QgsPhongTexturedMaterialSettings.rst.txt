@@ -1,0 +1,27 @@
+.. package: qgis\._3d
+
+Class: QgsPhongTexturedMaterialSettings
+...............................................
+
+.. py:module:: QgsPhongTexturedMaterialSettings
+
+.. autoclass:: qgis._3d.QgsPhongTexturedMaterialSettings
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis._3d.QgsPhongTexturedMaterialSettings
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis._3d.QgsPhongTexturedMaterialSettings
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis._3d.QgsPhongTexturedMaterialSettings
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis._3d.QgsPhongTexturedMaterialSettings
+        :attributes:
+

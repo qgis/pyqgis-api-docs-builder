@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsMergedFeatureRenderer
+...............................................
+
+.. py:module:: QgsMergedFeatureRenderer
+
+.. autoclass:: qgis.core.QgsMergedFeatureRenderer
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsMergedFeatureRenderer
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMergedFeatureRenderer
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMergedFeatureRenderer
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMergedFeatureRenderer
+        :attributes:
+

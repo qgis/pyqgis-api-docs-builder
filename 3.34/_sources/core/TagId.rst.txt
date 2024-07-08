@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: TagId
+...............................................
+
+.. py:module:: TagId
+
+.. autoclass:: qgis.core.TagId
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.TagId
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.TagId
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.TagId
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.TagId
+        :attributes:
+

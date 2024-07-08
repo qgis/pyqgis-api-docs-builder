@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: ZonalStatistics
+...............................................
+
+.. py:module:: ZonalStatistics
+
+.. autoclass:: qgis.core.ZonalStatistics
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.ZonalStatistics
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.ZonalStatistics
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.ZonalStatistics
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.ZonalStatistics
+        :attributes:
+

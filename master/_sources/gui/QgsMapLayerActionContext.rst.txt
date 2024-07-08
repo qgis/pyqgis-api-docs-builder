@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsMapLayerActionContext
+...............................................
+
+.. py:module:: QgsMapLayerActionContext
+
+.. autoclass:: qgis.gui.QgsMapLayerActionContext
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsMapLayerActionContext
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMapLayerActionContext
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMapLayerActionContext
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMapLayerActionContext
+        :attributes:
+

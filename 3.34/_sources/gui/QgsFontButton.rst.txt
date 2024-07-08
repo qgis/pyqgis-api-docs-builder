@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsFontButton
+...............................................
+
+.. py:module:: QgsFontButton
+
+.. autoclass:: qgis.gui.QgsFontButton
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsFontButton
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsFontButton
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsFontButton
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsFontButton
+        :attributes:
+

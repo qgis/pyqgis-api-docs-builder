@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsNewsFeedProxyModel
+...............................................
+
+.. py:module:: QgsNewsFeedProxyModel
+
+.. autoclass:: qgis.core.QgsNewsFeedProxyModel
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsNewsFeedProxyModel
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsNewsFeedProxyModel
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsNewsFeedProxyModel
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsNewsFeedProxyModel
+        :attributes:
+

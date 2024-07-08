@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsFieldFormatterContext
+...............................................
+
+.. py:module:: QgsFieldFormatterContext
+
+.. autoclass:: qgis.core.QgsFieldFormatterContext
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsFieldFormatterContext
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsFieldFormatterContext
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsFieldFormatterContext
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsFieldFormatterContext
+        :attributes:
+

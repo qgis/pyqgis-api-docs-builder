@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsInvertedPolygonRenderer
+...............................................
+
+.. py:module:: QgsInvertedPolygonRenderer
+
+.. autoclass:: qgis.core.QgsInvertedPolygonRenderer
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsInvertedPolygonRenderer
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsInvertedPolygonRenderer
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsInvertedPolygonRenderer
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsInvertedPolygonRenderer
+        :attributes:
+

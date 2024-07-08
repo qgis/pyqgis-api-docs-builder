@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsLayoutItemMapAtlasClippingSettings
+...............................................
+
+.. py:module:: QgsLayoutItemMapAtlasClippingSettings
+
+.. autoclass:: qgis.core.QgsLayoutItemMapAtlasClippingSettings
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsLayoutItemMapAtlasClippingSettings
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutItemMapAtlasClippingSettings
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutItemMapAtlasClippingSettings
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutItemMapAtlasClippingSettings
+        :attributes:
+

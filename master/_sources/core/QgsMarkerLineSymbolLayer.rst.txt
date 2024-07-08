@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsMarkerLineSymbolLayer
+...............................................
+
+.. py:module:: QgsMarkerLineSymbolLayer
+
+.. autoclass:: qgis.core.QgsMarkerLineSymbolLayer
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsMarkerLineSymbolLayer
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMarkerLineSymbolLayer
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMarkerLineSymbolLayer
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMarkerLineSymbolLayer
+        :attributes:
+

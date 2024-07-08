@@ -1,0 +1,27 @@
+.. package: qgis\.analysis
+
+Class: QgsRasterMatrix
+...............................................
+
+.. py:module:: QgsRasterMatrix
+
+.. autoclass:: qgis.analysis.QgsRasterMatrix
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.analysis.QgsRasterMatrix
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsRasterMatrix
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsRasterMatrix
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsRasterMatrix
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsExpressionNodeInOperator
+...............................................
+
+.. py:module:: QgsExpressionNodeInOperator
+
+.. autoclass:: qgis.core.QgsExpressionNodeInOperator
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsExpressionNodeInOperator
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsExpressionNodeInOperator
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsExpressionNodeInOperator
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsExpressionNodeInOperator
+        :attributes:
+

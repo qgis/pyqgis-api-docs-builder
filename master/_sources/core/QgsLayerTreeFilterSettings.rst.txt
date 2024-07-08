@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsLayerTreeFilterSettings
+...............................................
+
+.. py:module:: QgsLayerTreeFilterSettings
+
+.. autoclass:: qgis.core.QgsLayerTreeFilterSettings
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsLayerTreeFilterSettings
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayerTreeFilterSettings
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayerTreeFilterSettings
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayerTreeFilterSettings
+        :attributes:
+

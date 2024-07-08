@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsRuntimeProfiler
+...............................................
+
+.. py:module:: QgsRuntimeProfiler
+
+.. autoclass:: qgis.core.QgsRuntimeProfiler
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsRuntimeProfiler
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRuntimeProfiler
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRuntimeProfiler
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRuntimeProfiler
+        :attributes:
+

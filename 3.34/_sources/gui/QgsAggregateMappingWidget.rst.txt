@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsAggregateMappingWidget
+...............................................
+
+.. py:module:: QgsAggregateMappingWidget
+
+.. autoclass:: qgis.gui.QgsAggregateMappingWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsAggregateMappingWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAggregateMappingWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAggregateMappingWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAggregateMappingWidget
+        :attributes:
+

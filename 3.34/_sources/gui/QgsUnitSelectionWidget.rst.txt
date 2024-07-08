@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsUnitSelectionWidget
+...............................................
+
+.. py:module:: QgsUnitSelectionWidget
+
+.. autoclass:: qgis.gui.QgsUnitSelectionWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsUnitSelectionWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsUnitSelectionWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsUnitSelectionWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsUnitSelectionWidget
+        :attributes:
+

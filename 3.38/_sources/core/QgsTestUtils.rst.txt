@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsTestUtils
+...............................................
+
+.. py:module:: QgsTestUtils
+
+.. autoclass:: qgis.core.QgsTestUtils
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsTestUtils
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTestUtils
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTestUtils
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTestUtils
+        :attributes:
+

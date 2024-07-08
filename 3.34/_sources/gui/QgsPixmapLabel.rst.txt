@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsPixmapLabel
+...............................................
+
+.. py:module:: QgsPixmapLabel
+
+.. autoclass:: qgis.gui.QgsPixmapLabel
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsPixmapLabel
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsPixmapLabel
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsPixmapLabel
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsPixmapLabel
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsClassificationStandardDeviation
+...............................................
+
+.. py:module:: QgsClassificationStandardDeviation
+
+.. autoclass:: qgis.core.QgsClassificationStandardDeviation
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsClassificationStandardDeviation
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsClassificationStandardDeviation
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsClassificationStandardDeviation
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsClassificationStandardDeviation
+        :attributes:
+

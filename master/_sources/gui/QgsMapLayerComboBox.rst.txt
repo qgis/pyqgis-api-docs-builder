@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsMapLayerComboBox
+...............................................
+
+.. py:module:: QgsMapLayerComboBox
+
+.. autoclass:: qgis.gui.QgsMapLayerComboBox
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsMapLayerComboBox
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMapLayerComboBox
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMapLayerComboBox
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMapLayerComboBox
+        :attributes:
+

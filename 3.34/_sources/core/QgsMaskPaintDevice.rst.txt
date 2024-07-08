@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsMaskPaintDevice
+...............................................
+
+.. py:module:: QgsMaskPaintDevice
+
+.. autoclass:: qgis.core.QgsMaskPaintDevice
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsMaskPaintDevice
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMaskPaintDevice
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMaskPaintDevice
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMaskPaintDevice
+        :attributes:
+

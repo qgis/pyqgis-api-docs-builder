@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsStyleLegendPatchShapeEntity
+...............................................
+
+.. py:module:: QgsStyleLegendPatchShapeEntity
+
+.. autoclass:: qgis.core.QgsStyleLegendPatchShapeEntity
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsStyleLegendPatchShapeEntity
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsStyleLegendPatchShapeEntity
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsStyleLegendPatchShapeEntity
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsStyleLegendPatchShapeEntity
+        :attributes:
+

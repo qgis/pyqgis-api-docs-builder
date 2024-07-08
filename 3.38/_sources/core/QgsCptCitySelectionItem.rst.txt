@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsCptCitySelectionItem
+...............................................
+
+.. py:module:: QgsCptCitySelectionItem
+
+.. autoclass:: qgis.core.QgsCptCitySelectionItem
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsCptCitySelectionItem
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsCptCitySelectionItem
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsCptCitySelectionItem
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsCptCitySelectionItem
+        :attributes:
+

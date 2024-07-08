@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsBearingUtils
+...............................................
+
+.. py:module:: QgsBearingUtils
+
+.. autoclass:: qgis.core.QgsBearingUtils
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsBearingUtils
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsBearingUtils
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsBearingUtils
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsBearingUtils
+        :attributes:
+

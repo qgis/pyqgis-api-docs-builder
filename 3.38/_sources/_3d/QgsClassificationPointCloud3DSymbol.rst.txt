@@ -1,0 +1,27 @@
+.. package: qgis\._3d
+
+Class: QgsClassificationPointCloud3DSymbol
+...............................................
+
+.. py:module:: QgsClassificationPointCloud3DSymbol
+
+.. autoclass:: qgis._3d.QgsClassificationPointCloud3DSymbol
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis._3d.QgsClassificationPointCloud3DSymbol
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis._3d.QgsClassificationPointCloud3DSymbol
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis._3d.QgsClassificationPointCloud3DSymbol
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis._3d.QgsClassificationPointCloud3DSymbol
+        :attributes:
+

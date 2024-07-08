@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: BabelCommandFlags
+...............................................
+
+.. py:module:: BabelCommandFlags
+
+.. autoclass:: qgis.core.BabelCommandFlags
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.BabelCommandFlags
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.BabelCommandFlags
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.BabelCommandFlags
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.BabelCommandFlags
+        :attributes:
+

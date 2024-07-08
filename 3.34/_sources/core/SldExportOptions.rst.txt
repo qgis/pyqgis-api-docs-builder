@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: SldExportOptions
+...............................................
+
+.. py:module:: SldExportOptions
+
+.. autoclass:: qgis.core.SldExportOptions
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.SldExportOptions
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.SldExportOptions
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.SldExportOptions
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.SldExportOptions
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsAbstractPointCloud3DRenderer
+...............................................
+
+.. py:module:: QgsAbstractPointCloud3DRenderer
+
+.. autoclass:: qgis.core.QgsAbstractPointCloud3DRenderer
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsAbstractPointCloud3DRenderer
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsAbstractPointCloud3DRenderer
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsAbstractPointCloud3DRenderer
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsAbstractPointCloud3DRenderer
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsRelationshipsItem
+...............................................
+
+.. py:module:: QgsRelationshipsItem
+
+.. autoclass:: qgis.core.QgsRelationshipsItem
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsRelationshipsItem
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRelationshipsItem
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRelationshipsItem
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRelationshipsItem
+        :attributes:
+

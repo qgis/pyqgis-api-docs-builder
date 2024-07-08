@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsRasterSingleColorRenderer
+...............................................
+
+.. py:module:: QgsRasterSingleColorRenderer
+
+.. autoclass:: qgis.core.QgsRasterSingleColorRenderer
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsRasterSingleColorRenderer
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRasterSingleColorRenderer
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRasterSingleColorRenderer
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRasterSingleColorRenderer
+        :attributes:
+

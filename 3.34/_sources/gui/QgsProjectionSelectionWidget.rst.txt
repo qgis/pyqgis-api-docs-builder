@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsProjectionSelectionWidget
+...............................................
+
+.. py:module:: QgsProjectionSelectionWidget
+
+.. autoclass:: qgis.gui.QgsProjectionSelectionWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsProjectionSelectionWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProjectionSelectionWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProjectionSelectionWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProjectionSelectionWidget
+        :attributes:
+

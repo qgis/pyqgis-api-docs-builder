@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsLayoutItemMapItemStack
+...............................................
+
+.. py:module:: QgsLayoutItemMapItemStack
+
+.. autoclass:: qgis.core.QgsLayoutItemMapItemStack
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsLayoutItemMapItemStack
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutItemMapItemStack
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutItemMapItemStack
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutItemMapItemStack
+        :attributes:
+

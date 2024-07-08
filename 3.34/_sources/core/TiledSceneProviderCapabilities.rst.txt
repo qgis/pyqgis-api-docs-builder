@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: TiledSceneProviderCapabilities
+...............................................
+
+.. py:module:: TiledSceneProviderCapabilities
+
+.. autoclass:: qgis.core.TiledSceneProviderCapabilities
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.TiledSceneProviderCapabilities
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.TiledSceneProviderCapabilities
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.TiledSceneProviderCapabilities
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.TiledSceneProviderCapabilities
+        :attributes:
+

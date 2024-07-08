@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsLayerTreeView
+...............................................
+
+.. py:module:: QgsLayerTreeView
+
+.. autoclass:: qgis.gui.QgsLayerTreeView
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsLayerTreeView
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayerTreeView
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayerTreeView
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayerTreeView
+        :attributes:
+

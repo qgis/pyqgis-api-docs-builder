@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: LayerFlags
+...............................................
+
+.. py:module:: LayerFlags
+
+.. autoclass:: qgis.core.LayerFlags
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.LayerFlags
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.LayerFlags
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.LayerFlags
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.LayerFlags
+        :attributes:
+

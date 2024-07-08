@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsVectorTileLabeling
+...............................................
+
+.. py:module:: QgsVectorTileLabeling
+
+.. autoclass:: qgis.core.QgsVectorTileLabeling
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsVectorTileLabeling
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVectorTileLabeling
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVectorTileLabeling
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVectorTileLabeling
+        :attributes:
+

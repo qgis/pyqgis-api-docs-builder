@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: RasterBandStatistics
+...............................................
+
+.. py:module:: RasterBandStatistics
+
+.. autoclass:: qgis.core.RasterBandStatistics
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.RasterBandStatistics
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.RasterBandStatistics
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.RasterBandStatistics
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.RasterBandStatistics
+        :attributes:
+

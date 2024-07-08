@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsMesh3DAveragingMethod
+...............................................
+
+.. py:module:: QgsMesh3DAveragingMethod
+
+.. autoclass:: qgis.core.QgsMesh3DAveragingMethod
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsMesh3DAveragingMethod
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMesh3DAveragingMethod
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMesh3DAveragingMethod
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMesh3DAveragingMethod
+        :attributes:
+

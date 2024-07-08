@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsGraduatedSymbolRenderer
+...............................................
+
+.. py:module:: QgsGraduatedSymbolRenderer
+
+.. autoclass:: qgis.core.QgsGraduatedSymbolRenderer
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsGraduatedSymbolRenderer
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsGraduatedSymbolRenderer
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsGraduatedSymbolRenderer
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsGraduatedSymbolRenderer
+        :attributes:
+

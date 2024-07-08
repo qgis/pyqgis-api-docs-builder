@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsTiledSceneRendererPropertiesWidget
+...............................................
+
+.. py:module:: QgsTiledSceneRendererPropertiesWidget
+
+.. autoclass:: qgis.gui.QgsTiledSceneRendererPropertiesWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsTiledSceneRendererPropertiesWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsTiledSceneRendererPropertiesWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsTiledSceneRendererPropertiesWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsTiledSceneRendererPropertiesWidget
+        :attributes:
+

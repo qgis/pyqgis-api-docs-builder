@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsWindowManagerInterface
+...............................................
+
+.. py:module:: QgsWindowManagerInterface
+
+.. autoclass:: qgis.gui.QgsWindowManagerInterface
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsWindowManagerInterface
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsWindowManagerInterface
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsWindowManagerInterface
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsWindowManagerInterface
+        :attributes:
+

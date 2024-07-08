@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsMapCanvasSnappingUtils
+...............................................
+
+.. py:module:: QgsMapCanvasSnappingUtils
+
+.. autoclass:: qgis.gui.QgsMapCanvasSnappingUtils
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsMapCanvasSnappingUtils
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMapCanvasSnappingUtils
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMapCanvasSnappingUtils
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMapCanvasSnappingUtils
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsDataItemProvider
+...............................................
+
+.. py:module:: QgsDataItemProvider
+
+.. autoclass:: qgis.core.QgsDataItemProvider
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsDataItemProvider
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDataItemProvider
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDataItemProvider
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDataItemProvider
+        :attributes:
+

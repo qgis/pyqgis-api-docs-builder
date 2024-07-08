@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsStyleTextFormatEntity
+...............................................
+
+.. py:module:: QgsStyleTextFormatEntity
+
+.. autoclass:: qgis.core.QgsStyleTextFormatEntity
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsStyleTextFormatEntity
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsStyleTextFormatEntity
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsStyleTextFormatEntity
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsStyleTextFormatEntity
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsEmbeddedSymbolRendererWidget
+...............................................
+
+.. py:module:: QgsEmbeddedSymbolRendererWidget
+
+.. autoclass:: qgis.gui.QgsEmbeddedSymbolRendererWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsEmbeddedSymbolRendererWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsEmbeddedSymbolRendererWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsEmbeddedSymbolRendererWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsEmbeddedSymbolRendererWidget
+        :attributes:
+

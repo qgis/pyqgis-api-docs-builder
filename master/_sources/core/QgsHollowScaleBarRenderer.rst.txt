@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsHollowScaleBarRenderer
+...............................................
+
+.. py:module:: QgsHollowScaleBarRenderer
+
+.. autoclass:: qgis.core.QgsHollowScaleBarRenderer
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsHollowScaleBarRenderer
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsHollowScaleBarRenderer
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsHollowScaleBarRenderer
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsHollowScaleBarRenderer
+        :attributes:
+

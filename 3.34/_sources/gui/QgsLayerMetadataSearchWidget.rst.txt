@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsLayerMetadataSearchWidget
+...............................................
+
+.. py:module:: QgsLayerMetadataSearchWidget
+
+.. autoclass:: qgis.gui.QgsLayerMetadataSearchWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsLayerMetadataSearchWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayerMetadataSearchWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayerMetadataSearchWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayerMetadataSearchWidget
+        :attributes:
+

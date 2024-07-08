@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsDartMeasurement
+...............................................
+
+.. py:module:: QgsDartMeasurement
+
+.. autoclass:: qgis.core.QgsDartMeasurement
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsDartMeasurement
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDartMeasurement
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDartMeasurement
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDartMeasurement
+        :attributes:
+

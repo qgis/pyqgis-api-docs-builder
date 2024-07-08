@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsRecentCoordinateReferenceSystemsProxyModel
+...............................................
+
+.. py:module:: QgsRecentCoordinateReferenceSystemsProxyModel
+
+.. autoclass:: qgis.gui.QgsRecentCoordinateReferenceSystemsProxyModel
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsRecentCoordinateReferenceSystemsProxyModel
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsRecentCoordinateReferenceSystemsProxyModel
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsRecentCoordinateReferenceSystemsProxyModel
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsRecentCoordinateReferenceSystemsProxyModel
+        :attributes:
+

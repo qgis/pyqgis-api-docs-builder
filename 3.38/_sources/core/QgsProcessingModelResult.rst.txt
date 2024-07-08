@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsProcessingModelResult
+...............................................
+
+.. py:module:: QgsProcessingModelResult
+
+.. autoclass:: qgis.core.QgsProcessingModelResult
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsProcessingModelResult
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingModelResult
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingModelResult
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingModelResult
+        :attributes:
+

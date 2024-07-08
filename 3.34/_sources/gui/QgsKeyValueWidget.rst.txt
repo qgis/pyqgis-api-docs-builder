@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsKeyValueWidget
+...............................................
+
+.. py:module:: QgsKeyValueWidget
+
+.. autoclass:: qgis.gui.QgsKeyValueWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsKeyValueWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsKeyValueWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsKeyValueWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsKeyValueWidget
+        :attributes:
+

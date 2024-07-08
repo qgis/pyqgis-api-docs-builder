@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: BrowserItemCapabilities
+...............................................
+
+.. py:module:: BrowserItemCapabilities
+
+.. autoclass:: qgis.core.BrowserItemCapabilities
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.BrowserItemCapabilities
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.BrowserItemCapabilities
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.BrowserItemCapabilities
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.BrowserItemCapabilities
+        :attributes:
+

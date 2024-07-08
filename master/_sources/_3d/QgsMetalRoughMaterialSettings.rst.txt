@@ -1,0 +1,27 @@
+.. package: qgis\._3d
+
+Class: QgsMetalRoughMaterialSettings
+...............................................
+
+.. py:module:: QgsMetalRoughMaterialSettings
+
+.. autoclass:: qgis._3d.QgsMetalRoughMaterialSettings
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis._3d.QgsMetalRoughMaterialSettings
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis._3d.QgsMetalRoughMaterialSettings
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis._3d.QgsMetalRoughMaterialSettings
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis._3d.QgsMetalRoughMaterialSettings
+        :attributes:
+

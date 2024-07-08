@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsAuthTrustedCAsDialog
+...............................................
+
+.. py:module:: QgsAuthTrustedCAsDialog
+
+.. autoclass:: qgis.gui.QgsAuthTrustedCAsDialog
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsAuthTrustedCAsDialog
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAuthTrustedCAsDialog
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAuthTrustedCAsDialog
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAuthTrustedCAsDialog
+        :attributes:
+

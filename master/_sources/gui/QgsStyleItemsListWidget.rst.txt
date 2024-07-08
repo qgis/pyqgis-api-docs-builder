@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsStyleItemsListWidget
+...............................................
+
+.. py:module:: QgsStyleItemsListWidget
+
+.. autoclass:: qgis.gui.QgsStyleItemsListWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsStyleItemsListWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsStyleItemsListWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsStyleItemsListWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsStyleItemsListWidget
+        :attributes:
+

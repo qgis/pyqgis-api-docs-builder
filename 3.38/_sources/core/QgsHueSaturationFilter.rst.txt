@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsHueSaturationFilter
+...............................................
+
+.. py:module:: QgsHueSaturationFilter
+
+.. autoclass:: qgis.core.QgsHueSaturationFilter
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsHueSaturationFilter
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsHueSaturationFilter
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsHueSaturationFilter
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsHueSaturationFilter
+        :attributes:
+

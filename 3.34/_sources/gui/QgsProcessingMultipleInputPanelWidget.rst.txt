@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsProcessingMultipleInputPanelWidget
+...............................................
+
+.. py:module:: QgsProcessingMultipleInputPanelWidget
+
+.. autoclass:: qgis.gui.QgsProcessingMultipleInputPanelWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsProcessingMultipleInputPanelWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProcessingMultipleInputPanelWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProcessingMultipleInputPanelWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProcessingMultipleInputPanelWidget
+        :attributes:
+

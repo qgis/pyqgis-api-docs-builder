@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsMeshEditingError
+...............................................
+
+.. py:module:: QgsMeshEditingError
+
+.. autoclass:: qgis.core.QgsMeshEditingError
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsMeshEditingError
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMeshEditingError
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMeshEditingError
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMeshEditingError
+        :attributes:
+

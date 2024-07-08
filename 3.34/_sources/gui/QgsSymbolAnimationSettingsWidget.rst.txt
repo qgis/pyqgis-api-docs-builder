@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsSymbolAnimationSettingsWidget
+...............................................
+
+.. py:module:: QgsSymbolAnimationSettingsWidget
+
+.. autoclass:: qgis.gui.QgsSymbolAnimationSettingsWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsSymbolAnimationSettingsWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSymbolAnimationSettingsWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSymbolAnimationSettingsWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSymbolAnimationSettingsWidget
+        :attributes:
+

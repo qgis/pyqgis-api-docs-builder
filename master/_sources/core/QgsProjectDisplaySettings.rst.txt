@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsProjectDisplaySettings
+...............................................
+
+.. py:module:: QgsProjectDisplaySettings
+
+.. autoclass:: qgis.core.QgsProjectDisplaySettings
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsProjectDisplaySettings
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProjectDisplaySettings
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProjectDisplaySettings
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProjectDisplaySettings
+        :attributes:
+

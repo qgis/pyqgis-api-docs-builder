@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsPageSize
+...............................................
+
+.. py:module:: QgsPageSize
+
+.. autoclass:: qgis.core.QgsPageSize
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsPageSize
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsPageSize
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsPageSize
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsPageSize
+        :attributes:
+

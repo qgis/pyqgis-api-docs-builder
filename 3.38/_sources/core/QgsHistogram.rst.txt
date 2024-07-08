@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsHistogram
+...............................................
+
+.. py:module:: QgsHistogram
+
+.. autoclass:: qgis.core.QgsHistogram
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsHistogram
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsHistogram
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsHistogram
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsHistogram
+        :attributes:
+

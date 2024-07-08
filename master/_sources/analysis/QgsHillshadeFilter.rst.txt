@@ -1,0 +1,27 @@
+.. package: qgis\.analysis
+
+Class: QgsHillshadeFilter
+...............................................
+
+.. py:module:: QgsHillshadeFilter
+
+.. autoclass:: qgis.analysis.QgsHillshadeFilter
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.analysis.QgsHillshadeFilter
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsHillshadeFilter
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsHillshadeFilter
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsHillshadeFilter
+        :attributes:
+

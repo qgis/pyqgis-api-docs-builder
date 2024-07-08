@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsLayoutViewTriangleRubberBand
+...............................................
+
+.. py:module:: QgsLayoutViewTriangleRubberBand
+
+.. autoclass:: qgis.gui.QgsLayoutViewTriangleRubberBand
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsLayoutViewTriangleRubberBand
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayoutViewTriangleRubberBand
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayoutViewTriangleRubberBand
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLayoutViewTriangleRubberBand
+        :attributes:
+

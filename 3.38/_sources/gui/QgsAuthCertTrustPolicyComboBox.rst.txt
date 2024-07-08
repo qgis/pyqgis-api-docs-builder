@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsAuthCertTrustPolicyComboBox
+...............................................
+
+.. py:module:: QgsAuthCertTrustPolicyComboBox
+
+.. autoclass:: qgis.gui.QgsAuthCertTrustPolicyComboBox
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsAuthCertTrustPolicyComboBox
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAuthCertTrustPolicyComboBox
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAuthCertTrustPolicyComboBox
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAuthCertTrustPolicyComboBox
+        :attributes:
+

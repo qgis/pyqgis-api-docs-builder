@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsLayoutItemMarker
+...............................................
+
+.. py:module:: QgsLayoutItemMarker
+
+.. autoclass:: qgis.core.QgsLayoutItemMarker
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsLayoutItemMarker
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutItemMarker
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutItemMarker
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutItemMarker
+        :attributes:
+

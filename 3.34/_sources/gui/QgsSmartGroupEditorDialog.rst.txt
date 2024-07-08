@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsSmartGroupEditorDialog
+...............................................
+
+.. py:module:: QgsSmartGroupEditorDialog
+
+.. autoclass:: qgis.gui.QgsSmartGroupEditorDialog
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsSmartGroupEditorDialog
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSmartGroupEditorDialog
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSmartGroupEditorDialog
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsSmartGroupEditorDialog
+        :attributes:
+

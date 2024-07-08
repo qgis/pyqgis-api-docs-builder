@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: ProfileGeneratorFlags
+...............................................
+
+.. py:module:: ProfileGeneratorFlags
+
+.. autoclass:: qgis.core.ProfileGeneratorFlags
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.ProfileGeneratorFlags
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.ProfileGeneratorFlags
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.ProfileGeneratorFlags
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.ProfileGeneratorFlags
+        :attributes:
+

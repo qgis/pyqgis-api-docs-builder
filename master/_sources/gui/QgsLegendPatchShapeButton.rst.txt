@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsLegendPatchShapeButton
+...............................................
+
+.. py:module:: QgsLegendPatchShapeButton
+
+.. autoclass:: qgis.gui.QgsLegendPatchShapeButton
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsLegendPatchShapeButton
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLegendPatchShapeButton
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLegendPatchShapeButton
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLegendPatchShapeButton
+        :attributes:
+

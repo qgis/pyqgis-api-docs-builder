@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsPalLabeling
+...............................................
+
+.. py:module:: QgsPalLabeling
+
+.. autoclass:: qgis.core.QgsPalLabeling
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsPalLabeling
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsPalLabeling
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsPalLabeling
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsPalLabeling
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\._3d
+
+Class: QgsVectorLayer3DRendererMetadata
+...............................................
+
+.. py:module:: QgsVectorLayer3DRendererMetadata
+
+.. autoclass:: qgis._3d.QgsVectorLayer3DRendererMetadata
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis._3d.QgsVectorLayer3DRendererMetadata
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis._3d.QgsVectorLayer3DRendererMetadata
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis._3d.QgsVectorLayer3DRendererMetadata
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis._3d.QgsVectorLayer3DRendererMetadata
+        :attributes:
+

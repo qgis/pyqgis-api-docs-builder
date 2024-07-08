@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsGeometryValidator
+...............................................
+
+.. py:module:: QgsGeometryValidator
+
+.. autoclass:: qgis.core.QgsGeometryValidator
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsGeometryValidator
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsGeometryValidator
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsGeometryValidator
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsGeometryValidator
+        :attributes:
+

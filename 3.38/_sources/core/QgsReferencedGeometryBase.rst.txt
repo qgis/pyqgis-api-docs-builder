@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsReferencedGeometryBase
+...............................................
+
+.. py:module:: QgsReferencedGeometryBase
+
+.. autoclass:: qgis.core.QgsReferencedGeometryBase
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsReferencedGeometryBase
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsReferencedGeometryBase
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsReferencedGeometryBase
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsReferencedGeometryBase
+        :attributes:
+

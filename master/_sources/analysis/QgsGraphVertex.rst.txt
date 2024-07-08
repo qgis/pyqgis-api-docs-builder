@@ -1,0 +1,27 @@
+.. package: qgis\.analysis
+
+Class: QgsGraphVertex
+...............................................
+
+.. py:module:: QgsGraphVertex
+
+.. autoclass:: qgis.analysis.QgsGraphVertex
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.analysis.QgsGraphVertex
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsGraphVertex
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsGraphVertex
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsGraphVertex
+        :attributes:
+

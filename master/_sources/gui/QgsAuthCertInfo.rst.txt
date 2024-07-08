@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsAuthCertInfo
+...............................................
+
+.. py:module:: QgsAuthCertInfo
+
+.. autoclass:: qgis.gui.QgsAuthCertInfo
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsAuthCertInfo
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAuthCertInfo
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAuthCertInfo
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAuthCertInfo
+        :attributes:
+

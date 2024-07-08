@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsProjectStorageGuiProvider
+...............................................
+
+.. py:module:: QgsProjectStorageGuiProvider
+
+.. autoclass:: qgis.gui.QgsProjectStorageGuiProvider
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsProjectStorageGuiProvider
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProjectStorageGuiProvider
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProjectStorageGuiProvider
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProjectStorageGuiProvider
+        :attributes:
+

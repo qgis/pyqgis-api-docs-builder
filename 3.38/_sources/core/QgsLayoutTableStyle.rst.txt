@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsLayoutTableStyle
+...............................................
+
+.. py:module:: QgsLayoutTableStyle
+
+.. autoclass:: qgis.core.QgsLayoutTableStyle
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsLayoutTableStyle
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutTableStyle
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutTableStyle
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutTableStyle
+        :attributes:
+

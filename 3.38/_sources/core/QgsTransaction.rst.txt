@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsTransaction
+...............................................
+
+.. py:module:: QgsTransaction
+
+.. autoclass:: qgis.core.QgsTransaction
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsTransaction
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTransaction
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTransaction
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTransaction
+        :attributes:
+

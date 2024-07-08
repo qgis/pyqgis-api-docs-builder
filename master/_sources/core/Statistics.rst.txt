@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: Statistics
+...............................................
+
+.. py:module:: Statistics
+
+.. autoclass:: qgis.core.Statistics
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.Statistics
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.Statistics
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.Statistics
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.Statistics
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsMaskRenderSettings
+...............................................
+
+.. py:module:: QgsMaskRenderSettings
+
+.. autoclass:: qgis.core.QgsMaskRenderSettings
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsMaskRenderSettings
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMaskRenderSettings
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMaskRenderSettings
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMaskRenderSettings
+        :attributes:
+

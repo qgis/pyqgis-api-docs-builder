@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsPlaybackControllerWidget
+...............................................
+
+.. py:module:: QgsPlaybackControllerWidget
+
+.. autoclass:: qgis.gui.QgsPlaybackControllerWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsPlaybackControllerWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsPlaybackControllerWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsPlaybackControllerWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsPlaybackControllerWidget
+        :attributes:
+

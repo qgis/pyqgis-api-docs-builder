@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsTextRenderer
+...............................................
+
+.. py:module:: QgsTextRenderer
+
+.. autoclass:: qgis.core.QgsTextRenderer
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsTextRenderer
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTextRenderer
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTextRenderer
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTextRenderer
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsPalettedRasterRenderer
+...............................................
+
+.. py:module:: QgsPalettedRasterRenderer
+
+.. autoclass:: qgis.core.QgsPalettedRasterRenderer
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsPalettedRasterRenderer
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsPalettedRasterRenderer
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsPalettedRasterRenderer
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsPalettedRasterRenderer
+        :attributes:
+

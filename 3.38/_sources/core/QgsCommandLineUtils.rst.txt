@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsCommandLineUtils
+...............................................
+
+.. py:module:: QgsCommandLineUtils
+
+.. autoclass:: qgis.core.QgsCommandLineUtils
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsCommandLineUtils
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsCommandLineUtils
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsCommandLineUtils
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsCommandLineUtils
+        :attributes:
+

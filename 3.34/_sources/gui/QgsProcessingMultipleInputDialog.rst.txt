@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsProcessingMultipleInputDialog
+...............................................
+
+.. py:module:: QgsProcessingMultipleInputDialog
+
+.. autoclass:: qgis.gui.QgsProcessingMultipleInputDialog
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsProcessingMultipleInputDialog
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProcessingMultipleInputDialog
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProcessingMultipleInputDialog
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProcessingMultipleInputDialog
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsNewMemoryLayerDialog
+...............................................
+
+.. py:module:: QgsNewMemoryLayerDialog
+
+.. autoclass:: qgis.gui.QgsNewMemoryLayerDialog
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsNewMemoryLayerDialog
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsNewMemoryLayerDialog
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsNewMemoryLayerDialog
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsNewMemoryLayerDialog
+        :attributes:
+

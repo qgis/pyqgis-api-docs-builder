@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsCollapsibleGroupBoxBasic
+...............................................
+
+.. py:module:: QgsCollapsibleGroupBoxBasic
+
+.. autoclass:: qgis.gui.QgsCollapsibleGroupBoxBasic
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsCollapsibleGroupBoxBasic
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsCollapsibleGroupBoxBasic
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsCollapsibleGroupBoxBasic
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsCollapsibleGroupBoxBasic
+        :attributes:
+

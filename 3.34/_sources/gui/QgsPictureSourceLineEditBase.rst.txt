@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsPictureSourceLineEditBase
+...............................................
+
+.. py:module:: QgsPictureSourceLineEditBase
+
+.. autoclass:: qgis.gui.QgsPictureSourceLineEditBase
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsPictureSourceLineEditBase
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsPictureSourceLineEditBase
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsPictureSourceLineEditBase
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsPictureSourceLineEditBase
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsImageFetcher
+...............................................
+
+.. py:module:: QgsImageFetcher
+
+.. autoclass:: qgis.core.QgsImageFetcher
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsImageFetcher
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsImageFetcher
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsImageFetcher
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsImageFetcher
+        :attributes:
+

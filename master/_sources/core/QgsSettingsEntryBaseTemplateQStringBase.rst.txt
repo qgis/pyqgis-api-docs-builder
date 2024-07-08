@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsSettingsEntryBaseTemplateQStringBase
+...............................................
+
+.. py:module:: QgsSettingsEntryBaseTemplateQStringBase
+
+.. autoclass:: qgis.core.QgsSettingsEntryBaseTemplateQStringBase
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsSettingsEntryBaseTemplateQStringBase
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSettingsEntryBaseTemplateQStringBase
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSettingsEntryBaseTemplateQStringBase
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSettingsEntryBaseTemplateQStringBase
+        :attributes:
+

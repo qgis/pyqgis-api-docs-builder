@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsRasterMarkerSymbolLayer
+...............................................
+
+.. py:module:: QgsRasterMarkerSymbolLayer
+
+.. autoclass:: qgis.core.QgsRasterMarkerSymbolLayer
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsRasterMarkerSymbolLayer
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRasterMarkerSymbolLayer
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRasterMarkerSymbolLayer
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRasterMarkerSymbolLayer
+        :attributes:
+

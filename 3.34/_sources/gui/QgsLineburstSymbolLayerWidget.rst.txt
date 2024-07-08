@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsLineburstSymbolLayerWidget
+...............................................
+
+.. py:module:: QgsLineburstSymbolLayerWidget
+
+.. autoclass:: qgis.gui.QgsLineburstSymbolLayerWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsLineburstSymbolLayerWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLineburstSymbolLayerWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLineburstSymbolLayerWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsLineburstSymbolLayerWidget
+        :attributes:
+

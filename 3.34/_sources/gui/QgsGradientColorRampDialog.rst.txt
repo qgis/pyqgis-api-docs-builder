@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsGradientColorRampDialog
+...............................................
+
+.. py:module:: QgsGradientColorRampDialog
+
+.. autoclass:: qgis.gui.QgsGradientColorRampDialog
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsGradientColorRampDialog
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsGradientColorRampDialog
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsGradientColorRampDialog
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsGradientColorRampDialog
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsLayoutMultiFrameAbstractMetadata
+...............................................
+
+.. py:module:: QgsLayoutMultiFrameAbstractMetadata
+
+.. autoclass:: qgis.core.QgsLayoutMultiFrameAbstractMetadata
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsLayoutMultiFrameAbstractMetadata
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutMultiFrameAbstractMetadata
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutMultiFrameAbstractMetadata
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutMultiFrameAbstractMetadata
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsTextDocumentMetrics
+...............................................
+
+.. py:module:: QgsTextDocumentMetrics
+
+.. autoclass:: qgis.core.QgsTextDocumentMetrics
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsTextDocumentMetrics
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTextDocumentMetrics
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTextDocumentMetrics
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTextDocumentMetrics
+        :attributes:
+

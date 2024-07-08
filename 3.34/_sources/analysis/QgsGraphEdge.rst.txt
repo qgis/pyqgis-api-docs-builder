@@ -1,0 +1,27 @@
+.. package: qgis\.analysis
+
+Class: QgsGraphEdge
+...............................................
+
+.. py:module:: QgsGraphEdge
+
+.. autoclass:: qgis.analysis.QgsGraphEdge
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.analysis.QgsGraphEdge
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsGraphEdge
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsGraphEdge
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsGraphEdge
+        :attributes:
+

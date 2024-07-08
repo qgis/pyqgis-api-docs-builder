@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsRichTextEditor
+...............................................
+
+.. py:module:: QgsRichTextEditor
+
+.. autoclass:: qgis.gui.QgsRichTextEditor
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsRichTextEditor
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsRichTextEditor
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsRichTextEditor
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsRichTextEditor
+        :attributes:
+

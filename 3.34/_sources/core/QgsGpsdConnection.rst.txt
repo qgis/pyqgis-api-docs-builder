@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsGpsdConnection
+...............................................
+
+.. py:module:: QgsGpsdConnection
+
+.. autoclass:: qgis.core.QgsGpsdConnection
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsGpsdConnection
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsGpsdConnection
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsGpsdConnection
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsGpsdConnection
+        :attributes:
+

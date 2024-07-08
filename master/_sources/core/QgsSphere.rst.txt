@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsSphere
+...............................................
+
+.. py:module:: QgsSphere
+
+.. autoclass:: qgis.core.QgsSphere
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsSphere
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSphere
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSphere
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSphere
+        :attributes:
+

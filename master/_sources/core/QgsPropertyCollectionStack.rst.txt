@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsPropertyCollectionStack
+...............................................
+
+.. py:module:: QgsPropertyCollectionStack
+
+.. autoclass:: qgis.core.QgsPropertyCollectionStack
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsPropertyCollectionStack
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsPropertyCollectionStack
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsPropertyCollectionStack
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsPropertyCollectionStack
+        :attributes:
+

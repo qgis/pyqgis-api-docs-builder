@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsTreeWidgetItemObject
+...............................................
+
+.. py:module:: QgsTreeWidgetItemObject
+
+.. autoclass:: qgis.gui.QgsTreeWidgetItemObject
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsTreeWidgetItemObject
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsTreeWidgetItemObject
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsTreeWidgetItemObject
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsTreeWidgetItemObject
+        :attributes:
+

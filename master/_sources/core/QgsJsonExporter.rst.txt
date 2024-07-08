@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsJsonExporter
+...............................................
+
+.. py:module:: QgsJsonExporter
+
+.. autoclass:: qgis.core.QgsJsonExporter
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsJsonExporter
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsJsonExporter
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsJsonExporter
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsJsonExporter
+        :attributes:
+

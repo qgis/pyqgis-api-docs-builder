@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsGroupBoxCollapseButton
+...............................................
+
+.. py:module:: QgsGroupBoxCollapseButton
+
+.. autoclass:: qgis.gui.QgsGroupBoxCollapseButton
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsGroupBoxCollapseButton
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsGroupBoxCollapseButton
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsGroupBoxCollapseButton
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsGroupBoxCollapseButton
+        :attributes:
+

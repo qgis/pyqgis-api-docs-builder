@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsBookmark
+...............................................
+
+.. py:module:: QgsBookmark
+
+.. autoclass:: qgis.core.QgsBookmark
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsBookmark
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsBookmark
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsBookmark
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsBookmark
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.server
+
+Class: QgsServerSettingsEnv
+...............................................
+
+.. py:module:: QgsServerSettingsEnv
+
+.. autoclass:: qgis.server.QgsServerSettingsEnv
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.server.QgsServerSettingsEnv
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.server.QgsServerSettingsEnv
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.server.QgsServerSettingsEnv
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.server.QgsServerSettingsEnv
+        :attributes:
+

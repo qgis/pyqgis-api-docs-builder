@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsProcessingDestinationParameter
+...............................................
+
+.. py:module:: QgsProcessingDestinationParameter
+
+.. autoclass:: qgis.core.QgsProcessingDestinationParameter
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsProcessingDestinationParameter
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingDestinationParameter
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingDestinationParameter
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingDestinationParameter
+        :attributes:
+

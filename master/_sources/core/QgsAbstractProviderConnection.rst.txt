@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsAbstractProviderConnection
+...............................................
+
+.. py:module:: QgsAbstractProviderConnection
+
+.. autoclass:: qgis.core.QgsAbstractProviderConnection
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsAbstractProviderConnection
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsAbstractProviderConnection
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsAbstractProviderConnection
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsAbstractProviderConnection
+        :attributes:
+

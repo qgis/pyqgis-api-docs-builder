@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsPaintEffectAbstractMetadata
+...............................................
+
+.. py:module:: QgsPaintEffectAbstractMetadata
+
+.. autoclass:: qgis.core.QgsPaintEffectAbstractMetadata
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsPaintEffectAbstractMetadata
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsPaintEffectAbstractMetadata
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsPaintEffectAbstractMetadata
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsPaintEffectAbstractMetadata
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsTextMaskSettings
+...............................................
+
+.. py:module:: QgsTextMaskSettings
+
+.. autoclass:: qgis.core.QgsTextMaskSettings
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsTextMaskSettings
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTextMaskSettings
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTextMaskSettings
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTextMaskSettings
+        :attributes:
+

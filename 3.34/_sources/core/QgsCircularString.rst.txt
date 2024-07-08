@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsCircularString
+...............................................
+
+.. py:module:: QgsCircularString
+
+.. autoclass:: qgis.core.QgsCircularString
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsCircularString
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsCircularString
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsCircularString
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsCircularString
+        :attributes:
+

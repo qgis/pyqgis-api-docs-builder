@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsContrastEnhancement
+...............................................
+
+.. py:module:: QgsContrastEnhancement
+
+.. autoclass:: qgis.core.QgsContrastEnhancement
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsContrastEnhancement
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsContrastEnhancement
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsContrastEnhancement
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsContrastEnhancement
+        :attributes:
+

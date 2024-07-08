@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsSettingsEntryBaseTemplateQVariantBase
+...............................................
+
+.. py:module:: QgsSettingsEntryBaseTemplateQVariantBase
+
+.. autoclass:: qgis.core.QgsSettingsEntryBaseTemplateQVariantBase
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsSettingsEntryBaseTemplateQVariantBase
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSettingsEntryBaseTemplateQVariantBase
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSettingsEntryBaseTemplateQVariantBase
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSettingsEntryBaseTemplateQVariantBase
+        :attributes:
+

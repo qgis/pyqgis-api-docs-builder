@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsColorSchemeRegistry
+...............................................
+
+.. py:module:: QgsColorSchemeRegistry
+
+.. autoclass:: qgis.core.QgsColorSchemeRegistry
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsColorSchemeRegistry
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsColorSchemeRegistry
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsColorSchemeRegistry
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsColorSchemeRegistry
+        :attributes:
+

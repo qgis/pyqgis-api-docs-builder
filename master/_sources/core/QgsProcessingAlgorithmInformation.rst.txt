@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsProcessingAlgorithmInformation
+...............................................
+
+.. py:module:: QgsProcessingAlgorithmInformation
+
+.. autoclass:: qgis.core.QgsProcessingAlgorithmInformation
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsProcessingAlgorithmInformation
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingAlgorithmInformation
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingAlgorithmInformation
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingAlgorithmInformation
+        :attributes:
+

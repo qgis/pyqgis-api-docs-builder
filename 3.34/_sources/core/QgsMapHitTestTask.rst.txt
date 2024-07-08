@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsMapHitTestTask
+...............................................
+
+.. py:module:: QgsMapHitTestTask
+
+.. autoclass:: qgis.core.QgsMapHitTestTask
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsMapHitTestTask
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapHitTestTask
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapHitTestTask
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapHitTestTask
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsOptionsDialogHighlightGroupBox
+...............................................
+
+.. py:module:: QgsOptionsDialogHighlightGroupBox
+
+.. autoclass:: qgis.gui.QgsOptionsDialogHighlightGroupBox
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsOptionsDialogHighlightGroupBox
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsOptionsDialogHighlightGroupBox
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsOptionsDialogHighlightGroupBox
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsOptionsDialogHighlightGroupBox
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsProxyStyle
+...............................................
+
+.. py:module:: QgsProxyStyle
+
+.. autoclass:: qgis.gui.QgsProxyStyle
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsProxyStyle
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProxyStyle
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProxyStyle
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProxyStyle
+        :attributes:
+

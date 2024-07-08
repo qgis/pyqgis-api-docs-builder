@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsMeshEditForceByLine
+...............................................
+
+.. py:module:: QgsMeshEditForceByLine
+
+.. autoclass:: qgis.core.QgsMeshEditForceByLine
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsMeshEditForceByLine
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMeshEditForceByLine
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMeshEditForceByLine
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMeshEditForceByLine
+        :attributes:
+

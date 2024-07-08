@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsMapToolZoom
+...............................................
+
+.. py:module:: QgsMapToolZoom
+
+.. autoclass:: qgis.gui.QgsMapToolZoom
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsMapToolZoom
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMapToolZoom
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMapToolZoom
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMapToolZoom
+        :attributes:
+

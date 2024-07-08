@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: LabelSettingsFavoriteId
+...............................................
+
+.. py:module:: LabelSettingsFavoriteId
+
+.. autoclass:: qgis.core.LabelSettingsFavoriteId
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.LabelSettingsFavoriteId
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.LabelSettingsFavoriteId
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.LabelSettingsFavoriteId
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.LabelSettingsFavoriteId
+        :attributes:
+

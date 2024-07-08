@@ -1,0 +1,27 @@
+.. package: qgis\._3d
+
+Class: QgsLayoutItem3DMap
+...............................................
+
+.. py:module:: QgsLayoutItem3DMap
+
+.. autoclass:: qgis._3d.QgsLayoutItem3DMap
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis._3d.QgsLayoutItem3DMap
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis._3d.QgsLayoutItem3DMap
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis._3d.QgsLayoutItem3DMap
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis._3d.QgsLayoutItem3DMap
+        :attributes:
+

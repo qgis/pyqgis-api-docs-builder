@@ -1,0 +1,27 @@
+.. package: qgis\._3d
+
+Class: Qgs3DMapExportSettings
+...............................................
+
+.. py:module:: Qgs3DMapExportSettings
+
+.. autoclass:: qgis._3d.Qgs3DMapExportSettings
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis._3d.Qgs3DMapExportSettings
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis._3d.Qgs3DMapExportSettings
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis._3d.Qgs3DMapExportSettings
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis._3d.Qgs3DMapExportSettings
+        :attributes:
+

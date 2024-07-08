@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsElevationUtils
+...............................................
+
+.. py:module:: QgsElevationUtils
+
+.. autoclass:: qgis.core.QgsElevationUtils
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsElevationUtils
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsElevationUtils
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsElevationUtils
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsElevationUtils
+        :attributes:
+

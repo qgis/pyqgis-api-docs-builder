@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: GeometryValidityFlags
+...............................................
+
+.. py:module:: GeometryValidityFlags
+
+.. autoclass:: qgis.core.GeometryValidityFlags
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.GeometryValidityFlags
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.GeometryValidityFlags
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.GeometryValidityFlags
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.GeometryValidityFlags
+        :attributes:
+

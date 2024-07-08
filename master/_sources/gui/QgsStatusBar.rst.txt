@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsStatusBar
+...............................................
+
+.. py:module:: QgsStatusBar
+
+.. autoclass:: qgis.gui.QgsStatusBar
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsStatusBar
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsStatusBar
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsStatusBar
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsStatusBar
+        :attributes:
+

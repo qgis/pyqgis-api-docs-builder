@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsClassificationFixedInterval
+...............................................
+
+.. py:module:: QgsClassificationFixedInterval
+
+.. autoclass:: qgis.core.QgsClassificationFixedInterval
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsClassificationFixedInterval
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsClassificationFixedInterval
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsClassificationFixedInterval
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsClassificationFixedInterval
+        :attributes:
+

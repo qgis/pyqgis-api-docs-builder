@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: DEFAULT_SEGMENT_EPSILON
+...............................................
+
+.. py:module:: DEFAULT_SEGMENT_EPSILON
+
+.. autoclass:: qgis.core.DEFAULT_SEGMENT_EPSILON
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.DEFAULT_SEGMENT_EPSILON
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.DEFAULT_SEGMENT_EPSILON
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.DEFAULT_SEGMENT_EPSILON
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.DEFAULT_SEGMENT_EPSILON
+        :attributes:
+

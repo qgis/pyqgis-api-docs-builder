@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsPanelWidget
+...............................................
+
+.. py:module:: QgsPanelWidget
+
+.. autoclass:: qgis.gui.QgsPanelWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsPanelWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsPanelWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsPanelWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsPanelWidget
+        :attributes:
+

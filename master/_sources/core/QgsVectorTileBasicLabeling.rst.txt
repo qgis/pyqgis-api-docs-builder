@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsVectorTileBasicLabeling
+...............................................
+
+.. py:module:: QgsVectorTileBasicLabeling
+
+.. autoclass:: qgis.core.QgsVectorTileBasicLabeling
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsVectorTileBasicLabeling
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVectorTileBasicLabeling
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVectorTileBasicLabeling
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVectorTileBasicLabeling
+        :attributes:
+

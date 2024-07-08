@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: mapping_feature
+...............................................
+
+.. py:module:: mapping_feature
+
+.. autoclass:: qgis.core.mapping_feature
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.mapping_feature
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.mapping_feature
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.mapping_feature
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.mapping_feature
+        :attributes:
+

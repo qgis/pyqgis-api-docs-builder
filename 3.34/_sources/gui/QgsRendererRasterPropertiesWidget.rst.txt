@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsRendererRasterPropertiesWidget
+...............................................
+
+.. py:module:: QgsRendererRasterPropertiesWidget
+
+.. autoclass:: qgis.gui.QgsRendererRasterPropertiesWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsRendererRasterPropertiesWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsRendererRasterPropertiesWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsRendererRasterPropertiesWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsRendererRasterPropertiesWidget
+        :attributes:
+

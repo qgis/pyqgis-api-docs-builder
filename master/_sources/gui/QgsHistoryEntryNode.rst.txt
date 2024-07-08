@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsHistoryEntryNode
+...............................................
+
+.. py:module:: QgsHistoryEntryNode
+
+.. autoclass:: qgis.gui.QgsHistoryEntryNode
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsHistoryEntryNode
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsHistoryEntryNode
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsHistoryEntryNode
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsHistoryEntryNode
+        :attributes:
+

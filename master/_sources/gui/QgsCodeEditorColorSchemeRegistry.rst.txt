@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsCodeEditorColorSchemeRegistry
+...............................................
+
+.. py:module:: QgsCodeEditorColorSchemeRegistry
+
+.. autoclass:: qgis.gui.QgsCodeEditorColorSchemeRegistry
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsCodeEditorColorSchemeRegistry
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsCodeEditorColorSchemeRegistry
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsCodeEditorColorSchemeRegistry
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsCodeEditorColorSchemeRegistry
+        :attributes:
+

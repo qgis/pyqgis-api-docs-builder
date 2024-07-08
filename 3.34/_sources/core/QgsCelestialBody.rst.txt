@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsCelestialBody
+...............................................
+
+.. py:module:: QgsCelestialBody
+
+.. autoclass:: qgis.core.QgsCelestialBody
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsCelestialBody
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsCelestialBody
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsCelestialBody
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsCelestialBody
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsNewDatabaseTableNameWidget
+...............................................
+
+.. py:module:: QgsNewDatabaseTableNameWidget
+
+.. autoclass:: qgis.gui.QgsNewDatabaseTableNameWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsNewDatabaseTableNameWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsNewDatabaseTableNameWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsNewDatabaseTableNameWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsNewDatabaseTableNameWidget
+        :attributes:
+

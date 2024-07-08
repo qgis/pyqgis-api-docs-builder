@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsProcessingParameterCoordinateOperation
+...............................................
+
+.. py:module:: QgsProcessingParameterCoordinateOperation
+
+.. autoclass:: qgis.core.QgsProcessingParameterCoordinateOperation
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterCoordinateOperation
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterCoordinateOperation
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterCoordinateOperation
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProcessingParameterCoordinateOperation
+        :attributes:
+

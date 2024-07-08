@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsTaskManagerWidget
+...............................................
+
+.. py:module:: QgsTaskManagerWidget
+
+.. autoclass:: qgis.gui.QgsTaskManagerWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsTaskManagerWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsTaskManagerWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsTaskManagerWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsTaskManagerWidget
+        :attributes:
+

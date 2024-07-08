@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsCachedFeatureWriterIterator
+...............................................
+
+.. py:module:: QgsCachedFeatureWriterIterator
+
+.. autoclass:: qgis.core.QgsCachedFeatureWriterIterator
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsCachedFeatureWriterIterator
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsCachedFeatureWriterIterator
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsCachedFeatureWriterIterator
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsCachedFeatureWriterIterator
+        :attributes:
+

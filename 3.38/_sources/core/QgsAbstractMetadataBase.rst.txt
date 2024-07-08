@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsAbstractMetadataBase
+...............................................
+
+.. py:module:: QgsAbstractMetadataBase
+
+.. autoclass:: qgis.core.QgsAbstractMetadataBase
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsAbstractMetadataBase
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsAbstractMetadataBase
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsAbstractMetadataBase
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsAbstractMetadataBase
+        :attributes:
+

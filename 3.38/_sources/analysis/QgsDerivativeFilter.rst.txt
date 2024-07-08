@@ -1,0 +1,27 @@
+.. package: qgis\.analysis
+
+Class: QgsDerivativeFilter
+...............................................
+
+.. py:module:: QgsDerivativeFilter
+
+.. autoclass:: qgis.analysis.QgsDerivativeFilter
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.analysis.QgsDerivativeFilter
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsDerivativeFilter
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsDerivativeFilter
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsDerivativeFilter
+        :attributes:
+

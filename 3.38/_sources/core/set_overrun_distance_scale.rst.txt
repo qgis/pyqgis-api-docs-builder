@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: set_overrun_distance_scale
+...............................................
+
+.. py:module:: set_overrun_distance_scale
+
+.. autoclass:: qgis.core.set_overrun_distance_scale
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.set_overrun_distance_scale
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.set_overrun_distance_scale
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.set_overrun_distance_scale
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.set_overrun_distance_scale
+        :attributes:
+

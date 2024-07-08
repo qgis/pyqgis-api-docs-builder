@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsLayoutAtlas
+...............................................
+
+.. py:module:: QgsLayoutAtlas
+
+.. autoclass:: qgis.core.QgsLayoutAtlas
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsLayoutAtlas
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutAtlas
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutAtlas
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutAtlas
+        :attributes:
+

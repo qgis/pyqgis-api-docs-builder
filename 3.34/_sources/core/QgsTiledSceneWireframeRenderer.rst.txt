@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsTiledSceneWireframeRenderer
+...............................................
+
+.. py:module:: QgsTiledSceneWireframeRenderer
+
+.. autoclass:: qgis.core.QgsTiledSceneWireframeRenderer
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsTiledSceneWireframeRenderer
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTiledSceneWireframeRenderer
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTiledSceneWireframeRenderer
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTiledSceneWireframeRenderer
+        :attributes:
+

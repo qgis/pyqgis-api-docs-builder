@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsOWSSourceSelect
+...............................................
+
+.. py:module:: QgsOWSSourceSelect
+
+.. autoclass:: qgis.gui.QgsOWSSourceSelect
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsOWSSourceSelect
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsOWSSourceSelect
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsOWSSourceSelect
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsOWSSourceSelect
+        :attributes:
+

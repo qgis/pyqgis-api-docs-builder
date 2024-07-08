@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsRasterFormatSaveOptionsWidget
+...............................................
+
+.. py:module:: QgsRasterFormatSaveOptionsWidget
+
+.. autoclass:: qgis.gui.QgsRasterFormatSaveOptionsWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsRasterFormatSaveOptionsWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsRasterFormatSaveOptionsWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsRasterFormatSaveOptionsWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsRasterFormatSaveOptionsWidget
+        :attributes:
+

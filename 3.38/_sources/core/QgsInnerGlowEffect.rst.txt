@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsInnerGlowEffect
+...............................................
+
+.. py:module:: QgsInnerGlowEffect
+
+.. autoclass:: qgis.core.QgsInnerGlowEffect
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsInnerGlowEffect
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsInnerGlowEffect
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsInnerGlowEffect
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsInnerGlowEffect
+        :attributes:
+

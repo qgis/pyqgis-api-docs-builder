@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsMapUnitScale
+...............................................
+
+.. py:module:: QgsMapUnitScale
+
+.. autoclass:: qgis.core.QgsMapUnitScale
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsMapUnitScale
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapUnitScale
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapUnitScale
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapUnitScale
+        :attributes:
+

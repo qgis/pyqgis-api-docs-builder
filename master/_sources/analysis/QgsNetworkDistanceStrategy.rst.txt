@@ -1,0 +1,27 @@
+.. package: qgis\.analysis
+
+Class: QgsNetworkDistanceStrategy
+...............................................
+
+.. py:module:: QgsNetworkDistanceStrategy
+
+.. autoclass:: qgis.analysis.QgsNetworkDistanceStrategy
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.analysis.QgsNetworkDistanceStrategy
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsNetworkDistanceStrategy
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsNetworkDistanceStrategy
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsNetworkDistanceStrategy
+        :attributes:
+

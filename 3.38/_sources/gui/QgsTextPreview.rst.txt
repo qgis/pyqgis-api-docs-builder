@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsTextPreview
+...............................................
+
+.. py:module:: QgsTextPreview
+
+.. autoclass:: qgis.gui.QgsTextPreview
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsTextPreview
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsTextPreview
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsTextPreview
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsTextPreview
+        :attributes:
+

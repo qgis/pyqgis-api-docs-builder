@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsJsonUtils
+...............................................
+
+.. py:module:: QgsJsonUtils
+
+.. autoclass:: qgis.core.QgsJsonUtils
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsJsonUtils
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsJsonUtils
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsJsonUtils
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsJsonUtils
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsColorEffectWidget
+...............................................
+
+.. py:module:: QgsColorEffectWidget
+
+.. autoclass:: qgis.gui.QgsColorEffectWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsColorEffectWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsColorEffectWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsColorEffectWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsColorEffectWidget
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\._3d
+
+Class: QgsCameraController
+...............................................
+
+.. py:module:: QgsCameraController
+
+.. autoclass:: qgis._3d.QgsCameraController
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis._3d.QgsCameraController
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis._3d.QgsCameraController
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis._3d.QgsCameraController
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis._3d.QgsCameraController
+        :attributes:
+

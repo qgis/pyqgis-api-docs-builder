@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: qHash
+...............................................
+
+.. py:module:: qHash
+
+.. autoclass:: qgis.core.qHash
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.qHash
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.qHash
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.qHash
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.qHash
+        :attributes:
+

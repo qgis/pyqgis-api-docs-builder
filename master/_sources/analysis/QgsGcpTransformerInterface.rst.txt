@@ -1,0 +1,27 @@
+.. package: qgis\.analysis
+
+Class: QgsGcpTransformerInterface
+...............................................
+
+.. py:module:: QgsGcpTransformerInterface
+
+.. autoclass:: qgis.analysis.QgsGcpTransformerInterface
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.analysis.QgsGcpTransformerInterface
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsGcpTransformerInterface
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsGcpTransformerInterface
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsGcpTransformerInterface
+        :attributes:
+

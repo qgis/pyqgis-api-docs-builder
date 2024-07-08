@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsModelArrowItem
+...............................................
+
+.. py:module:: QgsModelArrowItem
+
+.. autoclass:: qgis.gui.QgsModelArrowItem
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsModelArrowItem
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsModelArrowItem
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsModelArrowItem
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsModelArrowItem
+        :attributes:
+

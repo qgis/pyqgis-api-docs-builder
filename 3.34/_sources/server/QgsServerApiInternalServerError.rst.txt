@@ -1,0 +1,27 @@
+.. package: qgis\.server
+
+Class: QgsServerApiInternalServerError
+...............................................
+
+.. py:module:: QgsServerApiInternalServerError
+
+.. autoclass:: qgis.server.QgsServerApiInternalServerError
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.server.QgsServerApiInternalServerError
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.server.QgsServerApiInternalServerError
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.server.QgsServerApiInternalServerError
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.server.QgsServerApiInternalServerError
+        :attributes:
+

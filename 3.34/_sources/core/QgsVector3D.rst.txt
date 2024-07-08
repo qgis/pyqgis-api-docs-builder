@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsVector3D
+...............................................
+
+.. py:module:: QgsVector3D
+
+.. autoclass:: qgis.core.QgsVector3D
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsVector3D
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVector3D
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVector3D
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVector3D
+        :attributes:
+

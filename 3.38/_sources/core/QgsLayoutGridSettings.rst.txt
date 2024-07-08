@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsLayoutGridSettings
+...............................................
+
+.. py:module:: QgsLayoutGridSettings
+
+.. autoclass:: qgis.core.QgsLayoutGridSettings
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsLayoutGridSettings
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutGridSettings
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutGridSettings
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutGridSettings
+        :attributes:
+

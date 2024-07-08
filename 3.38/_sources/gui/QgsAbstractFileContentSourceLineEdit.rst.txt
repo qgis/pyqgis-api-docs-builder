@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsAbstractFileContentSourceLineEdit
+...............................................
+
+.. py:module:: QgsAbstractFileContentSourceLineEdit
+
+.. autoclass:: qgis.gui.QgsAbstractFileContentSourceLineEdit
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsAbstractFileContentSourceLineEdit
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAbstractFileContentSourceLineEdit
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAbstractFileContentSourceLineEdit
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsAbstractFileContentSourceLineEdit
+        :attributes:
+

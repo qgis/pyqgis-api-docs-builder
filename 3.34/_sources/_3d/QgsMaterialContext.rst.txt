@@ -1,0 +1,27 @@
+.. package: qgis\._3d
+
+Class: QgsMaterialContext
+...............................................
+
+.. py:module:: QgsMaterialContext
+
+.. autoclass:: qgis._3d.QgsMaterialContext
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis._3d.QgsMaterialContext
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis._3d.QgsMaterialContext
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis._3d.QgsMaterialContext
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis._3d.QgsMaterialContext
+        :attributes:
+

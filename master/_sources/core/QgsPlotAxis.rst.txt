@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsPlotAxis
+...............................................
+
+.. py:module:: QgsPlotAxis
+
+.. autoclass:: qgis.core.QgsPlotAxis
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsPlotAxis
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsPlotAxis
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsPlotAxis
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsPlotAxis
+        :attributes:
+

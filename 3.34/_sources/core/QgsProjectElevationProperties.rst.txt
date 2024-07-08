@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsProjectElevationProperties
+...............................................
+
+.. py:module:: QgsProjectElevationProperties
+
+.. autoclass:: qgis.core.QgsProjectElevationProperties
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsProjectElevationProperties
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProjectElevationProperties
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProjectElevationProperties
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProjectElevationProperties
+        :attributes:
+

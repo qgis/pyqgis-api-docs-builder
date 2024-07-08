@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsFieldConditionalFormatWidget
+...............................................
+
+.. py:module:: QgsFieldConditionalFormatWidget
+
+.. autoclass:: qgis.gui.QgsFieldConditionalFormatWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsFieldConditionalFormatWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsFieldConditionalFormatWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsFieldConditionalFormatWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsFieldConditionalFormatWidget
+        :attributes:
+

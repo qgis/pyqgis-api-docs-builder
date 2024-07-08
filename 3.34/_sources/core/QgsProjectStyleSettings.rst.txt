@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsProjectStyleSettings
+...............................................
+
+.. py:module:: QgsProjectStyleSettings
+
+.. autoclass:: qgis.core.QgsProjectStyleSettings
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsProjectStyleSettings
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProjectStyleSettings
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProjectStyleSettings
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProjectStyleSettings
+        :attributes:
+

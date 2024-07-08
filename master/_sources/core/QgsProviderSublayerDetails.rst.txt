@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsProviderSublayerDetails
+...............................................
+
+.. py:module:: QgsProviderSublayerDetails
+
+.. autoclass:: qgis.core.QgsProviderSublayerDetails
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsProviderSublayerDetails
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProviderSublayerDetails
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProviderSublayerDetails
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsProviderSublayerDetails
+        :attributes:
+

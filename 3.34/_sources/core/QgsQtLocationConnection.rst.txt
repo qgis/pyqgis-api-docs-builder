@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsQtLocationConnection
+...............................................
+
+.. py:module:: QgsQtLocationConnection
+
+.. autoclass:: qgis.core.QgsQtLocationConnection
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsQtLocationConnection
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsQtLocationConnection
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsQtLocationConnection
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsQtLocationConnection
+        :attributes:
+

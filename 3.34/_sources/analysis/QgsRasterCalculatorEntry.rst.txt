@@ -1,0 +1,27 @@
+.. package: qgis\.analysis
+
+Class: QgsRasterCalculatorEntry
+...............................................
+
+.. py:module:: QgsRasterCalculatorEntry
+
+.. autoclass:: qgis.analysis.QgsRasterCalculatorEntry
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.analysis.QgsRasterCalculatorEntry
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsRasterCalculatorEntry
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsRasterCalculatorEntry
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.analysis.QgsRasterCalculatorEntry
+        :attributes:
+

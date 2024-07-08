@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsSymbolAnimationSettings
+...............................................
+
+.. py:module:: QgsSymbolAnimationSettings
+
+.. autoclass:: qgis.core.QgsSymbolAnimationSettings
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsSymbolAnimationSettings
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSymbolAnimationSettings
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSymbolAnimationSettings
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSymbolAnimationSettings
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsCesiumUtils
+...............................................
+
+.. py:module:: QgsCesiumUtils
+
+.. autoclass:: qgis.core.QgsCesiumUtils
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsCesiumUtils
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsCesiumUtils
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsCesiumUtils
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsCesiumUtils
+        :attributes:
+

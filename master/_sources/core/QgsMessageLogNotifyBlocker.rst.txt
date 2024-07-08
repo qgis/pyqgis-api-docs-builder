@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsMessageLogNotifyBlocker
+...............................................
+
+.. py:module:: QgsMessageLogNotifyBlocker
+
+.. autoclass:: qgis.core.QgsMessageLogNotifyBlocker
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsMessageLogNotifyBlocker
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMessageLogNotifyBlocker
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMessageLogNotifyBlocker
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMessageLogNotifyBlocker
+        :attributes:
+

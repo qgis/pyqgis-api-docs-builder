@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsBabelSimpleImportFormat
+...............................................
+
+.. py:module:: QgsBabelSimpleImportFormat
+
+.. autoclass:: qgis.core.QgsBabelSimpleImportFormat
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsBabelSimpleImportFormat
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsBabelSimpleImportFormat
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsBabelSimpleImportFormat
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsBabelSimpleImportFormat
+        :attributes:
+

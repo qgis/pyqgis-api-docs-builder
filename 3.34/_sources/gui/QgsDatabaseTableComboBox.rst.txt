@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsDatabaseTableComboBox
+...............................................
+
+.. py:module:: QgsDatabaseTableComboBox
+
+.. autoclass:: qgis.gui.QgsDatabaseTableComboBox
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsDatabaseTableComboBox
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsDatabaseTableComboBox
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsDatabaseTableComboBox
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsDatabaseTableComboBox
+        :attributes:
+

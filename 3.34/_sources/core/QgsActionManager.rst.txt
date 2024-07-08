@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsActionManager
+...............................................
+
+.. py:module:: QgsActionManager
+
+.. autoclass:: qgis.core.QgsActionManager
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsActionManager
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsActionManager
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsActionManager
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsActionManager
+        :attributes:
+

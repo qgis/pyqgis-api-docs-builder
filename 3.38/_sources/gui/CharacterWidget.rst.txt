@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: CharacterWidget
+...............................................
+
+.. py:module:: CharacterWidget
+
+.. autoclass:: qgis.gui.CharacterWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.CharacterWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.CharacterWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.CharacterWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.CharacterWidget
+        :attributes:
+

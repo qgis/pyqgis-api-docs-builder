@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsMeshTransformVerticesByExpression
+...............................................
+
+.. py:module:: QgsMeshTransformVerticesByExpression
+
+.. autoclass:: qgis.core.QgsMeshTransformVerticesByExpression
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsMeshTransformVerticesByExpression
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMeshTransformVerticesByExpression
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMeshTransformVerticesByExpression
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMeshTransformVerticesByExpression
+        :attributes:
+

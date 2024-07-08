@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: Buttons
+...............................................
+
+.. py:module:: Buttons
+
+.. autoclass:: qgis.gui.Buttons
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.Buttons
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.Buttons
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.Buttons
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.Buttons
+        :attributes:
+

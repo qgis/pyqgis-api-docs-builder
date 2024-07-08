@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsMarkerLineSymbolLayerWidget
+...............................................
+
+.. py:module:: QgsMarkerLineSymbolLayerWidget
+
+.. autoclass:: qgis.gui.QgsMarkerLineSymbolLayerWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsMarkerLineSymbolLayerWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMarkerLineSymbolLayerWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMarkerLineSymbolLayerWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsMarkerLineSymbolLayerWidget
+        :attributes:
+

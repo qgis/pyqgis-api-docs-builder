@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsPythonRunner
+...............................................
+
+.. py:module:: QgsPythonRunner
+
+.. autoclass:: qgis.core.QgsPythonRunner
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsPythonRunner
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsPythonRunner
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsPythonRunner
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsPythonRunner
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.server
+
+Class: QgsFeatureFilter
+...............................................
+
+.. py:module:: QgsFeatureFilter
+
+.. autoclass:: qgis.server.QgsFeatureFilter
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.server.QgsFeatureFilter
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.server.QgsFeatureFilter
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.server.QgsFeatureFilter
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.server.QgsFeatureFilter
+        :attributes:
+

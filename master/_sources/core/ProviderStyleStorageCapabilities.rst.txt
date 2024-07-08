@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: ProviderStyleStorageCapabilities
+...............................................
+
+.. py:module:: ProviderStyleStorageCapabilities
+
+.. autoclass:: qgis.core.ProviderStyleStorageCapabilities
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.ProviderStyleStorageCapabilities
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.ProviderStyleStorageCapabilities
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.ProviderStyleStorageCapabilities
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.ProviderStyleStorageCapabilities
+        :attributes:
+

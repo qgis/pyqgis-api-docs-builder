@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsSymbolLayerReference
+...............................................
+
+.. py:module:: QgsSymbolLayerReference
+
+.. autoclass:: qgis.core.QgsSymbolLayerReference
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsSymbolLayerReference
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSymbolLayerReference
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSymbolLayerReference
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSymbolLayerReference
+        :attributes:
+

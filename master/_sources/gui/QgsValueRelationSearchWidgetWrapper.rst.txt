@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsValueRelationSearchWidgetWrapper
+...............................................
+
+.. py:module:: QgsValueRelationSearchWidgetWrapper
+
+.. autoclass:: qgis.gui.QgsValueRelationSearchWidgetWrapper
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsValueRelationSearchWidgetWrapper
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsValueRelationSearchWidgetWrapper
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsValueRelationSearchWidgetWrapper
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsValueRelationSearchWidgetWrapper
+        :attributes:
+

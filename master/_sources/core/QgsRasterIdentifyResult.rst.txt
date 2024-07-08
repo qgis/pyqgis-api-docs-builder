@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsRasterIdentifyResult
+...............................................
+
+.. py:module:: QgsRasterIdentifyResult
+
+.. autoclass:: qgis.core.QgsRasterIdentifyResult
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsRasterIdentifyResult
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRasterIdentifyResult
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRasterIdentifyResult
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRasterIdentifyResult
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsLocalizedDataPathRegistry
+...............................................
+
+.. py:module:: QgsLocalizedDataPathRegistry
+
+.. autoclass:: qgis.core.QgsLocalizedDataPathRegistry
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsLocalizedDataPathRegistry
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLocalizedDataPathRegistry
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLocalizedDataPathRegistry
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLocalizedDataPathRegistry
+        :attributes:
+

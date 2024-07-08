@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsFilledMarkerSymbolLayer
+...............................................
+
+.. py:module:: QgsFilledMarkerSymbolLayer
+
+.. autoclass:: qgis.core.QgsFilledMarkerSymbolLayer
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsFilledMarkerSymbolLayer
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsFilledMarkerSymbolLayer
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsFilledMarkerSymbolLayer
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsFilledMarkerSymbolLayer
+        :attributes:
+

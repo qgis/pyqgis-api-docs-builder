@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsRegularPolygon
+...............................................
+
+.. py:module:: QgsRegularPolygon
+
+.. autoclass:: qgis.core.QgsRegularPolygon
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsRegularPolygon
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRegularPolygon
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRegularPolygon
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsRegularPolygon
+        :attributes:
+

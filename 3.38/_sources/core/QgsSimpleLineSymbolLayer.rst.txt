@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsSimpleLineSymbolLayer
+...............................................
+
+.. py:module:: QgsSimpleLineSymbolLayer
+
+.. autoclass:: qgis.core.QgsSimpleLineSymbolLayer
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsSimpleLineSymbolLayer
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSimpleLineSymbolLayer
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSimpleLineSymbolLayer
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSimpleLineSymbolLayer
+        :attributes:
+

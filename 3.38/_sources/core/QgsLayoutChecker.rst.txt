@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsLayoutChecker
+...............................................
+
+.. py:module:: QgsLayoutChecker
+
+.. autoclass:: qgis.core.QgsLayoutChecker
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsLayoutChecker
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutChecker
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutChecker
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutChecker
+        :attributes:
+

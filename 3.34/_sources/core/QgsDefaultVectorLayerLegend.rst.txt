@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsDefaultVectorLayerLegend
+...............................................
+
+.. py:module:: QgsDefaultVectorLayerLegend
+
+.. autoclass:: qgis.core.QgsDefaultVectorLayerLegend
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsDefaultVectorLayerLegend
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDefaultVectorLayerLegend
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDefaultVectorLayerLegend
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsDefaultVectorLayerLegend
+        :attributes:
+

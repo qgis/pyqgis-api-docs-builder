@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: StringStatistics
+...............................................
+
+.. py:module:: StringStatistics
+
+.. autoclass:: qgis.core.StringStatistics
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.StringStatistics
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.StringStatistics
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.StringStatistics
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.StringStatistics
+        :attributes:
+

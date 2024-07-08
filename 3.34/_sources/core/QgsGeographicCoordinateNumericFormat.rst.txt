@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsGeographicCoordinateNumericFormat
+...............................................
+
+.. py:module:: QgsGeographicCoordinateNumericFormat
+
+.. autoclass:: qgis.core.QgsGeographicCoordinateNumericFormat
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsGeographicCoordinateNumericFormat
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsGeographicCoordinateNumericFormat
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsGeographicCoordinateNumericFormat
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsGeographicCoordinateNumericFormat
+        :attributes:
+

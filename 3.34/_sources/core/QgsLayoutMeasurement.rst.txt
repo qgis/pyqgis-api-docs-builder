@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsLayoutMeasurement
+...............................................
+
+.. py:module:: QgsLayoutMeasurement
+
+.. autoclass:: qgis.core.QgsLayoutMeasurement
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsLayoutMeasurement
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutMeasurement
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutMeasurement
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsLayoutMeasurement
+        :attributes:
+

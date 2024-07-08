@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsMeshLayerSimpleLabeling
+...............................................
+
+.. py:module:: QgsMeshLayerSimpleLabeling
+
+.. autoclass:: qgis.core.QgsMeshLayerSimpleLabeling
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsMeshLayerSimpleLabeling
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMeshLayerSimpleLabeling
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMeshLayerSimpleLabeling
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMeshLayerSimpleLabeling
+        :attributes:
+

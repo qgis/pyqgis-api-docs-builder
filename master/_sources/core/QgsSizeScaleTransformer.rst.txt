@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsSizeScaleTransformer
+...............................................
+
+.. py:module:: QgsSizeScaleTransformer
+
+.. autoclass:: qgis.core.QgsSizeScaleTransformer
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsSizeScaleTransformer
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSizeScaleTransformer
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSizeScaleTransformer
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSizeScaleTransformer
+        :attributes:
+

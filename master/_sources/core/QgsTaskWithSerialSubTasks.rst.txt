@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsTaskWithSerialSubTasks
+...............................................
+
+.. py:module:: QgsTaskWithSerialSubTasks
+
+.. autoclass:: qgis.core.QgsTaskWithSerialSubTasks
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsTaskWithSerialSubTasks
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTaskWithSerialSubTasks
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTaskWithSerialSubTasks
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsTaskWithSerialSubTasks
+        :attributes:
+

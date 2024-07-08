@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsMapBoxGlStyleRasterSubLayer
+...............................................
+
+.. py:module:: QgsMapBoxGlStyleRasterSubLayer
+
+.. autoclass:: qgis.core.QgsMapBoxGlStyleRasterSubLayer
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsMapBoxGlStyleRasterSubLayer
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapBoxGlStyleRasterSubLayer
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapBoxGlStyleRasterSubLayer
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsMapBoxGlStyleRasterSubLayer
+        :attributes:
+

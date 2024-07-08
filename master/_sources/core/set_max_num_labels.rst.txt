@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: set_max_num_labels
+...............................................
+
+.. py:module:: set_max_num_labels
+
+.. autoclass:: qgis.core.set_max_num_labels
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.set_max_num_labels
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.set_max_num_labels
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.set_max_num_labels
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.set_max_num_labels
+        :attributes:
+

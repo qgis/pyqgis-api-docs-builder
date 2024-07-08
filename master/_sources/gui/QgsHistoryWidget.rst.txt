@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsHistoryWidget
+...............................................
+
+.. py:module:: QgsHistoryWidget
+
+.. autoclass:: qgis.gui.QgsHistoryWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsHistoryWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsHistoryWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsHistoryWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsHistoryWidget
+        :attributes:
+

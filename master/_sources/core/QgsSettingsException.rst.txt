@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsSettingsException
+...............................................
+
+.. py:module:: QgsSettingsException
+
+.. autoclass:: qgis.core.QgsSettingsException
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsSettingsException
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSettingsException
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSettingsException
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSettingsException
+        :attributes:
+

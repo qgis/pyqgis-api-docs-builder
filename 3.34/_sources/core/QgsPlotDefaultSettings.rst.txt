@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsPlotDefaultSettings
+...............................................
+
+.. py:module:: QgsPlotDefaultSettings
+
+.. autoclass:: qgis.core.QgsPlotDefaultSettings
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsPlotDefaultSettings
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsPlotDefaultSettings
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsPlotDefaultSettings
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsPlotDefaultSettings
+        :attributes:
+

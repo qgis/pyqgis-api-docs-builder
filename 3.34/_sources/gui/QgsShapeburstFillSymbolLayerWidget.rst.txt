@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsShapeburstFillSymbolLayerWidget
+...............................................
+
+.. py:module:: QgsShapeburstFillSymbolLayerWidget
+
+.. autoclass:: qgis.gui.QgsShapeburstFillSymbolLayerWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsShapeburstFillSymbolLayerWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsShapeburstFillSymbolLayerWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsShapeburstFillSymbolLayerWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsShapeburstFillSymbolLayerWidget
+        :attributes:
+

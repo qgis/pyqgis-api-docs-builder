@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsGeographicCoordinateNumericFormatDialog
+...............................................
+
+.. py:module:: QgsGeographicCoordinateNumericFormatDialog
+
+.. autoclass:: qgis.gui.QgsGeographicCoordinateNumericFormatDialog
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsGeographicCoordinateNumericFormatDialog
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsGeographicCoordinateNumericFormatDialog
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsGeographicCoordinateNumericFormatDialog
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsGeographicCoordinateNumericFormatDialog
+        :attributes:
+

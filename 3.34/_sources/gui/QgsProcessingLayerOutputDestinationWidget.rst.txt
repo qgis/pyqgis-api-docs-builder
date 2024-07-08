@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsProcessingLayerOutputDestinationWidget
+...............................................
+
+.. py:module:: QgsProcessingLayerOutputDestinationWidget
+
+.. autoclass:: qgis.gui.QgsProcessingLayerOutputDestinationWidget
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsProcessingLayerOutputDestinationWidget
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProcessingLayerOutputDestinationWidget
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProcessingLayerOutputDestinationWidget
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsProcessingLayerOutputDestinationWidget
+        :attributes:
+

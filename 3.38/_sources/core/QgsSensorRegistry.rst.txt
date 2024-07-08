@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsSensorRegistry
+...............................................
+
+.. py:module:: QgsSensorRegistry
+
+.. autoclass:: qgis.core.QgsSensorRegistry
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsSensorRegistry
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSensorRegistry
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSensorRegistry
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSensorRegistry
+        :attributes:
+

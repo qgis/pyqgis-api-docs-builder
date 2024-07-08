@@ -1,0 +1,27 @@
+.. package: qgis\.gui
+
+Class: QgsIFeatureSelectionManager
+...............................................
+
+.. py:module:: QgsIFeatureSelectionManager
+
+.. autoclass:: qgis.gui.QgsIFeatureSelectionManager
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.gui.QgsIFeatureSelectionManager
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsIFeatureSelectionManager
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsIFeatureSelectionManager
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.gui.QgsIFeatureSelectionManager
+        :attributes:
+

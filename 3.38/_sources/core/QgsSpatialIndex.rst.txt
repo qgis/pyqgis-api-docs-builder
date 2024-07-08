@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsSpatialIndex
+...............................................
+
+.. py:module:: QgsSpatialIndex
+
+.. autoclass:: qgis.core.QgsSpatialIndex
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsSpatialIndex
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSpatialIndex
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSpatialIndex
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSpatialIndex
+        :attributes:
+

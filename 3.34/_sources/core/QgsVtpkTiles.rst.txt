@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsVtpkTiles
+...............................................
+
+.. py:module:: QgsVtpkTiles
+
+.. autoclass:: qgis.core.QgsVtpkTiles
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsVtpkTiles
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVtpkTiles
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVtpkTiles
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsVtpkTiles
+        :attributes:
+

@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: FeatureToJsonFlags
+...............................................
+
+.. py:module:: FeatureToJsonFlags
+
+.. autoclass:: qgis.core.FeatureToJsonFlags
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.FeatureToJsonFlags
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.FeatureToJsonFlags
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.FeatureToJsonFlags
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.FeatureToJsonFlags
+        :attributes:
+
