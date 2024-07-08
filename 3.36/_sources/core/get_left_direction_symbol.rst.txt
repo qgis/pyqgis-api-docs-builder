@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: get_left_direction_symbol
+...............................................
+
+.. py:module:: get_left_direction_symbol
+
+.. autoclass:: qgis.core.get_left_direction_symbol
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.get_left_direction_symbol
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.get_left_direction_symbol
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.get_left_direction_symbol
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.get_left_direction_symbol
+        :attributes:
+

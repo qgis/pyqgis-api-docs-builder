@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: set_placement_flags
+...............................................
+
+.. py:module:: set_placement_flags
+
+.. autoclass:: qgis.core.set_placement_flags
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.set_placement_flags
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.set_placement_flags
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.set_placement_flags
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.set_placement_flags
+        :attributes:
+

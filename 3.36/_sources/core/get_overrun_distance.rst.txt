@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: get_overrun_distance
+...............................................
+
+.. py:module:: get_overrun_distance
+
+.. autoclass:: qgis.core.get_overrun_distance
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.get_overrun_distance
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.get_overrun_distance
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.get_overrun_distance
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.get_overrun_distance
+        :attributes:
+

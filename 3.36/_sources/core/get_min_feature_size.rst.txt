@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: get_min_feature_size
+...............................................
+
+.. py:module:: get_min_feature_size
+
+.. autoclass:: qgis.core.get_min_feature_size
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.get_min_feature_size
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.get_min_feature_size
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.get_min_feature_size
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.get_min_feature_size
+        :attributes:
+

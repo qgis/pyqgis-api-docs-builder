@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: get_merge_lines
+...............................................
+
+.. py:module:: get_merge_lines
+
+.. autoclass:: qgis.core.get_merge_lines
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.get_merge_lines
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.get_merge_lines
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.get_merge_lines
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.get_merge_lines
+        :attributes:
+

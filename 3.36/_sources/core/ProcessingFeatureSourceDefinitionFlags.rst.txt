@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: ProcessingFeatureSourceDefinitionFlags
+...............................................
+
+.. py:module:: ProcessingFeatureSourceDefinitionFlags
+
+.. autoclass:: qgis.core.ProcessingFeatureSourceDefinitionFlags
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.ProcessingFeatureSourceDefinitionFlags
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.ProcessingFeatureSourceDefinitionFlags
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.ProcessingFeatureSourceDefinitionFlags
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.ProcessingFeatureSourceDefinitionFlags
+        :attributes:
+

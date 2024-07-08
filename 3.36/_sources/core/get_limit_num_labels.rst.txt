@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: get_limit_num_labels
+...............................................
+
+.. py:module:: get_limit_num_labels
+
+.. autoclass:: qgis.core.get_limit_num_labels
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.get_limit_num_labels
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.get_limit_num_labels
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.get_limit_num_labels
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.get_limit_num_labels
+        :attributes:
+

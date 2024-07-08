@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: QgsSensorThingsUtils
+...............................................
+
+.. py:module:: QgsSensorThingsUtils
+
+.. autoclass:: qgis.core.QgsSensorThingsUtils
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.QgsSensorThingsUtils
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSensorThingsUtils
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSensorThingsUtils
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.QgsSensorThingsUtils
+        :attributes:
+

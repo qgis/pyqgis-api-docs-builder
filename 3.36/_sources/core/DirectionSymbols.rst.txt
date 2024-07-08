@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: DirectionSymbols
+...............................................
+
+.. py:module:: DirectionSymbols
+
+.. autoclass:: qgis.core.DirectionSymbols
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.DirectionSymbols
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.DirectionSymbols
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.DirectionSymbols
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.DirectionSymbols
+        :attributes:
+

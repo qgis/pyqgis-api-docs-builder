@@ -1,0 +1,27 @@
+.. package: qgis\.core
+
+Class: LinePlacementFlags
+...............................................
+
+.. py:module:: LinePlacementFlags
+
+.. autoclass:: qgis.core.LinePlacementFlags
+   :special-members: __init__
+   :members:
+   :undoc-members:
+
+    .. autoautosummary:: qgis.core.LinePlacementFlags
+        :enums:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.LinePlacementFlags
+        :methods:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.LinePlacementFlags
+        :signals:
+        :nosignatures:
+
+    .. autoautosummary:: qgis.core.LinePlacementFlags
+        :attributes:
+
