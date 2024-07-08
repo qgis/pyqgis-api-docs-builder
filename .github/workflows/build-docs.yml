@@ -73,6 +73,7 @@ jobs:
           path: ./build/
 
   publish-docs:
+    if: ${{ github.event_name != 'pull_request' }}
     name: Publish HTML
     runs-on: ubuntu-latest
     needs: build-docs
@@ -101,7 +102,6 @@ jobs:
           merge-multiple: true
 
       - name: Deploy
-        if: ${{ github.event_name != 'pull_request' }}
         env:
           VERSIONS: ${{ needs.build-docs.outputs.QGIS_VERSIONS_LIST }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
