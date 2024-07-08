@@ -15,5 +15,3 @@ RUN pip install --break-system-packages --upgrade sphinx-rtd-theme numpydoc
 RUN mkdir /root/pyqgis
 COPY . /root/pyqgis
 WORKDIR /root/pyqgis
-
-CMD /bin/bash -c "/root/pyqgis/scripts/build-docs.sh -v ${QGIS_VERSION} ${BUILD_OPTIONS}"

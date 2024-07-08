@@ -39,6 +39,7 @@ shift $(expr $OPTIND - 1)
 
 echo "QGIS VERSION: ${QGIS_VERSION}"
 echo "PACKAGE LIMIT: ${PACKAGE}"
+echo "SINGLE CLASS: ${CLASS}"
 
 if [[ -n ${QGIS_BUILD_DIR} ]]; then
   export PYTHONPATH=${PYTHONPATH}:$QGIS_BUILD_DIR/output/python
