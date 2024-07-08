@@ -16,7 +16,7 @@ parser.add_argument('--version', '-v', dest='qgis_version', default="master")
 parser.add_argument('--package', '-p', dest='package_limit', default=None, nargs='+',
                     choices=['core', 'gui', 'server', 'analysis', 'processing', '_3d'],
                     help='limit the build of the docs to one package (core, gui, server, analysis, processing, 3d) ')
-parser.add_argument('--class', '-c', dest='class_limit', default=None, nargs='+',
+parser.add_argument('--class', '-c', dest='single_class', default=None, nargs='+',
                     help='limit the build of the docs to a single class')
 args = parser.parse_args()
 
@@ -185,9 +185,9 @@ def extract_package_classes(package):
     for class_name in dir(package):
         if class_name.startswith('_'):
             continue
-        if args.class_limit:
+        if args.single_class:
             found = False
-            for _class in args.class_limit:
+            for _class in args.single_class:
                 if class_name.startswith(_class):
                     found = True
                     break
