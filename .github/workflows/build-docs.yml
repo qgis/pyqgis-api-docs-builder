@@ -38,10 +38,10 @@ jobs:
         run: |
           import yaml, os
           def add_to_env_and_outputs(name, value):
-              for var in ('GITHUB_OUTPUT', 'GITHUB_ENV'): 
+              for var in ('GITHUB_OUTPUT', 'GITHUB_ENV'):
                   with open(os.environ[var], 'a') as fh:
                       print(f'{name}={value}', file=fh)
-          
+
           with open('pyqgis_conf.yml', 'r') as f:
               cfg = yaml.safe_load(f)
           version_list = cfg['version_list'].replace(' ', '').split(',')

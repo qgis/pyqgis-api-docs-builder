@@ -26,4 +26,3 @@ source/i18n/*/conf.py
 source/static/
 sphinx_rtd_theme/
 .token*
-

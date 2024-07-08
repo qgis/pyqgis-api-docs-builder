@@ -216,4 +216,3 @@ def setup(app):
         app.connect('autodoc-skip-member', skip_member)
     except BaseException as e:
         raise e
-
