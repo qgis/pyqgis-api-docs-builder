@@ -2,32 +2,44 @@
 
 # QGIS Python API Documentation
 
-Sphinx project to build python API documentation for QGIS..
+This a Sphinx project to build python API documentation for QGIS.
+It does not contain the actual documentation itself which is hold in QGIS source code at https://github.com/qgis/QGIS/.
 
 You can see an online version of the generated documentation at this
 website:
 
 https://qgis.org/pyqgis/master/index.html
 
-## Prerequisites:
+## Building the docs
 
-Building and mostly pushing the docs properly requires SIP 4.19.7+.
+### With official Docker images
 
+You can build the documentation for a specific QGIS versions by calling
 
-## To build:
+```./scripts/run-docker.sh -v 3.40```
+
+### From your own QGIS build
 
 Call ``build-docs.sh``. QGIS python package must be found.
 You can either:
 
 * export the PYTHONPATH yourself
-* export your QGIS build directory with ``export QGIS_BUILD_DIR=/Users/timlinux/dev/QGIS/build``
-* or provide QGIS build directory as argument to the script: ``./build-docs.sh -qgis-build-dir /Users/timlinux/dev/QGIS/build``
+* export your QGIS build directory with ``export QGIS_BUILD_DIR=~/dev/QGIS/build``
+* or provide QGIS build directory as argument to the script: ``./build-docs.sh -qgis-build-dir ~/dev/QGIS/build``
+
+### Testing & development
+
+For testing and development, you can restrict the build of the documentation to specific classes to get faster builds:
+
+For a quick local run on a specific version (few classes):
+```./scripts/run-docker.sh -v 3.40 -c QgsVectorLayer -c QgsFeature```
+
+For all core (but no gui, analysis, etc):
+```./scripts/run-docker.sh -p core```
 
 ## Viewing the docs
 
 Open the build/html/ contents in your web browser.
-
-e.g. on MacOS you can do ``open open build/html/docs/index.html``
 
 ## Publishing the docs
 
