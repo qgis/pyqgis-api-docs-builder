@@ -5,7 +5,6 @@ import yaml
 
 import sphinx_rtd_theme
 
-
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
@@ -19,7 +18,12 @@ with open('../../pyqgis_conf.yml', 'r') as f:
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['sphinx.ext.autosummary', 'sphinx.ext.autodoc', 'sphinxcontrib.jquery']  #, 'rinoh.frontend.sphinx'], 'sphinx_autodoc_typehints'
+extensions = [
+  'sphinx.ext.autosummary',
+  'sphinx.ext.autodoc',
+  'sphinxcontrib.jquery',
+  'sphinx.ext.linkcode'
+]  #, 'rinoh.frontend.sphinx'], 'sphinx_autodoc_typehints'
 
 # The suffix of source filenames.
 source_suffix = '.rst'
@@ -39,6 +43,11 @@ copyright = u'2018, QGIS project'
 version = '__QGIS_VERSION__'
 # The full version, including alpha/beta/rc tags.
 release = '__QGIS_VERSION__'
+
+if version == 'master':
+    QGIS_GIT_TAG = ''
+else:
+    QGIS_GIT_TAG = f"release-{str(__QGIS_VERSION__).replace('.','_')}"
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -208,12 +217,33 @@ man_pages = [
 locale_dirs = ['../i18n/']
 gettext_compact = False
 
+class_maps = {}
+for module in ("3d", "analysis", "core", "gui", "server"):
+    with open(f'/usr/lib/python3/dist-packages/qgis/{module}/class_map.yaml', 'r') as f:
+        class_maps[module] = yaml.safe_load(f)
+
+
+def linkcode_resolve(domain, info):
+    if domain != 'py':
+        return None
+    if not info['module']:
+        return None
+    module = info['module'].split('.')[1]
+    try:
+        header = class_maps[module][info["fullname"]]
+        return f"https://github.com/qgis/QGIS/tree/{QGIS_GIT_TAG}/{header}"
+    except KeyError:
+        class_name = info["fullname"].split('.')[0]
+        header = class_maps[module][class_name]
+        # return f"https://github.com/qgis/QGIS/tree/{QGIS_GIT_TAG}/{header}"
+        return None
 
 def setup(app):
     try:
         from autoautosummary import AutoAutoSummary
-        app.add_directive('autoautosummary', AutoAutoSummary)
         from process_links import process_docstring, process_signature, skip_member
+
+        app.add_directive('autoautosummary', AutoAutoSummary)
         app.connect('autodoc-process-signature', process_signature)
         app.connect('autodoc-process-docstring', process_docstring)
         app.connect('autodoc-skip-member', skip_member)

@@ -36,7 +36,7 @@ while getopts "q:p:c:v:" opt; do
     ;;
   esac
 done
-shift $(expr $OPTIND - 1)
+shift $((OPTIND-1))
 
 # GNU prefix command for mac os support (gsed, gsplit)
 GP=
@@ -62,14 +62,8 @@ echo "##[endgroup]"
 
 echo "##[group] Docker run"
 docker rm -f pyqgis || true
-echo "command: /root/pyqgis/scripts/build-docs.sh ${PACKAGE} ${CLASS} -v ${QGIS_VERSION}"
-docker run --name pyqgis \
+docker run -v ${DIR}:/root/pyqgis \
   qgis/qgis-python-api-doc:${QGIS_DOCKER_TAG} \
   /bin/bash -c "/root/pyqgis/scripts/build-docs.sh ${PACKAGE} ${CLASS} -v ${QGIS_VERSION}"
 echo "##[endgroup]"
 
-echo "Copy files"
-mkdir -p ${DIR}/build
-mkdir -p ${DIR}/build/${QGIS_VERSION}
-CONTAINER_ID=$(docker ps -aqf "name=pyqgis")
-docker cp ${CONTAINER_ID}:/root/pyqgis/build/${QGIS_VERSION}/html/. ${DIR}/build/${QGIS_VERSION}/

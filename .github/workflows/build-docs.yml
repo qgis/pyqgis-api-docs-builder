@@ -57,6 +57,9 @@ jobs:
         run: |
           ./scripts/run-docker.sh -v ${QGIS_VERSION}
 
+      - uses: mxschmitt/action-tmate@v3
+        if: failure()
+
       - uses: actions/upload-artifact@v4
         if: ${{ github.event_name != 'pull_request' || matrix.qgis_version == 'master' }}
         with:
@@ -64,7 +67,7 @@ jobs:
           path: ./build/
 
       - name: Create archive
-
+        if: ${{ github.event_name != 'pull_request' || matrix.qgis_version == 'master' }}
         run: zip -r pyqgis-docs-${{ env.QGIS_VERSION }}.zip ./build/${{ env.QGIS_VERSION }}
 
       - name: Release

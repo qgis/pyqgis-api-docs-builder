@@ -7,6 +7,9 @@ DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 pushd ${DIR}/..
 
 QGIS_VERSION=master
+
+# TODO check version: $(apt-cache show qgis | grep Version | cut -d' ' -f2)
+
 while getopts "q:p:c:v:" opt; do
   case $opt in
   v)
@@ -35,11 +38,19 @@ while getopts "q:p:c:v:" opt; do
     ;;
   esac
 done
-shift $(expr $OPTIND - 1)
+shift $((OPTIND-1))
+
+if [[ ${QGIS_VERSION} == 'master' ]]; then
+  RELEASE_TAG=${QGIS_VERSION}
+else
+  RELEASE_TAG="release-${QGIS_VERSION//./_}"
+fi
 
 echo "QGIS VERSION: ${QGIS_VERSION}"
+echo "RELEASE TAG: ${RELEASE_TAG}"
 echo "PACKAGE LIMIT: ${PACKAGE}"
 echo "SINGLE CLASS: ${CLASS}"
+
 
 if [[ -n ${QGIS_BUILD_DIR} ]]; then
   export PYTHONPATH=${PYTHONPATH}:$QGIS_BUILD_DIR/output/python
