@@ -1,16 +1,15 @@
-# -*- coding: utf-8 -*-
-
-import sys, os
-import yaml
+import os
+import sys
 
 import sphinx_rtd_theme
+import yaml
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-sys.path.insert(0, os.path.abspath('../../'))
+sys.path.insert(0, os.path.abspath("../../"))
 
-with open('../../pyqgis_conf.yml', 'r') as f:
+with open("../../pyqgis_conf.yml") as f:
     cfg = yaml.safe_load(f)
 
 
@@ -19,62 +18,62 @@ with open('../../pyqgis_conf.yml', 'r') as f:
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 extensions = [
-  'sphinx.ext.autosummary',
-  'sphinx.ext.autodoc',
-  'sphinxcontrib.jquery',
-  'sphinx.ext.linkcode'
-]  #, 'rinoh.frontend.sphinx'], 'sphinx_autodoc_typehints'
+    "sphinx.ext.autosummary",
+    "sphinx.ext.autodoc",
+    "sphinxcontrib.jquery",
+    "sphinx.ext.linkcode",
+]  # , 'rinoh.frontend.sphinx'], 'sphinx_autodoc_typehints'
 
 # The suffix of source filenames.
-source_suffix = '.rst'
+source_suffix = ".rst"
 
 # The master toctree document.
-master_doc = 'index'
+master_doc = "index"
 
 # General information about the project.
-project = u'QGIS Python API'
-copyright = u'2018, QGIS project'
+project = "QGIS Python API"
+copyright = "2018, QGIS project"
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
 # The short X.Y version.
-version = '__QGIS_VERSION__'
+version = "__QGIS_VERSION__"
 # The full version, including alpha/beta/rc tags.
-release = '__QGIS_VERSION__'
+release = "__QGIS_VERSION__"
 
-if version == 'master':
-    QGIS_GIT_TAG = ''
+if version == "master":
+    QGIS_GIT_TAG = ""
 else:
-    QGIS_GIT_TAG = f"release-{str(__QGIS_VERSION__).replace('.','_')}"
+    QGIS_GIT_TAG = f"release-{release.replace('.','_')}"
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-exclude_patterns = ['output', "i18n", "resources", "scripts"]
+exclude_patterns = ["output", "i18n", "resources", "scripts"]
 
 # If true, '()' will be appended to :func: etc. cross-reference text.
-#add_function_parentheses = True
+# add_function_parentheses = True
 
 # If true, the current module name will be prepended to all description
 # unit titles (such as .. function::).
-#add_module_names = True
+# add_module_names = True
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'sphinx'
+pygments_style = "sphinx"
 
 # A list of ignored prefixes for module index sorting.
-#modindex_common_prefix = []
+# modindex_common_prefix = []
 
 # If true, keep warnings as "system message" paragraphs in the built documents.
-#keep_warnings = False
+# keep_warnings = False
 
 
 # -- Options for HTML output ---------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'sphinx_rtd_theme'
+html_theme = "sphinx_rtd_theme"
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]  # use with module import
 
 # html_theme_path = ['.']  # use with git submodule
@@ -83,91 +82,92 @@ html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]  # use with module im
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
-  'collapse_navigation': False,
-  'sticky_navigation': False,
-  'display_version': True,
-  'prev_next_buttons_location': None,
-  'titles_only': True,
-  'versioning': True,
-  'canonical_url': 'https://qgis.org/pyqgis/latest',
+    "collapse_navigation": False,
+    "sticky_navigation": False,
+    "display_version": True,
+    "prev_next_buttons_location": None,
+    "titles_only": True,
+    "versioning": True,
+    "canonical_url": "https://qgis.org/pyqgis/latest",
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
-#html_theme_path = []
+# html_theme_path = []
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
 html_title = ""
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
-#html_short_title = None
+# html_short_title = None
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-html_logo = '../../resources/en/common/logo.png'
+html_logo = "../../resources/en/common/logo.png"
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
 # pixels large.
-html_favicon = '../../resources/en/common/qgis.ico'
+html_favicon = "../../resources/en/common/qgis.ico"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-#html_static_path = ['themes/qgis-theme/static']
+# html_static_path = ['themes/qgis-theme/static']
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
-html_last_updated_fmt = '%H:%M %b %d, %Y'
+html_last_updated_fmt = "%H:%M %b %d, %Y"
 
 # If true, SmartyPants will be used to convert quotes and dashes to
 # typographically correct entities.
 # html_use_smartypants = True
 
-current_stable = str(cfg['current_stable'])
-current_ltr = str(cfg['current_ltr'])
-version_list = ('master', current_stable, current_ltr)
+current_stable = str(cfg["current_stable"])
+current_ltr = str(cfg["current_ltr"])
+version_list = ("master", current_stable, current_ltr)
 
-url = cfg['pyqgis_url']
-if not url.endswith('/'):
-    url += '/'
+url = cfg["pyqgis_url"]
+if not url.endswith("/"):
+    url += "/"
 
 if version not in version_list:
-    raise ValueError('QGIS version is not in version list', version, version_list)
+    raise ValueError("QGIS version is not in version list", version, version_list)
 
 context = {
     # 'READTHEDOCS': True,
-    'version_downloads': False,
-    'current_version': version,
-    'version': version,
-    'versions': [[v, url+v] for v in ('master', cfg['current_stable'], cfg['current_ltr'])],
-    'version_branch': ''.join(['release-', version]).replace('.',
-                                                        '_') if version != 'master' else 'master',
-    'display_lower_left': True,
+    "version_downloads": False,
+    "current_version": version,
+    "version": version,
+    "versions": [[v, url + v] for v in ("master", cfg["current_stable"], cfg["current_ltr"])],
+    "version_branch": (
+        "".join(["release-", version]).replace(".", "_") if version != "master" else "master"
+    ),
+    "display_lower_left": True,
     # 'downloads': [ ['PDF', '/builders.pdf'], ['HTML', '/builders.tgz'] ],
 }
 
-html_static_path = ['_static']
+html_static_path = ["_static"]
 html_css_files = [
-    'css/custom.css',
+    "css/custom.css",
 ]
 
-if 'html_context' in globals():
-    html_context.update(context)
+if "html_context" in globals():
+    html_context.update(context)  # noqa: F821
 else:
     html_context = context
 
-templates_path = ['_templates']
+templates_path = ["_templates"]
 
 
 # If false, no module index is generated.
 html_domain_indices = True
 
 # If false, no index is generated.
-#html_use_index = True
+# html_use_index = True
 
 # If true, the index is split into individual pages for each letter.
-#html_split_index = False
+# html_split_index = False
 
 # If true, links to the reST sources are added to the pages.
 # It would be nice to show link to source: https://github.com/qgis/pyqgis/issues/37
@@ -182,13 +182,13 @@ html_show_copyright = False
 # If true, an OpenSearch description file will be output, and all pages will
 # contain a <link> tag referring to it.  The value of this option must be the
 # base URL from which the finished HTML is served.
-#html_use_opensearch = ''
+# html_use_opensearch = ''
 
 # This is the file name suffix for HTML files (e.g. ".xhtml").
-#html_file_suffix = None
+# html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'QGISAPIDOC'
+htmlhelp_basename = "QGISAPIDOC"
 
 rst_prolog = """
 .. role:: disclaimer
@@ -206,48 +206,46 @@ rst_epilog = """
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
-man_pages = [
-    ('index', 'qgiswebsite', u'QGIS Website Documentation',
-     [u'QGIS Contributors'], 1)
-]
+man_pages = [("index", "qgiswebsite", "QGIS Website Documentation", ["QGIS Contributors"], 1)]
 
 # If true, show URL addresses after external links.
-#man_show_urls = False
+# man_show_urls = False
 
-locale_dirs = ['../i18n/']
+locale_dirs = ["../i18n/"]
 gettext_compact = False
 
 class_maps = {}
 for module in ("3d", "analysis", "core", "gui", "server"):
-    with open(f'/usr/lib/python3/dist-packages/qgis/{module}/class_map.yaml', 'r') as f:
+    with open(f"/usr/lib/python3/dist-packages/qgis/{module}/class_map.yaml") as f:
         class_maps[module] = yaml.safe_load(f)
 
 
 def linkcode_resolve(domain, info):
-    if domain != 'py':
+    if domain != "py":
         return None
-    if not info['module']:
+    if not info["module"]:
         return None
-    module = info['module'].split('.')[1]
-    if module == '_3d':
-      module = '3d'
+    module = info["module"].split(".")[1]
+    if module == "_3d":
+        module = "3d"
     try:
         header = class_maps[module][info["fullname"]]
         return f"https://github.com/qgis/QGIS/tree/{QGIS_GIT_TAG}/{header}"
     except KeyError:
-        class_name = info["fullname"].split('.')[0]
+        class_name = info["fullname"].split(".")[0]
         header = class_maps[module][class_name]
         # return f"https://github.com/qgis/QGIS/tree/{QGIS_GIT_TAG}/{header}"
         return None
+
 
 def setup(app):
     try:
         from autoautosummary import AutoAutoSummary
         from process_links import process_docstring, process_signature, skip_member
 
-        app.add_directive('autoautosummary', AutoAutoSummary)
-        app.connect('autodoc-process-signature', process_signature)
-        app.connect('autodoc-process-docstring', process_docstring)
-        app.connect('autodoc-skip-member', skip_member)
+        app.add_directive("autoautosummary", AutoAutoSummary)
+        app.connect("autodoc-process-signature", process_signature)
+        app.connect("autodoc-process-docstring", process_docstring)
+        app.connect("autodoc-skip-member", skip_member)
     except BaseException as e:
         raise e
