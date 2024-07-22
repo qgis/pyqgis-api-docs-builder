@@ -233,7 +233,7 @@ def linkcode_resolve(domain, info):
         return f"https://github.com/qgis/QGIS/tree/{QGIS_GIT_TAG}/{header}"
     except KeyError:
         # class_name = info["fullname"].split(".")[0]
-        header = class_maps[module][class_name]
+        # header = class_maps[module][class_name]
         # return f"https://github.com/qgis/QGIS/tree/{QGIS_GIT_TAG}/{header}"
         return None
 
