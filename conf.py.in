@@ -229,6 +229,8 @@ def linkcode_resolve(domain, info):
     if not info['module']:
         return None
     module = info['module'].split('.')[1]
+    if module == '_3d':
+      module = '3d'
     try:
         header = class_maps[module][info["fullname"]]
         return f"https://github.com/qgis/QGIS/tree/{QGIS_GIT_TAG}/{header}"
