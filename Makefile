@@ -49,7 +49,7 @@ help:
 .PHONY: help Makefile
 
 prepare:
-	${SED} -r 's/__QGIS_VERSION__/${QGIS_VERSION}/g;' conf.py.in > $(SOURCEDIR)/conf.py
+	${SED} -r 's/__QGIS_VERSION__/${QGIS_VERSION}/g;' conf.in.py > $(SOURCEDIR)/conf.py
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
