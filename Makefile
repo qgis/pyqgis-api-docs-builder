@@ -24,7 +24,7 @@
 #
 
 # You can set these variables from the command line.
-SPHINXOPTS    = -T #-j auto
+SPHINXOPTS    = -T -j auto
 SPHINXBUILD   = sphinx-build
 SPHINXPROJ    = QGIS
 QGIS_VERSION   = master
