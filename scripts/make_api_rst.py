@@ -66,7 +66,8 @@ current_ltr_minor = int(current_ltr.split(".")[1])
 old_versions_links = ", ".join(reversed(
     [
         f"`3.{v} <https://github.com/qgis/pyqgis-api-docs-builder/releases/download/3.{v}/pyqgis-docs-3.{v}.zip>`_"
-        for v in range(0, current_ltr_minor, 2)
+        for v in range(0, current_stable_minor, 2)
+        if v != current_ltr_minor
     ]
 ))
 
