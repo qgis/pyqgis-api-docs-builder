@@ -72,7 +72,7 @@ def process_docstring(app, what, name, obj, options, lines):
         if signature != "":
             match = py_ext_sig_re.match(signature)
             if not match:
-                print(obj)
+                # print(obj)
                 if name not in cfg["non-instantiable"]:
                     raise Warning(f"invalid signature for {name}: {signature}")
             else:

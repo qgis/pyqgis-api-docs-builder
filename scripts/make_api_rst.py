@@ -183,7 +183,7 @@ def generate_docs():
         package_index.write(package_header.replace("PACKAGENAME", package_name))
 
         for class_name in extract_package_classes(package):
-            print(class_name)
+            # print(class_name)
             substitutions = {"PACKAGE": package_name, "CLASS": class_name}
             class_template = template.substitute(**substitutions)
             class_rst = open(f"api/{qgis_version}/{package_name}/{class_name}.rst", "w")
@@ -220,6 +220,12 @@ def extract_package_classes(package):
                 continue
         if class_name in cfg["skipped"]:
             continue
+
+        _class = getattr(package, class_name)
+        if hasattr(_class, '__name__') and class_name != _class.__name__:
+            print(f'Skipping alias {class_name}, {_class.__name__}')
+            continue
+
         # if not re.match('^Qgi?s', class_name):
         #     continue
         classes.append(class_name)
