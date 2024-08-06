@@ -159,6 +159,7 @@ else:
 
 templates_path = ["_templates"]
 
+autodoc_default_options = {'show-inheritance': True}
 
 # If false, no module index is generated.
 html_domain_indices = True
@@ -241,11 +242,12 @@ def linkcode_resolve(domain, info):
 def setup(app):
     try:
         from autoautosummary import AutoAutoSummary
-        from process_links import process_docstring, process_signature, skip_member
+        from process_links import process_docstring, process_signature, skip_member, process_bases
 
         app.add_directive("autoautosummary", AutoAutoSummary)
         app.connect("autodoc-process-signature", process_signature)
         app.connect("autodoc-process-docstring", process_docstring)
         app.connect("autodoc-skip-member", skip_member)
+        app.connect("autodoc-process-bases", process_bases)
     except BaseException as e:
         raise e
