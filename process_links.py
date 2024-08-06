@@ -129,6 +129,8 @@ def skip_member(app, what, name, obj, skip, options):
     # skip monkey patched enums (base classes are different)
     if name == "staticMetaObject":
         return True
+    if name == "baseClass":
+        return True
     if hasattr(obj, "is_monkey_patched") and obj.is_monkey_patched:
         print(f"skipping monkey patched enum {name}")
         return True
