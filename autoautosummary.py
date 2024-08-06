@@ -3,14 +3,18 @@
 # added toctree and nosignatures in options
 
 from enum import Enum
+from typing import Any
 
 import PyQt5
 from docutils import nodes
 from docutils.parsers.rst import directives
 from sphinx.ext.autosummary import Autosummary, get_documenter
 from sphinx.util.inspect import safe_getattr
+from sphinx.util import logging
+from sphinx.locale import __
 
 # from sphinx.directives import directive
+logger = logging.getLogger(__name__)
 
 
 class AutoAutoSummary(Autosummary):
@@ -35,6 +39,17 @@ class AutoAutoSummary(Autosummary):
     required_arguments = 1
 
     @staticmethod
+    def skip_member(doc, obj: Any, name: str, objtype: str) -> bool:
+        try:
+            return doc.settings.env.app.emit_firstresult('autodoc-skip-member', objtype, name,
+                                        obj, False, {})
+        except Exception as exc:
+            logger.warning(__('autosummary: failed to determine %r to be documented.'
+                              'the following exception was raised:\n%s'),
+                           name, exc, type='autosummary')
+            return False
+
+    @staticmethod
     def get_members(doc, obj, typ, include_public=None, signal=False, enum=False):
         try:
             if not include_public:
@@ -50,6 +65,9 @@ class AutoAutoSummary(Autosummary):
                     # cl = get_class_that_defined_method(chobj)
                     # print(name, chobj.__qualname__, type(chobj), issubclass(chobj, Enum), documenter.objtype)
                     if documenter.objtype == typ:
+                        skipped = AutoAutoSummary.skip_member(doc, chobj, name, documenter.objtype)
+                        if skipped is True:
+                            continue
                         if typ == "attribute":
                             if signal and isinstance(chobj, PyQt5.QtCore.pyqtSignal):
                                 continue
