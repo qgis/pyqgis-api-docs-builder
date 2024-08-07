@@ -17,14 +17,18 @@ Class: $CLASS
     .. autoautosummary:: qgis.$PACKAGE.$CLASS
         :enums:
         :nosignatures:
+        :exclude-members: $EXCLUDE_METHODS
 
     .. autoautosummary:: qgis.$PACKAGE.$CLASS
         :methods:
         :nosignatures:
+        :exclude-members: $EXCLUDE_METHODS
 
     .. autoautosummary:: qgis.$PACKAGE.$CLASS
         :signals:
         :nosignatures:
+        :exclude-members: $EXCLUDE_METHODS
 
     .. autoautosummary:: qgis.$PACKAGE.$CLASS
         :attributes:
+        :exclude-members: $EXCLUDE_METHODS

@@ -34,13 +34,17 @@ class AutoAutoSummary(Autosummary):
         "attributes": directives.unchanged,
         "nosignatures": directives.unchanged,
         "toctree": directives.unchanged,
+        "exclude-members": directives.unchanged
     }
 
     required_arguments = 1
 
     @staticmethod
-    def skip_member(doc, obj: Any, name: str, objtype: str) -> bool:
+    def skip_member(doc, obj: Any, name: str, options, objtype: str) -> bool:
+        # print(name, name in options.get('exclude-members', '').split(','))
         try:
+            if name in options.get('exclude-members', '').split(','):
+                return True
             return doc.settings.env.app.emit_firstresult('autodoc-skip-member', objtype, name,
                                         obj, False, {})
         except Exception as exc:
@@ -50,7 +54,7 @@ class AutoAutoSummary(Autosummary):
             return False
 
     @staticmethod
-    def get_members(doc, obj, typ, include_public: Optional[List]=None, signal=False, enum=False):
+    def get_members(doc, obj, typ, options, include_public: Optional[List]=None, signal=False, enum=False):
         try:
             if not include_public:
                 include_public = []
@@ -65,7 +69,7 @@ class AutoAutoSummary(Autosummary):
                     # cl = get_class_that_defined_method(chobj)
                     # print(name, chobj.__qualname__, type(chobj), issubclass(chobj, Enum), documenter.objtype)
                     if documenter.objtype == typ:
-                        skipped = AutoAutoSummary.skip_member(doc, chobj, name, documenter.objtype)
+                        skipped = AutoAutoSummary.skip_member(doc, chobj, name, options, documenter.objtype)
                         if skipped is True:
                             continue
                         if typ == "attribute":
@@ -106,19 +110,19 @@ class AutoAutoSummary(Autosummary):
             c = getattr(m, class_name)
             if "methods" in self.options:
                 rubric_title = "Methods"
-                _, rubric_elems = self.get_members(self.state.document, c, "method", ["__init__"])
+                _, rubric_elems = self.get_members(self.state.document, c, "method", self.options, ["__init__"])
             elif "enums" in self.options:
                 rubric_title = "Enums"
                 _, rubric_elems = self.get_members(
-                    self.state.document, c, "class", None, False, True
+                    self.state.document, c, "class", self.options, None, False, True
                 )
             elif "signals" in self.options:
                 rubric_title = "Signals"
-                _, rubric_elems = self.get_members(self.state.document, c, "attribute", None, signal=True)
+                _, rubric_elems = self.get_members(self.state.document, c, "attribute", self.options, None, signal=True)
             elif "attributes" in self.options:
                 rubric_title = "Attributes"
                 _, rubric_elems = self.get_members(
-                    self.state.document, c, "attribute", None, False
+                    self.state.document, c, "attribute", self.options, None, False
                 )
 
             if rubric_elems:
