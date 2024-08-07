@@ -10,7 +10,10 @@ RUN curl https://bootstrap.pypa.io/get-pip.py | python3
 
 WORKDIR /root
 
-RUN pip install --break-system-packages --upgrade sphinx-rtd-theme numpydoc graphviz
+RUN apt-get update \
+  && apt-get install -y graphviz
+
+RUN pip install --break-system-packages --upgrade sphinx-rtd-theme numpydoc
 
 RUN mkdir /root/pyqgis
 COPY . /root/pyqgis
