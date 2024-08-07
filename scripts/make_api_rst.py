@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import argparse
+import re
 from os import makedirs
 from shutil import rmtree
 from string import Template
@@ -70,6 +71,10 @@ old_versions_links = ", ".join(reversed(
         if v not in (current_stable_minor, current_ltr_minor)
     ]
 ))
+
+py_ext_sig_re = re.compile(
+r"""^(?:([\w.]+::)?([\w.]+\.)?(\w+)\s*(?:\((.*)\)(?:\s*->\s*([\w.]+(?:\[.*?\])?))?(?:\s*\[(signal)\])?)?)?$"""
+)
 
 
 # Make sure :numbered: is only specified in the top level index - see
@@ -190,6 +195,10 @@ def generate_docs():
                     continue
 
                 class_doc = getattr(_class, method).__doc__
+
+                if class_doc and all(py_ext_sig_re.match(line) for line in class_doc.split('\n')):
+                    # print(f'docs are function signature only {class_doc}')
+                    class_doc = None
 
                 for base in _class.__bases__:
                     if hasattr(base, method) and (not class_doc or getattr(base, method).__doc__ == class_doc):
