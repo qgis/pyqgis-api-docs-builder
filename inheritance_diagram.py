@@ -184,7 +184,7 @@ class InheritanceGraph:
         """
         all_classes = {}
 
-        def recurse(cls: Any) -> None:
+        def recurse(cls: Any, include_bases: bool, include_derived: bool=False, current_depth: int=0) -> None:
             if not show_builtins and cls in py_builtins:
                 return
             if not private_bases and cls.__name__.startswith('_'):
@@ -204,22 +204,33 @@ class InheritanceGraph:
                 pass
 
             baselist: list[str] = []
-            all_classes[cls] = (nodename, fullname, baselist, tooltip)
+            derivedlist: list[str] = []
+            all_classes[cls] = (nodename, fullname, baselist, tooltip, derivedlist)
 
             if fullname in top_classes:
                 return
 
-            for base in cls.__bases__:
-                if not show_builtins and base in py_builtins:
-                    continue
-                if not private_bases and base.__name__.startswith('_'):
-                    continue
-                baselist.append(self.class_name(base, parts, aliases))
-                if base not in all_classes:
-                    recurse(base)
+            if include_bases:
+                for base in cls.__bases__:
+                    if not show_builtins and base in py_builtins:
+                        continue
+                    if not private_bases and base.__name__.startswith('_'):
+                        continue
+                    baselist.append(self.class_name(base, parts, aliases))
+                    if base not in all_classes:
+                        recurse(base, include_bases, False)
+
+            if include_derived:
+                depth = current_depth + 1
+                for derived in cls.__subclasses__():
+                    if not show_builtins and cls in py_builtins:
+                        continue
+                    derivedlist.append(self.class_name(derived, parts, aliases))
+                    if derived not in all_classes:
+                        recurse(derived, False, depth<5, depth)
 
         for cls in classes:
-            recurse(cls)
+            recurse(cls, include_bases=True, include_derived=True, current_depth=0)
 
         return list(all_classes.values())  # type: ignore[arg-type]
 
@@ -247,7 +258,7 @@ class InheritanceGraph:
 
     def get_all_class_names(self) -> list[str]:
         """Get all of the class names involved in the graph."""
-        return [fullname for (_, fullname, _, _) in self.class_info]
+        return [fullname for (_, fullname, _, _, _) in self.class_info]
 
     # These are the default attrs for graphviz
     default_graph_attrs = {
@@ -312,7 +323,7 @@ class InheritanceGraph:
             self._format_graph_attrs(g_attrs),
         ]
 
-        for name, fullname, bases, tooltip in sorted(self.class_info):
+        for name, fullname, bases, tooltip, derived in sorted(self.class_info):
             # Write the node
             this_node_attrs = n_attrs.copy()
             if fullname in urls:
@@ -327,6 +338,13 @@ class InheritanceGraph:
                 '  "%s" -> "%s" [%s];\n' % (base_name, name, self._format_node_attrs(e_attrs))
                 for base_name in bases
             )
+
+            # Write derived classes
+            res.extend(
+                '  "%s" -> "%s" [%s];\n' % (name, derived_name, self._format_node_attrs(e_attrs))
+                for derived_name in derived
+            )
+
         res.append("}\n")
         return "".join(res)
 
