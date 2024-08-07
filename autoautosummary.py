@@ -3,18 +3,30 @@
 # added toctree and nosignatures in options
 
 from enum import Enum
+import re
 from typing import Any, List, Optional
 
 import PyQt5
 from docutils import nodes
 from docutils.parsers.rst import directives
 from sphinx.ext.autosummary import Autosummary, get_documenter
+from sphinx.ext import autosummary
 from sphinx.util.inspect import safe_getattr
 from sphinx.util import logging
 from sphinx.locale import __
 
 # from sphinx.directives import directive
 logger = logging.getLogger(__name__)
+
+
+old_extract_summary = autosummary.extract_summary
+
+def new_extract_summary(doc: list[str], document: Any) -> str:
+    res = old_extract_summary(doc, document)
+    res = re.sub(r'\`((?!(?:None|True|False))[a-zA-Z0-9_]+)\`', r'\1', res)
+    return res
+
+autosummary.extract_summary = new_extract_summary
 
 
 class AutoAutoSummary(Autosummary):
