@@ -448,7 +448,10 @@ def html_visit_inheritance_diagram(self: HTML5Translator, node: inheritance_diag
             else:
                 refname = child['reftitle']
 
-            urls[refname] = child.get('refuri')
+            if '#' in child.get('refuri'):
+                urls[refname] = child['refuri'].split('#')[0]
+            else:
+                urls[refname] = child.get('refuri')
         elif child.get('refid') is not None:
             if graphviz_output_format == 'SVG':
                 urls[child['reftitle']] = current_filename + '#' + child.get('refid')
