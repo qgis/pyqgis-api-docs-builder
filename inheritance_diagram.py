@@ -70,7 +70,8 @@ module_sig_re = re.compile(r'''^(?:([\w.]*)\.)?  # module names
 
 py_builtins = [obj for obj in vars(builtins).values()
                if inspect.isclass(obj)]
-
+from qgis.PyQt import sip
+py_builtins.extend([sip.wrapper, sip.simplewrapper])
 
 def try_import(objname: str) -> Any:
     """Import a object or module using *name* and *currentmodule*.
