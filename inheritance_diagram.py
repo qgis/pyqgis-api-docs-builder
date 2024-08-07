@@ -327,6 +327,9 @@ class InheritanceGraph:
         for name, fullname, bases, tooltip, derived in sorted(self.class_info):
             # Write the node
             this_node_attrs = n_attrs.copy()
+            if any(n.endswith(f'.{name}') for n in self.class_names):
+                this_node_attrs['fillcolor'] = '"#e7f2fa"'
+
             if fullname in urls:
                 this_node_attrs["URL"] = '"%s"' % urls[fullname]
                 this_node_attrs["target"] = '"_top"'
