@@ -22,6 +22,9 @@ extensions = [
     "sphinx.ext.autodoc",
     "sphinxcontrib.jquery",
     "sphinx.ext.linkcode",
+    "inheritance_diagram",
+    "sphinx.ext.graphviz"
+
 ]  # , 'rinoh.frontend.sphinx'], 'sphinx_autodoc_typehints'
 
 # The suffix of source filenames.
@@ -126,6 +129,8 @@ html_last_updated_fmt = "%H:%M %b %d, %Y"
 current_stable = str(cfg["current_stable"])
 current_ltr = str(cfg["current_ltr"])
 version_list = ("master", current_stable, current_ltr)
+
+graphviz_output_format = 'svg'
 
 url = cfg["pyqgis_url"]
 if not url.endswith("/"):

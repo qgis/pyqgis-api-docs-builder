@@ -5,7 +5,11 @@ Class: $CLASS
 
 .. py:module:: $CLASS
 
+.. inheritance-diagram:: qgis.$PACKAGE.$CLASS
+   :parts: 1
+
 .. autoclass:: qgis.$PACKAGE.$CLASS
+
    :special-members: __init__
    :members:
    :undoc-members:
