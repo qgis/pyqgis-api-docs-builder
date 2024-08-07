@@ -187,8 +187,7 @@ def generate_docs():
         # Read in the standard rst template we will use for classes
         package_index.write(package_header.replace("PACKAGENAME", package_name))
 
-        for _class in extract_package_classes(package):
-            class_name = _class.__name__
+        for class_name, _class in extract_package_classes(package):
             exclude_methods = set()
             for method in dir(_class):
                 if not hasattr(_class, method):
@@ -196,20 +195,21 @@ def generate_docs():
 
                 class_doc = getattr(_class, method).__doc__
 
-                if class_doc and all(py_ext_sig_re.match(line) for line in class_doc.split('\n')):
+                if class_doc and all(py_ext_sig_re.match(line) for line in str(class_doc).split('\n')):
                     # print(f'docs are function signature only {class_doc}')
                     class_doc = None
 
-                for base in _class.__bases__:
-                    if hasattr(base, method) and (not class_doc or getattr(base, method).__doc__ == class_doc):
-                        # print(f'skipping overridden method with no new doc {method}')
-                        exclude_methods.add(method)
-                        break
-                    elif hasattr(base, method):
-                        # print(f'overrides {method} with different docs')
-                        # print(class_doc)
-                        # print(getattr(base, method).__doc__)
-                        pass
+                if hasattr(_class, '__bases__'):
+                    for base in _class.__bases__:
+                        if hasattr(base, method) and (not class_doc or getattr(base, method).__doc__ == str(class_doc)):
+                            # print(f'skipping overridden method with no new doc {method}')
+                            exclude_methods.add(method)
+                            break
+                        elif hasattr(base, method):
+                            # print(f'overrides {method} with different docs')
+                            # print(class_doc)
+                            # print(getattr(base, method).__doc__)
+                            pass
 
             substitutions = {"PACKAGE": package_name,
                              "CLASS": class_name,
@@ -257,9 +257,9 @@ def extract_package_classes(package):
 
         # if not re.match('^Qgi?s', class_name):
         #     continue
-        classes.append(_class)
+        classes.append((class_name, _class))
 
-    return sorted(classes, key=lambda x: x.__name__)
+    return sorted(classes, key=lambda x: x[0])
 
 
 if __name__ == "__main__":
