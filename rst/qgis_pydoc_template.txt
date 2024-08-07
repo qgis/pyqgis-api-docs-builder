@@ -9,7 +9,6 @@ Class: $CLASS
    :parts: 1
 
 .. autoclass:: qgis.$PACKAGE.$CLASS
-
    :special-members: __init__
    :members:
    :undoc-members:
