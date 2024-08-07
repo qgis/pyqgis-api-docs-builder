@@ -12,6 +12,7 @@ Class: $CLASS
    :special-members: __init__
    :members:
    :undoc-members:
+   :exclude-members: $EXCLUDE_METHODS
 
     .. autoautosummary:: qgis.$PACKAGE.$CLASS
         :enums:
