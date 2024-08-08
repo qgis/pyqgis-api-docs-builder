@@ -3,7 +3,7 @@
 # added toctree and nosignatures in options
 
 from enum import Enum
-from typing import Any
+from typing import Any, List, Optional
 
 import PyQt5
 from docutils import nodes
@@ -50,7 +50,7 @@ class AutoAutoSummary(Autosummary):
             return False
 
     @staticmethod
-    def get_members(doc, obj, typ, include_public=None, signal=False, enum=False):
+    def get_members(doc, obj, typ, include_public: Optional[List]=None, signal=False, enum=False):
         try:
             if not include_public:
                 include_public = []
@@ -69,7 +69,7 @@ class AutoAutoSummary(Autosummary):
                         if skipped is True:
                             continue
                         if typ == "attribute":
-                            if signal and isinstance(chobj, PyQt5.QtCore.pyqtSignal):
+                            if signal and not isinstance(chobj, PyQt5.QtCore.pyqtSignal):
                                 continue
                             if not signal and isinstance(chobj, PyQt5.QtCore.pyqtSignal):
                                 continue
@@ -114,7 +114,7 @@ class AutoAutoSummary(Autosummary):
                 )
             elif "signals" in self.options:
                 rubric_title = "Signals"
-                _, rubric_elems = self.get_members(self.state.document, c, "attribute", None, True)
+                _, rubric_elems = self.get_members(self.state.document, c, "attribute", None, signal=True)
             elif "attributes" in self.options:
                 rubric_title = "Attributes"
                 _, rubric_elems = self.get_members(
