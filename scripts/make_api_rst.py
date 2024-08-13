@@ -64,16 +64,18 @@ current_stable = cfg["current_stable"]
 current_ltr = cfg["current_ltr"]
 current_stable_minor = int(current_stable.split(".")[1]) + 2  # '3.38' => 40
 current_ltr_minor = int(current_ltr.split(".")[1]) + 2  # '3.38' => 40
-old_versions_links = ", ".join(reversed(
-    [
-        f"`3.{v} <https://github.com/qgis/pyqgis-api-docs-builder/releases/download/3.{v}/pyqgis-docs-3.{v}.zip>`_"
-        for v in range(0, current_stable_minor, 2)
-        if v not in (current_stable_minor, current_ltr_minor)
-    ]
-))
+old_versions_links = ", ".join(
+    reversed(
+        [
+            f"`3.{v} <https://github.com/qgis/pyqgis-api-docs-builder/releases/download/3.{v}/pyqgis-docs-3.{v}.zip>`_"
+            for v in range(0, current_stable_minor, 2)
+            if v not in (current_stable_minor, current_ltr_minor)
+        ]
+    )
+)
 
 py_ext_sig_re = re.compile(
-r"""^(?:([\w.]+::)?([\w.]+\.)?(\w+)\s*(?:\((.*)\)(?:\s*->\s*([\w.]+(?:\[.*?\])?))?(?:\s*\[(signal)\])?)?)?$"""
+    r"""^(?:([\w.]+::)?([\w.]+\.)?(\w+)\s*(?:\((.*)\)(?:\s*->\s*([\w.]+(?:\[.*?\])?))?(?:\s*\[(signal)\])?)?)?$"""
 )
 
 
@@ -195,13 +197,17 @@ def generate_docs():
 
                 class_doc = getattr(_class, method).__doc__
 
-                if class_doc and all(py_ext_sig_re.match(line) for line in str(class_doc).split('\n')):
+                if class_doc and all(
+                    py_ext_sig_re.match(line) for line in str(class_doc).split("\n")
+                ):
                     # print(f'docs are function signature only {class_doc}')
                     class_doc = None
 
-                if hasattr(_class, '__bases__'):
+                if hasattr(_class, "__bases__"):
                     for base in _class.__bases__:
-                        if hasattr(base, method) and (not class_doc or getattr(base, method).__doc__ == str(class_doc)):
+                        if hasattr(base, method) and (
+                            not class_doc or getattr(base, method).__doc__ == str(class_doc)
+                        ):
                             # print(f'skipping overridden method with no new doc {method}')
                             exclude_methods.add(method)
                             break
@@ -211,9 +217,11 @@ def generate_docs():
                             # print(getattr(base, method).__doc__)
                             pass
 
-            substitutions = {"PACKAGE": package_name,
-                             "CLASS": class_name,
-                             "EXCLUDE_METHODS": ','.join(exclude_methods)}
+            substitutions = {
+                "PACKAGE": package_name,
+                "CLASS": class_name,
+                "EXCLUDE_METHODS": ",".join(exclude_methods),
+            }
             class_template = template.substitute(**substitutions)
             class_rst = open(f"api/{qgis_version}/{package_name}/{class_name}.rst", "w")
             print(class_template, file=class_rst)
@@ -251,8 +259,8 @@ def extract_package_classes(package):
             continue
 
         _class = getattr(package, class_name)
-        if hasattr(_class, '__name__') and class_name != _class.__name__:
-            print(f'Skipping alias {class_name}, {_class.__name__}')
+        if hasattr(_class, "__name__") and class_name != _class.__name__:
+            print(f"Skipping alias {class_name}, {_class.__name__}")
             continue
 
         # if not re.match('^Qgi?s', class_name):

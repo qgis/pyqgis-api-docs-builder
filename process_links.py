@@ -14,6 +14,7 @@ with open("pyqgis_conf.yml") as f:
     cfg = yaml.safe_load(f)
 
 from sphinx.ext.autodoc import Documenter
+
 old_get_doc = Documenter.get_doc
 
 
@@ -21,7 +22,7 @@ def new_get_doc(self) -> list[list[str]] | None:
     try:
         if self.object_name in self.parent.__attribute_docs__:
             docs = self.parent.__attribute_docs__[self.object_name]
-            return [docs.split('\n')]
+            return [docs.split("\n")]
     except AttributeError:
         pass
 
@@ -139,5 +140,5 @@ def process_bases(app, name, obj, option, bases: list) -> None:
     """Here we fine tune how the base class's classes are displayed."""
     for i, base in enumerate(bases):
         # replace 'sip.wrapper' base class with 'object'
-        if base.__name__ == 'wrapper':
+        if base.__name__ == "wrapper":
             bases[i] = object

@@ -2,18 +2,18 @@
 # see https://stackoverflow.com/questions/20569011/python-sphinx-autosummary-automated-listing-of-member-functions
 # added toctree and nosignatures in options
 
-from enum import Enum
 import re
-from typing import Any, List, Optional
+from enum import Enum
+from typing import Any
 
 import PyQt5
 from docutils import nodes
 from docutils.parsers.rst import directives
-from sphinx.ext.autosummary import Autosummary, get_documenter
 from sphinx.ext import autosummary
-from sphinx.util.inspect import safe_getattr
-from sphinx.util import logging
+from sphinx.ext.autosummary import Autosummary, get_documenter
 from sphinx.locale import __
+from sphinx.util import logging
+from sphinx.util.inspect import safe_getattr
 
 # from sphinx.directives import directive
 logger = logging.getLogger(__name__)
@@ -21,10 +21,12 @@ logger = logging.getLogger(__name__)
 
 old_extract_summary = autosummary.extract_summary
 
+
 def new_extract_summary(doc: list[str], document: Any) -> str:
     res = old_extract_summary(doc, document)
-    res = re.sub(r'\`((?!(?:None|True|False))[a-zA-Z0-9_]+)\`', r'\1', res)
+    res = re.sub(r"\`((?!(?:None|True|False))[a-zA-Z0-9_]+)\`", r"\1", res)
     return res
+
 
 autosummary.extract_summary = new_extract_summary
 
@@ -46,7 +48,7 @@ class AutoAutoSummary(Autosummary):
         "attributes": directives.unchanged,
         "nosignatures": directives.unchanged,
         "toctree": directives.unchanged,
-        "exclude-members": directives.unchanged
+        "exclude-members": directives.unchanged,
     }
 
     required_arguments = 1
@@ -55,18 +57,27 @@ class AutoAutoSummary(Autosummary):
     def skip_member(doc, obj: Any, name: str, options, objtype: str) -> bool:
         # print(name, name in options.get('exclude-members', '').split(','))
         try:
-            if name in options.get('exclude-members', '').split(','):
+            if name in options.get("exclude-members", "").split(","):
                 return True
-            return doc.settings.env.app.emit_firstresult('autodoc-skip-member', objtype, name,
-                                        obj, False, {})
+            return doc.settings.env.app.emit_firstresult(
+                "autodoc-skip-member", objtype, name, obj, False, {}
+            )
         except Exception as exc:
-            logger.warning(__('autosummary: failed to determine %r to be documented.'
-                              'the following exception was raised:\n%s'),
-                           name, exc, type='autosummary')
+            logger.warning(
+                __(
+                    "autosummary: failed to determine %r to be documented."
+                    "the following exception was raised:\n%s"
+                ),
+                name,
+                exc,
+                type="autosummary",
+            )
             return False
 
     @staticmethod
-    def get_members(doc, obj, typ, options, include_public: Optional[List]=None, signal=False, enum=False):
+    def get_members(
+        doc, obj, typ, options, include_public: list | None = None, signal=False, enum=False
+    ):
         try:
             if not include_public:
                 include_public = []
@@ -81,7 +92,9 @@ class AutoAutoSummary(Autosummary):
                     # cl = get_class_that_defined_method(chobj)
                     # print(name, chobj.__qualname__, type(chobj), issubclass(chobj, Enum), documenter.objtype)
                     if documenter.objtype == typ:
-                        skipped = AutoAutoSummary.skip_member(doc, chobj, name, options, documenter.objtype)
+                        skipped = AutoAutoSummary.skip_member(
+                            doc, chobj, name, options, documenter.objtype
+                        )
                         if skipped is True:
                             continue
                         if typ == "attribute":
@@ -122,7 +135,9 @@ class AutoAutoSummary(Autosummary):
             c = getattr(m, class_name)
             if "methods" in self.options:
                 rubric_title = "Methods"
-                _, rubric_elems = self.get_members(self.state.document, c, "method", self.options, ["__init__"])
+                _, rubric_elems = self.get_members(
+                    self.state.document, c, "method", self.options, ["__init__"]
+                )
             elif "enums" in self.options:
                 rubric_title = "Enums"
                 _, rubric_elems = self.get_members(
@@ -130,7 +145,9 @@ class AutoAutoSummary(Autosummary):
                 )
             elif "signals" in self.options:
                 rubric_title = "Signals"
-                _, rubric_elems = self.get_members(self.state.document, c, "attribute", self.options, None, signal=True)
+                _, rubric_elems = self.get_members(
+                    self.state.document, c, "attribute", self.options, None, signal=True
+                )
             elif "attributes" in self.options:
                 rubric_title = "Attributes"
                 _, rubric_elems = self.get_members(
