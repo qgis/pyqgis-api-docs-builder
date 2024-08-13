@@ -13,6 +13,23 @@ import yaml
 with open("pyqgis_conf.yml") as f:
     cfg = yaml.safe_load(f)
 
+from sphinx.ext.autodoc import Documenter
+old_get_doc = Documenter.get_doc
+
+
+def new_get_doc(self) -> list[list[str]] | None:
+    try:
+        if self.object_name in self.parent.__attribute_docs__:
+            docs = self.parent.__attribute_docs__[self.object_name]
+            return [docs.split('\n')]
+    except AttributeError:
+        pass
+
+    return old_get_doc(self)
+
+
+Documenter.get_doc = new_get_doc
+
 
 # https://github.com/sphinx-doc/sphinx/blob/685e3fdb49c42b464e09ec955e1033e2a8729fff/sphinx/ext/autodoc/__init__.py#L51
 # adapted to handle signals
