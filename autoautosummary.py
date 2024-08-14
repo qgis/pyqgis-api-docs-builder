@@ -13,7 +13,7 @@ from sphinx.ext import autosummary
 from sphinx.ext.autosummary import Autosummary, get_documenter
 from sphinx.locale import __
 from sphinx.util import logging
-from sphinx.util.inspect import safe_getattr, isstaticmethod
+from sphinx.util.inspect import isstaticmethod, safe_getattr
 
 # from sphinx.directives import directive
 logger = logging.getLogger(__name__)
@@ -77,7 +77,14 @@ class AutoAutoSummary(Autosummary):
 
     @staticmethod
     def get_members(
-        doc, obj, typ, options, include_public: list | None = None, signal=False, enum=False, static=False
+        doc,
+        obj,
+        typ,
+        options,
+        include_public: list | None = None,
+        signal=False,
+        enum=False,
+        static=False,
     ):
         try:
             if not include_public:
@@ -145,10 +152,9 @@ class AutoAutoSummary(Autosummary):
                 )
             elif "static_methods" in self.options:
                 rubric_title = "Static Methods"
-                _, rubric_elems = self.get_members(self.state.document, c,
-                                                   "method",
-                                                   self.options,
-                                                   static=True)
+                _, rubric_elems = self.get_members(
+                    self.state.document, c, "method", self.options, static=True
+                )
             elif "enums" in self.options:
                 rubric_title = "Enums"
                 _, rubric_elems = self.get_members(
