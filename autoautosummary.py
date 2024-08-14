@@ -13,7 +13,7 @@ from sphinx.ext import autosummary
 from sphinx.ext.autosummary import Autosummary, get_documenter
 from sphinx.locale import __
 from sphinx.util import logging
-from sphinx.util.inspect import safe_getattr
+from sphinx.util.inspect import safe_getattr, isstaticmethod
 
 # from sphinx.directives import directive
 logger = logging.getLogger(__name__)
@@ -43,6 +43,7 @@ class AutoAutoSummary(Autosummary):
 
     option_spec = {
         "methods": directives.unchanged,
+        "static_methods": directives.unchanged,
         "signals": directives.unchanged,
         "enums": directives.unchanged,
         "attributes": directives.unchanged,
@@ -76,7 +77,7 @@ class AutoAutoSummary(Autosummary):
 
     @staticmethod
     def get_members(
-        doc, obj, typ, options, include_public: list | None = None, signal=False, enum=False
+        doc, obj, typ, options, include_public: list | None = None, signal=False, enum=False, static=False
     ):
         try:
             if not include_public:
@@ -97,7 +98,11 @@ class AutoAutoSummary(Autosummary):
                         )
                         if skipped is True:
                             continue
-                        if typ == "attribute":
+                        if typ == "method":
+                            method_is_static = isstaticmethod(chobj, obj, name)
+                            if method_is_static != static:
+                                continue
+                        elif typ == "attribute":
                             if signal and not isinstance(chobj, PyQt5.QtCore.pyqtSignal):
                                 continue
                             if not signal and isinstance(chobj, PyQt5.QtCore.pyqtSignal):
@@ -138,6 +143,12 @@ class AutoAutoSummary(Autosummary):
                 _, rubric_elems = self.get_members(
                     self.state.document, c, "method", self.options, ["__init__"]
                 )
+            elif "static_methods" in self.options:
+                rubric_title = "Static Methods"
+                _, rubric_elems = self.get_members(self.state.document, c,
+                                                   "method",
+                                                   self.options,
+                                                   static=True)
             elif "enums" in self.options:
                 rubric_title = "Enums"
                 _, rubric_elems = self.get_members(

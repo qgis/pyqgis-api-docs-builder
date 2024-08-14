@@ -25,6 +25,11 @@ Class: $CLASS
         :exclude-members: $EXCLUDE_METHODS
 
     .. autoautosummary:: qgis.$PACKAGE.$CLASS
+        :static_methods:
+        :nosignatures:
+        :exclude-members: $EXCLUDE_METHODS
+
+    .. autoautosummary:: qgis.$PACKAGE.$CLASS
         :signals:
         :nosignatures:
         :exclude-members: $EXCLUDE_METHODS
