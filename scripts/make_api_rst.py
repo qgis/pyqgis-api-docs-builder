@@ -5,7 +5,6 @@ import re
 from os import makedirs
 from shutil import rmtree
 from string import Template
-from typing import List
 
 import yaml
 
@@ -277,8 +276,7 @@ def generate_docs():
             summary = ""
             if class_doc:
                 summary = extract_summary(class_doc)
-            row_contents = [f"`{class_name} <{class_name}.html>`_",
-                            summary or '']
+            row_contents = [f"`{class_name} <{class_name}.html>`_", summary or ""]
             package_custom_toc += make_table_row(row_contents)
 
         package_index.write(
