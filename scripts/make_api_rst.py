@@ -149,7 +149,7 @@ PACKAGENAME
 
 """
 
-MODULE_TOC_MAX_COLUMN_SIZES = [100, 300]
+MODULE_TOC_MAX_COLUMN_SIZES = [300, 500]
 
 
 def extract_summary(doc: str) -> str:
@@ -277,7 +277,8 @@ def generate_docs():
             summary = ""
             if class_doc:
                 summary = extract_summary(class_doc)
-            row_contents = [f":doc:`{class_name}`", summary or ""]
+            row_contents = [f"`{class_name} <{class_name}.html>`_",
+                            summary or '']
             package_custom_toc += make_table_row(row_contents)
 
         package_index.write(
