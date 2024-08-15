@@ -24,7 +24,11 @@ old_extract_summary = autosummary.extract_summary
 
 def new_extract_summary(doc: list[str], document: Any) -> str:
     res = old_extract_summary(doc, document)
-    res = re.sub(r"\`((?!(?:None|True|False))[a-zA-Z0-9_]+)\`", r"\1", res)
+    # we only want to remove the surrounding ` from argument names here.
+    # So we don't want to match:
+    # - literals, e.g. None, True, False
+    # - :py: directives (e.g. links to other classes)
+    res = re.sub(r"(?<!:)`((?!None|True|False)[a-zA-Z0-9_]+)`", r"\1", res)
     return res
 
 
