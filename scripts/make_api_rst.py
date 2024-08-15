@@ -156,8 +156,7 @@ def extract_summary(doc: str) -> str:
     """
     Extract summary from docstring.
     """
-    doc = [line for line in doc.split('\n') if
-               not line or not py_ext_sig_re.match(line)]
+    doc = [line for line in doc.split("\n") if not line or not py_ext_sig_re.match(line)]
 
     # Skip a blank lines at the top
     while doc and not doc[0].strip():
@@ -172,25 +171,26 @@ def extract_summary(doc: str) -> str:
             break
 
     if not doc:
-        return ''
+        return ""
 
-    return ' '.join(doc)
+    return " ".join(doc)
 
 
-def make_table_row(contents: List[str]):
+def make_table_row(contents: list[str]):
     """
     Adds a row to the module TOC table
     """
-    res = '|'
+    res = "|"
     for column, cell in enumerate(contents):
-        formatted_cell = cell[:MODULE_TOC_MAX_COLUMN_SIZES[column]]
-        formatted_cell = formatted_cell + ' ' * (
-                MODULE_TOC_MAX_COLUMN_SIZES[column] - len(formatted_cell))
-        res += formatted_cell + '|'
-    res += '\n'
+        formatted_cell = cell[: MODULE_TOC_MAX_COLUMN_SIZES[column]]
+        formatted_cell = formatted_cell + " " * (
+            MODULE_TOC_MAX_COLUMN_SIZES[column] - len(formatted_cell)
+        )
+        res += formatted_cell + "|"
+    res += "\n"
     for column, _ in enumerate(contents):
-        res += f'+{'-' * MODULE_TOC_MAX_COLUMN_SIZES[column]}'
-    res += '+\n'
+        res += f"+{'-' * MODULE_TOC_MAX_COLUMN_SIZES[column]}"
+    res += "+\n"
     return res
 
 
@@ -233,7 +233,7 @@ def generate_docs():
         package_index = open(f"api/{qgis_version}/{package_name}/index.rst", "w")
         # Read in the standard rst template we will use for classes
         package_index.write(package_header.replace("PACKAGENAME", package_name))
-        package_custom_toc = ''
+        package_custom_toc = ""
 
         for class_name, _class in extract_package_classes(package):
             exclude_methods = set()
@@ -274,16 +274,17 @@ def generate_docs():
             class_rst.close()
             package_index.write(f"   {class_name}\n")
             class_doc = _class.__doc__
-            summary = ''
+            summary = ""
             if class_doc:
                 summary = extract_summary(class_doc)
-            row_contents = [f":doc:`{class_name}`",
-                            summary or '']
+            row_contents = [f":doc:`{class_name}`", summary or ""]
             package_custom_toc += make_table_row(row_contents)
 
-        package_index.write(f'\n\n+{'-' * MODULE_TOC_MAX_COLUMN_SIZES[0]}+{'-' * MODULE_TOC_MAX_COLUMN_SIZES[1]}+\n')
+        package_index.write(
+            f"\n\n+{'-' * MODULE_TOC_MAX_COLUMN_SIZES[0]}+{'-' * MODULE_TOC_MAX_COLUMN_SIZES[1]}+\n"
+        )
         package_index.write(package_custom_toc)
-        package_index.write('\n\n')
+        package_index.write("\n\n")
         package_index.close()
 
     index.write(document_footer)
