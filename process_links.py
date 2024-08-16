@@ -13,6 +13,24 @@ import yaml
 with open("pyqgis_conf.yml") as f:
     cfg = yaml.safe_load(f)
 
+from sphinx.ext.autodoc import Documenter
+
+old_get_doc = Documenter.get_doc
+
+
+def new_get_doc(self) -> list[list[str]] | None:
+    try:
+        if self.object_name in self.parent.__attribute_docs__:
+            docs = self.parent.__attribute_docs__[self.object_name]
+            return [docs.split("\n")]
+    except AttributeError:
+        pass
+
+    return old_get_doc(self)
+
+
+Documenter.get_doc = new_get_doc
+
 
 # https://github.com/sphinx-doc/sphinx/blob/685e3fdb49c42b464e09ec955e1033e2a8729fff/sphinx/ext/autodoc/__init__.py#L51
 # adapted to handle signals
@@ -31,20 +49,6 @@ py_ext_sig_re = re.compile(
 )
 
 
-def show_inheritance(obj):
-    # handle inheritance printing to patch qgis._core with qgis.core
-    # https://github.com/sphinx-doc/sphinx/blob/685e3fdb49c42b464e09ec955e1033e2a8729fff/sphinx/ext/autodoc/__init__.py#L1103-L1109
-    if hasattr(obj, "__bases__") and len(obj.__bases__):
-        bases = [
-            b.__module__ in ("__builtin__", "builtins")
-            and ":class:`%s`" % b.__name__
-            or f":class:`{b.__module__}.{b.__name__}`"
-            for b in obj.__bases__
-        ]
-        return "Bases: %s" % ", ".join(bases)
-    return None
-
-
 def create_links(doc: str) -> str:
     # fix inheritance
     doc = re.sub(r"qgis\._(core|gui|analysis|processing)\.", r"", doc)
@@ -55,11 +59,6 @@ def create_links(doc: str) -> str:
 
 def process_docstring(app, what, name, obj, options, lines):
     # print('d', what, name, obj, options)
-    bases = show_inheritance(obj)
-    if bases:
-        lines.insert(0, "")
-        lines.insert(0, bases)
-
     for i in range(len(lines)):
 
         # fix seealso
@@ -72,7 +71,7 @@ def process_docstring(app, what, name, obj, options, lines):
         if signature != "":
             match = py_ext_sig_re.match(signature)
             if not match:
-                print(obj)
+                # print(obj)
                 if name not in cfg["non-instantiable"]:
                     raise Warning(f"invalid signature for {name}: {signature}")
             else:
@@ -129,7 +128,17 @@ def skip_member(app, what, name, obj, skip, options):
     # skip monkey patched enums (base classes are different)
     if name == "staticMetaObject":
         return True
+    if name == "baseClass":
+        return True
     if hasattr(obj, "is_monkey_patched") and obj.is_monkey_patched:
-        print(f"skipping monkey patched enum {name}")
+        # print(f"skipping monkey patched enum {name}")
         return True
     return skip
+
+
+def process_bases(app, name, obj, option, bases: list) -> None:
+    """Here we fine tune how the base class's classes are displayed."""
+    for i, base in enumerate(bases):
+        # replace 'sip.wrapper' base class with 'object'
+        if base.__name__ == "wrapper":
+            bases[i] = object

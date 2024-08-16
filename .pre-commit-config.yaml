@@ -1,7 +1,7 @@
 repos:
   # Fix end of files
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.5.0
+    rev: v4.6.0
     hooks:
       - id: trailing-whitespace
         exclude: .*\.qgs
@@ -32,21 +32,21 @@ repos:
 
   # Black formatting
   - repo: https://github.com/psf/black
-    rev: "24.3.0"
+    rev: "24.8.0"
     hooks:
       - id: black
         args: ["--line-length=99"]
 
   # tool to automatically upgrade syntax for newer versions of the language
   - repo: https://github.com/asottile/pyupgrade
-    rev: v3.15.2
+    rev: v3.17.0
     hooks:
       - id: pyupgrade
         args: [--py311-plus]
 
   # Lint files
   - repo: https://github.com/pycqa/flake8
-    rev: "7.0.0"
+    rev: "7.1.1"
     hooks:
       - id: flake8
         args: [

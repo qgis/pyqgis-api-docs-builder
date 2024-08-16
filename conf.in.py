@@ -22,6 +22,8 @@ extensions = [
     "sphinx.ext.autodoc",
     "sphinxcontrib.jquery",
     "sphinx.ext.linkcode",
+    "inheritance_diagram",
+    "sphinx.ext.graphviz",
 ]  # , 'rinoh.frontend.sphinx'], 'sphinx_autodoc_typehints'
 
 # The suffix of source filenames.
@@ -46,7 +48,7 @@ release = "__QGIS_VERSION__"
 if version == "master":
     QGIS_GIT_TAG = "master"
 else:
-    QGIS_GIT_TAG = f"release-{release.replace('.','_')}"
+    QGIS_GIT_TAG = f"release-{release.replace('.', '_')}"
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -127,6 +129,8 @@ current_stable = str(cfg["current_stable"])
 current_ltr = str(cfg["current_ltr"])
 version_list = ("master", current_stable, current_ltr)
 
+graphviz_output_format = "svg"
+
 url = cfg["pyqgis_url"]
 if not url.endswith("/"):
     url += "/"
@@ -159,6 +163,7 @@ else:
 
 templates_path = ["_templates"]
 
+autodoc_default_options = {"show-inheritance": True}
 
 # If false, no module index is generated.
 html_domain_indices = True
@@ -241,11 +246,17 @@ def linkcode_resolve(domain, info):
 def setup(app):
     try:
         from autoautosummary import AutoAutoSummary
-        from process_links import process_docstring, process_signature, skip_member
+        from process_links import (
+            process_bases,
+            process_docstring,
+            process_signature,
+            skip_member,
+        )
 
         app.add_directive("autoautosummary", AutoAutoSummary)
         app.connect("autodoc-process-signature", process_signature)
         app.connect("autodoc-process-docstring", process_docstring)
         app.connect("autodoc-skip-member", skip_member)
+        app.connect("autodoc-process-bases", process_bases)
     except BaseException as e:
         raise e
