@@ -2,10 +2,10 @@
 
 import argparse
 import re
+from collections import defaultdict
 from os import makedirs
 from shutil import rmtree
 from string import Template
-from collections import defaultdict
 
 import yaml
 
@@ -80,70 +80,70 @@ py_ext_sig_re = re.compile(
 )
 
 group_names = {
-    '3d': '3D',
-    'actions': 'Map Actions',
-    'annotations': 'Annotations and Annotation Layers',
-    'attributetable': 'Attribute Table and Forms',
-    'auth': 'Authentication Framework',
-    'browser': 'Browser',
-    'callouts': 'Label Callouts',
-    'classification': 'Classification Methods',
-    'codeeditors': 'Code Editors',
-    'devtools': 'Development Tools',
-    'diagram': 'Diagrams and Charts',
-    'dxf': 'DXF Exports',
-    'editform': 'Attribute Form Configuration',
-    'editorwidgets': 'Attribute Editor Widgets',
-    'editorwidgets.core': 'Attribute Editor Widgets - Core',
-    'effects': 'Paint Effects',
-    'elevation': 'Elevation Handling',
-    'expression': 'Expression Engine',
-    'externalstorage': 'External Storage',
-    'fieldformatter': 'Field Value Formating',
-    'geocoding': 'Geocoding',
-    'geometry': 'Geometry',
-    'georeferencing': 'Georeferencing',
-    'gps': 'GPS and GNSS',
-    'history': 'User History Tracking',
-    'inputcontroller': 'Input Controller Handling',
-    'interpolation': 'Interpolation',
-    'labeling': 'Labeling',
-    'layertree': 'Layer Tree and Legends',
-    'layout': 'Print Layouts and Reports',
-    'locator': 'Locator Bar',
-    'maprenderer': 'Map Rendering',
-    'maptools': 'Map Tools',
-    'mesh': 'Mesh Layers',
-    'metadata': 'Metadata Handling',
-    'network': 'Network Access',
-    'numericformats': 'Numeric Formats',
-    'ogr': 'Data Providers - OGR',
-    'painting': 'Painting Operations',
-    'pdf': 'PDF Rendering',
-    'plot': 'Plot and Graph Rendering',
-    'pointcloud': 'Point Cloud Layers',
-    'processing': 'Processing Framework',
-    'processing.models': 'Processing Framework - Models',
-    'processing.pdal': 'Processing Framework - PDAL',
-    'proj': 'Coordinate Systems and Transformations',
-    'project': 'QGIS Projects',
-    'providers': 'Data Providers',
-    'providers.arcgis': 'Data Providers - ArcGIS',
-    'providers.gdal': 'Data Providers - GDAL',
-    'providers.memory': 'Data Providers - Memory',
-    'providers.sensorthings': 'Data Providers - OGC Sensorthings',
-    'raster': 'Raster Layers',
-    'scalebar': 'Scale Bars',
-    'sensor': 'Sensor Handling',
-    'settings': 'Settings Handling',
-    'symbology': 'Symbology and Vector Renderers',
-    'tableeditor': 'Table Editor',
-    'textrenderer': 'Text Rendering',
-    'tiledscene': 'Tiled Scene Layers',
-    'validity': 'Validity Checks',
-    'vector': 'Vector Layers',
-    'vector.geometry_checker': 'Geometry Checker',
-    'vectortile': 'Vector Tile Layers',
+    "3d": "3D",
+    "actions": "Map Actions",
+    "annotations": "Annotations and Annotation Layers",
+    "attributetable": "Attribute Table and Forms",
+    "auth": "Authentication Framework",
+    "browser": "Browser",
+    "callouts": "Label Callouts",
+    "classification": "Classification Methods",
+    "codeeditors": "Code Editors",
+    "devtools": "Development Tools",
+    "diagram": "Diagrams and Charts",
+    "dxf": "DXF Exports",
+    "editform": "Attribute Form Configuration",
+    "editorwidgets": "Attribute Editor Widgets",
+    "editorwidgets.core": "Attribute Editor Widgets - Core",
+    "effects": "Paint Effects",
+    "elevation": "Elevation Handling",
+    "expression": "Expression Engine",
+    "externalstorage": "External Storage",
+    "fieldformatter": "Field Value Formating",
+    "geocoding": "Geocoding",
+    "geometry": "Geometry",
+    "georeferencing": "Georeferencing",
+    "gps": "GPS and GNSS",
+    "history": "User History Tracking",
+    "inputcontroller": "Input Controller Handling",
+    "interpolation": "Interpolation",
+    "labeling": "Labeling",
+    "layertree": "Layer Tree and Legends",
+    "layout": "Print Layouts and Reports",
+    "locator": "Locator Bar",
+    "maprenderer": "Map Rendering",
+    "maptools": "Map Tools",
+    "mesh": "Mesh Layers",
+    "metadata": "Metadata Handling",
+    "network": "Network Access",
+    "numericformats": "Numeric Formats",
+    "ogr": "Data Providers - OGR",
+    "painting": "Painting Operations",
+    "pdf": "PDF Rendering",
+    "plot": "Plot and Graph Rendering",
+    "pointcloud": "Point Cloud Layers",
+    "processing": "Processing Framework",
+    "processing.models": "Processing Framework - Models",
+    "processing.pdal": "Processing Framework - PDAL",
+    "proj": "Coordinate Systems and Transformations",
+    "project": "QGIS Projects",
+    "providers": "Data Providers",
+    "providers.arcgis": "Data Providers - ArcGIS",
+    "providers.gdal": "Data Providers - GDAL",
+    "providers.memory": "Data Providers - Memory",
+    "providers.sensorthings": "Data Providers - OGC Sensorthings",
+    "raster": "Raster Layers",
+    "scalebar": "Scale Bars",
+    "sensor": "Sensor Handling",
+    "settings": "Settings Handling",
+    "symbology": "Symbology and Vector Renderers",
+    "tableeditor": "Table Editor",
+    "textrenderer": "Text Rendering",
+    "tiledscene": "Tiled Scene Layers",
+    "validity": "Validity Checks",
+    "vector": "Vector Layers",
+    "vector.geometry_checker": "Geometry Checker",
+    "vectortile": "Vector Tile Layers",
 }
 
 
@@ -346,10 +346,12 @@ def generate_docs():
             if class_doc:
                 summary = extract_summary(class_doc)
             row_contents = [f"`{class_name} <{class_name}.html>`_", summary or ""]
-            group = '.'.join(_class.__group__) if hasattr(_class, '__group__') else ""
+            group = ".".join(_class.__group__) if hasattr(_class, "__group__") else ""
             package_custom_toc[group] += make_table_row(row_contents)
 
-        sorted_package_groups = sorted(package_custom_toc.keys(), key=lambda x: group_names.get(x, x))
+        sorted_package_groups = sorted(
+            package_custom_toc.keys(), key=lambda x: group_names.get(x, x)
+        )
         if len(sorted_package_groups) > 1:
             # Add TOC for groups
             package_index.write(f"\n")
@@ -357,7 +359,7 @@ def generate_docs():
                 if not package_group:
                     continue
 
-                anchor = package_group.replace('.', '_')
+                anchor = package_group.replace(".", "_")
                 group_name = group_names.get(package_group, package_group)
                 package_index.write(f"- :ref:`{group_name}<{anchor}>`\n")
 
@@ -366,7 +368,7 @@ def generate_docs():
         for package_group in sorted_package_groups:
             group_custom_toc = package_custom_toc[package_group]
             if package_group:
-                anchor = package_group.replace('.', '_')
+                anchor = package_group.replace(".", "_")
                 package_index.write(f".. _{anchor}:\n\n")
                 group_name = group_names.get(package_group, package_group)
                 package_index.write(f"{group_name}\n{'-' * len(group_name)}\n")
