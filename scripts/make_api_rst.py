@@ -354,7 +354,7 @@ def generate_docs():
         )
         if len(sorted_package_groups) > 1:
             # Add TOC for groups
-            package_index.write(f"\n")
+            package_index.write("\n")
             for package_group in sorted_package_groups:
                 if not package_group:
                     continue
@@ -363,7 +363,7 @@ def generate_docs():
                 group_name = group_names.get(package_group, package_group)
                 package_index.write(f"- :ref:`{group_name}<{anchor}>`\n")
 
-            package_index.write(f"\n")
+            package_index.write("\n")
 
         for package_group in sorted_package_groups:
             group_custom_toc = package_custom_toc[package_group]
