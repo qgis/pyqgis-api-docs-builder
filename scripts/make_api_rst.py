@@ -5,6 +5,7 @@ import re
 from os import makedirs
 from shutil import rmtree
 from string import Template
+from collections import defaultdict
 
 import yaml
 
@@ -77,6 +78,74 @@ old_versions_links = ", ".join(
 py_ext_sig_re = re.compile(
     r"""^(?:([\w.]+::)?([\w.]+\.)?(\w+)\s*(?:\((.*)\)(?:\s*->\s*([\w.]+(?:\[.*?\])?))?(?:\s*\[(signal)\])?)?)?$"""
 )
+
+group_names = {
+    '3d': '3D',
+    'actions': 'Map Actions',
+    'annotations': 'Annotations and Annotation Layers',
+    'attributetable': 'Attribute Table and Forms',
+    'auth': 'Authentication Framework',
+    'browser': 'Browser',
+    'callouts': 'Label Callouts',
+    'classification': 'Classification Methods',
+    'codeeditors': 'Code Editors',
+    'devtools': 'Development Tools',
+    'diagram': 'Diagrams and Charts',
+    'dxf': 'DXF Exports',
+    'editform': 'Attribute Form Configuration',
+    'editorwidgets': 'Attribute Editor Widgets',
+    'editorwidgets.core': 'Attribute Editor Widgets - Core',
+    'effects': 'Paint Effects',
+    'elevation': 'Elevation Handling',
+    'expression': 'Expression Engine',
+    'externalstorage': 'External Storage',
+    'fieldformatter': 'Field Value Formating',
+    'geocoding': 'Geocoding',
+    'geometry': 'Geometry',
+    'georeferencing': 'Georeferencing',
+    'gps': 'GPS and GNSS',
+    'history': 'User History Tracking',
+    'inputcontroller': 'Input Controller Handling',
+    'interpolation': 'Interpolation',
+    'labeling': 'Labeling',
+    'layertree': 'Layer Tree and Legends',
+    'layout': 'Print Layouts and Reports',
+    'locator': 'Locator Bar',
+    'maprenderer': 'Map Rendering',
+    'maptools': 'Map Tools',
+    'mesh': 'Mesh Layers',
+    'metadata': 'Metadata Handling',
+    'network': 'Network Access',
+    'numericformats': 'Numeric Formats',
+    'ogr': 'Data Providers - OGR',
+    'painting': 'Painting Operations',
+    'pdf': 'PDF Rendering',
+    'plot': 'Plot and Graph Rendering',
+    'pointcloud': 'Point Cloud Layers',
+    'processing': 'Processing Framework',
+    'processing.models': 'Processing Framework - Models',
+    'processing.pdal': 'Processing Framework - PDAL',
+    'proj': 'Coordinate Systems and Transformations',
+    'project': 'QGIS Projects',
+    'providers': 'Data Providers',
+    'providers.arcgis': 'Data Providers - ArcGIS',
+    'providers.gdal': 'Data Providers - GDAL',
+    'providers.memory': 'Data Providers - Memory',
+    'providers.sensorthings': 'Data Providers - OGC Sensorthings',
+    'raster': 'Raster Layers',
+    'scalebar': 'Scale Bars',
+    'sensor': 'Sensor Handling',
+    'settings': 'Settings Handling',
+    'symbology': 'Symbology and Vector Renderers',
+    'tableeditor': 'Table Editor',
+    'textrenderer': 'Text Rendering',
+    'tiledscene': 'Tiled Scene Layers',
+    'validity': 'Validity Checks',
+    'vector': 'Vector Layers',
+    'vector.geometry_checker': 'Geometry Checker',
+    'vectortile': 'Vector Tile Layers',
+}
+
 
 # Make sure :numbered: is only specified in the top level index - see
 # sphinx docs about this.
@@ -232,7 +301,7 @@ def generate_docs():
         package_index = open(f"api/{qgis_version}/{package_name}/index.rst", "w")
         # Read in the standard rst template we will use for classes
         package_index.write(package_header.replace("PACKAGENAME", package_name))
-        package_custom_toc = ""
+        package_custom_toc = defaultdict(str)
 
         for class_name, _class in extract_package_classes(package):
             exclude_methods = set()
@@ -277,13 +346,36 @@ def generate_docs():
             if class_doc:
                 summary = extract_summary(class_doc)
             row_contents = [f"`{class_name} <{class_name}.html>`_", summary or ""]
-            package_custom_toc += make_table_row(row_contents)
+            group = '.'.join(_class.__group__) if hasattr(_class, '__group__') else ""
+            package_custom_toc[group] += make_table_row(row_contents)
 
-        package_index.write(
-            f"\n\n+{'-' * MODULE_TOC_MAX_COLUMN_SIZES[0]}+{'-' * MODULE_TOC_MAX_COLUMN_SIZES[1]}+\n"
-        )
-        package_index.write(package_custom_toc)
-        package_index.write("\n\n")
+        sorted_package_groups = sorted(package_custom_toc.keys(), key=lambda x: group_names.get(x, x))
+        if len(sorted_package_groups) > 1:
+            # Add TOC for groups
+            package_index.write(f"\n")
+            for package_group in sorted_package_groups:
+                if not package_group:
+                    continue
+
+                anchor = package_group.replace('.', '_')
+                group_name = group_names.get(package_group, package_group)
+                package_index.write(f"- :ref:`{group_name}<{anchor}>`\n")
+
+            package_index.write(f"\n")
+
+        for package_group in sorted_package_groups:
+            group_custom_toc = package_custom_toc[package_group]
+            if package_group:
+                anchor = package_group.replace('.', '_')
+                package_index.write(f".. _{anchor}:\n\n")
+                group_name = group_names.get(package_group, package_group)
+                package_index.write(f"{group_name}\n{'-' * len(group_name)}\n")
+            package_index.write(
+                f"\n+{'-' * MODULE_TOC_MAX_COLUMN_SIZES[0]}+{'-' * MODULE_TOC_MAX_COLUMN_SIZES[1]}+\n"
+            )
+            package_index.write(group_custom_toc)
+            package_index.write("\n")
+
         package_index.close()
 
     index.write(document_footer)
