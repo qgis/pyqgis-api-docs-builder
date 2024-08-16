@@ -359,7 +359,7 @@ def generate_docs():
                 if not package_group:
                     continue
 
-                anchor = f'{package_name.replace("_", "")}.{package_group}'.replace('.', '_')
+                anchor = f'{package_name.replace("_", "")}.{package_group}'.replace(".", "_")
                 group_name = group_names.get(package_group, package_group)
                 package_index.write(f"- :ref:`{group_name}<{anchor}>`\n")
 
@@ -368,7 +368,7 @@ def generate_docs():
         for package_group in sorted_package_groups:
             group_custom_toc = package_custom_toc[package_group]
             if package_group:
-                anchor = f'{package_name.replace("_", "")}.{package_group}'.replace('.', '_')
+                anchor = f'{package_name.replace("_", "")}.{package_group}'.replace(".", "_")
                 package_index.write(f".. _{anchor}:\n\n")
                 group_name = group_names.get(package_group, package_group)
                 package_index.write(f"{group_name}\n{'-' * len(group_name)}\n")
