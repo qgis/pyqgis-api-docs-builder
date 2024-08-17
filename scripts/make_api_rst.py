@@ -79,74 +79,6 @@ py_ext_sig_re = re.compile(
     r"""^(?:([\w.]+::)?([\w.]+\.)?(\w+)\s*(?:\((.*)\)(?:\s*->\s*([\w.]+(?:\[.*?\])?))?(?:\s*\[(signal)\])?)?)?$"""
 )
 
-group_names = {
-    "3d": "3D",
-    "actions": "Map Actions",
-    "annotations": "Annotations and Annotation Layers",
-    "attributetable": "Attribute Table and Forms",
-    "auth": "Authentication Framework",
-    "browser": "Browser",
-    "callouts": "Label Callouts",
-    "classification": "Classification Methods",
-    "codeeditors": "Code Editors",
-    "devtools": "Development Tools",
-    "diagram": "Diagrams and Charts",
-    "dxf": "DXF Exports",
-    "editform": "Attribute Form Configuration",
-    "editorwidgets": "Attribute Editor Widgets",
-    "editorwidgets.core": "Attribute Editor Widgets - Core",
-    "effects": "Paint Effects",
-    "elevation": "Elevation Handling",
-    "expression": "Expression Engine",
-    "externalstorage": "External Storage",
-    "fieldformatter": "Field Value Formating",
-    "geocoding": "Geocoding",
-    "geometry": "Geometry",
-    "georeferencing": "Georeferencing",
-    "gps": "GPS and GNSS",
-    "history": "User History Tracking",
-    "inputcontroller": "Input Controller Handling",
-    "interpolation": "Interpolation",
-    "labeling": "Labeling",
-    "layertree": "Layer Tree and Legends",
-    "layout": "Print Layouts and Reports",
-    "locator": "Locator Bar",
-    "maprenderer": "Map Rendering",
-    "maptools": "Map Tools",
-    "mesh": "Mesh Layers",
-    "metadata": "Metadata Handling",
-    "network": "Network Access",
-    "numericformats": "Numeric Formats",
-    "ogr": "Data Providers - OGR",
-    "painting": "Painting Operations",
-    "pdf": "PDF Rendering",
-    "plot": "Plot and Graph Rendering",
-    "pointcloud": "Point Cloud Layers",
-    "processing": "Processing Framework",
-    "processing.models": "Processing Framework - Models",
-    "processing.pdal": "Processing Framework - PDAL",
-    "proj": "Coordinate Systems and Transformations",
-    "project": "QGIS Projects",
-    "providers": "Data Providers",
-    "providers.arcgis": "Data Providers - ArcGIS",
-    "providers.gdal": "Data Providers - GDAL",
-    "providers.memory": "Data Providers - Memory",
-    "providers.sensorthings": "Data Providers - OGC Sensorthings",
-    "raster": "Raster Layers",
-    "scalebar": "Scale Bars",
-    "sensor": "Sensor Handling",
-    "settings": "Settings Handling",
-    "symbology": "Symbology and Vector Renderers",
-    "tableeditor": "Table Editor",
-    "textrenderer": "Text Rendering",
-    "tiledscene": "Tiled Scene Layers",
-    "validity": "Validity Checks",
-    "vector": "Vector Layers",
-    "vector.geometry_checker": "Geometry Checker",
-    "vectortile": "Vector Tile Layers",
-}
-
-
 # Make sure :numbered: is only specified in the top level index - see
 # sphinx docs about this.
 document_header = f"""
@@ -350,7 +282,7 @@ def generate_docs():
             package_custom_toc[group] += make_table_row(row_contents)
 
         sorted_package_groups = sorted(
-            package_custom_toc.keys(), key=lambda x: group_names.get(x, x)
+            package_custom_toc.keys(), key=lambda x: cfg["group-names"].get(x, x)
         )
         if len(sorted_package_groups) > 1:
             # Add TOC for groups
@@ -360,7 +292,7 @@ def generate_docs():
                     continue
 
                 anchor = f'{package_name.replace("_", "")}.{package_group}'.replace(".", "_")
-                group_name = group_names.get(package_group, package_group)
+                group_name = cfg["group-names"].get(package_group, package_group)
                 package_index.write(f"- :ref:`{group_name}<{anchor}>`\n")
 
             package_index.write("\n")
@@ -370,7 +302,7 @@ def generate_docs():
             if package_group:
                 anchor = f'{package_name.replace("_", "")}.{package_group}'.replace(".", "_")
                 package_index.write(f".. _{anchor}:\n\n")
-                group_name = group_names.get(package_group, package_group)
+                group_name = cfg["group-names"].get(package_group, package_group)
                 package_index.write(f"{group_name}\n{'-' * len(group_name)}\n")
             package_index.write(
                 f"\n+{'-' * MODULE_TOC_MAX_COLUMN_SIZES[0]}+{'-' * MODULE_TOC_MAX_COLUMN_SIZES[1]}+\n"
