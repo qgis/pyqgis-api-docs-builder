@@ -182,6 +182,32 @@ class_header = """
    :parts: 1
 """
 
+class_toc = """
+    .. autoautosummary:: qgis.$PACKAGE.$CLASS
+        :enums:
+        :nosignatures:
+        :exclude-members: $EXCLUDE_METHODS
+
+    .. autoautosummary:: qgis.$PACKAGE.$CLASS
+        :methods:
+        :nosignatures:
+        :exclude-members: $EXCLUDE_METHODS
+
+    .. autoautosummary:: qgis.$PACKAGE.$CLASS
+        :static_methods:
+        :nosignatures:
+        :exclude-members: $EXCLUDE_METHODS
+
+    .. autoautosummary:: qgis.$PACKAGE.$CLASS
+        :signals:
+        :nosignatures:
+        :exclude-members: $EXCLUDE_METHODS
+
+    .. autoautosummary:: qgis.$PACKAGE.$CLASS
+        :attributes:
+        :exclude-members: $EXCLUDE_METHODS
+"""
+
 MODULE_TOC_MAX_COLUMN_SIZES = [300, 500]
 
 
@@ -271,12 +297,14 @@ def generate_docs():
         for class_name, _class in extract_package_classes(package):
             exclude_methods = set()
             header = ''
+            toc = ''
             for method in dir(_class):
                 if not hasattr(_class, method):
                     continue
 
                 if inspect.isclass(_class):
                     header = class_header
+                    toc = class_toc
 
                 class_doc = getattr(_class, method).__doc__
 
@@ -304,7 +332,8 @@ def generate_docs():
                 "PACKAGE": package_name,
                 "CLASS": class_name,
                 "EXCLUDE_METHODS": ",".join(exclude_methods),
-                "HEADER_CONTENT": header
+                "HEADER_CONTENT": header,
+                "TABLE_OF_CONTENTS": toc
             }
             class_template = template.substitute(**substitutions)
             class_rst = open(f"api/{qgis_version}/{package_name}/{class_name}.rst", "w")
