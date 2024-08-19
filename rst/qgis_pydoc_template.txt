@@ -5,8 +5,7 @@ Class: $CLASS
 
 .. py:module:: $CLASS
 
-.. inheritance-diagram:: qgis.$PACKAGE.$CLASS
-   :parts: 1
+$HEADER_CONTENT
 
 .. autoclass:: qgis.$PACKAGE.$CLASS
    :special-members: __init__

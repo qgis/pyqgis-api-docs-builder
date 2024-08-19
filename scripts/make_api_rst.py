@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import argparse
+import inspect
 import re
 from collections import defaultdict
 from os import makedirs
@@ -79,6 +80,33 @@ py_ext_sig_re = re.compile(
     r"""^(?:([\w.]+::)?([\w.]+\.)?(\w+)\s*(?:\((.*)\)(?:\s*->\s*([\w.]+(?:\[.*?\])?))?(?:\s*\[(signal)\])?)?)?$"""
 )
 
+
+class RecursiveTemplate(Template):
+    """
+    Template subclass which performs recursive substitution on a string.
+    """
+    def __init__(self, template):
+        super().__init__(template)
+        self.depth = 0
+        self.max_depth = 10  # Prevent infinite recursion
+
+    def substitute(self, **kws):
+        self.depth = 0
+        return self._recursive_substitute(**kws)
+
+    def _recursive_substitute(self, **kws):
+        if self.depth > self.max_depth:
+            raise ValueError("Max recursion depth exceeded")
+
+        self.depth += 1
+        result = super().safe_substitute(**kws)
+
+        if '$' in result:
+            return self.__class__(result)._recursive_substitute(**kws)
+
+        return result
+
+
 # Make sure :numbered: is only specified in the top level index - see
 # sphinx docs about this.
 document_header = f"""
@@ -147,6 +175,11 @@ PACKAGENAME
    :hidden:
    :caption: PACKAGENAME:
 
+"""
+
+class_header = """
+.. inheritance-diagram:: qgis.$PACKAGE.$CLASS
+   :parts: 1
 """
 
 MODULE_TOC_MAX_COLUMN_SIZES = [300, 500]
@@ -221,7 +254,7 @@ def generate_docs():
 
     with open("rst/qgis_pydoc_template.txt") as template_file:
         template_text = template_file.read()
-    template = Template(template_text)
+    template = RecursiveTemplate(template_text)
 
     # Iterate over every class in every package and write out an rst
     # template based on standard rst template
@@ -237,9 +270,13 @@ def generate_docs():
 
         for class_name, _class in extract_package_classes(package):
             exclude_methods = set()
+            header = ''
             for method in dir(_class):
                 if not hasattr(_class, method):
                     continue
+
+                if inspect.isclass(_class):
+                    header = class_header
 
                 class_doc = getattr(_class, method).__doc__
 
@@ -267,6 +304,7 @@ def generate_docs():
                 "PACKAGE": package_name,
                 "CLASS": class_name,
                 "EXCLUDE_METHODS": ",".join(exclude_methods),
+                "HEADER_CONTENT": header
             }
             class_template = template.substitute(**substitutions)
             class_rst = open(f"api/{qgis_version}/{package_name}/{class_name}.rst", "w")
@@ -343,7 +381,7 @@ def extract_package_classes(package):
 
         _class = getattr(package, class_name)
         if hasattr(_class, "__name__") and class_name != _class.__name__:
-            print(f"Skipping alias {class_name}, {_class.__name__}")
+            # print(f"Skipping alias {class_name}, {_class.__name__}")
             continue
 
         # if not re.match('^Qgi?s', class_name):
