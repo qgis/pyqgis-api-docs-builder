@@ -14,4 +14,3 @@ $HEADER_CONTENT
    :exclude-members: $EXCLUDE_METHODS
 
    $TABLE_OF_CONTENTS
-

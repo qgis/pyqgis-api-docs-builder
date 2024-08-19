@@ -85,6 +85,7 @@ class RecursiveTemplate(Template):
     """
     Template subclass which performs recursive substitution on a string.
     """
+
     def __init__(self, template):
         super().__init__(template)
         self.depth = 0
@@ -101,7 +102,7 @@ class RecursiveTemplate(Template):
         self.depth += 1
         result = super().safe_substitute(**kws)
 
-        if '$' in result:
+        if "$" in result:
             return self.__class__(result)._recursive_substitute(**kws)
 
         return result
@@ -296,8 +297,8 @@ def generate_docs():
 
         for class_name, _class in extract_package_classes(package):
             exclude_methods = set()
-            header = ''
-            toc = ''
+            header = ""
+            toc = ""
             for method in dir(_class):
                 if not hasattr(_class, method):
                     continue
@@ -333,7 +334,7 @@ def generate_docs():
                 "CLASS": class_name,
                 "EXCLUDE_METHODS": ",".join(exclude_methods),
                 "HEADER_CONTENT": header,
-                "TABLE_OF_CONTENTS": toc
+                "TABLE_OF_CONTENTS": toc,
             }
             class_template = template.substitute(**substitutions)
             class_rst = open(f"api/{qgis_version}/{package_name}/{class_name}.rst", "w")
