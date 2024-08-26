@@ -212,10 +212,28 @@ class_toc = """
 MODULE_TOC_MAX_COLUMN_SIZES = [300, 500]
 
 
-def extract_summary(doc: str) -> str:
+def write_header(header: str, level=1) -> str:
+    """
+    Writes a markdown header
+    """
+    res = header + "\n"
+    if level == 1:
+        res += "-" * len(header)
+    elif level == 2:
+        res += "=" * len(header)
+    else:
+        assert False
+
+    return res + "\n"
+
+
+def extract_summary(doc: str | None) -> str:
     """
     Extract summary from docstring.
     """
+    if not doc:
+        return ""
+
     doc = [line for line in doc.split("\n") if not line or not py_ext_sig_re.match(line)]
 
     # Skip a blank lines at the top
@@ -299,13 +317,50 @@ def generate_docs():
             exclude_methods = set()
             header = ""
             toc = ""
+
+            if inspect.isclass(_class):
+                header = class_header
+                toc = class_toc
+
+            if hasattr(_class, "__bases__") and _class.__bases__:
+
+                def export_bases(_b):
+
+                    res = ""
+                    for _base in _b.__bases__:
+                        if _base.__name__ in ("wrapper", "simplewrapper", "object"):
+                            continue
+                        res += make_table_row(
+                            [
+                                f"`{_base.__name__} <{_base.__name__}.html>`_",
+                                extract_summary(_base.__doc__),
+                            ]
+                        )
+                        if hasattr(_base, "__bases__"):
+                            res += export_bases(_base)
+                    return res
+
+                base_header = export_bases(_class)
+                if base_header:
+                    header += "\n" + write_header("Base classes")
+                    header += f"\n+{'-' * MODULE_TOC_MAX_COLUMN_SIZES[0]}+{'-' * MODULE_TOC_MAX_COLUMN_SIZES[1]}+\n"
+                    header += base_header
+
+            if hasattr(_class, "__subclasses__") and _class.__subclasses__():
+                header += "\n" + write_header("Subclasses")
+                header += f"\n+{'-' * MODULE_TOC_MAX_COLUMN_SIZES[0]}+{'-' * MODULE_TOC_MAX_COLUMN_SIZES[1]}+\n"
+
+                for subclass in _class.__subclasses__():
+                    header += make_table_row(
+                        [
+                            f"`{subclass.__name__} <{subclass.__name__}.html>`_",
+                            extract_summary(subclass.__doc__),
+                        ]
+                    )
+
             for method in dir(_class):
                 if not hasattr(_class, method):
                     continue
-
-                if inspect.isclass(_class):
-                    header = class_header
-                    toc = class_toc
 
                 class_doc = getattr(_class, method).__doc__
 
