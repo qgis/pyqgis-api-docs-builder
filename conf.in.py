@@ -91,6 +91,7 @@ html_theme_options = {
     "titles_only": True,
     "versioning": True,
     "canonical_url": "https://qgis.org/pyqgis/latest",
+    "navigation_depth": 1,
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
