@@ -13,7 +13,7 @@ import yaml
 with open("pyqgis_conf.yml") as f:
     cfg = yaml.safe_load(f)
 
-from sphinx.ext.autodoc import Documenter
+from sphinx.ext.autodoc import Documenter, AttributeDocumenter
 
 old_get_doc = Documenter.get_doc
 
@@ -30,6 +30,57 @@ def new_get_doc(self) -> list[list[str]] | None:
 
 
 Documenter.get_doc = new_get_doc
+
+old_attribute_get_doc = AttributeDocumenter.get_doc
+
+parent_obj = None
+
+def new_attribute_get_doc(self):
+    # we need to make self.parent accessible to process_docstring -- this
+    # is a hacky approach to store it temporarily in a global. Sorry!
+    global parent_obj
+    try:
+        if self.object_name in self.parent.__attribute_docs__:
+            parent_obj = self.parent
+            docs = self.parent.__attribute_docs__[self.object_name]
+            return [docs.split("\n")]
+    except AttributeError:
+        pass
+
+    return old_attribute_get_doc(self)
+
+AttributeDocumenter.get_doc = new_attribute_get_doc
+
+old_format_signature = Documenter.format_signature
+
+def new_format_signature(self, **kwargs) -> str:
+    """
+    Monkey patch signature formatting to retrieve signature for
+    signals, which are actually attributes and so don't have a real
+    signature available!
+    """
+    try:
+        if self.object_name in self.parent.__signal_arguments__:
+            args = self.parent.__signal_arguments__[self.object_name]
+            args = f'({", ".join(args)})'
+            retann = None
+            result = self.env.events.emit_firstresult('autodoc-process-signature',
+                                                      self.objtype, self.fullname,
+                                                      self.object, self.options, args, retann)
+            if result:
+                args, retann = result
+
+            if args:
+                return args
+            else:
+                return ''
+    except AttributeError:
+        pass
+
+    return old_format_signature(self, **kwargs)
+
+
+Documenter.format_signature = new_format_signature
 
 
 # https://github.com/sphinx-doc/sphinx/blob/685e3fdb49c42b464e09ec955e1033e2a8729fff/sphinx/ext/autodoc/__init__.py#L51
@@ -88,13 +139,42 @@ def process_docstring(app, what, name, obj, options, lines):
             return
 
     for i in range(len(lines)):
-
         # fix seealso
         # lines[i] = re.sub(r':py: func:`(\w+\(\))`', r':func:`.{}.\1()'.format(what), lines[i])
         lines[i] = create_links(lines[i])
 
+    def inject_args(_args, _lines):
+        for arg in _args:
+            try:
+                argname, hint = arg.split(": ")
+            except ValueError:
+                continue
+            searchfor = f":param {argname}:"
+            insert_index = None
+
+            for i, line in enumerate(_lines):
+                if line.startswith(searchfor):
+                    insert_index = i
+                    break
+
+            if insert_index is None:
+                _lines.append(searchfor)
+                insert_index = len(_lines)
+
+            if insert_index is not None:
+                _lines.insert(insert_index, f":type {argname}: {create_links(hint)}")
+
+    if what == 'attribute':
+        global parent_obj
+        try:
+            args = parent_obj.__signal_arguments__.get(name.split('.')[-1], [])
+            inject_args(args, lines)
+        except AttributeError:
+            pass
+
     # add return type and param type
-    if what != "class" and not isinstance(obj, enum.EnumMeta) and obj.__doc__:
+    elif what != "class" and not isinstance(obj, enum.EnumMeta) and obj.__doc__:
+
         signature = obj.__doc__.split("\n")[0]
         if signature != "":
             match = py_ext_sig_re.match(signature)
@@ -107,25 +187,7 @@ def process_docstring(app, what, name, obj, options, lines):
 
                 if args:
                     args = args.split(", ")
-                    for arg in args:
-                        try:
-                            argname, hint = arg.split(": ")
-                        except ValueError:
-                            continue
-                        searchfor = f":param {argname}:"
-                        insert_index = None
-
-                        for i, line in enumerate(lines):
-                            if line.startswith(searchfor):
-                                insert_index = i
-                                break
-
-                        if insert_index is None:
-                            lines.append(searchfor)
-                            insert_index = len(lines)
-
-                        if insert_index is not None:
-                            lines.insert(insert_index, f":type {argname}: {create_links(hint)}")
+                    inject_args(args, lines)
 
                 if retann:
                     insert_index = len(lines)
