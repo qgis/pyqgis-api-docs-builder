@@ -13,7 +13,7 @@ import yaml
 with open("pyqgis_conf.yml") as f:
     cfg = yaml.safe_load(f)
 
-from sphinx.ext.autodoc import Documenter, AttributeDocumenter
+from sphinx.ext.autodoc import AttributeDocumenter, Documenter
 
 old_get_doc = Documenter.get_doc
 
@@ -35,6 +35,7 @@ old_attribute_get_doc = AttributeDocumenter.get_doc
 
 parent_obj = None
 
+
 def new_attribute_get_doc(self):
     # we need to make self.parent accessible to process_docstring -- this
     # is a hacky approach to store it temporarily in a global. Sorry!
@@ -49,9 +50,11 @@ def new_attribute_get_doc(self):
 
     return old_attribute_get_doc(self)
 
+
 AttributeDocumenter.get_doc = new_attribute_get_doc
 
 old_format_signature = Documenter.format_signature
+
 
 def new_format_signature(self, **kwargs) -> str:
     """
@@ -64,16 +67,22 @@ def new_format_signature(self, **kwargs) -> str:
             args = self.parent.__signal_arguments__[self.object_name]
             args = f'({", ".join(args)})'
             retann = None
-            result = self.env.events.emit_firstresult('autodoc-process-signature',
-                                                      self.objtype, self.fullname,
-                                                      self.object, self.options, args, retann)
+            result = self.env.events.emit_firstresult(
+                "autodoc-process-signature",
+                self.objtype,
+                self.fullname,
+                self.object,
+                self.options,
+                args,
+                retann,
+            )
             if result:
                 args, retann = result
 
             if args:
                 return args
             else:
-                return ''
+                return ""
     except AttributeError:
         pass
 
@@ -164,10 +173,10 @@ def process_docstring(app, what, name, obj, options, lines):
             if insert_index is not None:
                 _lines.insert(insert_index, f":type {argname}: {create_links(hint)}")
 
-    if what == 'attribute':
+    if what == "attribute":
         global parent_obj
         try:
-            args = parent_obj.__signal_arguments__.get(name.split('.')[-1], [])
+            args = parent_obj.__signal_arguments__.get(name.split(".")[-1], [])
             inject_args(args, lines)
         except AttributeError:
             pass
