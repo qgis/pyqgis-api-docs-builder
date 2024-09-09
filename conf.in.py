@@ -268,8 +268,8 @@ def linkcode_resolve(domain, info):
 def setup(app):
     try:
         from autoautosummary import AutoAutoSummary
+        from documenters import OverloadedPythonMethodDocumenter
         from process_links import (
-            OverloadedPythonMethodDocumenter,
             process_bases,
             process_docstring,
             process_signature,
