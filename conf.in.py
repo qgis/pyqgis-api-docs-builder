@@ -1,5 +1,6 @@
 import os
 import sys
+from pathlib import Path
 
 import sphinx_rtd_theme
 import yaml
@@ -220,10 +221,27 @@ man_pages = [("index", "qgiswebsite", "QGIS Website Documentation", ["QGIS Contr
 locale_dirs = ["../i18n/"]
 gettext_compact = False
 
+try:
+    user_paths = [Path(p) for p in os.environ["PYTHONPATH"].split(os.pathsep)]
+except KeyError:
+    user_paths = []
+
 class_maps = {}
-for module in ("3d", "analysis", "core", "gui", "server"):
-    with open(f"/usr/lib/python3/dist-packages/qgis/{module}/class_map.yaml") as f:
-        class_maps[module] = yaml.safe_load(f)
+qgis_module_path = None
+for path in user_paths:
+    candidate_path = path / "qgis" / "core"
+    if candidate_path.exists():
+        qgis_module_path = candidate_path
+        break
+
+if qgis_module_path:
+    for module in ("3d", "analysis", "core", "gui", "server"):
+        class_map_path = qgis_module_path / module / "class_map.yaml"
+        if not class_map_path.exists():
+            print(f"Cannot find class_map.yaml for {module}, skipping...")
+            continue
+        with open(qgis_module_path / module / "class_map.yaml") as f:
+            class_maps[module] = yaml.safe_load(f)
 
 
 def linkcode_resolve(domain, info):
