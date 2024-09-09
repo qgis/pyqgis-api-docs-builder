@@ -231,7 +231,10 @@ def linkcode_resolve(domain, info):
         return None
     if not info["module"]:
         return None
-    module = info["module"].split(".")[1]
+    try:
+        module = info["module"].split(".")[1]
+    except IndexError:
+        return None
     if module == "_3d":
         module = "3d"
     try:
@@ -248,6 +251,7 @@ def setup(app):
     try:
         from autoautosummary import AutoAutoSummary
         from process_links import (
+            OverloadedPythonMethodDocumenter,
             process_bases,
             process_docstring,
             process_signature,
@@ -255,6 +259,7 @@ def setup(app):
         )
 
         app.add_directive("autoautosummary", AutoAutoSummary)
+        app.add_autodocumenter(OverloadedPythonMethodDocumenter)
         app.connect("autodoc-process-signature", process_signature)
         app.connect("autodoc-process-docstring", process_docstring)
         app.connect("autodoc-skip-member", skip_member)
