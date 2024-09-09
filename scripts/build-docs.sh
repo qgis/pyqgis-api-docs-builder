@@ -66,12 +66,6 @@ echo "RELEASE TAG: ${RELEASE_TAG}"
 echo "PACKAGE LIMIT: ${PACKAGE}"
 echo "SINGLE CLASS: ${CLASS}"
 
-# download class_map until correctly installed
-# TODO: remove this when https://github.com/qgis/QGIS/pull/58200 is merged
-for module in "3d" "analysis" "core" "gui" "server"; do
-    wget -O /usr/lib/python3/dist-packages/qgis/${module}/class_map.yaml https://raw.githubusercontent.com/qgis/QGIS/${RELEASE_TAG}/python/${module}/class_map.yaml
-done
-
 if [[ -n ${QGIS_BUILD_DIR} ]]; then
   export PYTHONPATH=${PYTHONPATH}:$QGIS_BUILD_DIR/output/python
   #export PATH=$PATH:/usr/local/bin/:$QGIS_BUILD_DIR/build/output/bin
