@@ -10,10 +10,13 @@ import PyQt5
 from docutils import nodes
 from docutils.parsers.rst import directives
 from sphinx.ext import autosummary
-from sphinx.ext.autosummary import Autosummary, ImportExceptionGroup, get_documenter
+from sphinx.ext.autodoc import MethodDocumenter
+from sphinx.ext.autosummary import Autosummary, ImportExceptionGroup
 from sphinx.locale import __
 from sphinx.util import logging
 from sphinx.util.inspect import isstaticmethod, safe_getattr
+
+from process_links import OverloadedPythonMethodDocumenter
 
 # from sphinx.directives import directive
 logger = logging.getLogger(__name__)
@@ -33,6 +36,21 @@ def new_extract_summary(doc: list[str], document: Any) -> str:
 
 
 autosummary.extract_summary = new_extract_summary
+
+old_get_documenter = autosummary.get_documenter
+
+
+def new_get_documenter(app, obj: Any, parent: Any):
+    res = old_get_documenter(app, obj, parent)
+    if issubclass(res, OverloadedPythonMethodDocumenter):
+        # sorry, gross hack! OverloadedPythonMethodDocumenter works well
+        # for generating the actual docs, but fails when we are building
+        # the table of contents. So fallback to original class instead...
+        return MethodDocumenter
+    return res
+
+
+autosummary.get_documenter = new_get_documenter
 
 
 class AutoAutoSummary(Autosummary):
@@ -100,7 +118,7 @@ class AutoAutoSummary(Autosummary):
                     continue
                 try:
                     chobj = safe_getattr(obj, name)
-                    documenter = get_documenter(doc.settings.env.app, chobj, obj)
+                    documenter = autosummary.get_documenter(doc.settings.env.app, chobj, obj)
                     # cl = get_class_that_defined_method(chobj)
                     # print(name, chobj.__qualname__, type(chobj), issubclass(chobj, Enum), documenter.objtype)
                     if documenter.objtype == typ:
