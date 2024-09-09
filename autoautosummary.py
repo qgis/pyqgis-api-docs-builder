@@ -16,7 +16,7 @@ from sphinx.locale import __
 from sphinx.util import logging
 from sphinx.util.inspect import isstaticmethod, safe_getattr
 
-from process_links import OverloadedPythonMethodDocumenter
+from documenters import OverloadedPythonMethodDocumenter
 
 # from sphinx.directives import directive
 logger = logging.getLogger(__name__)
