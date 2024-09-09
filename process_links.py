@@ -189,44 +189,49 @@ def process_docstring(app, what, name, obj, options, lines):
         # OverloadedPythonMethodDocumenter class, so that we are only
         # looking at the docs relevant to the specific overload we are
         # currently processing
-        signature = lines[0]
-        if signature != "":
+        signature = None
+        match = None
+        if lines:
+            signature = lines[0]
+        if signature:
             match = py_ext_sig_re.match(signature)
-            if not match:
-                # fallback to default docstring, just to be safe...
-                signature = obj.__doc__.split("\n")[0]
-                match = py_ext_sig_re.match(signature)
-            else:
+            if match:
                 del lines[0]
 
-            if not match:
-                # print(obj)
-                if name not in cfg["non-instantiable"]:
-                    raise Warning(f"invalid signature for {name}: {signature}")
-            else:
-                exmod, path, base, args, retann, signal = match.groups()
+        if match is None:
+            signature = obj.__doc__.split("\n")[0]
+            if signature == "":
+                return
+            match = py_ext_sig_re.match(signature)
 
-                if args:
-                    args = args.split(", ")
-                    inject_args(args, lines)
+        if match is None:
+            if name not in cfg["non-instantiable"]:
+                raise Warning(f"invalid signature for {name}: {signature}")
 
-                if retann:
-                    insert_index = len(lines)
-                    for i, line in enumerate(lines):
-                        if line.startswith(":rtype:"):
-                            insert_index = None
-                            break
-                        elif line.startswith(":return:") or line.startswith(":returns:"):
-                            insert_index = i
+        else:
+            exmod, path, base, args, retann, signal = match.groups()
 
-                    if insert_index is not None:
-                        if insert_index == len(lines):
-                            # Ensure that :rtype: doesn't get joined with a paragraph of text, which
-                            # prevents it being interpreted.
-                            lines.append("")
-                            insert_index += 1
+            if args:
+                args = args.split(", ")
+                inject_args(args, lines)
 
-                        lines.insert(insert_index, f":rtype: {create_links(retann)}")
+            if retann:
+                insert_index = len(lines)
+                for i, line in enumerate(lines):
+                    if line.startswith(":rtype:"):
+                        insert_index = None
+                        break
+                    elif line.startswith(":return:") or line.startswith(":returns:"):
+                        insert_index = i
+
+                if insert_index is not None:
+                    if insert_index == len(lines):
+                        # Ensure that :rtype: doesn't get joined with a paragraph of text, which
+                        # prevents it being interpreted.
+                        lines.append("")
+                        insert_index += 1
+
+                    lines.insert(insert_index, f":rtype: {create_links(retann)}")
 
 
 def process_signature(app, what, name, obj, options, signature, return_annotation):
