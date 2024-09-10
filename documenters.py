@@ -17,30 +17,6 @@ class OverloadedPythonMethodDocumenter(MethodDocumenter):
     def can_document_member(cls, member, membername, isattr, parent):
         return MethodDocumenter.can_document_member(member, membername, isattr, parent)
 
-    @staticmethod
-    def parse_signatures(docstring):
-        """
-        Extracts each signature from a sip generated docstring
-        """
-        signature_pattern = r"(\w+\(.*?\))(?:\s*->\s*\(?\w+(?:,\s*\w+)*\)?)?"
-        res = []
-        current_signature_docs = []
-        for line in docstring.split("\n"):
-
-            if re.match(signature_pattern, line):
-                if current_signature_docs:
-                    res.append(current_signature_docs)
-
-                # Extract just the parameter part of each signature
-                params = re.search(r"\((.*?)\)", line).group()
-                current_signature_docs = [params]
-            else:
-                current_signature_docs += [line]
-        if current_signature_docs:
-            res.append(current_signature_docs)
-
-        return res
-
     def parse_signature_blocks(self, docstring):
         """
         Extracts each signature from a sip generated docstring, and
@@ -86,6 +62,9 @@ class OverloadedPythonMethodDocumenter(MethodDocumenter):
 
             # add a method output for EVERY override
             for i, (signature, description) in enumerate(signature_blocks):
+                if i > 0:
+                    self.add_line("", sourcename)
+
                 # this pattern is used in the autodoc source!
                 old_indent = self.indent
                 new_indent = (
@@ -93,34 +72,16 @@ class OverloadedPythonMethodDocumenter(MethodDocumenter):
                     * len(self.content_indent)
                     * (len(self.indent) // len(self.content_indent) - 1)
                 )
-                self.indent = new_indent
-                # skip this class, go straight to super. The add_directive_header
-                # implementation from this class will omit the signatures of
-                # overridden methods
-                super().add_directive_header(signature)
-                self.indent = old_indent
-
+                # skip the signature for the first overload. This will already
+                # have been included by the base class Documenter logic!
                 if i > 0:
+                    self.indent = new_indent
+                    self.add_directive_header(signature)
+                    self.indent = old_indent
                     # we can only index the first signature!
                     self.add_line(":no-index:", sourcename)
-
-                self.add_line("", sourcename)
+                    self.add_line("", sourcename)
 
                 doc_for_this_override = self.object_name + signature + "\n" + description
                 for line in self.process_doc([doc_for_this_override.split("\n")]):
                     self.add_line(line, sourcename)
-
-    def add_directive_header(self, sig):
-        # Parse the docstring to get all signatures
-        docstring = inspect.getdoc(self.object)
-        if docstring:
-            signatures = self.parse_signatures(docstring)
-        else:
-            signatures = [sig]  # Use the original signature if no docstring
-
-        if len(signatures) > 1:
-            # skip overridden method directive headers here, we will generate
-            # them later when we pass the actual docstring
-            return
-
-        return super().add_directive_header(sig)
