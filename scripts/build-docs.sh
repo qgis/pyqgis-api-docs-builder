@@ -66,10 +66,17 @@ echo "RELEASE TAG: ${RELEASE_TAG}"
 echo "PACKAGE LIMIT: ${PACKAGE}"
 echo "SINGLE CLASS: ${CLASS}"
 
-# download class_map until correctly installed
-# TODO: remove this when https://github.com/qgis/QGIS/pull/58200 is merged
+# download current class_map file, if it hasn't already been
+mkdir -p temp
 for module in "3d" "analysis" "core" "gui" "server"; do
-    wget -O /usr/lib/python3/dist-packages/qgis/${module}/class_map.yaml https://raw.githubusercontent.com/qgis/QGIS/${RELEASE_TAG}/python/${module}/class_map.yaml
+    CLASS_MAP_FILE="temp/${module}/class_map.yaml"
+    if [ -f "$CLASS_MAP_FILE" ]; then
+      echo "${module} class map file already downloaded"
+    else
+      echo "Need to fetch ${module} class map file"
+      mkdir -p temp/${module}
+      wget -O "$CLASS_MAP_FILE" https://raw.githubusercontent.com/qgis/QGIS/${RELEASE_TAG}/python/${module}/class_map.yaml
+    fi
 done
 
 if [[ -n ${QGIS_BUILD_DIR} ]]; then

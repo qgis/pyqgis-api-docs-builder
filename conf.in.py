@@ -227,21 +227,12 @@ except KeyError:
     user_paths = []
 
 class_maps = {}
-qgis_module_path = None
-for path in user_paths:
-    candidate_path = path / "qgis" / "core"
-    if candidate_path.exists():
-        qgis_module_path = candidate_path
-        break
 
-if qgis_module_path:
-    for module in ("3d", "analysis", "core", "gui", "server"):
-        class_map_path = qgis_module_path / module / "class_map.yaml"
-        if not class_map_path.exists():
-            print(f"Cannot find class_map.yaml for {module}, skipping...")
-            continue
-        with open(qgis_module_path / module / "class_map.yaml") as f:
-            class_maps[module] = yaml.safe_load(f)
+for module in ("3d", "analysis", "core", "gui", "server"):
+    class_map_path = Path("..") / ".." / "temp" / module / "class_map.yaml"
+    assert class_map_path.exists(), f"Cannot find {class_map_path.resolve()}"
+    with open(class_map_path) as f:
+        class_maps[module] = yaml.safe_load(f)
 
 
 def linkcode_resolve(domain, info):
