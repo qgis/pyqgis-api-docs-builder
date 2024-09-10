@@ -27,9 +27,7 @@ class OverloadedPythonMethodDocumenter(MethodDocumenter):
         current_sig = ""
         current_desc = ""
         for line in docstring.split("\n"):
-            match = re.match(
-                r"^\s*\w+(\([^)]*\)(?:\s*->\s*[^:\n]+)?)\s*((?:(?!\w+\().)*)\s*$", line
-            )
+            match = re.match(r"^\w+(\([^)]*\)(?:\s*->\s*[^:\n]+)?)\s*((?:(?!\w+\().)*)\s*$", line)
             if match:
                 if current_sig:
                     res.append((current_sig, current_desc))
