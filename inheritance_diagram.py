@@ -354,6 +354,9 @@ class InheritanceGraph:
             if any(n.endswith(f".{name}") for n in self.class_names):
                 this_node_attrs["fillcolor"] = '"#e7f2fa"'
 
+            if fullname.startswith("PyQt"):
+                this_node_attrs["URL"] = f'"{env.config.qt_docs_url_base}{name.lower()}.html"'
+                this_node_attrs["target"] = '"_top"'
             if fullname in urls:
                 this_node_attrs["URL"] = '"%s"' % urls[fullname]
                 this_node_attrs["target"] = '"_top"'
@@ -550,5 +553,6 @@ def setup(app: Sphinx) -> ExtensionMetadata:
     app.add_config_value("inheritance_graph_attrs", {}, "")
     app.add_config_value("inheritance_node_attrs", {}, "")
     app.add_config_value("inheritance_edge_attrs", {}, "")
+    app.add_config_value("qt_docs_url_base", "", "")
     app.add_config_value("inheritance_alias", {}, "")
     return {"version": sphinx.__display_version__, "parallel_read_safe": True}

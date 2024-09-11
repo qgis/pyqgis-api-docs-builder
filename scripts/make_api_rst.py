@@ -330,9 +330,15 @@ def generate_docs():
                     for _base in _b.__bases__:
                         if _base.__name__ in ("wrapper", "simplewrapper", "object"):
                             continue
+
+                        if re.match(r"^Q(?!gs)", _base.__name__):
+                            doc_link = f'{cfg["qt_docs_url_base"]}{_base.__name__.lower()}.html'
+                        else:
+                            doc_link = f"{_base.__name__}.html"
+
                         res += make_table_row(
                             [
-                                f"`{_base.__name__} <{_base.__name__}.html>`_",
+                                f"`{_base.__name__} <{doc_link}>`_",
                                 extract_summary(_base.__doc__),
                             ]
                         )

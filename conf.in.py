@@ -131,6 +131,7 @@ current_ltr = str(cfg["current_ltr"])
 version_list = ("master", current_stable, current_ltr)
 
 graphviz_output_format = "svg"
+qt_docs_url_base = cfg["qt_docs_url_base"]
 
 url = cfg["pyqgis_url"]
 if not url.endswith("/"):
