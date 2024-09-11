@@ -212,6 +212,22 @@ class_toc = """
     :exclude-members: $EXCLUDE_METHODS
 """
 
+AUTO_CLASS = """
+.. autoclass:: qgis.$PACKAGE.$CLASS
+   :special-members: __init__
+   :members:
+   :undoc-members:
+   :exclude-members: $EXCLUDE_METHODS
+"""
+
+AUTO_FUNCTION = """
+.. autofunction:: qgis.$PACKAGE.$CLASS
+"""
+
+AUTO_ATTRIBUTE = """
+.. autoattribute:: qgis.$PACKAGE.$CLASS
+"""
+
 MODULE_TOC_MAX_COLUMN_SIZES = [300, 500]
 
 
@@ -408,12 +424,27 @@ def generate_docs():
                             # print(getattr(base, method).__doc__)
                             pass
 
+            if isinstance(_class, (str, int, float)):
+                content = AUTO_ATTRIBUTE
+                object_type = "Attribute"
+            elif (
+                inspect.isfunction(_class)
+                or _class.__class__.__name__ == "builtin_function_or_method"
+            ):
+                content = AUTO_FUNCTION
+                object_type = "Function"
+            else:
+                content = AUTO_CLASS
+                object_type = "Class"
+
             substitutions = {
                 "PACKAGE": package_name,
                 "CLASS": class_name,
                 "EXCLUDE_METHODS": ",".join(exclude_methods),
                 "HEADER_CONTENT": header,
                 "TABLE_OF_CONTENTS": toc,
+                "CONTENT": content,
+                "OBJECT_TYPE": object_type,
             }
             class_template = template.substitute(**substitutions)
             class_rst = open(f"api/{qgis_version}/{package_name}/{class_name}.rst", "w")

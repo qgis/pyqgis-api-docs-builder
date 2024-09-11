@@ -1,6 +1,6 @@
 .. package: qgis\.$PACKAGE
 
-Class: $CLASS
+$OBJECT_TYPE: $CLASS
 ..............................................................................................
 
 .. py:module:: $CLASS
@@ -9,8 +9,4 @@ $HEADER_CONTENT
 
 $TABLE_OF_CONTENTS
 
-.. autoclass:: qgis.$PACKAGE.$CLASS
-   :special-members: __init__
-   :members:
-   :undoc-members:
-   :exclude-members: $EXCLUDE_METHODS
+$CONTENT
