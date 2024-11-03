@@ -3,7 +3,7 @@ pyqgis_url: https://qgis.org/pyqgis
 
 current_stable: '3.40'
 current_ltr: '3.34'
-current_master: nightly
+master: nightly
 
 qt_docs_url_base: https://doc.qt.io/qt-5/
 
