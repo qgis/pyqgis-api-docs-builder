@@ -87,6 +87,7 @@ html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]  # use with module im
 html_theme_options = {
     "collapse_navigation": False,
     "sticky_navigation": False,
+    "display_version": True,
     "prev_next_buttons_location": None,
     "titles_only": True,
     "versioning": True,
