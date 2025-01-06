@@ -32,14 +32,14 @@ repos:
 
   # Black formatting
   - repo: https://github.com/psf/black
-    rev: "24.8.0"
+    rev: "24.10.0"
     hooks:
       - id: black
         args: ["--line-length=99"]
 
   # tool to automatically upgrade syntax for newer versions of the language
   - repo: https://github.com/asottile/pyupgrade
-    rev: v3.17.0
+    rev: v3.19.1
     hooks:
       - id: pyupgrade
         args: [--py311-plus]
