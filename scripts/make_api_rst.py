@@ -399,7 +399,14 @@ def generate_docs():
                         if re.match(rf"^{_class.__name__}\(", line):
                             break
 
-                    header = "\n".join(lines[:init_idx])
+                    for line in lines[:init_idx]:
+                        # fix links to function names
+                        line = re.sub(
+                            r":py:func:`~(.*?)`",
+                            f":py:func:`\\1() <qgis.{package_name}.{_class.__name__}.\\1>`",
+                            line,
+                        )
+                        header += line + "\n"
 
                 if bases_and_subclass_header:
                     if header:
