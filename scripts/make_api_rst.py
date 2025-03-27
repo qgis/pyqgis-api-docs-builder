@@ -325,6 +325,12 @@ def generate_docs():
         template_text = template_file.read()
     template = RecursiveTemplate(template_text)
 
+    # first build a master mapping of class name to source package
+    class_packages = {}
+    for package_name, package in packages.items():
+        for class_name, _ in extract_package_classes(package):
+            class_packages[class_name] = package_name
+
     # Iterate over every class in every package and write out an rst
     # template based on standard rst template
 
@@ -354,12 +360,15 @@ def generate_docs():
 
                         if re.match(r"^Q(?!gs)", _base.__name__):
                             doc_link = f'{cfg["qt_docs_url_base"]}{_base.__name__.lower()}.html'
+                            doc_link_cell = f"`{_base.__name__} <{doc_link}>`_"
                         else:
-                            doc_link = f"{_base.__name__}.html"
+                            if _base.__name__ not in class_packages:
+                                continue
+                            doc_link_cell = f":py:class:`{_base.__name__} <qgis.{class_packages[_base.__name__]}.{_base.__name__}>`"
 
                         res += make_table_row(
                             [
-                                f"`{_base.__name__} <{doc_link}>`_",
+                                doc_link_cell,
                                 extract_summary(_base.__doc__),
                             ]
                         )
@@ -378,9 +387,12 @@ def generate_docs():
                 bases_and_subclass_header += f"\n+{'-' * MODULE_TOC_MAX_COLUMN_SIZES[0]}+{'-' * MODULE_TOC_MAX_COLUMN_SIZES[1]}+\n"
 
                 for subclass in _class.__subclasses__():
+                    if subclass.__name__ not in class_packages:
+                        continue
+
                     bases_and_subclass_header += make_table_row(
                         [
-                            f"`{subclass.__name__} <{subclass.__name__}.html>`_",
+                            f":py:class:`{subclass.__name__} <qgis.{class_packages[subclass.__name__]}.{subclass.__name__}>`",
                             extract_summary(subclass.__doc__),
                         ]
                     )
