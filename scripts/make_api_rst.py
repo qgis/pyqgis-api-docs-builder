@@ -451,14 +451,19 @@ def generate_docs():
                                 del abstract_methods[overridden_method]
 
                 if abstract_methods:
-                    header += "\n\n.. note:: This is an abstract class, with methods which **must** be implemented by a subclass. "
-                    header += "The following methods must be implemented:\n\n"
-                    for name in sorted(abstract_methods.keys()):
+                    header += "\n\n.. note:: This is an abstract class, with methods which **must** be implemented by a subclass.\n\n    "
+                    header += "The following methods must be implemented: "
+                    for idx, name in enumerate(sorted(abstract_methods.keys())):
+                        if idx:
+                            header += ", "
                         source_class = abstract_methods[name]
                         if source_class == _class.__name__:
-                            header += f"  - :py:func:`{name}() <qgis.{package_name}.{source_class}.{name}>`\n"
+                            header += (
+                                f":py:func:`{name}() <qgis.{package_name}.{source_class}.{name}>`"
+                            )
                         else:
-                            header += f"  - :py:func:`{source_class}.{name}() <qgis.{package_name}.{source_class}.{name}>`\n"
+                            header += f":py:func:`{source_class}.{name}() <qgis.{package_name}.{source_class}.{name}>`"
+                    header += "\n\n"
 
                 if bases_and_subclass_header:
                     if header:
