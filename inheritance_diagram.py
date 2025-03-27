@@ -72,6 +72,11 @@ module_sig_re = re.compile(
 py_builtins = [obj for obj in vars(builtins).values() if inspect.isclass(obj)]
 py_builtins.extend([sip.wrapper, sip.simplewrapper])
 
+# We have to import ALL PyQGIS modules upfront, so that we can
+# reliably determine class __subclasses__ which fall over different
+# modules
+from qgis import _3d, analysis, core, gui, processing, server  # NOQA
+
 
 def try_import(objname: str) -> Any:
     """Import a object or module using *name* and *currentmodule*.
