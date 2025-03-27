@@ -147,10 +147,17 @@ def process_docstring(app, what, name, obj, options, lines):
             lines[:] = lines_out[:]
             return
 
+    in_code_block = False
     for i in range(len(lines)):
         # fix seealso
         # lines[i] = re.sub(r':py: func:`(\w+\(\))`', r':func:`.{}.\1()'.format(what), lines[i])
-        lines[i] = create_links(lines[i])
+        if lines[i].startswith(".. code-block"):
+            in_code_block = True
+        elif not lines[i] and i < len(lines) - 1 and not lines[i + 1]:
+            in_code_block = False
+
+        if not in_code_block:
+            lines[i] = create_links(lines[i])
 
     def inject_args(_args, _lines):
         for arg in _args:
