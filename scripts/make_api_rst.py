@@ -296,6 +296,23 @@ def make_table_row(contents: list[str]):
     return res
 
 
+def all_parent_classes(class_):
+    """
+    Collects ALL parent classes for a class, recursively
+    """
+    res = []
+    for _base in class_.__bases__:
+        if _base.__name__ in ("wrapper", "simplewrapper", "object"):
+            continue
+
+        res.append(_base)
+
+        if hasattr(_base, "__bases__"):
+            res.extend(all_parent_classes(_base))
+
+    return res
+
+
 def generate_docs():
     """Generate RST documentation by introspection of QGIS libs.
 
@@ -419,6 +436,41 @@ def generate_docs():
                             line,
                         )
                         header += line + "\n"
+
+                # We need to build a list of the abstract methods from this class AND all parent classes
+                # We also want to identify the actual parent class where the abstract method comes from,
+                # so we put these in a dictionary where we'll overwrite the class with the parent
+                # class for the method
+                if hasattr(_class, "__abstract_methods__"):
+                    abstract_methods = {m: _class.__name__ for m in _class.__abstract_methods__}
+                else:
+                    abstract_methods = {}
+                for _base in all_parent_classes(_class):
+                    if hasattr(_base, "__abstract_methods__"):
+                        for base_abstract_method in _base.__abstract_methods__:
+                            abstract_methods[base_abstract_method] = _base.__name__
+
+                # remove abstract methods from base classes which were overridden
+                if hasattr(_class, "__overridden_methods__"):
+                    for overridden_method in _class.__overridden_methods__:
+                        if overridden_method in abstract_methods:
+                            del abstract_methods[overridden_method]
+
+                for _base in all_parent_classes(_class):
+                    if hasattr(_base, "__overridden_methods__"):
+                        for overridden_method in _base.__overridden_methods__:
+                            if overridden_method in abstract_methods:
+                                del abstract_methods[overridden_method]
+
+                if abstract_methods:
+                    header += "\n\n.. note:: This is an abstract class, with methods which **must** be implemented by a subclass. "
+                    header += "The following methods must be implemented:\n\n"
+                    for name in sorted(abstract_methods.keys()):
+                        source_class = abstract_methods[name]
+                        if source_class == _class.__name__:
+                            header += f"  - :py:func:`{name}() <qgis.{package_name}.{source_class}.{name}>`\n"
+                        else:
+                            header += f"  - :py:func:`{source_class}.{name}() <qgis.{package_name}.{source_class}.{name}>`\n"
 
                 if bases_and_subclass_header:
                     if header:
