@@ -13,7 +13,101 @@ import yaml
 with open("pyqgis_conf.yml") as f:
     cfg = yaml.safe_load(f)
 
+import PyQt5
+from docutils import nodes
+from qgis._3d import *  # NOQA
+from qgis.analysis import *  # NOQA
+from qgis.core import *  # NOQA
+from qgis.gui import *  # NOQA
+from qgis.server import *  # NOQA
+from sphinx import addnodes
+from sphinx.domains.python import PyAttribute, PyMethod
 from sphinx.ext.autodoc import AttributeDocumenter, Documenter
+
+old_get_sig = PyMethod.get_signature_prefix
+
+
+old_PyMethod_get_signature_prefix = PyMethod.get_signature_prefix
+old_PyAttribute_get_signature_prefix = PyAttribute.get_signature_prefix
+
+
+def new_method_get_signature_prefix(self, sig: str):
+    prefix = old_PyMethod_get_signature_prefix(self, sig)
+
+    assert len(self.arguments) == 1
+    name_parts = self.arguments[0].split("(")[0].split(".")
+    if len(name_parts) > 1:
+        try_class_name_parts = name_parts[:]
+        obj_class = None
+        while try_class_name_parts:
+            try:
+                obj_class = globals()[".".join(try_class_name_parts)]
+                break
+            except KeyError:
+                try_class_name_parts = try_class_name_parts[:-1]
+
+        if obj_class:
+            method_name = ".".join(name_parts[len(try_class_name_parts) :])
+
+            if (
+                hasattr(obj_class, method_name)
+                and hasattr(obj_class, "__abstract_methods__")
+                and method_name in obj_class.__abstract_methods__
+            ):
+                prefix.append(nodes.Text("abstract"))
+                prefix.append(addnodes.desc_sig_space())
+            elif hasattr(obj_class, method_name) and (
+                (
+                    hasattr(obj_class, "__virtual_methods__")
+                    and method_name in obj_class.__virtual_methods__
+                )
+                or (
+                    hasattr(obj_class, "__overridden_methods__")
+                    and method_name in obj_class.__overridden_methods__
+                )
+            ):
+                prefix.append(nodes.Text("virtual"))
+                prefix.append(addnodes.desc_sig_space())
+
+    # print(dir(self))
+    # prefix.append(nodes.Text('sdfgsdfgds'))
+    # prefix.append(addnodes.desc_sig_space())
+    return prefix
+
+
+PyMethod.get_signature_prefix = new_method_get_signature_prefix
+
+
+def new_attr_get_signature_prefix(self, sig: str):
+    prefix = old_PyAttribute_get_signature_prefix(self, sig)
+
+    # add prefix label for attributes which are signals
+
+    assert len(self.arguments) == 1
+    name_parts = self.arguments[0].split("(")[0].split(".")
+    if len(name_parts) > 1:
+        try_class_name_parts = name_parts[:]
+        obj_class = None
+        while try_class_name_parts:
+            try:
+                obj_class = globals()[".".join(try_class_name_parts)]
+                break
+            except KeyError:
+                try_class_name_parts = try_class_name_parts[:-1]
+
+        if obj_class:
+            method_name = ".".join(name_parts[len(try_class_name_parts) :])
+            if hasattr(obj_class, method_name) and isinstance(
+                getattr(obj_class, method_name), PyQt5.QtCore.pyqtSignal
+            ):
+                prefix.append(nodes.Text("signal"))
+                prefix.append(addnodes.desc_sig_space())
+
+    return prefix
+
+
+PyAttribute.get_signature_prefix = new_attr_get_signature_prefix
+
 
 old_get_doc = Documenter.get_doc
 
