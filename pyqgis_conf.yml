@@ -39,6 +39,20 @@ skipped:
   - SmartgroupId
   - SmartgroupName
   - SmartgroupXML
+  - DEFAULT_LINE_WIDTH
+  - DEFAULT_POINT_SIZE
+  - DEFAULT_SEGMENT_EPSILON
+  - GEOCRS_ID
+  - GEOPROJ4
+  - GEOSRID
+  - GEOWKT
+  - GEO_EPSG_CRS_AUTHID
+  - GEO_EPSG_CRS_ID
+  - GEO_NONE
+  - PROJECT_SCALES
+  - geoNone
+  - geoProj4
+  - geoWkt
 
 non-instantiable:
   - qgis.core.QgsRunProcess
