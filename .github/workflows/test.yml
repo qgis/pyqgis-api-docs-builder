@@ -1,0 +1,16 @@
+name: Testing
+
+on:
+  pull_request:
+  push:
+
+jobs:
+
+  test_builder:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Run docs builder tests
+      run: |
+        pip install -U pytest &&
+        pytest
