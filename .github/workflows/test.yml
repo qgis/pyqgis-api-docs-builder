@@ -12,5 +12,5 @@ jobs:
     - uses: actions/checkout@v4
     - name: Run docs builder tests
       run: |
-        pip install -U pytest &&
+        pip install -U pytest sphinx &&
         pytest
