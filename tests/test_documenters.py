@@ -221,6 +221,26 @@ qgis.db)
             ],
         )
 
+        self.assertEqual(
+            OverloadedPythonMethodDocumenter.parse_signature_blocks(
+                """contains(self, other: QgsDateRange) -> bool
+Returns ``True`` if this range contains another range.
+
+contains(self, element: Union[QDate, datetime.date]) -> bool
+Returns ``True`` if this range contains a specified ``element``."""
+            ),
+            [
+                (
+                    "(self, other: QgsDateRange) -> bool",
+                    "Returns ``True`` if this range contains another range.\n\n",
+                ),
+                (
+                    "(self, element: Union[QDate, datetime.date]) -> bool",
+                    "Returns ``True`` if this range contains a specified ``element``.\n",
+                ),
+            ],
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
