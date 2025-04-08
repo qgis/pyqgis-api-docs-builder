@@ -1,5 +1,6 @@
 import inspect
 import re
+from enum import Enum
 
 from sphinx.ext.autodoc import MethodDocumenter
 
@@ -17,24 +18,67 @@ class OverloadedPythonMethodDocumenter(MethodDocumenter):
     def can_document_member(cls, member, membername, isattr, parent):
         return MethodDocumenter.can_document_member(member, membername, isattr, parent)
 
-    def parse_signature_blocks(self, docstring):
+    @staticmethod
+    def parse_signature_blocks(docstring):
         """
         Extracts each signature from a sip generated docstring, and
         returns each signature in a tuple with the docs for just
         that signature.
         """
+
+        class SignaturePart(Enum):
+            Leading = 0
+            Arguments = 1
+            ReturnType = 2
+
         res = []
         current_sig = ""
         current_desc = ""
         for line in docstring.split("\n"):
-            match = re.match(r"^\w+(\([^)]*\)(?:\s*->\s*[^:\n]+)?)\s*((?:(?!\w+\().)*)\s*$", line)
-            if match:
+            leading = ""
+            arguments = ""
+            return_type = ""
+            part = SignaturePart.Leading
+            depth = 0
+            is_signature = True
+            # try to find out if this line is a signature, and if so, extract
+            # its components.
+            # we can't use a regular expression for this, as we need to account
+            # for potentially nested () [] in the arguments lists...
+            for char in line:
+                if part == SignaturePart.Leading and char == " ":
+                    is_signature = False
+                    break
+                if part == SignaturePart.Leading and char != "(":
+                    leading += char
+                elif part == SignaturePart.Leading and char == "(":
+                    part = SignaturePart.Arguments
+                    arguments += "("
+                    depth = 1
+                elif part == SignaturePart.Arguments and char not in ("(", ")", "[", "]"):
+                    arguments += char
+                elif part == SignaturePart.Arguments:
+                    if char in ("(", "["):
+                        depth += 1
+                    if char in (")", "]"):
+                        depth -= 1
+                    arguments += char
+                    if depth == 0:
+                        part = SignaturePart.ReturnType
+                elif part == SignaturePart.ReturnType:
+                    return_type += char
+            if (
+                part != SignaturePart.ReturnType
+                or not leading
+                or not re.match(r"^[a-zA-Z0-9_]+$", leading)
+            ):
+                is_signature = False
+
+            if is_signature:
                 if current_sig:
                     res.append((current_sig, current_desc))
-                current_sig = match.group(1)
-                current_desc = match.group(2)
-                if current_desc:
-                    current_desc += "\n"
+                current_sig = arguments + return_type
+                current_desc = ""
             else:
                 current_desc += line + "\n"
 
