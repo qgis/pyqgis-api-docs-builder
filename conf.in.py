@@ -260,7 +260,7 @@ def linkcode_resolve(domain, info):
 def setup(app):
     try:
         from autoautosummary import AutoAutoSummary
-        from documenters import OverloadedPythonMethodDocumenter
+        from docs_builder.documenters import OverloadedPythonMethodDocumenter
         from process_links import (
             process_bases,
             process_docstring,

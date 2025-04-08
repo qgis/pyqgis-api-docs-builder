@@ -18,7 +18,8 @@ class OverloadedPythonMethodDocumenter(MethodDocumenter):
     def can_document_member(cls, member, membername, isattr, parent):
         return MethodDocumenter.can_document_member(member, membername, isattr, parent)
 
-    def parse_signature_blocks(self, docstring):
+    @staticmethod
+    def parse_signature_blocks(docstring):
         """
         Extracts each signature from a sip generated docstring, and
         returns each signature in a tuple with the docs for just
