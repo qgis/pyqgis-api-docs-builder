@@ -3,11 +3,17 @@ import pathlib
 import re
 
 import yaml
+from sphinx.ext.autodoc import AttributeDocumenter, Documenter
 
 from .utils import Utils
 
 with open(pathlib.Path(__file__).parent / ".." / "pyqgis_conf.yml") as f:
     cfg = yaml.safe_load(f)
+
+
+old_get_doc = Documenter.get_doc
+old_attribute_get_doc = AttributeDocumenter.get_doc
+old_format_signature = Documenter.format_signature
 
 
 class AutoDocAdditions:
@@ -197,3 +203,104 @@ class AutoDocAdditions:
                         lines.insert(
                             insert_index, f":rtype: {AutoDocAdditions.create_links(retann)}"
                         )
+
+    @staticmethod
+    def process_signature(app, what, name, obj, options, signature, return_annotation):
+        # we cannot render links in signature for the moment, so do nothing
+        # https://github.com/sphinx-doc/sphinx/issues/1059
+        return signature, return_annotation
+
+    @staticmethod
+    def skip_member(app, what, name, obj, skip, options):
+        # skip monkey patched enums (base classes are different)
+        if name == "staticMetaObject":
+            return True
+        if name == "baseClass":
+            return True
+        if hasattr(obj, "is_monkey_patched") and obj.is_monkey_patched:
+            # print(f"skipping monkey patched enum {name}")
+            return True
+        return skip
+
+    @staticmethod
+    def process_bases(app, name, obj, option, bases: list) -> None:
+        """Here we fine tune how the base class's classes are displayed."""
+        for i, base in enumerate(bases):
+            # replace 'sip.wrapper' base class with 'object'
+            if base.__name__ == "wrapper":
+                bases[i] = object
+
+    @staticmethod
+    def get_doc(self) -> list[list[str]] | None:
+        """
+        Attributes cannot have docstrings, so in QGIS we hack around this
+        by storing them in a __attribute_docs__ dictionary in classes.
+
+        This method is then monkey-patched into autodoc.Documenter
+        to allow docstrings for attributes.
+        """
+        try:
+            if self.object_name in self.parent.__attribute_docs__:
+                docs = self.parent.__attribute_docs__[self.object_name]
+                return [docs.split("\n")]
+        except AttributeError:
+            pass
+
+        return old_get_doc(self)
+
+    @staticmethod
+    def attribute_get_doc(self):
+        """
+        This method is monkey-patched into autodoc.AttributeDocumenter as
+        we need to make self.parent accessible to process_docstring -- this
+        is a hacky approach to store it temporarily in a global. Sorry!
+        """
+        try:
+            if self.object_name in self.parent.__attribute_docs__:
+                AutoDocAdditions.PARENT_OBJ = self.parent
+                docs = self.parent.__attribute_docs__[self.object_name]
+                return [docs.split("\n")]
+        except AttributeError:
+            pass
+
+        return old_attribute_get_doc(self)
+
+    @staticmethod
+    def format_signature(self, **kwargs) -> str:
+        """
+        Monkey patched into autodoc.Documenter for signature formatting,
+        to retrieve signatures for signals, which are actually attributes
+        and so don't have a real signature available!
+        """
+        try:
+            if self.object_name in self.parent.__signal_arguments__:
+                args = self.parent.__signal_arguments__[self.object_name]
+                args = f'({", ".join(args)})'
+                retann = None
+                result = self.env.events.emit_firstresult(
+                    "autodoc-process-signature",
+                    self.objtype,
+                    self.fullname,
+                    self.object,
+                    self.options,
+                    args,
+                    retann,
+                )
+                if result:
+                    args, retann = result
+
+                if args:
+                    return args
+                else:
+                    return ""
+        except AttributeError:
+            pass
+
+        return old_format_signature(self, **kwargs)
+
+
+# monkey patch some Sphinx autodoc methods
+# TODO -- is it possible to avoid this? Maybe a custom Documenter would help?
+Documenter.format_signature = AutoDocAdditions.format_signature
+Documenter.get_doc = AutoDocAdditions.get_doc
+AttributeDocumenter.get_doc = AutoDocAdditions.attribute_get_doc

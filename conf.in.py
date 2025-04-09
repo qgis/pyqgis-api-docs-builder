@@ -262,17 +262,12 @@ def setup(app):
         from autoautosummary import AutoAutoSummary
         from docs_builder.autodoc import AutoDocAdditions
         from docs_builder.documenters import OverloadedPythonMethodDocumenter
-        from process_links import (
-            process_bases,
-            process_signature,
-            skip_member,
-        )
 
         app.add_directive("autoautosummary", AutoAutoSummary)
         app.add_autodocumenter(OverloadedPythonMethodDocumenter)
-        app.connect("autodoc-process-signature", process_signature)
+        app.connect("autodoc-process-signature", AutoDocAdditions.process_signature)
         app.connect("autodoc-process-docstring", AutoDocAdditions.process_docstring)
-        app.connect("autodoc-skip-member", skip_member)
-        app.connect("autodoc-process-bases", process_bases)
+        app.connect("autodoc-skip-member", AutoDocAdditions.skip_member)
+        app.connect("autodoc-process-bases", AutoDocAdditions.process_bases)
     except BaseException as e:
         raise e
