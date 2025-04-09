@@ -81,51 +81,51 @@ class TestUtils(unittest.TestCase):
         result = Utils.get_class_from_fully_qualified_attribute_name(
             "TestClass.attribute", globals()
         )
-        self.assertEqual(result, TestClass)
+        self.assertEqual(result, (TestClass, "attribute"))
 
         # Nested class attribute
         result = Utils.get_class_from_fully_qualified_attribute_name(
             "TestClass.NestedClass.nested_attribute", globals()
         )
-        self.assertEqual(result, TestClass.NestedClass)
+        self.assertEqual(result, (TestClass.NestedClass, "nested_attribute"))
 
         # Double nested class
         result = Utils.get_class_from_fully_qualified_attribute_name(
             "OuterModule.InnerClass.inner_attribute", globals()
         )
-        self.assertEqual(result, OuterModule.InnerClass)
+        self.assertEqual(result, (OuterModule.InnerClass, "inner_attribute"))
 
         # Nonexistent attribute
         result = Utils.get_class_from_fully_qualified_attribute_name(
             "NonexistentClass.attribute", globals()
         )
-        self.assertIsNone(result)
+        self.assertEqual(result, (None, ""))
 
         # Nonexistent nested attribute
         result = Utils.get_class_from_fully_qualified_attribute_name(
             "TestClass.NonexistentNestedClass.attribute", globals()
         )
-        self.assertEqual(result, TestClass)
+        self.assertEqual(result, (TestClass, "NonexistentNestedClass.attribute"))
 
         # Single name no dots
         result = Utils.get_class_from_fully_qualified_attribute_name("SingleName", globals())
-        self.assertIsNone(result)
+        self.assertEqual(result, (None, ""))
 
         # Empty string
         result = Utils.get_class_from_fully_qualified_attribute_name("", globals())
-        self.assertIsNone(result)
+        self.assertEqual(result, (None, ""))
 
         # With method name instead of attribute
         result = Utils.get_class_from_fully_qualified_attribute_name(
             "TestClass.test_method", globals()
         )
-        self.assertEqual(result, TestClass)
+        self.assertEqual(result, (TestClass, "test_method"))
 
         # With complicated hierarchy
         result = Utils.get_class_from_fully_qualified_attribute_name(
             "ComplexHierarchy.Level1.Level2.Level3.deep_attribute", globals()
         )
-        self.assertEqual(result, ComplexHierarchy.Level1.Level2.Level3)
+        self.assertEqual(result, (ComplexHierarchy.Level1.Level2.Level3, "deep_attribute"))
 
 
 if __name__ == "__main__":

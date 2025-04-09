@@ -40,10 +40,10 @@ class Utils:
     @staticmethod
     def get_class_from_fully_qualified_attribute_name(
         name: str, module_globals: dict[str, Any]
-    ) -> type | None:
+    ) -> tuple[type | None, str]:
         """
         Given the fully-qualified name of an attribute, returns the fully-qualified
-        name of the class that the object belongs to.
+        name of the class that the object belongs to and the attribute name
         """
         name_parts = name.split(".")
         _class = None
@@ -65,6 +65,6 @@ class Utils:
                         _class = getattr(_class, try_class_name_parts[-1])
                     else:
                         break
-                return _class
+                return _class, ".".join(name_parts[len(try_class_name_parts) - 1 :])
 
-        return None
+        return None, ""
