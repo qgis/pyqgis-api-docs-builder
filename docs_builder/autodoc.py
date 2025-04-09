@@ -37,6 +37,51 @@ class AutoDocAdditions:
         return doc
 
     @staticmethod
+    def insert_links(lines: list[str]):
+        """
+        Inserts link tags into a block of docstring lines
+        """
+        in_code_block = False
+        for i in range(len(lines)):
+            # fix seealso
+            # lines[i] = re.sub(r':py: func:`(\w+\(\))`', r':func:`.{}.\1()'.format(what), lines[i])
+            if lines[i].startswith(".. code-block"):
+                in_code_block = True
+            elif not lines[i] and i < len(lines) - 1 and not lines[i + 1]:
+                in_code_block = False
+
+            if not in_code_block:
+                lines[i] = AutoDocAdditions.create_links(lines[i])
+
+    @staticmethod
+    def inject_args(args: list[str], lines: list[str]):
+        """
+        Injects :param and param :type lines into a docstring, for the
+        arguments specified in args
+        """
+        for arg in args:
+            try:
+                arg_name, hint = arg.split(": ")
+            except ValueError:
+                continue
+            search_for = f":param {arg_name}:"
+            insert_index = None
+
+            for i, line in enumerate(lines):
+                if line.startswith(search_for):
+                    insert_index = i
+                    break
+
+            if insert_index is None:
+                lines.append(search_for)
+                insert_index = len(lines)
+
+            if insert_index is not None:
+                lines.insert(
+                    insert_index, f":type {arg_name}: {AutoDocAdditions.create_links(hint)}"
+                )
+
+    @staticmethod
     def process_docstring(app, what, name, obj, options, lines):
         if what == "class":
             # hacky approach to detect nested classes, eg QgsCallout.QgsCalloutContext
@@ -67,47 +112,14 @@ class AutoDocAdditions:
                 lines[:] = lines_out[:]
                 return
 
-        in_code_block = False
-        for i in range(len(lines)):
-            # fix seealso
-            # lines[i] = re.sub(r':py: func:`(\w+\(\))`', r':func:`.{}.\1()'.format(what), lines[i])
-            if lines[i].startswith(".. code-block"):
-                in_code_block = True
-            elif not lines[i] and i < len(lines) - 1 and not lines[i + 1]:
-                in_code_block = False
-
-            if not in_code_block:
-                lines[i] = AutoDocAdditions.create_links(lines[i])
-
-        def inject_args(_args, _lines):
-            for arg in _args:
-                try:
-                    argname, hint = arg.split(": ")
-                except ValueError:
-                    continue
-                searchfor = f":param {argname}:"
-                insert_index = None
-
-                for i, line in enumerate(_lines):
-                    if line.startswith(searchfor):
-                        insert_index = i
-                        break
-
-                if insert_index is None:
-                    _lines.append(searchfor)
-                    insert_index = len(_lines)
-
-                if insert_index is not None:
-                    _lines.insert(
-                        insert_index, f":type {argname}: {AutoDocAdditions.create_links(hint)}"
-                    )
+        AutoDocAdditions.insert_links(lines)
 
         if what == "attribute":
             try:
                 args = AutoDocAdditions.PARENT_OBJ.__signal_arguments__.get(
                     name.split(".")[-1], []
                 )
-                inject_args(args, lines)
+                AutoDocAdditions.inject_args(args, lines)
             except AttributeError:
                 pass
 
@@ -142,7 +154,7 @@ class AutoDocAdditions:
 
                 if args:
                     args = args.split(", ")
-                    inject_args(args, lines)
+                    AutoDocAdditions.inject_args(args, lines)
 
                 if retann:
                     insert_index = len(lines)
