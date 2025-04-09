@@ -4,6 +4,8 @@ import re
 
 import yaml
 
+from .utils import Utils
+
 with open(pathlib.Path(__file__).parent / ".." / "pyqgis_conf.yml") as f:
     cfg = yaml.safe_load(f)
 
@@ -153,7 +155,7 @@ class AutoDocAdditions:
                 exmod, path, base, args, retann, signal = match.groups()
 
                 if args:
-                    args = args.split(", ")
+                    args = Utils.split_to_tokens(args)
                     AutoDocAdditions.inject_args(args, lines)
 
                 if retann:
