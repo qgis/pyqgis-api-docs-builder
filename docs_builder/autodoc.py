@@ -56,7 +56,7 @@ class AutoDocAdditions:
                 lines[i] = AutoDocAdditions.create_links(lines[i])
 
     @staticmethod
-    def inject_args(args: list[str], lines: list[str]):
+    def inject_args(args: list[str], lines: list[str], indent: int = 0):
         """
         Injects :param and param :type lines into a docstring, for the
         arguments specified in args
@@ -70,17 +70,18 @@ class AutoDocAdditions:
             insert_index = None
 
             for i, line in enumerate(lines):
-                if line.startswith(search_for):
+                if line.strip().startswith(search_for):
                     insert_index = i
                     break
 
             if insert_index is None:
-                lines.append(search_for)
+                lines.append((" " * indent) + search_for)
                 insert_index = len(lines)
 
             if insert_index is not None:
                 lines.insert(
-                    insert_index, f":type {arg_name}: {AutoDocAdditions.create_links(hint)}"
+                    insert_index,
+                    f"{' ' * indent}:type {arg_name}: {AutoDocAdditions.create_links(hint)}",
                 )
 
     @staticmethod
@@ -98,20 +99,39 @@ class AutoDocAdditions:
                         break
 
                 lines[:] = lines[init_idx:]
-                lines_out = []
                 # loop through remaining lines, which are the constructors. Format
                 # these up so they look like proper __init__ method documentation
+                current_constructor = []
+                current_constructor_args = []
+                constructors = []
                 for i, line in enumerate(lines):
-                    if re.match(rf"^{class_name}\(", line):
-                        lines_out.append(
+                    match = re.match(rf"^{class_name}\((.*)\)", line)
+                    if match:
+                        if current_constructor:
+                            if current_constructor_args:
+                                AutoDocAdditions.inject_args(
+                                    current_constructor_args, current_constructor, indent=4
+                                )
+                            constructors.append(current_constructor)
+                            current_constructor = []
+                        current_constructor_args = Utils.split_to_tokens(match.group(1))
+                        current_constructor.append(
                             re.sub(rf"\b{class_name}\(", ".. py:method:: __init__(", line)
                         )
-                        lines_out.append("    :noindex:")
-                        lines_out.append("")
+                        current_constructor.append("    :noindex:")
+                        current_constructor.append("")
                     else:
-                        lines_out.append("    " + line)
+                        current_constructor.append("    " + line)
+                if current_constructor:
+                    if current_constructor_args:
+                        AutoDocAdditions.inject_args(
+                            current_constructor_args, current_constructor, indent=4
+                        )
+                    constructors.append(current_constructor)
 
-                lines[:] = lines_out[:]
+                lines[:] = []
+                for constructor in constructors:
+                    lines.extend(constructor)
                 return
 
         AutoDocAdditions.insert_links(lines)

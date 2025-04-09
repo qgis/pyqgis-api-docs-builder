@@ -261,6 +261,8 @@ class TestAutoDocAdditions(unittest.TestCase):
                 "    Creates a geometry from an abstract geometry object. Ownership of geom",
                 "    is transferred.",
                 "    ",
+                "    :param geom:",
+                "    :type geom: QgsAbstractGeometry",
             ],
         )
 
