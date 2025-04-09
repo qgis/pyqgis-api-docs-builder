@@ -163,6 +163,33 @@ class TestAutoDocAdditions(unittest.TestCase):
             ],
         )
 
+        # complex argument types
+        lines = [
+            "contains(self, element: Union[QDate, datetime.date]) -> bool",
+            "Returns ``True`` if this range contains a specified ``element``.",
+            "",
+        ]
+
+        AutoDocAdditions.process_docstring(
+            app=None,
+            what="method",
+            name="qgis.core.QgsDateRange.contains",
+            obj=dummy_method,
+            options={},
+            lines=lines,
+        )
+        self.assertEqual(
+            lines,
+            [
+                "Returns ``True`` if this range contains a specified ``element``.",
+                "",
+                ":param element:",
+                ":type element: Union[QDate, datetime.date]",
+                "",
+                ":rtype: bool",
+            ],
+        )
+
     def test_process_docstring_for_classes(self):
         """
         Test logic for processing the docstrings for classes
