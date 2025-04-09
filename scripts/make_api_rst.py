@@ -198,7 +198,17 @@ class_toc = """
     :exclude-members: $EXCLUDE_METHODS
 
 .. autoautosummary:: qgis.$PACKAGE.$CLASS
+    :abstract_methods:
+    :nosignatures:
+    :exclude-members: $EXCLUDE_METHODS
+
+.. autoautosummary:: qgis.$PACKAGE.$CLASS
     :methods:
+    :nosignatures:
+    :exclude-members: $EXCLUDE_METHODS
+
+.. autoautosummary:: qgis.$PACKAGE.$CLASS
+    :virtual_methods:
     :nosignatures:
     :exclude-members: $EXCLUDE_METHODS
 

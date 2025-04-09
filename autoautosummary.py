@@ -37,7 +37,7 @@ autosummary.extract_summary = new_extract_summary
 
 class AutoAutoSummary(Autosummary):
     """
-    Create a summary for methods, attributes and signals (autosummary).
+    Create a summary for methods, attributes, signals, virtual and abstract methods (autosummary).
 
     If the summary contains elements, a title (Methods, Attributes or Signals)
     is automatically added before (using the rubric directive).
@@ -49,6 +49,8 @@ class AutoAutoSummary(Autosummary):
         "methods": directives.unchanged,
         "static_methods": directives.unchanged,
         "signals": directives.unchanged,
+        "virtual_methods": directives.unchanged,
+        "abstract_methods": directives.unchanged,
         "enums": directives.unchanged,
         "attributes": directives.unchanged,
         "nosignatures": directives.unchanged,
@@ -89,6 +91,8 @@ class AutoAutoSummary(Autosummary):
         signal=False,
         enum=False,
         static=False,
+        virtual=False,
+        abstract=False,
     ):
         try:
             if not include_public:
@@ -100,6 +104,19 @@ class AutoAutoSummary(Autosummary):
                     continue
                 try:
                     chobj = safe_getattr(obj, name)
+
+                    abstract_methods = (
+                        obj.__abstract_methods__ if hasattr(obj, "__abstract_methods__") else set()
+                    )
+                    virtual_methods = (
+                        obj.__virtual_methods__ if hasattr(obj, "__virtual_methods__") else set()
+                    )
+                    overridden_methods = (
+                        obj.__overridden_methods__
+                        if hasattr(obj, "__overridden_methods__")
+                        else set()
+                    )
+
                     documenter = autosummary.get_documenter(doc.settings.env.app, chobj, obj)
                     # cl = get_class_that_defined_method(chobj)
                     # print(name, chobj.__qualname__, type(chobj), issubclass(chobj, Enum), documenter.objtype)
@@ -112,6 +129,14 @@ class AutoAutoSummary(Autosummary):
                         if typ == "method":
                             method_is_static = isstaticmethod(chobj, obj, name)
                             if method_is_static != static:
+                                continue
+                            method_is_abstract = name in abstract_methods
+                            if method_is_abstract != abstract:
+                                continue
+                            method_is_virtual = (
+                                name in virtual_methods or name in overridden_methods
+                            )
+                            if not abstract and method_is_virtual != virtual:
                                 continue
                         elif typ == "attribute":
                             if signal and not isinstance(chobj, PyQt5.QtCore.pyqtSignal):
@@ -171,10 +196,20 @@ class AutoAutoSummary(Autosummary):
             (module_name, class_name) = clazz.rsplit(".", 1)
             m = __import__(module_name, globals(), locals(), [class_name])
             c = getattr(m, class_name)
-            if "methods" in self.options:
+            if "abstract_methods" in self.options:
+                rubric_title = "Abstract Methods"
+                _, rubric_elems = self.get_members(
+                    self.state.document, c, "method", self.options, ["__init__"], abstract=True
+                )
+            elif "methods" in self.options:
                 rubric_title = "Methods"
                 _, rubric_elems = self.get_members(
                     self.state.document, c, "method", self.options, ["__init__"]
+                )
+            elif "virtual_methods" in self.options:
+                rubric_title = "Virtual Methods"
+                _, rubric_elems = self.get_members(
+                    self.state.document, c, "method", self.options, ["__init__"], virtual=True
                 )
             elif "static_methods" in self.options:
                 rubric_title = "Static Methods"
