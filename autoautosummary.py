@@ -245,4 +245,6 @@ class AutoAutoSummary(Autosummary):
                 if rubric_public_elems and len(rubric_public_elems) > 0:
                     rub = nodes.rubric("", rubric_title)
                     ret.insert(0, rub)
+                else:
+                    ret = []
             return ret
