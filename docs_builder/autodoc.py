@@ -3,17 +3,31 @@ import pathlib
 import re
 
 import yaml
+from docutils import nodes
+from sphinx import addnodes
+from sphinx.domains.python import PyAttribute, PyMethod
 from sphinx.ext.autodoc import AttributeDocumenter, Documenter
 
 from .utils import Utils
+
+try:
+    from qgis._3d import *  # NOQA
+    from qgis.analysis import *  # NOQA
+    from qgis.core import *  # NOQA
+    from qgis.gui import *  # NOQA
+    from qgis.server import *  # NOQA
+except ImportError:
+    pass
 
 with open(pathlib.Path(__file__).parent / ".." / "pyqgis_conf.yml") as f:
     cfg = yaml.safe_load(f)
 
 
-old_get_doc = Documenter.get_doc
-old_attribute_get_doc = AttributeDocumenter.get_doc
-old_format_signature = Documenter.format_signature
+old_documenter_get_doc = Documenter.get_doc
+old_attribute_documenter_get_doc = AttributeDocumenter.get_doc
+old_documenter_format_signature = Documenter.format_signature
+old_py_method_get_signature_prefix = PyMethod.get_signature_prefix
+old_py_attribute_get_signature_prefix = PyAttribute.get_signature_prefix
 
 
 class AutoDocAdditions:
@@ -246,7 +260,7 @@ class AutoDocAdditions:
         except AttributeError:
             pass
 
-        return old_get_doc(self)
+        return old_documenter_get_doc(self)
 
     @staticmethod
     def attribute_get_doc(self):
@@ -263,7 +277,7 @@ class AutoDocAdditions:
         except AttributeError:
             pass
 
-        return old_attribute_get_doc(self)
+        return old_attribute_documenter_get_doc(self)
 
     @staticmethod
     def format_signature(self, **kwargs) -> str:
@@ -296,7 +310,79 @@ class AutoDocAdditions:
         except AttributeError:
             pass
 
-        return old_format_signature(self, **kwargs)
+        return old_documenter_format_signature(self, **kwargs)
+
+    @staticmethod
+    def method_get_signature_prefix(self, sig: str):
+        """
+        Monkey patched into PyMethod.get_signature_prefix to tag
+        abstract methods and virtual methods, using the
+        __abstract_methods__ and __virtual_methods__ class members
+        injected into the PyQGIS classes.
+
+        Virtual methods are not supported natively by Sphinx,
+        and abstract methods from sip bindings are not detected by Sphinx.
+        """
+        prefix = old_py_method_get_signature_prefix(self, sig)
+
+        # find actual class and name for the method
+        assert len(self.arguments) == 1
+        name_parts = self.arguments[0].split("(")[0]
+        obj_class, method_name = Utils.get_class_from_fully_qualified_attribute_name(
+            name_parts, globals()
+        )
+
+        if obj_class:
+            # check if method is present in the __abstract_methods__,
+            # __virtual_methods__ or __overridden_methods__ class
+            # members, and if so, add appropriate prefix tags
+            if (
+                hasattr(obj_class, method_name)
+                and hasattr(obj_class, "__abstract_methods__")
+                and method_name in obj_class.__abstract_methods__
+            ):
+                prefix.append(nodes.Text("abstract"))
+                prefix.append(addnodes.desc_sig_space())
+            elif hasattr(obj_class, method_name) and (
+                (
+                    hasattr(obj_class, "__virtual_methods__")
+                    and method_name in obj_class.__virtual_methods__
+                )
+                or (
+                    hasattr(obj_class, "__overridden_methods__")
+                    and method_name in obj_class.__overridden_methods__
+                )
+            ):
+                prefix.append(nodes.Text("virtual"))
+                prefix.append(addnodes.desc_sig_space())
+
+        return prefix
+
+    @staticmethod
+    def attribute_get_signature_prefix(self, sig: str):
+        """
+        Monkey patched into PyAttribute.get_signature_prefix to tag
+        signals, which are not supported natively by Sphinx.
+        """
+        prefix = old_py_attribute_get_signature_prefix(self, sig)
+
+        # find actual class and name for the attribute
+        assert len(self.arguments) == 1
+        name_parts = self.arguments[0].split("(")[0]
+        obj_class, method_name = Utils.get_class_from_fully_qualified_attribute_name(
+            name_parts, globals()
+        )
+
+        if obj_class:
+            # does this attribute look like a signal?
+            if (
+                hasattr(obj_class, method_name)
+                and getattr(obj_class, method_name).__class__.__name__ == "pyqtSignal"
+            ):
+                prefix.append(nodes.Text("signal"))
+                prefix.append(addnodes.desc_sig_space())
+
+        return prefix
 
 
 # monkey patch some Sphinx autodoc methods
@@ -304,3 +390,5 @@ class AutoDocAdditions:
 Documenter.format_signature = AutoDocAdditions.format_signature
 Documenter.get_doc = AutoDocAdditions.get_doc
 AttributeDocumenter.get_doc = AutoDocAdditions.attribute_get_doc
+PyMethod.get_signature_prefix = AutoDocAdditions.method_get_signature_prefix
+PyAttribute.get_signature_prefix = AutoDocAdditions.attribute_get_signature_prefix
