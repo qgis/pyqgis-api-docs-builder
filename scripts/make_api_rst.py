@@ -587,6 +587,7 @@ def generate_docs():
 
         package_index.close()
 
+    index.write("   faq\n")
     index.write(document_footer)
     index.close()
 

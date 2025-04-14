@@ -35,3 +35,34 @@ from https://rackerlabs.github.io/docs-rackspace/tools/rtd-tables.html */
       overflow: auto !important;
    }
 }
+
+/* Style for the virtual method label with tooltip and link */
+em.property > a.virtualmethod-link {
+  position: relative;
+  cursor: pointer;
+  color: #555;
+}
+
+.custom-tooltip {
+  font-style: normal;
+  font-weight: normal;
+  visibility: hidden;
+  width: 350px;
+  background-color: #555;
+  color: #fff;
+  text-align: left;
+  padding: 8px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+em.property > a.virtualmethod-link:hover .custom-tooltip {
+  visibility: visible;
+  opacity: 1;
+}

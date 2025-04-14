@@ -159,6 +159,11 @@ html_css_files = [
     "css/custom.css",
 ]
 
+html_js_files = [
+    "js/custom.js",
+]
+
+
 if "html_context" in globals():
     html_context.update(context)  # noqa: F821
 else:
