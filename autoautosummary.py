@@ -8,7 +8,9 @@ from typing import Any
 
 import PyQt5
 from docutils import nodes
-from docutils.parsers.rst import directives
+from docutils.frontend import OptionParser
+from docutils.parsers.rst import Parser, directives
+from docutils.utils import new_document
 from sphinx.ext import autosummary
 from sphinx.ext.autosummary import Autosummary, ImportExceptionGroup
 from sphinx.locale import __
@@ -190,6 +192,7 @@ class AutoAutoSummary(Autosummary):
     def run(self):
         clazz = self.arguments[0]
         rubric_title = None
+        rubric_description = None
         rubric_elems = None
         rubric_public_elems = None
         try:
@@ -208,6 +211,7 @@ class AutoAutoSummary(Autosummary):
                 )
             elif "virtual_methods" in self.options:
                 rubric_title = "Virtual Methods"
+                rubric_description = f"In PyQGIS, **only** methods marked as ``virtual`` can be safely overridden in a Python subclass of {class_name}. See the `FAQ <../faq.html#what-are-virtual-methods>`_ for more details."
                 _, rubric_elems = self.get_members(
                     self.state.document, c, "method", self.options, ["__init__"], virtual=True
                 )
@@ -239,8 +243,23 @@ class AutoAutoSummary(Autosummary):
             print(str(e))
             raise e
         finally:
-            # add the title before the return of the run
+            # add the title and descriptions before the return of the run
             ret = super().run()
+            if rubric_description:
+                if rubric_public_elems and len(rubric_public_elems) > 0:
+                    settings = OptionParser(components=(Parser,)).get_default_values()
+                    document = new_document("", settings)
+
+                    # Parse the RST content
+                    parser = Parser()
+                    parser.parse(rubric_description, document)
+
+                    # Extract the content from the parsed document
+                    rst_nodes = document.children
+
+                    # Insert the RST nodes into your document
+                    for node in rst_nodes:
+                        ret.insert(0, node)
             if rubric_title:
                 if rubric_public_elems and len(rubric_public_elems) > 0:
                     rub = nodes.rubric("", rubric_title)
