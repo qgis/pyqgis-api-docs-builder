@@ -410,19 +410,25 @@ def generate_docs():
                     bases_and_subclass_header += base_header
 
             if hasattr(_class, "__subclasses__") and _class.__subclasses__():
-                bases_and_subclass_header += "\n" + write_header("Subclasses", 2)
-                bases_and_subclass_header += f"\n+{'-' * MODULE_TOC_MAX_COLUMN_SIZES[0]}+{'-' * MODULE_TOC_MAX_COLUMN_SIZES[1]}+\n"
+                subclass_header = ""
+                subclass_header += "\n" + write_header("Subclasses", 2)
+                subclass_header += f"\n+{'-' * MODULE_TOC_MAX_COLUMN_SIZES[0]}+{'-' * MODULE_TOC_MAX_COLUMN_SIZES[1]}+\n"
 
+                found_subclasses = False
                 for subclass in _class.__subclasses__():
                     if subclass.__name__ not in class_packages:
                         continue
 
-                    bases_and_subclass_header += make_table_row(
+                    found_subclasses = True
+                    subclass_header += make_table_row(
                         [
                             f":py:class:`{subclass.__name__} <qgis.{class_packages[subclass.__name__]}.{subclass.__name__}>`",
                             extract_summary(subclass.__doc__),
                         ]
                     )
+
+                if found_subclasses:
+                    bases_and_subclass_header += subclass_header
 
             if inspect.isclass(_class):
                 class_doc = _class.__doc__
