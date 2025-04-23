@@ -16,6 +16,11 @@ from qgis.core import QgsApplication
 qgs = QgsApplication([], False)
 qgs.initQgis()
 qgs.setStyle("Fusion")
+# force a standard font size
+font = qgs.font()
+font.setPointSize(10)
+qgs.setFont(font)
+
 
 with open("pyqgis_conf.yml") as f:
     cfg = yaml.safe_load(f)
