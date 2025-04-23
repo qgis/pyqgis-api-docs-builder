@@ -5,7 +5,7 @@ QGIS screenshot generation utilities
 from qgis.PyQt.QtCore import QSize, Qt
 from qgis.PyQt.QtGui import QImage, QPainter
 from qgis.PyQt.QtTest import QTest
-from qgis.PyQt.QtWidgets import QComboBox, QVBoxLayout, QWidget
+from qgis.PyQt.QtWidgets import QComboBox, QToolButton, QVBoxLayout, QWidget
 
 
 class ScreenshotUtils:
@@ -92,5 +92,52 @@ class ScreenshotUtils:
 
         w.layout().removeWidget(combo)
         combo.setParent(None)
+
+        return im
+
+    @staticmethod
+    def capture_toolbutton_with_dropdown(button: QToolButton, width: int = 300) -> QImage:
+        """
+        Captures a QToolButton showing the menu expanded
+        """
+        # create a layout for the combobox
+        w = QWidget()
+        w.setLayout(QVBoxLayout())
+        w.layout().addWidget(button)
+        w.layout().addStretch()
+        w.setFixedWidth(width)
+        # something big enough to show all reasonable drop down heights!
+        w.setFixedHeight(600)
+
+        # ensure widget is ready for screenshot
+        w.show()
+        w.ensurePolished()
+        QTest.qWait(50)
+
+        menu = button.menu()
+        menu.aboutToShow.emit()
+        menu.show()
+        menu.ensurePolished()
+
+        popup_top_left = w.mapFromGlobal(
+            button.parent().mapToGlobal(button.geometry().bottomLeft())
+        )
+
+        menu_size = menu.size()
+        min_height = (
+            popup_top_left.y() + menu_size.height() + w.layout().contentsMargins().bottom()
+        )
+
+        im = QImage(QSize(w.width(), min_height), QImage.Format_ARGB32)
+        im.fill(Qt.transparent)
+
+        painter = QPainter(im)
+        w.render(painter)
+
+        menu.render(painter, targetOffset=popup_top_left)
+        painter.end()
+
+        w.layout().removeWidget(button)
+        button.setParent(None)
 
         return im
