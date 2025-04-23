@@ -8,7 +8,7 @@ from screenshots.utils import ScreenshotUtils
 
 def __generate_screenshots(dest_path: Path):
     layer = QgsVectorLayer("Point", "A point layer", "memory")
-    layer2 = QgsVectorLayer("Line", "A line layer", "memory")
+    layer2 = QgsVectorLayer("Linestring", "A line layer", "memory")
     raster = QgsRasterLayer("x", "Raster layer")
 
     QgsProject.instance().addMapLayers([layer, layer2, raster])
