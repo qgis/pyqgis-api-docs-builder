@@ -1,14 +1,21 @@
 #!/usr/bin/env python3
 
 import argparse
+import importlib
 import inspect
 import re
 from collections import defaultdict
 from os import makedirs
+from pathlib import Path
 from shutil import rmtree
 from string import Template
 
 import yaml
+from qgis.core import QgsApplication
+
+qgs = QgsApplication([], False)
+qgs.initQgis()
+qgs.setStyle("Fusion")
 
 with open("pyqgis_conf.yml") as f:
     cfg = yaml.safe_load(f)
@@ -306,6 +313,31 @@ def make_table_row(contents: list[str]):
     return res
 
 
+def generate_screenshots(package, class_name: str, _class) -> str:
+    """
+    Generates screenshots for a class, and returns corresponding markdown
+    """
+    module_name = package.__name__.split(".")[-1]
+    script_path = (
+        Path(__file__).parent / ".." / "screenshots" / module_name / (class_name.lower() + ".py")
+    )
+    if not script_path.exists():
+        return ""
+
+    image_path = Path(__file__).parent / ".." / "api" / "master" / module_name
+    spec = importlib.util.spec_from_file_location("script", script_path)
+    executed_module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(executed_module)
+    func = getattr(executed_module, "__generate_screenshots")
+    images = func(image_path)
+
+    # format images as markdown:
+    result = ""
+    for image, desc in images.items():
+        result += f"\n\n.. figure:: {image}\n   :alt: {desc}\n\n   {desc}\n\n"
+    return result
+
+
 def all_parent_classes(class_):
     """
     Collects ALL parent classes for a class, recursively
@@ -493,8 +525,10 @@ def generate_docs():
                             header += f":py:func:`{source_class}.{name}() <qgis.{package_name}.{source_class}.{name}>`"
                     header += "\n\n"
 
+                header += generate_screenshots(package, class_name, _class)
+
                 if bases_and_subclass_header:
-                    if header:
+                    if header and not header.endswith("\n\n"):
                         header += "\n\n"
                     header += write_header("Class Hierarchy")
                     header += inheritance_diagram

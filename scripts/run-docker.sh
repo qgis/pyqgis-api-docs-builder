@@ -64,5 +64,5 @@ echo "##[group] Docker run"
 docker rm -f pyqgis || true
 docker run -v ${DIR}:/root/pyqgis \
   qgis/qgis-python-api-doc:${QGIS_DOCKER_TAG} \
-  /bin/bash -c "/root/pyqgis/scripts/build-docs.sh ${PACKAGE} ${CLASS} -v ${QGIS_VERSION}"
+  /bin/bash -c "QT_QPA_PLATFORM=offscreen /root/pyqgis/scripts/build-docs.sh ${PACKAGE} ${CLASS} -v ${QGIS_VERSION}"
 echo "##[endgroup]"
