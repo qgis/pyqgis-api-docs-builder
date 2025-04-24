@@ -318,7 +318,7 @@ def make_table_row(contents: list[str]):
     return res
 
 
-def generate_screenshots(package, class_name: str, _class) -> str:
+def generate_screenshots(package, class_name: str, _class, version: str) -> str:
     """
     Generates screenshots for a class, and returns corresponding markdown
     """
@@ -329,7 +329,7 @@ def generate_screenshots(package, class_name: str, _class) -> str:
     if not script_path.exists():
         return ""
 
-    image_path = Path(__file__).parent / ".." / "api" / "master" / module_name
+    image_path = Path(__file__).parent / ".." / "api" / version / module_name
     spec = importlib.util.spec_from_file_location("script", script_path)
     executed_module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(executed_module)
@@ -530,7 +530,7 @@ def generate_docs():
                             header += f":py:func:`{source_class}.{name}() <qgis.{package_name}.{source_class}.{name}>`"
                     header += "\n\n"
 
-                header += generate_screenshots(package, class_name, _class)
+                header += generate_screenshots(package, class_name, _class, qgis_version)
 
                 if bases_and_subclass_header:
                     if header and not header.endswith("\n\n"):
