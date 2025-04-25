@@ -2,10 +2,20 @@
 QGIS screenshot generation utilities
 """
 
-from qgis.PyQt.QtCore import QSize, Qt
+from qgis.PyQt.QtCore import QRect, QSize, Qt
 from qgis.PyQt.QtGui import QImage, QPainter
 from qgis.PyQt.QtTest import QTest
-from qgis.PyQt.QtWidgets import QComboBox, QToolButton, QVBoxLayout, QWidget
+from qgis.PyQt.QtWidgets import (
+    QComboBox,
+    QDialog,
+    QFrame,
+    QStyle,
+    QStyleOptionFrame,
+    QStyleOptionTitleBar,
+    QToolButton,
+    QVBoxLayout,
+    QWidget,
+)
 
 
 class ScreenshotUtils:
@@ -52,6 +62,101 @@ class ScreenshotUtils:
 
         w.layout().removeWidget(widget)
         widget.setParent(None)
+
+        return im
+
+    @staticmethod
+    def capture_dialog(
+        dialog: QDialog,
+        width: int = 300,
+        height: int | None = None,
+        show_max: bool = False,
+        show_min: bool = False,
+    ) -> QImage:
+        """
+        Captures a QDialog to an image, at the specified width and height.
+
+        Ensures that the window frame and title bar are also drawn.
+
+        Optionally, the minimize and maximize buttons can be shown.
+        """
+        dialog.setFixedWidth(width)
+        if height:
+            dialog.setFixedHeight(height)
+
+        style = dialog.style()
+        title_bar_option = QStyleOptionTitleBar()
+        title_bar_option.initFrom(dialog)
+        frame_width = style.pixelMetric(QStyle.PM_DefaultFrameWidth, None, dialog)
+        title_bar_height = style.pixelMetric(QStyle.PM_TitleBarHeight, title_bar_option, dialog)
+        content_rect = dialog.rect()
+        dialog_rect = content_rect.adjusted(-frame_width, -frame_width, frame_width, frame_width)
+        frame_rect = content_rect.adjusted(
+            -frame_width, -title_bar_height, frame_width, frame_width
+        )
+        title_bar_rect = QRect(
+            frame_rect.left(), frame_rect.top(), frame_rect.width(), title_bar_height
+        )
+
+        im = QImage(QSize(frame_rect.width(), frame_rect.height()), QImage.Format_ARGB32)
+        im.fill(Qt.transparent)
+
+        painter = QPainter(im)
+        painter.setRenderHint(QPainter.TextAntialiasing)
+        painter.translate(frame_width, title_bar_height)
+
+        # ensure widget is ready for screenshot
+        dialog.show()
+        dialog.ensurePolished()
+        QTest.qWait(50)
+
+        frame_option = QStyleOptionFrame()
+        frame_option.initFrom(dialog)
+        frame_option.rect = dialog_rect
+        frame_option.frameShape = QFrame.StyledPanel
+        frame_option.state |= QStyle.State_Raised
+
+        # draw frame
+        style.drawPrimitive(QStyle.PE_Frame, frame_option, painter, dialog)
+
+        title_bar_option.rect = title_bar_rect
+        title_bar_option.text = dialog.windowTitle()
+        title_bar_option.state = QStyle.State_Active
+        title_bar_option.subControls = QStyle.SC_TitleBarCloseButton | QStyle.SC_TitleBarLabel
+        title_bar_option.titleBarFlags = (
+            Qt.Window
+            | Qt.WindowTitleHint
+            | Qt.WindowSystemMenuHint
+            | Qt.WindowMinMaxButtonsHint
+            | Qt.WindowCloseButtonHint
+        )
+        title_bar_option.titleBarState = QStyle.State_Active
+
+        # draw title bar background
+        style.drawComplexControl(QStyle.CC_TitleBar, title_bar_option, painter, dialog)
+
+        # draw window title
+        style.drawItemText(
+            painter,
+            title_bar_option.rect,
+            Qt.AlignCenter,
+            dialog.palette(),
+            True,
+            title_bar_option.text,
+        )
+
+        # Draw window buttons (minimize, maximize, close)
+        button_option = QStyleOptionTitleBar(title_bar_option)
+        button_option.subControls = QStyle.SC_TitleBarCloseButton | QStyle.SC_TitleBarLabel
+        if show_max:
+            button_option.subControls |= QStyle.SC_TitleBarMaxButton
+        if show_min:
+            button_option.subControls |= QStyle.SC_TitleBarMinButton
+        style.drawComplexControl(QStyle.CC_TitleBar, button_option, painter, dialog)
+
+        # draw actual dialog contents
+        dialog.render(painter)
+        painter.end()
 
         return im
 
