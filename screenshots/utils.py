@@ -14,13 +14,18 @@ class ScreenshotUtils:
     """
 
     @staticmethod
-    def capture_widget(widget: QWidget, width: int = 300, height: int | None = None) -> QImage:
+    def capture_widget(
+        widget: QWidget, width: int = 300, height: int | None = None, padding: int | None = None
+    ) -> QImage:
         """
         Captures a QWidget to an image, at the specified width and height.
         """
         # create a layout for the widget
         w = QWidget()
-        w.setLayout(QVBoxLayout())
+        vl = QVBoxLayout()
+        if padding is not None:
+            vl.setContentsMargins(padding, padding, padding, padding)
+        w.setLayout(vl)
         w.layout().addWidget(widget)
         w.layout().addStretch()
         w.setFixedWidth(width)
