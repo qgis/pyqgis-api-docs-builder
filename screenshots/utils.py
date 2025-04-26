@@ -57,6 +57,8 @@ class ScreenshotUtils:
         im.fill(Qt.transparent)
 
         painter = QPainter(im)
+        painter.setRenderHint(QPainter.Antialiasing)
+        painter.setRenderHint(QPainter.TextAntialiasing)
         w.render(painter)
         painter.end()
 
@@ -103,6 +105,7 @@ class ScreenshotUtils:
 
         painter = QPainter(im)
         painter.setRenderHint(QPainter.TextAntialiasing)
+        painter.setRenderHint(QPainter.Antialiasing)
         painter.translate(frame_width, title_bar_height)
 
         # ensure widget is ready for screenshot
@@ -196,6 +199,8 @@ class ScreenshotUtils:
         im.fill(Qt.transparent)
 
         painter = QPainter(im)
+        painter.setRenderHint(QPainter.TextAntialiasing)
+        painter.setRenderHint(QPainter.Antialiasing)
         w.render(painter)
         popup.render(painter, targetOffset=popup_top_left)
         painter.end()
@@ -242,6 +247,8 @@ class ScreenshotUtils:
         im.fill(Qt.transparent)
 
         painter = QPainter(im)
+        painter.setRenderHint(QPainter.TextAntialiasing)
+        painter.setRenderHint(QPainter.Antialiasing)
         w.render(painter)
 
         menu.render(painter, targetOffset=popup_top_left)
