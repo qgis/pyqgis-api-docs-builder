@@ -15,7 +15,7 @@ def __generate_screenshots(dest_path: Path):
     widget = QgsDataDefinedSizeDialog([symbol], layer)
     widget.setWindowTitle("Data Defined Size")
 
-    im = ScreenshotUtils.capture_dialog(widget, width=350, height=150)
+    im = ScreenshotUtils.capture_dialog(widget, width=350)
     im.save((dest_path / "datadefinedsizedialog.png").as_posix())
 
     return {"datadefinedsizedialog.png": "QgsDataDefinedSizeDialog with data-defined size enabled"}
