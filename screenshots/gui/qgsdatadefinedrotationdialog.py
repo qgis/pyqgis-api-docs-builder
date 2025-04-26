@@ -15,7 +15,7 @@ def __generate_screenshots(dest_path: Path):
     widget = QgsDataDefinedRotationDialog([symbol], layer)
     widget.setWindowTitle("Data Defined Rotation")
 
-    im = ScreenshotUtils.capture_dialog(widget, width=350, height=150)
+    im = ScreenshotUtils.capture_dialog(widget, width=350)
     im.save((dest_path / "datadefinedrotationdialog.png").as_posix())
 
     return {
