@@ -91,7 +91,8 @@ echo "##[group]make API RST ./scripts/make_api_rst.py ${PACKAGE} ${CLASS} -v ${Q
 # see https://bugs.launchpad.net/ubuntu/+source/opencv/+bug/1890170?comments=all
 export LD_PRELOAD=/lib/x86_64-linux-gnu/libstdc++.so.6
 
-./scripts/make_api_rst.py ${PACKAGE} ${CLASS} -v ${QGIS_VERSION}
+QT_STYLE_OVERRIDE=Fusion QT_AUTO_SCREEN_SCALE_FACTOR=0 QT_SCALE_FACTOR=1 QT_QPA_PLATFORM=offscreen QT_FONT_DPI=96 ./scripts/make_api_rst.py ${PACKAGE} ${CLASS} -v ${QGIS_VERSION}
+
 cp -r _templates api/${QGIS_VERSION}/_templates
 mkdir api/${QGIS_VERSION}/_static
 cp -r _static/css api/${QGIS_VERSION}/_static/css
