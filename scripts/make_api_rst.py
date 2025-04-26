@@ -12,12 +12,12 @@ from string import Template
 
 import yaml
 from qgis.core import QgsApplication
+from qgis.PyQt.QtGui import QFont
 
 qgs = QgsApplication([], False)
 qgs.initQgis()
-qgs.setStyle("Fusion")
 # force a standard font size
-font = qgs.font()
+font = QFont("Noto Sans")
 font.setPointSize(10)
 qgs.setFont(font)
 
