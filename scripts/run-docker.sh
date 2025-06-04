@@ -72,5 +72,5 @@ docker run --rm -v ${DIR}:/app/pyqgis -u $(id -u):$(id -g) --name pyqgis \
     QT_SCALE_FACTOR=1 \
     QT_QPA_PLATFORM=offscreen \
     QT_FONT_DPI=96 \
-    /app/pyqgis/scripts/build-docs.sh ${PACKAGE} ${CLASS} -v ${QGIS_VERSION}"
+    /app/pyqgis/scripts/build-docs.sh ${DEBUGPY} ${PACKAGE} ${CLASS} -v ${QGIS_VERSION}"
 echo "##[endgroup]"
