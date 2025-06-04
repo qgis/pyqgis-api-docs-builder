@@ -27,7 +27,7 @@ while getopts "q:p:c:v:" opt; do
     if [[ -z $CLASS ]]; then
       CLASS="-c $OPTARG"
     else
-      CLASS="$CLASS $OPTARG"
+      CLASS="$CLASS -c $OPTARG"
     fi
     ;;
   \?)
