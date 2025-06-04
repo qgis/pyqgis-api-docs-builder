@@ -13,7 +13,7 @@ pushd ${DIR}/..
 
 QGIS_VERSION=master
 
-while getopts "q:p:c:v:" opt; do
+while getopts "q:p:c:v:d" opt; do
   case $opt in
   v)
     QGIS_VERSION=$OPTARG
@@ -34,6 +34,9 @@ while getopts "q:p:c:v:" opt; do
     else
       CLASS="$CLASS $OPTARG"
     fi
+    ;;
+  d)
+    DEBUGPY="python3 -m debugpy --listen 0.0.0.0:5678 --wait-for-client"
     ;;
   \?)
     echo "Invalid option: -$OPTARG" >&2
@@ -91,7 +94,12 @@ echo "##[group]make API RST ./scripts/make_api_rst.py ${PACKAGE} ${CLASS} -v ${Q
 # see https://bugs.launchpad.net/ubuntu/+source/opencv/+bug/1890170?comments=all
 export LD_PRELOAD=/lib/x86_64-linux-gnu/libstdc++.so.6
 
-QT_STYLE_OVERRIDE=Fusion QT_AUTO_SCREEN_SCALE_FACTOR=0 QT_SCALE_FACTOR=1 QT_QPA_PLATFORM=offscreen QT_FONT_DPI=96 ./scripts/make_api_rst.py ${PACKAGE} ${CLASS} -v ${QGIS_VERSION}
+QT_STYLE_OVERRIDE=Fusion \
+QT_AUTO_SCREEN_SCALE_FACTOR=0 \
+QT_SCALE_FACTOR=1 \
+QT_QPA_PLATFORM=offscreen \
+QT_FONT_DPI=96 \
+${DEBUGPY} ./scripts/make_api_rst.py ${PACKAGE} ${CLASS} -v ${QGIS_VERSION}
 
 cp -r _templates api/${QGIS_VERSION}/_templates
 mkdir api/${QGIS_VERSION}/_static
