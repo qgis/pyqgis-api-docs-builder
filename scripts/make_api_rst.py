@@ -11,8 +11,14 @@ from shutil import rmtree
 from string import Template
 
 import yaml
-from qgis.core import QgsApplication
+from qgis.core import QgsApplication, QgsSettings
+from qgis.PyQt.QtCore import QCoreApplication
 from qgis.PyQt.QtGui import QFont
+
+QCoreApplication.setOrganizationName("QGIS_PyQGISApiDocsBuilder")
+QCoreApplication.setOrganizationDomain("PyQGISApiDocsBuilder.com")
+QCoreApplication.setApplicationName("PyQGISApiDocsBuilder")
+QgsSettings().clear()
 
 qgs = QgsApplication([], False)
 qgs.initQgis()
