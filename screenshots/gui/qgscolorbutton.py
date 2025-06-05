@@ -14,7 +14,7 @@ def __generate_screenshots(dest_path: Path):
     im = ScreenshotUtils.capture_widget(widget, width=200)
     im.save((dest_path / "color_button.png").as_posix())
 
-    im = ScreenshotUtils.capture_toolbutton_with_dropdown(widget, width=200)
+    im = ScreenshotUtils.capture_toolbutton_with_dropdown(widget, width=250)
     im.save((dest_path / "color_button_expanded.png").as_posix())
 
     return {
