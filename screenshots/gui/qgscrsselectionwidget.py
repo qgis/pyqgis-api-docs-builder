@@ -1,12 +1,23 @@
 from pathlib import Path
 
-from qgis.core import QgsCoordinateReferenceSystem
+from qgis.core import QgsApplication, QgsCoordinateReferenceSystem
 from qgis.gui import QgsCrsSelectionWidget
 
 from screenshots.utils import ScreenshotUtils
 
 
 def __generate_screenshots(dest_path: Path):
+    QgsApplication.coordinateReferenceSystemRegistry().clearRecent()
+    QgsApplication.coordinateReferenceSystemRegistry().pushRecent(
+        QgsCoordinateReferenceSystem("ESRI:54030")
+    )
+    QgsApplication.coordinateReferenceSystemRegistry().pushRecent(
+        QgsCoordinateReferenceSystem("EPSG:3857")
+    )
+    QgsApplication.coordinateReferenceSystemRegistry().pushRecent(
+        QgsCoordinateReferenceSystem("EPSG:4326")
+    )
+
     widget = QgsCrsSelectionWidget()
     crs = QgsCoordinateReferenceSystem("EPSG:4326")
     widget.setCrs(crs)
