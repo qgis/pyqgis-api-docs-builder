@@ -8,7 +8,7 @@ from screenshots.utils import ScreenshotUtils
 
 def __generate_screenshots(dest_path: Path):
     widget = QgsCrsDefinitionWidget()
-    crs = QgsCoordinateReferenceSystem.fromEpsgId(4326)
+    crs = QgsCoordinateReferenceSystem("EPSG:4326")
     widget.setCrs(crs)
 
     im = ScreenshotUtils.capture_widget(widget, width=600)
