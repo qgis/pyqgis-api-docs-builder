@@ -81,6 +81,9 @@ done
 
 if [[ -n ${QGIS_BUILD_DIR} ]]; then
   export PYTHONPATH=${PYTHONPATH}:$QGIS_BUILD_DIR/output/python
+  export QGIS_PREFIX_PATH=$QGIS_BUILD_DIR/output
+  echo "setting QGIS_PREFIX_PATH ${QGIS_PREFIX_PATH}"
+
   #export PATH=$PATH:/usr/local/bin/:$QGIS_BUILD_DIR/build/output/bin
 fi
 export PYTHONPATH=${PYTHONPATH}:${DIR}/..
