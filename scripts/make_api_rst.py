@@ -11,6 +11,7 @@ from shutil import rmtree
 from string import Template
 
 import yaml
+from qgis._3d import Qgs3D
 from qgis.core import QgsApplication, QgsSettings
 from qgis.PyQt.QtCore import QCoreApplication
 from qgis.PyQt.QtGui import QFont
@@ -26,6 +27,8 @@ qgs.initQgis()
 font = QFont("Noto Sans")
 font.setPointSize(10)
 qgs.setFont(font)
+
+Qgs3D.initialize()
 
 
 with open("pyqgis_conf.yml") as f:
