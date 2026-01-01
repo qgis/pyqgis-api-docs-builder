@@ -84,21 +84,21 @@ jobs:
 
     steps:
       - name: Get artifact for master
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v7
         with:
           name: master
           merge-multiple: true
 
       - name: Get artifact for stable
         if: ${{ github.event_name != 'pull_request' }}
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v7
         with:
           name: stable
           merge-multiple: true
 
       - name: Get artifact for ltr
         if: ${{ github.event_name != 'pull_request' }}
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v7
         with:
           name: ltr
           merge-multiple: true
