@@ -58,7 +58,7 @@ jobs:
         run: |
           ./scripts/run-docker.sh -v ${QGIS_VERSION}
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v6
         if: ${{ github.event_name != 'pull_request' || matrix.qgis_version == 'master' }}
         with:
           name: ${{ matrix.qgis_version }}
