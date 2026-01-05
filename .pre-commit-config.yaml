@@ -1,7 +1,7 @@
 repos:
   # Fix end of files
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
+    rev: v6.0.0
     hooks:
       - id: trailing-whitespace
         exclude: .*\.qgs
@@ -25,28 +25,28 @@ repos:
 
   # Sort imports
   - repo: https://github.com/pycqa/isort
-    rev: "6.0.1"
+    rev: "7.0.0"
     hooks:
       - id: isort
         args: ["--profile", "black"]
 
   # Black formatting
-  - repo: https://github.com/psf/black
-    rev: "25.1.0"
+  - repo: https://github.com/psf/black-pre-commit-mirror
+    rev: "25.12.0"
     hooks:
       - id: black
         args: ["--line-length=99"]
 
   # tool to automatically upgrade syntax for newer versions of the language
   - repo: https://github.com/asottile/pyupgrade
-    rev: v3.19.1
+    rev: v3.21.2
     hooks:
       - id: pyupgrade
         args: [--py311-plus]
 
   # Lint files
   - repo: https://github.com/pycqa/flake8
-    rev: "7.2.0"
+    rev: "7.3.0"
     hooks:
       - id: flake8
         args: [
