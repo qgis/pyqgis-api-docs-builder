@@ -75,7 +75,7 @@ for module in "3d" "analysis" "core" "gui" "server"; do
     else
       echo "Need to fetch ${module} class map file"
       mkdir -p temp/${module}
-      wget -O "$CLASS_MAP_FILE" https://raw.githubusercontent.com/qgis/QGIS/${RELEASE_TAG}/python/${module}/class_map.yaml
+      wget -O "$CLASS_MAP_FILE" https://raw.githubusercontent.com/qgis/QGIS/${RELEASE_TAG}/python/PyQt6/${module}/class_map.yaml
     fi
 done
 
