@@ -137,7 +137,11 @@ class ScreenshotUtils:
             | Qt.WindowType.WindowMinMaxButtonsHint
             | Qt.WindowType.WindowCloseButtonHint
         )
-        title_bar_option.titleBarState = int(QStyle.StateFlag.State_Active)
+        # titleBarState expects int — use .value for PyQt6 enums, fall back to
+        # the enum itself for PyQt5 (where enums are already ints)
+        title_bar_option.titleBarState = getattr(
+            QStyle.StateFlag.State_Active, "value", QStyle.StateFlag.State_Active
+        )
 
         # draw title bar background
         style.drawComplexControl(
