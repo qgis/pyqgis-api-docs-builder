@@ -6,16 +6,34 @@ import re
 from enum import Enum
 from typing import Any
 
-import PyQt5
 from docutils import nodes
 from docutils.frontend import OptionParser
 from docutils.parsers.rst import Parser, directives
 from docutils.utils import new_document
+from qgis.PyQt.QtCore import pyqtSignal as _pyqtSignal
 from sphinx.ext import autosummary
 from sphinx.ext.autosummary import Autosummary, ImportExceptionGroup
 from sphinx.locale import __
 from sphinx.util import logging
 from sphinx.util.inspect import isstaticmethod, safe_getattr
+
+# get_documenter was made private and its signature changed in Sphinx 9.x
+try:
+    from sphinx.ext.autosummary import get_documenter as _sphinx_get_documenter
+
+    def _get_documenter_type(app, obj, parent):
+        return _sphinx_get_documenter(app, obj, parent).objtype
+
+except ImportError:
+    from sphinx.ext.autosummary import _get_documenter as _sphinx_get_documenter
+
+    def _get_documenter_type(app, obj, parent):
+        result = _sphinx_get_documenter(obj, parent)
+        # Sphinx 9.x returns a string directly
+        if isinstance(result, str):
+            return result
+        return result.objtype
+
 
 # from sphinx.directives import directive
 logger = logging.getLogger(__name__)
@@ -119,13 +137,9 @@ class AutoAutoSummary(Autosummary):
                         else set()
                     )
 
-                    documenter = autosummary.get_documenter(doc.settings.env.app, chobj, obj)
-                    # cl = get_class_that_defined_method(chobj)
-                    # print(name, chobj.__qualname__, type(chobj), issubclass(chobj, Enum), documenter.objtype)
-                    if documenter.objtype == typ:
-                        skipped = AutoAutoSummary.skip_member(
-                            doc, chobj, name, options, documenter.objtype
-                        )
+                    objtype = _get_documenter_type(doc.settings.env.app, chobj, obj)
+                    if objtype == typ:
+                        skipped = AutoAutoSummary.skip_member(doc, chobj, name, options, objtype)
                         if skipped is True:
                             continue
                         if typ == "method":
@@ -141,9 +155,9 @@ class AutoAutoSummary(Autosummary):
                             if not abstract and method_is_virtual != virtual:
                                 continue
                         elif typ == "attribute":
-                            if signal and not isinstance(chobj, PyQt5.QtCore.pyqtSignal):
+                            if signal and not isinstance(chobj, _pyqtSignal):
                                 continue
-                            if not signal and isinstance(chobj, PyQt5.QtCore.pyqtSignal):
+                            if not signal and isinstance(chobj, _pyqtSignal):
                                 continue
                             # skip monkey patched enums
                             # the monkeypatched enums coming out of scoped enum inherit Enum
