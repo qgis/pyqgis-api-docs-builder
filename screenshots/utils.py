@@ -119,14 +119,14 @@ class ScreenshotUtils:
         frame_option.initFrom(dialog)
         frame_option.rect = dialog_rect
         frame_option.frameShape = QFrame.Shape.StyledPanel
-        frame_option.state |= QStyle.StateFlag.State_Raised
+        frame_option.state |= int(QStyle.StateFlag.State_Raised)
 
         # draw frame
         style.drawPrimitive(QStyle.PrimitiveElement.PE_Frame, frame_option, painter, dialog)
 
         title_bar_option.rect = title_bar_rect
         title_bar_option.text = dialog.windowTitle()
-        title_bar_option.state = QStyle.StateFlag.State_Active
+        title_bar_option.state = int(QStyle.StateFlag.State_Active)
         title_bar_option.subControls = (
             QStyle.SubControl.SC_TitleBarCloseButton | QStyle.SubControl.SC_TitleBarLabel
         )
@@ -137,7 +137,7 @@ class ScreenshotUtils:
             | Qt.WindowType.WindowMinMaxButtonsHint
             | Qt.WindowType.WindowCloseButtonHint
         )
-        title_bar_option.titleBarState = QStyle.StateFlag.State_Active
+        title_bar_option.titleBarState = int(QStyle.StateFlag.State_Active)
 
         # draw title bar background
         style.drawComplexControl(
