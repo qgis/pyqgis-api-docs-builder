@@ -31,21 +31,6 @@ old_py_attribute_get_signature_prefix = PyAttribute.get_signature_prefix
 
 
 class AutoDocAdditions:
-    # https://github.com/sphinx-doc/sphinx/blob/685e3fdb49c42b464e09ec955e1033e2a8729fff/sphinx/ext/autodoc/__init__.py#L51
-    # adapted to handle signals
-
-    # https://regex101.com/r/lSB3rK/2/
-    py_ext_sig_re = re.compile(
-        r"""^ ([\w.]+::)?            # explicit module name
-              ([\w.]+\.)?            # module and/or class name(s)
-              (\w+)  \s*             # thing name
-              (?: \((.*)\)          # optional: arguments
-              (?:\s* -> \s* ([\w.]+(?:\[.*?])?))?   # return annotation
-              (?:\s* \[(signal)])?    # is signal
-              )? $                   # and nothing more
-              """,
-        re.VERBOSE,
-    )
 
     # hack
     PARENT_OBJ = None
@@ -173,26 +158,30 @@ class AutoDocAdditions:
             # looking at the docs relevant to the specific overload we are
             # currently processing
             signature = None
-            match = None
+            parsed = None
             if lines:
                 signature = lines[0]
             if signature:
-                match = AutoDocAdditions.py_ext_sig_re.match(signature)
-                if match:
+                parsed = Utils.parse_signature(signature)
+                if parsed[2] is not None:  # name component found
                     del lines[0]
+                else:
+                    parsed = None
 
-            if match is None:
+            if parsed is None:
                 signature = obj.__doc__.split("\n")[0]
                 if signature == "":
                     return
-                match = AutoDocAdditions.py_ext_sig_re.match(signature)
+                parsed = Utils.parse_signature(signature)
+                if parsed[2] is None:
+                    parsed = None
 
-            if match is None:
+            if parsed is None:
                 if name not in cfg["non-instantiable"]:
                     raise Warning(f"invalid signature for {name}: {signature}")
 
             else:
-                exmod, path, base, args, retann, signal = match.groups()
+                _exmod, _path, _base, args, retann, _signal = parsed
 
                 if args:
                     args = Utils.split_to_tokens(args)

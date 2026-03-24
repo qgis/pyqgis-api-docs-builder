@@ -190,6 +190,44 @@ class TestAutoDocAdditions(unittest.TestCase):
             ],
         )
 
+        # parenthesized tuple return type (issue #197)
+        lines = [
+            "transform(self, geometry: QgsGeometry, feedback: QgsFeedback = None) -> (QgsGeometry, bool)",
+            "Transforms the specified input ``geometry``.",
+            "",
+            ":param geometry: Input geometry to transform",
+            ":param feedback: optional feedback argument",
+            "",
+            ":return: - transformed geometry",
+            "         - ok: ``True`` if geometry was successfully transformed",
+            "",
+        ]
+
+        AutoDocAdditions.process_docstring(
+            app=None,
+            what="method",
+            name="qgis.analysis.QgsGcpGeometryTransformer.transform",
+            obj=dummy_method,
+            options={},
+            lines=lines,
+        )
+        self.assertEqual(
+            lines,
+            [
+                "Transforms the specified input ``geometry``.",
+                "",
+                ":type geometry: :py:class:`.QgsGeometry`",
+                ":param geometry: Input geometry to transform",
+                ":type feedback: :py:class:`.QgsFeedback` = None",
+                ":param feedback: optional feedback argument",
+                "",
+                ":rtype: (:py:class:`.QgsGeometry`, bool)",
+                ":return: - transformed geometry",
+                "         - ok: ``True`` if geometry was successfully transformed",
+                "",
+            ],
+        )
+
     def test_process_docstring_for_classes(self):
         """
         Test logic for processing the docstrings for classes
