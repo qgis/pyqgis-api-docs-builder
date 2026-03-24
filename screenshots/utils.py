@@ -53,12 +53,12 @@ class ScreenshotUtils:
             + w.layout().contentsMargins().bottom()
         )
 
-        im = QImage(QSize(w.width(), min_height), QImage.Format_ARGB32)
-        im.fill(Qt.transparent)
+        im = QImage(QSize(w.width(), min_height), QImage.Format.Format_ARGB32)
+        im.fill(Qt.GlobalColor.transparent)
 
         painter = QPainter(im)
-        painter.setRenderHint(QPainter.Antialiasing)
-        painter.setRenderHint(QPainter.TextAntialiasing)
+        painter.setRenderHint(QPainter.RenderHint.Antialiasing)
+        painter.setRenderHint(QPainter.RenderHint.TextAntialiasing)
         w.render(painter)
         painter.end()
 
@@ -89,8 +89,8 @@ class ScreenshotUtils:
         style = dialog.style()
         title_bar_option = QStyleOptionTitleBar()
         title_bar_option.initFrom(dialog)
-        frame_width = style.pixelMetric(QStyle.PM_DefaultFrameWidth, None, dialog)
-        title_bar_height = style.pixelMetric(QStyle.PM_TitleBarHeight, title_bar_option, dialog)
+        frame_width = style.pixelMetric(QStyle.PixelMetric.PM_DefaultFrameWidth, None, dialog)
+        title_bar_height = style.pixelMetric(QStyle.PixelMetric.PM_TitleBarHeight, title_bar_option, dialog)
         content_rect = dialog.rect()
         dialog_rect = content_rect.adjusted(-frame_width, -frame_width, frame_width, frame_width)
         frame_rect = content_rect.adjusted(
@@ -100,12 +100,12 @@ class ScreenshotUtils:
             frame_rect.left(), frame_rect.top(), frame_rect.width(), title_bar_height
         )
 
-        im = QImage(QSize(frame_rect.width(), frame_rect.height()), QImage.Format_ARGB32)
-        im.fill(Qt.transparent)
+        im = QImage(QSize(frame_rect.width(), frame_rect.height()), QImage.Format.Format_ARGB32)
+        im.fill(Qt.GlobalColor.transparent)
 
         painter = QPainter(im)
-        painter.setRenderHint(QPainter.TextAntialiasing)
-        painter.setRenderHint(QPainter.Antialiasing)
+        painter.setRenderHint(QPainter.RenderHint.TextAntialiasing)
+        painter.setRenderHint(QPainter.RenderHint.Antialiasing)
         painter.translate(frame_width, title_bar_height)
 
         # ensure widget is ready for screenshot
@@ -116,33 +116,33 @@ class ScreenshotUtils:
         frame_option = QStyleOptionFrame()
         frame_option.initFrom(dialog)
         frame_option.rect = dialog_rect
-        frame_option.frameShape = QFrame.StyledPanel
-        frame_option.state |= QStyle.State_Raised
+        frame_option.frameShape = QFrame.Shape.StyledPanel
+        frame_option.state |= QStyle.StateFlag.State_Raised
 
         # draw frame
-        style.drawPrimitive(QStyle.PE_Frame, frame_option, painter, dialog)
+        style.drawPrimitive(QStyle.PrimitiveElement.PE_Frame, frame_option, painter, dialog)
 
         title_bar_option.rect = title_bar_rect
         title_bar_option.text = dialog.windowTitle()
-        title_bar_option.state = QStyle.State_Active
-        title_bar_option.subControls = QStyle.SC_TitleBarCloseButton | QStyle.SC_TitleBarLabel
+        title_bar_option.state = QStyle.StateFlag.State_Active
+        title_bar_option.subControls = QStyle.SubControl.SC_TitleBarCloseButton | QStyle.SubControl.SC_TitleBarLabel
         title_bar_option.titleBarFlags = (
-            Qt.Window
-            | Qt.WindowTitleHint
-            | Qt.WindowSystemMenuHint
-            | Qt.WindowMinMaxButtonsHint
-            | Qt.WindowCloseButtonHint
+            Qt.WindowType.Window
+            | Qt.WindowType.WindowTitleHint
+            | Qt.WindowType.WindowSystemMenuHint
+            | Qt.WindowType.WindowMinMaxButtonsHint
+            | Qt.WindowType.WindowCloseButtonHint
         )
-        title_bar_option.titleBarState = QStyle.State_Active
+        title_bar_option.titleBarState = QStyle.StateFlag.State_Active
 
         # draw title bar background
-        style.drawComplexControl(QStyle.CC_TitleBar, title_bar_option, painter, dialog)
+        style.drawComplexControl(QStyle.ComplexControl.CC_TitleBar, title_bar_option, painter, dialog)
 
         # draw window title
         style.drawItemText(
             painter,
             title_bar_option.rect,
-            Qt.AlignCenter,
+            Qt.AlignmentFlag.AlignCenter,
             dialog.palette(),
             True,
             title_bar_option.text,
@@ -150,12 +150,12 @@ class ScreenshotUtils:
 
         # Draw window buttons (minimize, maximize, close)
         button_option = QStyleOptionTitleBar(title_bar_option)
-        button_option.subControls = QStyle.SC_TitleBarCloseButton | QStyle.SC_TitleBarLabel
+        button_option.subControls = QStyle.SubControl.SC_TitleBarCloseButton | QStyle.SubControl.SC_TitleBarLabel
         if show_max:
-            button_option.subControls |= QStyle.SC_TitleBarMaxButton
+            button_option.subControls |= QStyle.SubControl.SC_TitleBarMaxButton
         if show_min:
-            button_option.subControls |= QStyle.SC_TitleBarMinButton
-        style.drawComplexControl(QStyle.CC_TitleBar, button_option, painter, dialog)
+            button_option.subControls |= QStyle.SubControl.SC_TitleBarMinButton
+        style.drawComplexControl(QStyle.ComplexControl.CC_TitleBar, button_option, painter, dialog)
 
         # draw actual dialog contents
         dialog.render(painter)
@@ -195,12 +195,12 @@ class ScreenshotUtils:
             + w.layout().contentsMargins().bottom()
         )
 
-        im = QImage(QSize(w.width(), min_height), QImage.Format_ARGB32)
-        im.fill(Qt.transparent)
+        im = QImage(QSize(w.width(), min_height), QImage.Format.Format_ARGB32)
+        im.fill(Qt.GlobalColor.transparent)
 
         painter = QPainter(im)
-        painter.setRenderHint(QPainter.TextAntialiasing)
-        painter.setRenderHint(QPainter.Antialiasing)
+        painter.setRenderHint(QPainter.RenderHint.TextAntialiasing)
+        painter.setRenderHint(QPainter.RenderHint.Antialiasing)
         w.render(painter)
         popup.render(painter, targetOffset=popup_top_left)
         painter.end()
@@ -243,12 +243,12 @@ class ScreenshotUtils:
             popup_top_left.y() + menu_size.height() + w.layout().contentsMargins().bottom()
         )
 
-        im = QImage(QSize(w.width(), min_height), QImage.Format_ARGB32)
-        im.fill(Qt.transparent)
+        im = QImage(QSize(w.width(), min_height), QImage.Format.Format_ARGB32)
+        im.fill(Qt.GlobalColor.transparent)
 
         painter = QPainter(im)
-        painter.setRenderHint(QPainter.TextAntialiasing)
-        painter.setRenderHint(QPainter.Antialiasing)
+        painter.setRenderHint(QPainter.RenderHint.TextAntialiasing)
+        painter.setRenderHint(QPainter.RenderHint.Antialiasing)
         w.render(painter)
 
         menu.render(painter, targetOffset=popup_top_left)
