@@ -17,18 +17,23 @@ from pathlib import Path
 # ensure the project root is importable (for screenshots.utils etc.)
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from qgis.core import QgsApplication  # noqa: E402
+from qgis._3d import Qgs3D  # noqa: E402
+from qgis.core import QgsApplication, QgsSettings  # noqa: E402
 from qgis.PyQt.QtCore import QCoreApplication  # noqa: E402
 from qgis.PyQt.QtGui import QFont  # noqa: E402
 
 QCoreApplication.setOrganizationName("QGIS_PyQGISApiDocsBuilder")
+QCoreApplication.setOrganizationDomain("PyQGISApiDocsBuilder.com")
 QCoreApplication.setApplicationName("PyQGISApiDocsBuilder")
+QgsSettings().clear()
 
 qgs = QgsApplication([], False)
 qgs.initQgis()
 font = QFont("Noto Sans")
 font.setPointSize(10)
 qgs.setFont(font)
+
+Qgs3D.initialize()
 
 script_path = Path(sys.argv[1])
 output_path = Path(sys.argv[2])
