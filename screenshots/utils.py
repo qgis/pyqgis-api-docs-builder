@@ -90,7 +90,9 @@ class ScreenshotUtils:
         title_bar_option = QStyleOptionTitleBar()
         title_bar_option.initFrom(dialog)
         frame_width = style.pixelMetric(QStyle.PixelMetric.PM_DefaultFrameWidth, None, dialog)
-        title_bar_height = style.pixelMetric(QStyle.PixelMetric.PM_TitleBarHeight, title_bar_option, dialog)
+        title_bar_height = style.pixelMetric(
+            QStyle.PixelMetric.PM_TitleBarHeight, title_bar_option, dialog
+        )
         content_rect = dialog.rect()
         dialog_rect = content_rect.adjusted(-frame_width, -frame_width, frame_width, frame_width)
         frame_rect = content_rect.adjusted(
@@ -125,7 +127,9 @@ class ScreenshotUtils:
         title_bar_option.rect = title_bar_rect
         title_bar_option.text = dialog.windowTitle()
         title_bar_option.state = QStyle.StateFlag.State_Active
-        title_bar_option.subControls = QStyle.SubControl.SC_TitleBarCloseButton | QStyle.SubControl.SC_TitleBarLabel
+        title_bar_option.subControls = (
+            QStyle.SubControl.SC_TitleBarCloseButton | QStyle.SubControl.SC_TitleBarLabel
+        )
         title_bar_option.titleBarFlags = (
             Qt.WindowType.Window
             | Qt.WindowType.WindowTitleHint
@@ -136,7 +140,9 @@ class ScreenshotUtils:
         title_bar_option.titleBarState = QStyle.StateFlag.State_Active
 
         # draw title bar background
-        style.drawComplexControl(QStyle.ComplexControl.CC_TitleBar, title_bar_option, painter, dialog)
+        style.drawComplexControl(
+            QStyle.ComplexControl.CC_TitleBar, title_bar_option, painter, dialog
+        )
 
         # draw window title
         style.drawItemText(
@@ -150,7 +156,9 @@ class ScreenshotUtils:
 
         # Draw window buttons (minimize, maximize, close)
         button_option = QStyleOptionTitleBar(title_bar_option)
-        button_option.subControls = QStyle.SubControl.SC_TitleBarCloseButton | QStyle.SubControl.SC_TitleBarLabel
+        button_option.subControls = (
+            QStyle.SubControl.SC_TitleBarCloseButton | QStyle.SubControl.SC_TitleBarLabel
+        )
         if show_max:
             button_option.subControls |= QStyle.SubControl.SC_TitleBarMaxButton
         if show_min:
