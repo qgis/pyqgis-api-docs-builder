@@ -1,10 +1,10 @@
 from pathlib import Path
 
-from PyQt5.QtWidgets import QTreeView
 from qgis.core import QgsMarkerSymbol, QgsRuleBasedRenderer, QgsStyle, QgsVectorLayer
 from qgis.gui import QgsPanelWidgetStack, QgsRuleBasedRendererWidget
 from qgis.PyQt.QtCore import QItemSelectionModel
 from qgis.PyQt.QtGui import QColor
+from qgis.PyQt.QtWidgets import QTreeView
 
 from screenshots.utils import ScreenshotUtils
 
