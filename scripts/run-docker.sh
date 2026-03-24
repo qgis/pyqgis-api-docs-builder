@@ -49,11 +49,6 @@ DIR=$(git rev-parse --show-toplevel)
 
 QGIS_DOCKER_TAG="${QGIS_VERSION//master/latest}"
 
-# TODO: remove once QGIS 4.0 docker image is available on default (resolute) distribution
-if [[ "${QGIS_DOCKER_TAG}" == "4.0" ]]; then
-  QGIS_DOCKER_TAG="4.0-questing"
-fi
-
 echo "QGIS Docker tag: ${QGIS_DOCKER_TAG}"
 echo "Building for QGIS: ${QGIS_VERSION}"
 
