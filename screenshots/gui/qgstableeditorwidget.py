@@ -12,7 +12,7 @@ def __generate_screenshots(dest_path: Path):
     widget = QgsTableEditorWidget()
     header = QgsTableCell("My table")
     header.setSpan(1, 2)
-    header.setHorizontalAlignment(Qt.AlignHCenter)
+    header.setHorizontalAlignment(Qt.AlignmentFlag.AlignHCenter)
     header.setBackgroundColor(QColor(240, 245, 230))
     text_format = QgsTextFormat()
     text_format.setColor(QColor(0, 0, 80))

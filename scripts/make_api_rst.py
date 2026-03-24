@@ -338,6 +338,7 @@ def generate_screenshots(package, class_name: str, _class, version: str) -> str:
     if not script_path.exists():
         return ""
 
+    print(f"  generating screenshots for {class_name}...", flush=True)
     image_path = Path(__file__).parent / ".." / "api" / version / module_name
     spec = importlib.util.spec_from_file_location("script", script_path)
     executed_module = importlib.util.module_from_spec(spec)
