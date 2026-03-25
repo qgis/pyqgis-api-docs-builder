@@ -4,7 +4,9 @@ pyqgis_url: https://qgis.org/pyqgis
 current_stable: '4.0'
 current_ltr: '3.44'
 
-qt_docs_url_base: https://doc.qt.io/qt-5/
+qt_docs_url_base:
+  qt5: https://doc.qt.io/qt-5/
+  qt6: https://doc.qt.io/qt-6/
 
 skipped:
   - PyProviderMetadata

@@ -132,7 +132,15 @@ current_ltr = str(cfg["current_ltr"])
 version_list = ("master", current_stable, current_ltr)
 
 graphviz_output_format = "svg"
-qt_docs_url_base = cfg["qt_docs_url_base"]
+_qt_urls = cfg["qt_docs_url_base"]
+if isinstance(_qt_urls, dict):
+    try:
+        _major = int(version.split(".")[0])
+    except (ValueError, IndexError):
+        _major = 4
+    qt_docs_url_base = _qt_urls.get("qt6" if _major >= 4 else "qt5", "https://doc.qt.io/qt-6/")
+else:
+    qt_docs_url_base = _qt_urls
 
 url = cfg["pyqgis_url"]
 if not url.endswith("/"):
