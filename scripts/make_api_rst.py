@@ -217,6 +217,11 @@ inheritance_diagram = """
 
 class_toc = """
 .. autoautosummary:: qgis.$PACKAGE.$CLASS
+    :classes:
+    :nosignatures:
+    :exclude-members: $EXCLUDE_METHODS
+
+.. autoautosummary:: qgis.$PACKAGE.$CLASS
     :enums:
     :nosignatures:
     :exclude-members: $EXCLUDE_METHODS
