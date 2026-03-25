@@ -167,6 +167,12 @@ class AutoAutoSummary(Autosummary):
                                     continue
                             if not enum and issubclass(chobj, Enum):
                                 continue
+                            # skip type aliases (e.g. QgsFeatureRequest.Flags
+                            # is an alias for Qgis.FeatureRequestFlags)
+                            if hasattr(
+                                chobj, "__qualname__"
+                            ) and not chobj.__qualname__.startswith(f"{obj.__name__}."):
+                                continue
                         items.append(name)
                 except AttributeError:
                     continue
