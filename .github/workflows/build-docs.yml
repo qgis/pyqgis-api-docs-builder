@@ -20,6 +20,7 @@ permissions:
   contents: write
   pages: write
   id-token: write
+  pull-requests: write
 
 jobs:
   build-docs:
@@ -58,7 +59,8 @@ jobs:
         run: |
           ./scripts/run-docker.sh -v ${QGIS_VERSION}
 
-      - uses: actions/upload-artifact@v7
+      - id: upload-artifact
+        uses: actions/upload-artifact@v7
         if: ${{ github.event_name != 'pull_request' || matrix.qgis_version == 'master' }}
         with:
           name: ${{ matrix.qgis_version }}
@@ -75,6 +77,15 @@ jobs:
         with:
           tag_name: ${{ env.QGIS_VERSION }}
           files: pyqgis-docs-${{ env.QGIS_VERSION }}.zip
+
+      - name: Comment artifact link on PR
+        if: ${{ github.event_name == 'pull_request' && matrix.qgis_version == 'master' }}
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          header: docs-preview
+          message: |
+            📘 **Docs build complete**
+            [Download docs artifact](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts/${{ steps.upload-artifact.outputs.artifact-id }})
 
   deploy-docs:
     if: ${{ github.event_name != 'pull_request' }}
