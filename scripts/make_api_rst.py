@@ -421,6 +421,24 @@ def _classify_member(obj):
     return "attribute"
 
 
+def _qt_docs_url_base(qgis_version):
+    """Return the Qt docs URL base for the given QGIS version.
+
+    QGIS 3.x uses Qt5, QGIS 4.x+ uses Qt6.
+    """
+    qt_urls = cfg.get("qt_docs_url_base", {})
+    if isinstance(qt_urls, str):
+        # Legacy single-value config
+        return qt_urls
+    try:
+        major = int(qgis_version.split(".")[0])
+    except (ValueError, IndexError):
+        major = 4  # default to latest
+    if major >= 4:
+        return qt_urls.get("qt6", "https://doc.qt.io/qt-6/")
+    return qt_urls.get("qt5", "https://doc.qt.io/qt-5/")
+
+
 _MODULE_TO_PACKAGE = {
     "qgis._core": "core",
     "qgis._gui": "gui",
@@ -526,7 +544,7 @@ def generate_all_members_page(package_name, class_name, _class, qgis_version):
         "",
     ]
 
-    qt_docs_base = cfg.get("qt_docs_url_base", "https://doc.qt.io/qt-5/")
+    qt_docs_base = _qt_docs_url_base(qgis_version)
 
     for source_name, source_pkg in source_order:
         members = by_source[(source_name, source_pkg)]
@@ -632,7 +650,9 @@ def generate_docs():
                             continue
 
                         if re.match(r"^Q(?!gs)", _base.__name__):
-                            doc_link = f'{cfg["qt_docs_url_base"]}{_base.__name__.lower()}.html'
+                            doc_link = (
+                                f"{_qt_docs_url_base(qgis_version)}{_base.__name__.lower()}.html"
+                            )
                             doc_link_cell = f"`{_base.__name__} <{doc_link}>`_"
                         else:
                             if _base.__name__ not in class_packages:
