@@ -127,6 +127,103 @@ class TestUtils(unittest.TestCase):
         )
         self.assertEqual(result, (ComplexHierarchy.Level1.Level2.Level3, "deep_attribute"))
 
+    def test_parse_signature(self):
+        """
+        Test Utils.parse_signature
+        """
+        # Simple method with return type
+        self.assertEqual(
+            Utils.parse_signature("method(self, arg: str) -> bool"),
+            (None, None, "method", "self, arg: str", "bool", False),
+        )
+
+        # Parenthesized tuple return type (issue #197)
+        self.assertEqual(
+            Utils.parse_signature(
+                "transform(self, geometry: QgsGeometry, feedback: QgsFeedback = None) -> (QgsGeometry, bool)"
+            ),
+            (
+                None,
+                None,
+                "transform",
+                "self, geometry: QgsGeometry, feedback: QgsFeedback = None",
+                "(QgsGeometry, bool)",
+                False,
+            ),
+        )
+
+        # Tuple[] return type
+        self.assertEqual(
+            Utils.parse_signature("loadNamedStyle(self, uri: Optional[str]) -> Tuple[str, bool]"),
+            (None, None, "loadNamedStyle", "self, uri: Optional[str]", "Tuple[str, bool]", False),
+        )
+
+        # Complex args with nested parens in default values
+        self.assertEqual(
+            Utils.parse_signature(
+                "getFeatures(self, request: QgsFeatureRequest = QgsFeatureRequest()) -> QgsFeatureIterator"
+            ),
+            (
+                None,
+                None,
+                "getFeatures",
+                "self, request: QgsFeatureRequest = QgsFeatureRequest()",
+                "QgsFeatureIterator",
+                False,
+            ),
+        )
+
+        # No return type
+        self.assertEqual(
+            Utils.parse_signature(
+                "setGcpTransformer(self, transformer: QgsGcpTransformerInterface)"
+            ),
+            (
+                None,
+                None,
+                "setGcpTransformer",
+                "self, transformer: QgsGcpTransformerInterface",
+                None,
+                False,
+            ),
+        )
+
+        # Signal
+        self.assertEqual(
+            Utils.parse_signature("mySignal(self, arg: str) -> None [signal]"),
+            (None, None, "mySignal", "self, arg: str", "None", True),
+        )
+
+        # Module-qualified name
+        self.assertEqual(
+            Utils.parse_signature("qgis.core.QgsProject.instance() -> QgsProject"),
+            (None, "qgis.core.QgsProject.", "instance", "", "QgsProject", False),
+        )
+
+        # No arguments, no return type
+        self.assertEqual(
+            Utils.parse_signature("instance()"),
+            (None, None, "instance", "", None, False),
+        )
+
+        # Empty string
+        self.assertEqual(
+            Utils.parse_signature(""),
+            (None, None, None, None, None, False),
+        )
+
+        # No parentheses — not a valid signature
+        self.assertEqual(
+            Utils.parse_signature("just_a_name"),
+            (None, None, None, None, None, False),
+        )
+
+        # Explicit module prefix
+        self.assertEqual(
+            Utils.parse_signature("qgis.core::QgsProject.instance() -> QgsProject"),
+            ("qgis.core", "QgsProject.", "instance", "", "QgsProject", False),
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
