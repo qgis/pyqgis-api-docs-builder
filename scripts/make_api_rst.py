@@ -436,9 +436,18 @@ _MODULE_TO_PACKAGE = {
 
 
 def _resolve_package(klass):
-    """Resolve the documentation package name for a class from its __module__."""
+    """Resolve the documentation package name for a class from its __module__.
+
+    Returns a string package name for QGIS classes, or None.
+    """
     module = getattr(klass, "__module__", "")
     return _MODULE_TO_PACKAGE.get(module)
+
+
+def _is_qt_class(klass):
+    """Check if a class comes from PyQt."""
+    module = getattr(klass, "__module__", "")
+    return module.startswith("PyQt5.") or module.startswith("PyQt6.")
 
 
 def generate_all_members_page(package_name, class_name, _class, qgis_version):
@@ -480,11 +489,13 @@ def generate_all_members_page(package_name, class_name, _class, qgis_version):
 
         source_name = source_class.__name__
         source_pkg = _resolve_package(source_class)
-        if source_pkg is None:
-            # Not a documented QGIS class (e.g. QObject)
+        is_qt = _is_qt_class(source_class)
+        if source_pkg is None and not is_qt:
+            # Not a documented QGIS or Qt class
             continue
 
         member_type = _classify_member(obj)
+        # Use package name as key for QGIS classes, None for Qt classes
         by_source[(source_name, source_pkg)].append((name, member_type))
 
     if not by_source:
@@ -515,11 +526,17 @@ def generate_all_members_page(package_name, class_name, _class, qgis_version):
         "",
     ]
 
+    qt_docs_base = cfg.get("qt_docs_url_base", "https://doc.qt.io/qt-5/")
+
     for source_name, source_pkg in source_order:
         members = by_source[(source_name, source_pkg)]
 
         if source_name == class_name:
             section = source_name
+        elif source_pkg is None:
+            # Qt class — link to external docs
+            qt_url = f"{qt_docs_base}{source_name.lower()}.html"
+            section = f"Inherited from `{source_name} <{qt_url}>`_"
         else:
             section = f"Inherited from {source_name}"
 
@@ -528,7 +545,11 @@ def generate_all_members_page(package_name, class_name, _class, qgis_version):
         lines.append("")
 
         for name, member_type in sorted(members):
-            if member_type in ("class", "enum"):
+            if source_pkg is None:
+                # Qt member — link to external docs
+                qt_url = f"{qt_docs_base}{source_name.lower()}.html#{source_name.lower()}-{name.lower()}"
+                ref = f"`{name} <{qt_url}>`_"
+            elif member_type in ("class", "enum"):
                 ref = f":py:class:`~qgis.{source_pkg}.{source_name}.{name}`"
             elif member_type == "signal":
                 ref = f":py:attr:`~qgis.{source_pkg}.{source_name}.{name}` [signal]"
