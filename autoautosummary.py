@@ -65,6 +65,7 @@ class AutoAutoSummary(Autosummary):
         "signals": directives.unchanged,
         "virtual_methods": directives.unchanged,
         "abstract_methods": directives.unchanged,
+        "classes": directives.unchanged,
         "enums": directives.unchanged,
         "attributes": directives.unchanged,
         "nosignatures": directives.unchanged,
@@ -227,6 +228,11 @@ class AutoAutoSummary(Autosummary):
                 rubric_title = "Static Methods"
                 _, rubric_elems = self.get_members(
                     self.state.document, c, "method", self.options, static=True
+                )
+            elif "classes" in self.options:
+                rubric_title = "Classes"
+                _, rubric_elems = self.get_members(
+                    self.state.document, c, "class", self.options, None, False, False
                 )
             elif "enums" in self.options:
                 rubric_title = "Enums"
