@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 
 import argparse
-import importlib
 import inspect
+import json
+import os
 import re
+import subprocess
+import sys
 from collections import defaultdict
 from os import makedirs
 from pathlib import Path
@@ -329,7 +332,10 @@ def make_table_row(contents: list[str]):
 
 def generate_screenshots(package, class_name: str, _class, version: str) -> str:
     """
-    Generates screenshots for a class, and returns corresponding markdown
+    Generates screenshots for a class, and returns corresponding markdown.
+
+    Runs screenshot generation in a subprocess to isolate potential native
+    Qt crashes (segfaults) so they don't kill the entire build.
     """
     module_name = package.__name__.split(".")[-1]
     script_path = (
@@ -338,18 +344,47 @@ def generate_screenshots(package, class_name: str, _class, version: str) -> str:
     if not script_path.exists():
         return ""
 
+    print(f"  generating screenshots for {class_name}...", flush=True)
     image_path = Path(__file__).parent / ".." / "api" / version / module_name
-    spec = importlib.util.spec_from_file_location("script", script_path)
-    executed_module = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(executed_module)
-    func = getattr(executed_module, "__generate_screenshots")
-    images = func(image_path)
+    runner = Path(__file__).parent / "run_screenshot.py"
+
+    result = subprocess.run(
+        [sys.executable, "-u", str(runner), str(script_path), str(image_path)],
+        capture_output=True,
+        text=True,
+        env=os.environ.copy(),
+        timeout=120,
+    )
+
+    if result.returncode != 0:
+        print(
+            f"  WARNING: screenshot generation for {class_name} failed "
+            f"(exit code {result.returncode})",
+            flush=True,
+        )
+        stderr = result.stderr.strip()
+        if stderr:
+            for line in stderr.split("\n")[-5:]:
+                print(f"    {line}", flush=True)
+        return ""
+
+    # Parse the JSON output (last non-empty line of stdout)
+    stdout_lines = [line for line in result.stdout.strip().split("\n") if line.strip()]
+    if not stdout_lines:
+        print(f"  WARNING: no output from screenshot generation for {class_name}", flush=True)
+        return ""
+
+    try:
+        images = json.loads(stdout_lines[-1])
+    except json.JSONDecodeError:
+        print(f"  WARNING: could not parse screenshot output for {class_name}", flush=True)
+        return ""
 
     # format images as markdown:
-    result = ""
+    rst_result = ""
     for image, desc in images.items():
-        result += f"\n\n.. figure:: {image}\n   :alt: {desc}\n\n   {desc}\n\n"
-    return result
+        rst_result += f"\n\n.. figure:: {image}\n   :alt: {desc}\n\n   {desc}\n\n"
+    return rst_result
 
 
 def all_parent_classes(class_):
