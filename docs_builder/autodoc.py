@@ -141,52 +141,75 @@ class AutoDocAdditions:
     @staticmethod
     def process_docstring(app, what, name, obj, options, lines):
         if what == "class":
-            # hacky approach to detect nested classes, eg QgsCallout.QgsCalloutContext
+            # SIP docstrings use the qualified class name minus the package,
+            # e.g. "QgsGeometry" for qgis.core.QgsGeometry,
+            #      "QgsFeatureRequest.OrderByClause" for qgis.core.QgsFeatureRequest.OrderByClause
+            sip_class_name_escaped = re.escape(".".join(name.split(".")[2:]))
             is_nested = len(name.split(".")) > 3
+
             if not is_nested:
                 # remove docstring part, we've already included it in the page header
                 # only leave the __init__ methods
                 init_idx = 0
-                class_name = name.split(".")[-1]
                 for init_idx, line in enumerate(lines):
-                    if re.match(rf"^{class_name}\(", line):
+                    if re.match(rf"^{sip_class_name_escaped}\(", line):
+                        break
+                lines[:] = lines[init_idx:]
+            else:
+                # For nested classes, check if constructors exist
+                init_idx = None
+                for idx, line in enumerate(lines):
+                    if re.match(rf"^{sip_class_name_escaped}\(", line):
+                        init_idx = idx
                         break
 
-                lines[:] = lines[init_idx:]
-                # loop through remaining lines, which are the constructors. Format
-                # these up so they look like proper __init__ method documentation
-                current_constructor = []
-                current_constructor_args = []
-                constructors = []
-                for i, line in enumerate(lines):
-                    match = re.match(rf"^{class_name}\((.*)\)", line)
-                    if match:
-                        if current_constructor:
-                            if current_constructor_args:
-                                AutoDocAdditions.inject_args(
-                                    current_constructor_args, current_constructor, indent=4
-                                )
-                            constructors.append(current_constructor)
-                            current_constructor = []
-                        current_constructor_args = Utils.split_to_tokens(match.group(1))
-                        current_constructor.append(
-                            re.sub(rf"\b{class_name}\(", ".. py:method:: __init__(", line)
-                        )
-                        current_constructor.append("    :noindex:")
-                        current_constructor.append("")
-                    else:
-                        current_constructor.append("    " + line)
-                if current_constructor:
-                    if current_constructor_args:
-                        AutoDocAdditions.inject_args(
-                            current_constructor_args, current_constructor, indent=4
-                        )
-                    constructors.append(current_constructor)
+                if init_idx is None:
+                    # No constructors found — keep docstring as-is with links
+                    AutoDocAdditions.insert_links(lines)
+                    return
 
+                # Keep the class description, process constructors below
+                description_part = lines[:init_idx]
+                AutoDocAdditions.insert_links(description_part)
+                lines[:] = lines[init_idx:]
+
+            # loop through remaining lines, which are the constructors. Format
+            # these up so they look like proper __init__ method documentation
+            current_constructor = []
+            current_constructor_args = []
+            constructors = []
+            for i, line in enumerate(lines):
+                match = re.match(rf"^{sip_class_name_escaped}\((.*)\)", line)
+                if match:
+                    if current_constructor:
+                        if current_constructor_args:
+                            AutoDocAdditions.inject_args(
+                                current_constructor_args, current_constructor, indent=4
+                            )
+                        constructors.append(current_constructor)
+                        current_constructor = []
+                    current_constructor_args = Utils.split_to_tokens(match.group(1))
+                    current_constructor.append(
+                        re.sub(rf"^{sip_class_name_escaped}\(", ".. py:method:: __init__(", line)
+                    )
+                    current_constructor.append("    :noindex:")
+                    current_constructor.append("")
+                else:
+                    current_constructor.append("    " + line)
+            if current_constructor:
+                if current_constructor_args:
+                    AutoDocAdditions.inject_args(
+                        current_constructor_args, current_constructor, indent=4
+                    )
+                constructors.append(current_constructor)
+
+            if is_nested:
+                lines[:] = description_part
+            else:
                 lines[:] = []
-                for constructor in constructors:
-                    lines.extend(constructor)
-                return
+            for constructor in constructors:
+                lines.extend(constructor)
+            return
 
         AutoDocAdditions.insert_links(lines)
 
