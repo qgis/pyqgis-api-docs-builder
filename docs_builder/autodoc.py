@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import enum
 import pathlib
 import re
@@ -6,7 +8,6 @@ import yaml
 from docutils import nodes
 from sphinx import addnodes
 from sphinx.domains.python import PyAttribute, PyMethod
-from sphinx.ext.autodoc import AttributeDocumenter, Documenter
 
 from .utils import Utils
 
@@ -23,32 +24,65 @@ with open(pathlib.Path(__file__).parent / ".." / "pyqgis_conf.yml") as f:
     cfg = yaml.safe_load(f)
 
 
-old_documenter_get_doc = Documenter.get_doc
-old_attribute_documenter_get_doc = AttributeDocumenter.get_doc
-old_documenter_format_signature = Documenter.format_signature
 old_py_method_get_signature_prefix = PyMethod.get_signature_prefix
 old_py_attribute_get_signature_prefix = PyAttribute.get_signature_prefix
 
+# Sphinx 9.x uses a new dynamic pipeline. Monkey-patch _get_docstring_lines
+# to provide correct docstrings for pyqtSignal attributes, which would
+# otherwise get the generic pyqtSignal docstring.
+try:
+    from sphinx.ext.autodoc._dynamic import _docstrings as _sphinx_docstrings
+
+    _original_get_docstring_lines = _sphinx_docstrings._get_docstring_lines
+
+    def _patched_get_docstring_lines(props, **kwargs):
+        """Replace generic pyqtSignal docstrings with __attribute_docs__ content."""
+        obj = props._obj
+        if hasattr(obj, "__class__") and obj.__class__.__name__ == "pyqtSignal":
+            parent = kwargs.get("parent")
+            attr_name = props.name
+            if parent and hasattr(parent, "__attribute_docs__"):
+                if attr_name in parent.__attribute_docs__:
+                    from sphinx.util.docstrings import prepare_docstring
+
+                    docs = parent.__attribute_docs__[attr_name]
+                    # Build a signature line so _extract_signatures_from_docstrings
+                    # can extract it. Format: "attrName(arg1: type1, arg2: type2)"
+                    sig_args = ""
+                    if hasattr(parent, "__signal_arguments__"):
+                        args_list = parent.__signal_arguments__.get(attr_name, [])
+                        sig_args = ", ".join(args_list)
+                    sig_line = f"{attr_name}({sig_args})"
+                    full_doc = f"{sig_line}\n{docs}"
+                    tab_width = kwargs.get("tab_width", 8)
+                    return [prepare_docstring(full_doc, tab_width)]
+        return _original_get_docstring_lines(props, **kwargs)
+
+    _sphinx_docstrings._get_docstring_lines = _patched_get_docstring_lines
+
+    # Also patch the reference in _loader.py which imported
+    # _get_docstring_lines at module level
+    from sphinx.ext.autodoc._dynamic import _loader as _sphinx_loader
+
+    _sphinx_loader._get_docstring_lines = _patched_get_docstring_lines
+except ImportError:
+    # Sphinx < 9 — the dynamic pipeline doesn't exist
+    pass
+
 
 class AutoDocAdditions:
-    # https://github.com/sphinx-doc/sphinx/blob/685e3fdb49c42b464e09ec955e1033e2a8729fff/sphinx/ext/autodoc/__init__.py#L51
-    # adapted to handle signals
 
-    # https://regex101.com/r/lSB3rK/2/
-    py_ext_sig_re = re.compile(
-        r"""^ ([\w.]+::)?            # explicit module name
-              ([\w.]+\.)?            # module and/or class name(s)
-              (\w+)  \s*             # thing name
-              (?: \((.*)\)          # optional: arguments
-              (?:\s* -> \s* ([\w.]+(?:\[.*?])?))?   # return annotation
-              (?:\s* \[(signal)])?    # is signal
-              )? $                   # and nothing more
-              """,
-        re.VERBOSE,
-    )
-
-    # hack
-    PARENT_OBJ = None
+    @staticmethod
+    def _get_parent_class(name: str):
+        """
+        Resolve the parent class from a fully qualified name like
+        'qgis.core.QgsClass.attrName'. Wildcard imports put class names
+        directly in globals, so look up the second-to-last part.
+        """
+        name_parts = name.split(".")
+        if len(name_parts) >= 2:
+            return globals().get(name_parts[-2])
+        return None
 
     @staticmethod
     def create_links(doc: str) -> str:
@@ -157,13 +191,22 @@ class AutoDocAdditions:
         AutoDocAdditions.insert_links(lines)
 
         if what == "attribute":
-            try:
-                args = AutoDocAdditions.PARENT_OBJ.__signal_arguments__.get(
-                    name.split(".")[-1], []
-                )
-                AutoDocAdditions.inject_args(args, lines)
-            except AttributeError:
-                pass
+            is_signal = hasattr(obj, "__class__") and obj.__class__.__name__ == "pyqtSignal"
+            if is_signal:
+                attr_name = name.split(".")[-1]
+                parent_class = AutoDocAdditions._get_parent_class(name)
+
+                # Replace generic pyqtSignal docstring with __attribute_docs__
+                if parent_class and hasattr(parent_class, "__attribute_docs__"):
+                    if attr_name in parent_class.__attribute_docs__:
+                        docs = parent_class.__attribute_docs__[attr_name]
+                        lines[:] = docs.split("\n")
+                        AutoDocAdditions.insert_links(lines)
+
+                # Inject signal argument types
+                if parent_class and hasattr(parent_class, "__signal_arguments__"):
+                    args = parent_class.__signal_arguments__.get(attr_name, [])
+                    AutoDocAdditions.inject_args(args, lines)
 
         # add return type and param type
         elif what != "class" and not isinstance(obj, enum.EnumMeta) and obj.__doc__:
@@ -173,26 +216,30 @@ class AutoDocAdditions:
             # looking at the docs relevant to the specific overload we are
             # currently processing
             signature = None
-            match = None
+            parsed = None
             if lines:
                 signature = lines[0]
             if signature:
-                match = AutoDocAdditions.py_ext_sig_re.match(signature)
-                if match:
+                parsed = Utils.parse_signature(signature)
+                if parsed[2] is not None:  # name component found
                     del lines[0]
+                else:
+                    parsed = None
 
-            if match is None:
+            if parsed is None:
                 signature = obj.__doc__.split("\n")[0]
                 if signature == "":
                     return
-                match = AutoDocAdditions.py_ext_sig_re.match(signature)
+                parsed = Utils.parse_signature(signature)
+                if parsed[2] is None:
+                    parsed = None
 
-            if match is None:
+            if parsed is None:
                 if name not in cfg["non-instantiable"]:
                     raise Warning(f"invalid signature for {name}: {signature}")
 
             else:
-                exmod, path, base, args, retann, signal = match.groups()
+                _exmod, _path, _base, args, retann, _signal = parsed
 
                 if args:
                     args = Utils.split_to_tokens(args)
@@ -220,6 +267,22 @@ class AutoDocAdditions:
 
     @staticmethod
     def process_signature(app, what, name, obj, options, signature, return_annotation):
+        if what == "attribute":
+            is_signal = hasattr(obj, "__class__") and obj.__class__.__name__ == "pyqtSignal"
+            if is_signal:
+                # In Sphinx 9.x, signature is None when the internal signatures
+                # list is empty. Returning a value in that case would crash
+                # Sphinx (IndexError on signatures[0]).
+                if signature is None:
+                    return None
+                # Replace pyqtSignal's generic signature with
+                # the correct signal arguments.
+                attr_name = name.split(".")[-1]
+                parent_class = AutoDocAdditions._get_parent_class(name)
+                args_list = []
+                if parent_class and hasattr(parent_class, "__signal_arguments__"):
+                    args_list = parent_class.__signal_arguments__.get(attr_name, [])
+                return f'({", ".join(args_list)})', None
         # we cannot render links in signature for the moment, so do nothing
         # https://github.com/sphinx-doc/sphinx/issues/1059
         return signature, return_annotation
@@ -243,74 +306,6 @@ class AutoDocAdditions:
             # replace 'sip.wrapper' base class with 'object'
             if base.__name__ == "wrapper":
                 bases[i] = object
-
-    @staticmethod
-    def get_doc(self) -> list[list[str]] | None:
-        """
-        Attributes cannot have docstrings, so in QGIS we hack around this
-        by storing them in a __attribute_docs__ dictionary in classes.
-
-        This method is then monkey-patched into autodoc.Documenter
-        to allow docstrings for attributes.
-        """
-        try:
-            if self.object_name in self.parent.__attribute_docs__:
-                docs = self.parent.__attribute_docs__[self.object_name]
-                return [docs.split("\n")]
-        except AttributeError:
-            pass
-
-        return old_documenter_get_doc(self)
-
-    @staticmethod
-    def attribute_get_doc(self):
-        """
-        This method is monkey-patched into autodoc.AttributeDocumenter as
-        we need to make self.parent accessible to process_docstring -- this
-        is a hacky approach to store it temporarily in a global. Sorry!
-        """
-        try:
-            if self.object_name in self.parent.__attribute_docs__:
-                AutoDocAdditions.PARENT_OBJ = self.parent
-                docs = self.parent.__attribute_docs__[self.object_name]
-                return [docs.split("\n")]
-        except AttributeError:
-            pass
-
-        return old_attribute_documenter_get_doc(self)
-
-    @staticmethod
-    def format_signature(self, **kwargs) -> str:
-        """
-        Monkey patched into autodoc.Documenter for signature formatting,
-        to retrieve signatures for signals, which are actually attributes
-        and so don't have a real signature available!
-        """
-        try:
-            if self.object_name in self.parent.__signal_arguments__:
-                args = self.parent.__signal_arguments__[self.object_name]
-                args = f'({", ".join(args)})'
-                retann = None
-                result = self.env.events.emit_firstresult(
-                    "autodoc-process-signature",
-                    self.objtype,
-                    self.fullname,
-                    self.object,
-                    self.options,
-                    args,
-                    retann,
-                )
-                if result:
-                    args, retann = result
-
-                if args:
-                    return args
-                else:
-                    return ""
-        except AttributeError:
-            pass
-
-        return old_documenter_format_signature(self, **kwargs)
 
     @staticmethod
     def method_get_signature_prefix(self, sig: str):
@@ -385,10 +380,7 @@ class AutoDocAdditions:
         return prefix
 
 
-# monkey patch some Sphinx autodoc methods
-# TODO -- is it possible to avoid this? Maybe a custom Documenter would help?
-Documenter.format_signature = AutoDocAdditions.format_signature
-Documenter.get_doc = AutoDocAdditions.get_doc
-AttributeDocumenter.get_doc = AutoDocAdditions.attribute_get_doc
+# Monkey-patch Python domain classes to add abstract/virtual/signal prefixes.
+# These domain classes (PyMethod, PyAttribute) are unchanged in Sphinx 9.x.
 PyMethod.get_signature_prefix = AutoDocAdditions.method_get_signature_prefix
 PyAttribute.get_signature_prefix = AutoDocAdditions.attribute_get_signature_prefix
