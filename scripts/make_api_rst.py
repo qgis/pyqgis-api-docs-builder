@@ -761,13 +761,6 @@ def generate_docs():
 
                 header += generate_screenshots(package, class_name, _class, qgis_version)
 
-                if bases_and_subclass_header:
-                    if header and not header.endswith("\n\n"):
-                        header += "\n\n"
-                    header += write_header("Class Hierarchy")
-                    header += inheritance_diagram
-                    header += bases_and_subclass_header
-
                 has_all_members = generate_all_members_page(
                     package_name, class_name, _class, qgis_version
                 )
@@ -775,6 +768,13 @@ def generate_docs():
                     if header and not header.endswith("\n\n"):
                         header += "\n\n"
                     header += f"`List of all members, including inherited members <{class_name}-all-members.html>`_\n\n"
+
+                if bases_and_subclass_header:
+                    if header and not header.endswith("\n\n"):
+                        header += "\n\n"
+                    header += write_header("Class Hierarchy")
+                    header += inheritance_diagram
+                    header += bases_and_subclass_header
 
                 toc = class_toc
 
