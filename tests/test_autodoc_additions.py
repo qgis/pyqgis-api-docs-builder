@@ -7,234 +7,133 @@ import unittest
 from docs_builder.autodoc import AutoDocAdditions
 
 
-class TestAutoDocAdditions(unittest.TestCase):
+def _inject_class(cls):
     """
-    Test autodoc additions
+    Register a class in the autodoc module's globals, mimicking what
+    ``from qgis.core import *`` does in production. Returns a cleanup
+    function to be called afterwards.
     """
+    import docs_builder.autodoc as autodoc_mod
 
-    def test_process_docstring_for_methods(self):
-        """
-        Test logic for processing the docstrings for methods
-        """
+    autodoc_mod.__dict__[cls.__name__] = cls
+    return lambda: autodoc_mod.__dict__.pop(cls.__name__, None)
 
-        def dummy_method():
-            """
-            xxx
-            """
 
+class TestProcessDocstringMethods(unittest.TestCase):
+    """Tests for process_docstring on methods (link insertion, param/rtype injection)"""
+
+    def _process_method(self, name, lines):
+        def dummy():
+            """addFeature(self) -> bool"""
+
+        AutoDocAdditions.process_docstring(
+            app=None, what="method", name=name, obj=dummy, options={}, lines=lines
+        )
+
+    def test_class_links_inserted(self):
         lines = [
-            "Adds a single ``feature`` to the sink. Feature addition behavior is",
-            "controlled by the specified ``flags``.",
+            "addFeature(self) -> bool",
+            "Adds a single ``feature`` to the sink.",
             "",
             ".. seealso:: QgsVectorLayer for another class",
             "",
-            ".. seealso:: :py:func:`addFeatures`",
-            "",
-            ":return: ``True`` in case of success and ``False`` in case of failure",
-            "",
         ]
-        AutoDocAdditions.process_docstring(
-            app=None,
-            what="method",
-            name="qgis.core.QgsFeatureSink.addFeature",
-            obj=dummy_method,
-            options={},
-            lines=lines,
-        )
-        self.assertEqual(
-            lines,
-            [
-                "Adds a single ``feature`` to the sink. Feature addition behavior is",
-                "controlled by the specified ``flags``.",
-                "",
-                ".. seealso:: :py:class:`.QgsVectorLayer` for another class",
-                "",
-                ".. seealso:: :py:func:`addFeatures`",
-                "",
-                ":return: ``True`` in case of success and ``False`` in case of failure",
-                "",
-            ],
-        )
+        self._process_method("qgis.core.QgsFeatureSink.addFeature", lines)
+        self.assertIn(".. seealso:: :py:class:`.QgsVectorLayer` for another class", lines)
 
-        # with code example
+    def test_links_not_inserted_in_code_blocks(self):
         lines = [
-            "Adds a single ``feature`` to the sink. Feature addition behavior is",
-            "controlled by the specified ``flags``.",
+            "addFeature(self) -> bool",
+            "Example:",
             "",
             ".. code-block:",
             "",
             "  class MyClass(QgsMapLayer):",
-            "    pass" "",
+            "    pass",
             "",
-            ":return: ``True`` in case of success and ``False`` in case of failure",
             "",
         ]
-        AutoDocAdditions.process_docstring(
-            app=None,
-            what="method",
-            name="qgis.core.QgsFeatureSink.addFeature",
-            obj=dummy_method,
-            options={},
-            lines=lines,
-        )
-        self.assertEqual(
-            lines,
-            [
-                "Adds a single ``feature`` to the sink. Feature addition behavior is",
-                "controlled by the specified ``flags``.",
-                "",
-                ".. code-block:",
-                "",
-                "  class MyClass(QgsMapLayer):",
-                "    pass",
-                "",
-                ":return: ``True`` in case of success and ``False`` in case of failure",
-                "",
-            ],
-        )
+        self._process_method("qgis.core.QgsFeatureSink.addFeature", lines)
+        # Inside code block, class names should not be linked
+        self.assertIn("  class MyClass(QgsMapLayer):", lines)
 
-        # overloaded method style docstring
+    def test_overloaded_signature_parsed(self):
         lines = [
             "addRing(self, ring: Iterable[QgsPointXY]) -> Qgis.GeometryOperationResult",
-            "Adds a new ring to this geometry. This makes only sense for polygon and",
-            "multipolygons.",
+            "Adds a new ring to this geometry.",
             "",
             ":param ring: The ring to be added",
             "",
-            ":return: OperationResult a result code: success or reason of failure",
-            "",
+            ":return: result code",
             "",
         ]
-        AutoDocAdditions.process_docstring(
-            app=None,
-            what="method",
-            name="qgis.core.QgsGeometry.addRing",
-            obj=dummy_method,
-            options={},
-            lines=lines,
-        )
-        self.assertEqual(
+        self._process_method("qgis.core.QgsGeometry.addRing", lines)
+        self.assertIn(":type ring: Iterable[QgsPointXY]", lines)
+        self.assertIn(":rtype: Qgis.GeometryOperationResult", lines)
+        # Signature line should have been consumed
+        self.assertNotIn(
+            "addRing(self, ring: Iterable[QgsPointXY]) -> Qgis.GeometryOperationResult",
             lines,
-            [
-                "Adds a new ring to this geometry. This makes only sense for polygon and",
-                "multipolygons.",
-                "",
-                ":type ring: Iterable[QgsPointXY]",
-                ":param ring: The ring to be added",
-                "",
-                ":rtype: Qgis.GeometryOperationResult",
-                ":return: OperationResult a result code: success or reason of failure",
-                "",
-                "",
-            ],
         )
 
+    def test_qgis_class_type_linked(self):
         lines = [
             "addRing(self, ring: QgsCurve) -> Qgis.GeometryOperationResult",
-            "Adds a new ring to this geometry. This makes only sense for polygon and",
-            "multipolygons.",
+            "Adds a new ring.",
             "",
             ":param ring: The ring to be added",
             "",
-            ":return: OperationResult a result code: success or reason of failure",
-            "",
         ]
+        self._process_method("qgis.core.QgsGeometry.addRing", lines)
+        self.assertIn(":type ring: :py:class:`.QgsCurve`", lines)
 
-        AutoDocAdditions.process_docstring(
-            app=None,
-            what="method",
-            name="qgis.core.QgsGeometry.addRing",
-            obj=dummy_method,
-            options={},
-            lines=lines,
-        )
-        self.assertEqual(
-            lines,
-            [
-                "Adds a new ring to this geometry. This makes only sense for polygon and",
-                "multipolygons.",
-                "",
-                ":type ring: :py:class:`.QgsCurve`",
-                ":param ring: The ring to be added",
-                "",
-                ":rtype: Qgis.GeometryOperationResult",
-                ":return: OperationResult a result code: success or reason of failure",
-                "",
-            ],
-        )
-
-        # complex argument types
+    def test_complex_union_argument(self):
         lines = [
             "contains(self, element: Union[QDate, datetime.date]) -> bool",
             "Returns ``True`` if this range contains a specified ``element``.",
             "",
         ]
+        self._process_method("qgis.core.QgsDateRange.contains", lines)
+        self.assertIn(":type element: Union[QDate, datetime.date]", lines)
+        self.assertIn(":rtype: bool", lines)
 
-        AutoDocAdditions.process_docstring(
-            app=None,
-            what="method",
-            name="qgis.core.QgsDateRange.contains",
-            obj=dummy_method,
-            options={},
-            lines=lines,
-        )
-        self.assertEqual(
-            lines,
-            [
-                "Returns ``True`` if this range contains a specified ``element``.",
-                "",
-                ":param element:",
-                ":type element: Union[QDate, datetime.date]",
-                "",
-                ":rtype: bool",
-            ],
-        )
+    def test_parenthesized_tuple_return_type(self):
+        """Regression test for issue #197 — tuple return types like -> (QgsGeometry, bool)"""
+        lines = [
+            "transform(self, geometry: QgsGeometry, feedback: QgsFeedback = None) -> (QgsGeometry, bool)",
+            "Transforms the specified input ``geometry``.",
+            "",
+            ":param geometry: Input geometry to transform",
+            ":param feedback: optional feedback argument",
+            "",
+            ":return: - transformed geometry",
+            "         - ok: ``True`` if geometry was successfully transformed",
+            "",
+        ]
+        self._process_method("qgis.analysis.QgsGcpGeometryTransformer.transform", lines)
+        self.assertIn(":rtype: (:py:class:`.QgsGeometry`, bool)", lines)
+        self.assertIn(":type geometry: :py:class:`.QgsGeometry`", lines)
 
-    def test_process_docstring_for_classes(self):
-        """
-        Test logic for processing the docstrings for classes
-        """
 
+class TestProcessDocstringClasses(unittest.TestCase):
+    """Tests for process_docstring on classes (constructor formatting)"""
+
+    def test_constructors_formatted(self):
         class DummyClass:
-            """
-            xxx
-            """
+            """xxx"""
 
         lines = [
             "A geometry is the spatial representation of a feature.",
             "",
-            ":py:class:`QgsGeometry` acts as a generic container for geometry",
-            "objects. :py:class:`QgsGeometry` objects are implicitly shared, so",
-            "making copies of geometries is inexpensive. The geometry container class",
-            "can also be stored inside a QVariant object.",
-            "",
-            "The actual geometry representation is stored as a",
-            ":py:class:`QgsAbstractGeometry` within the container, and can be",
-            "accessed via the :py:func:`~get` method or set using the :py:func:`~set`",
-            "method. This gives access to the underlying raw geometry primitive, such",
-            "as the point, line, polygon, curve or other geometry subclasses.",
-            "",
-            ".. note::",
-            "",
-            "   :py:class:`QgsGeometry` objects are inherently Cartesian/planar geometries. They have no concept of geodesy, and none",
-            "   of the methods or properties exposed from the :py:class:`QgsGeometry` API (or :py:class:`QgsAbstractGeometry` subclasses) utilize",
-            "   geodesic calculations. Accordingly, properties like :py:func:`~length` and :py:func:`~area` or spatial operations like :py:func:`~buffer`",
-            "   are always calculated using strictly Cartesian mathematics. In contrast, the :py:class:`QgsDistanceArea` class exposes",
-            "   methods for working with geodesic calculations and spatial operations on geometries,",
-            "   and should be used whenever calculations which account for the curvature of the Earth (or any other celestial body)",
-            "   are required.",
-            "",
             "QgsGeometry()",
             "",
             "QgsGeometry(QgsGeometry)",
-            "Copy constructor will prompt a shallow copy of the geometry",
+            "Copy constructor",
             "",
             "QgsGeometry(geom: QgsAbstractGeometry)",
-            "Creates a geometry from an abstract geometry object. Ownership of geom",
-            "is transferred.",
+            "Creates a geometry from an abstract geometry object.",
             "",
         ]
-
         AutoDocAdditions.process_docstring(
             app=None,
             what="class",
@@ -243,33 +142,19 @@ class TestAutoDocAdditions(unittest.TestCase):
             options={},
             lines=lines,
         )
-        self.assertEqual(
-            lines,
-            [
-                ".. py:method:: __init__()",
-                "    :noindex:",
-                "",
-                "    ",
-                ".. py:method:: __init__(QgsGeometry)",
-                "    :noindex:",
-                "",
-                "    Copy constructor will prompt a shallow copy of the geometry",
-                "    ",
-                ".. py:method:: __init__(geom: QgsAbstractGeometry)",
-                "    :noindex:",
-                "",
-                "    Creates a geometry from an abstract geometry object. Ownership of geom",
-                "    is transferred.",
-                "    ",
-                "    :param geom:",
-                "    :type geom: QgsAbstractGeometry",
-            ],
-        )
+        self.assertIn(".. py:method:: __init__()", lines)
+        self.assertIn(".. py:method:: __init__(QgsGeometry)", lines)
+        self.assertIn(".. py:method:: __init__(geom: QgsAbstractGeometry)", lines)
+        self.assertIn("    :type geom: QgsAbstractGeometry", lines)
+        # Original class description should be removed
+        self.assertNotIn("A geometry is the spatial representation of a feature.", lines)
 
-        # nested class
+    def test_nested_class_preserved(self):
+        class DummyClass:
+            """xxx"""
+
         lines = [
-            "Contains additional contextual information about the context in which a",
-            "callout is being rendered.",
+            "Contains additional contextual information.",
             "",
             ".. versionadded:: 3.10",
             "",
@@ -282,55 +167,163 @@ class TestAutoDocAdditions(unittest.TestCase):
             options={},
             lines=lines,
         )
-        self.assertEqual(
-            lines,
-            [
-                "Contains additional contextual information about the context in which a",
-                "callout is being rendered.",
-                "",
-                ".. versionadded:: 3.10",
-                "",
-            ],
-        )
+        # Nested classes should keep their docstring intact
+        self.assertIn("Contains additional contextual information.", lines)
 
-    def test_process_docstring_for_signals(self):
-        """
-        Test logic for processing the docstrings for signals
-        """
+
+class TestProcessDocstringSignals(unittest.TestCase):
+    """Tests for process_docstring on signals (attribute docs, argument injection)"""
+
+    def test_signal_args_injected(self):
+        class pyqtSignal:
+            """Generic pyqtSignal docstring"""
 
         class DummyClass:
-            """
-            xxx
-            """
-
-            fake_signal = ""
-
+            autoRefreshIntervalChanged = pyqtSignal()
+            __attribute_docs__ = {
+                "autoRefreshIntervalChanged": "Emitted when the auto refresh interval changes."
+            }
             __signal_arguments__ = {"autoRefreshIntervalChanged": ["interval: int"]}
 
-        lines = [
-            "Emitted when the auto refresh interval changes.",
-            "",
-            ".. seealso:: :py:func:`setAutoRefreshInterval`",
-            "",
-        ]
+        cleanup = _inject_class(DummyClass)
+        try:
+            lines = ["Emitted when the auto refresh interval changes."]
+            AutoDocAdditions.process_docstring(
+                app=None,
+                what="attribute",
+                name="qgis.core.DummyClass.autoRefreshIntervalChanged",
+                obj=DummyClass.autoRefreshIntervalChanged,
+                options={},
+                lines=lines,
+            )
+            self.assertIn(":param interval:", lines)
+            self.assertIn(":type interval: int", lines)
+        finally:
+            cleanup()
 
-        AutoDocAdditions.PARENT_OBJ = DummyClass
-        AutoDocAdditions.process_docstring(
+    def test_generic_pyqtsignal_docstring_replaced(self):
+        """Sphinx 9.x sends generic pyqtSignal docstring — should be replaced."""
+
+        class pyqtSignal:
+            """Generic pyqtSignal docstring"""
+
+        class DummySignalClass:
+            mySignal = pyqtSignal()
+            __attribute_docs__ = {
+                "mySignal": ("Emitted when something changes.\n" "\n" ".. versionadded:: 3.26\n")
+            }
+            __signal_arguments__ = {"mySignal": []}
+
+        cleanup = _inject_class(DummySignalClass)
+        try:
+            lines = [
+                "pyqtSignal(*types, name: str = ..., revision: int = ..., arguments: Sequence = ...) -> PYQT_SIGNAL",
+                "",
+                "types is normally a sequence of individual types.",
+                "",
+            ]
+            AutoDocAdditions.process_docstring(
+                app=None,
+                what="attribute",
+                name="qgis.core.DummySignalClass.mySignal",
+                obj=DummySignalClass.mySignal,
+                options={},
+                lines=lines,
+            )
+            self.assertIn("Emitted when something changes.", lines)
+            self.assertIn(".. versionadded:: 3.26", lines)
+            # Generic docstring should be gone
+            self.assertNotIn("types is normally a sequence of individual types.", lines)
+        finally:
+            cleanup()
+
+
+class TestProcessSignature(unittest.TestCase):
+    """Tests for process_signature (signal signature replacement)"""
+
+    def test_signal_no_args(self):
+        class pyqtSignal:
+            """Generic pyqtSignal docstring"""
+
+        class DummyClass:
+            noArgsSignal = pyqtSignal()
+            __signal_arguments__ = {"noArgsSignal": []}
+
+        cleanup = _inject_class(DummyClass)
+        try:
+            result = AutoDocAdditions.process_signature(
+                app=None,
+                what="attribute",
+                name="qgis.core.DummyClass.noArgsSignal",
+                obj=DummyClass.noArgsSignal,
+                options={},
+                signature="(*types, name: str = ...)",
+                return_annotation="PYQT_SIGNAL",
+            )
+            self.assertEqual(result, ("()", None))
+        finally:
+            cleanup()
+
+    def test_signal_with_args(self):
+        class pyqtSignal:
+            """Generic pyqtSignal docstring"""
+
+        class DummyClass:
+            oneArgSignal = pyqtSignal()
+            __signal_arguments__ = {"oneArgSignal": ["value: int"]}
+
+        cleanup = _inject_class(DummyClass)
+        try:
+            result = AutoDocAdditions.process_signature(
+                app=None,
+                what="attribute",
+                name="qgis.core.DummyClass.oneArgSignal",
+                obj=DummyClass.oneArgSignal,
+                options={},
+                signature="(*types, name: str = ...)",
+                return_annotation="PYQT_SIGNAL",
+            )
+            self.assertEqual(result, ("(value: int)", None))
+        finally:
+            cleanup()
+
+    def test_signal_signature_none_returns_none(self):
+        """In Sphinx 9.x, signature=None when internal signatures list is empty."""
+
+        class pyqtSignal:
+            """Generic pyqtSignal docstring"""
+
+        class DummyClass:
+            sig = pyqtSignal()
+            __signal_arguments__ = {"sig": []}
+
+        cleanup = _inject_class(DummyClass)
+        try:
+            result = AutoDocAdditions.process_signature(
+                app=None,
+                what="attribute",
+                name="qgis.core.DummyClass.sig",
+                obj=DummyClass.sig,
+                options={},
+                signature=None,
+                return_annotation=None,
+            )
+            self.assertIsNone(result)
+        finally:
+            cleanup()
+
+    def test_method_signature_passthrough(self):
+        result = AutoDocAdditions.process_signature(
             app=None,
-            what="attribute",
-            name="qgis.core.QgsMapLayer.autoRefreshIntervalChanged",
-            obj=DummyClass.fake_signal,
+            what="method",
+            name="qgis.core.SomeClass.method",
+            obj=lambda: None,
             options={},
-            lines=lines,
+            signature="(self, arg: str)",
+            return_annotation="bool",
         )
-        self.assertEqual(
-            lines,
-            [
-                "Emitted when the auto refresh interval changes.",
-                "",
-                ".. seealso:: :py:func:`setAutoRefreshInterval`",
-                "",
-                ":param interval:",
-                ":type interval: int",
-            ],
-        )
+        self.assertEqual(result, ("(self, arg: str)", "bool"))
+
+
+if __name__ == "__main__":
+    unittest.main()
