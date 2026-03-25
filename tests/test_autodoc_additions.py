@@ -170,6 +170,59 @@ class TestProcessDocstringClasses(unittest.TestCase):
         # Nested classes should keep their docstring intact
         self.assertIn("Contains additional contextual information.", lines)
 
+    def test_nested_class_with_constructors(self):
+        """Nested classes with constructors should format them as __init__ methods."""
+
+        class DummyClass:
+            """xxx"""
+
+        lines = [
+            "The OrderByClause class represents an order by clause.",
+            "",
+            "QgsFeatureRequest.OrderByClause(expression: Optional[str], ascending: bool = True)",
+            "Creates a new OrderByClause",
+            "",
+            ":param expression: The expression to use for ordering",
+            ":param ascending: If the order should be ascending",
+            "",
+            "QgsFeatureRequest.OrderByClause(expression: QgsExpression, ascending: bool, nullsfirst: bool)",
+            "Creates a new OrderByClause with nulls ordering",
+            "",
+            ":param expression: The expression to use for ordering",
+            ":param ascending: If the order should be ascending",
+            ":param nullsfirst: If True, NULLS are at the beginning",
+            "",
+            "QgsFeatureRequest.OrderByClause(a0: QgsFeatureRequest.OrderByClause)",
+            "",
+        ]
+        AutoDocAdditions.process_docstring(
+            app=None,
+            what="class",
+            name="qgis.core.QgsFeatureRequest.OrderByClause",
+            obj=DummyClass,
+            options={},
+            lines=lines,
+        )
+        # Description should be preserved for nested classes
+        self.assertIn("The OrderByClause class represents an order by clause.", lines)
+        # Constructors should be formatted as __init__
+        self.assertIn(
+            ".. py:method:: __init__(expression: Optional[str], ascending: bool = True)",
+            lines,
+        )
+        self.assertIn(
+            ".. py:method:: __init__(expression: QgsExpression, ascending: bool, nullsfirst: bool)",
+            lines,
+        )
+        self.assertIn(".. py:method:: __init__(a0: QgsFeatureRequest.OrderByClause)", lines)
+        # Type annotations should be injected
+        self.assertIn("    :type expression: Optional[str]", lines)
+        # The raw SIP signature lines should be gone
+        self.assertNotIn(
+            "QgsFeatureRequest.OrderByClause(expression: Optional[str], ascending: bool = True)",
+            lines,
+        )
+
 
 class TestProcessDocstringSignals(unittest.TestCase):
     """Tests for process_docstring on signals (attribute docs, argument injection)"""
