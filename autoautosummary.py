@@ -12,27 +12,21 @@ from docutils.parsers.rst import Parser, directives
 from docutils.utils import new_document
 from qgis.PyQt.QtCore import pyqtSignal as _pyqtSignal
 from sphinx.ext import autosummary
+
+# Sphinx 9.x made get_documenter private and changed its signature
 from sphinx.ext.autosummary import Autosummary, ImportExceptionGroup
+from sphinx.ext.autosummary import _get_documenter as _sphinx_get_documenter
 from sphinx.locale import __
 from sphinx.util import logging
 from sphinx.util.inspect import isstaticmethod, safe_getattr
 
-# get_documenter was made private and its signature changed in Sphinx 9.x
-try:
-    from sphinx.ext.autosummary import get_documenter as _sphinx_get_documenter
 
-    def _get_documenter_type(app, obj, parent):
-        return _sphinx_get_documenter(app, obj, parent).objtype
-
-except ImportError:
-    from sphinx.ext.autosummary import _get_documenter as _sphinx_get_documenter
-
-    def _get_documenter_type(app, obj, parent):
-        result = _sphinx_get_documenter(obj, parent)
-        # Sphinx 9.x returns a string directly
-        if isinstance(result, str):
-            return result
-        return result.objtype
+def _get_documenter_type(app, obj, parent):
+    result = _sphinx_get_documenter(obj, parent)
+    # Sphinx 9.x returns a string directly
+    if isinstance(result, str):
+        return result
+    return result.objtype
 
 
 # from sphinx.directives import directive

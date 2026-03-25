@@ -2,6 +2,8 @@
 Contains utility functions for documentation logic
 """
 
+from __future__ import annotations
+
 from typing import Any
 
 
@@ -36,6 +38,90 @@ class Utils:
             tokens.append(current_token.strip())
 
         return tokens
+
+    @staticmethod
+    def parse_signature(
+        signature: str,
+    ) -> tuple[str | None, str | None, str | None, str | None, str | None, bool]:
+        """
+        Parses a SIP-generated method signature string into its components,
+        correctly handling nested parentheses in arguments and return types.
+
+        Returns a tuple of (explicit_module, path, name, args, return_annotation, is_signal).
+        Returns None for any component that is not present.
+
+        Uses bracket-depth tracking instead of regex so that parenthesized
+        return types like ``-> (QgsGeometry, bool)`` are not swallowed
+        into the argument list.
+        """
+        s = signature.strip()
+        if not s:
+            return None, None, None, None, None, False
+
+        # Find the opening '(' for arguments
+        paren_pos = s.find("(")
+        if paren_pos < 0:
+            return None, None, None, None, None, False
+
+        leading = s[:paren_pos].strip()
+        if not leading:
+            return None, None, None, None, None, False
+
+        # Split leading into explicit_module, path, name
+        explicit_module = None
+        if "::" in leading:
+            explicit_module, leading = leading.split("::", 1)
+
+        parts = leading.rsplit(".", 1)
+        if len(parts) == 2:
+            path = parts[0] + "."
+            name = parts[1]
+        else:
+            path = None
+            name = parts[0]
+
+        if not name or not name.replace("_", "").isalnum():
+            return None, None, None, None, None, False
+
+        # Walk character by character from the opening '(' to find the
+        # matching ')' respecting nested brackets
+        depth = 0
+        args_end = None
+        for i in range(paren_pos, len(s)):
+            ch = s[i]
+            if ch in ("(", "["):
+                depth += 1
+            elif ch in (")", "]"):
+                depth -= 1
+                if depth == 0:
+                    args_end = i
+                    break
+
+        if args_end is None:
+            return None, None, None, None, None, False
+
+        args = s[paren_pos + 1 : args_end]
+
+        remainder = s[args_end + 1 :].strip()
+
+        # Extract return annotation
+        return_annotation = None
+        if remainder.startswith("->"):
+            remainder = remainder[2:].strip()
+            # Check for [signal] suffix
+            if remainder.endswith("[signal]"):
+                return_annotation = remainder[: -len("[signal]")].strip()
+                return explicit_module, path, name, args, return_annotation, True
+            else:
+                return_annotation = remainder if remainder else None
+                return explicit_module, path, name, args, return_annotation, False
+
+        # Check for [signal] without return annotation
+        is_signal = False
+        if remainder.strip() == "[signal]":
+            is_signal = True
+
+        return explicit_module, path, name, args, return_annotation, is_signal
 
     @staticmethod
     def get_class_from_fully_qualified_attribute_name(
