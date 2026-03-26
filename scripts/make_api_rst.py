@@ -581,7 +581,7 @@ def generate_all_members_page(package_name, class_name, _class, qgis_version):
         for name, member_type in sorted(members):
             if source_pkg is None:
                 # Qt member — link to external docs
-                qt_url = f"{qt_docs_base}{source_name.lower()}.html#{source_name.lower()}-{name.lower()}"
+                qt_url = f"{qt_docs_base}{source_name.lower()}.html#{name.lower()}"
                 ref = f"`{name} <{qt_url}>`_"
             elif member_type in ("class", "enum"):
                 ref = f":py:class:`~qgis.{source_pkg}.{source_name}.{name}`"
