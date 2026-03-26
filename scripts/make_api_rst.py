@@ -89,17 +89,18 @@ def ltr_tag(v):
 
 current_stable = cfg["current_stable"]
 current_ltr = cfg["current_ltr"]
-current_stable_minor = int(current_stable.split(".")[1])
-current_ltr_minor = int(current_ltr.split(".")[1])
-old_versions_links = ", ".join(
-    reversed(
-        [
-            f"`3.{v} <https://github.com/qgis/pyqgis-api-docs-builder/releases/download/3.{v}/pyqgis-docs-3.{v}.zip>`_"
-            for v in range(0, current_stable_minor, 2)
-            if v != current_ltr_minor
-        ]
-    )
-)
+
+# Build list of old version download links.
+# All even-numbered 3.x releases that aren't the current stable or LTR.
+_current_versions = {current_stable, current_ltr}
+_old_versions = []
+for v in range(0, 46, 2):  # 3.0 through 3.44
+    ver = f"3.{v}"
+    if ver not in _current_versions:
+        _old_versions.append(
+            f"`{ver} <https://github.com/qgis/pyqgis-api-docs-builder/releases/download/{ver}/pyqgis-docs-{ver}.zip>`_"
+        )
+old_versions_links = ", ".join(reversed(_old_versions))
 
 py_ext_sig_re = re.compile(
     r"""^(?:([\w.]+::)?([\w.]+\.)?(\w+)\s*(?:\((.*)\)(?:\s*->\s*([\w.]+(?:\[.*?\])?))?(?:\s*\[(signal)\])?)?)?$"""
