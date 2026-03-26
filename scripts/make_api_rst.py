@@ -91,15 +91,30 @@ current_stable = cfg["current_stable"]
 current_ltr = cfg["current_ltr"]
 
 # Build list of old version download links.
-# All even-numbered 3.x releases that aren't the current stable or LTR.
+# Include all even-numbered releases across major series (3.x, 4.x)
+# that aren't the current stable or LTR.
 _current_versions = {current_stable, current_ltr}
 _old_versions = []
-for v in range(0, 46, 2):  # 3.0 through 3.44
-    ver = f"3.{v}"
-    if ver not in _current_versions:
-        _old_versions.append(
-            f"`{ver} <https://github.com/qgis/pyqgis-api-docs-builder/releases/download/{ver}/pyqgis-docs-{ver}.zip>`_"
-        )
+# Last minor release of each completed major series
+_COMPLETED_SERIES = {3: 44}
+_max_major = 4
+for major in range(3, _max_major + 1):
+    _minors_in_series = [
+        int(v.split(".")[1]) for v in _current_versions if v.startswith(f"{major}.")
+    ]
+    last_minor = _COMPLETED_SERIES.get(major)
+    if last_minor is not None:
+        max_minor = max(last_minor, *_minors_in_series) if _minors_in_series else last_minor
+    elif _minors_in_series:
+        max_minor = max(_minors_in_series)
+    else:
+        continue
+    for minor in range(0, max_minor + 2, 2):
+        ver = f"{major}.{minor}"
+        if ver not in _current_versions:
+            _old_versions.append(
+                f"`{ver} <https://github.com/qgis/pyqgis-api-docs-builder/releases/download/{ver}/pyqgis-docs-{ver}.zip>`_"
+            )
 old_versions_links = ", ".join(reversed(_old_versions))
 
 py_ext_sig_re = re.compile(
