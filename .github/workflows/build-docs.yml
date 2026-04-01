@@ -80,7 +80,7 @@ jobs:
 
       - name: Comment artifact link on PR
         if: ${{ github.event_name == 'pull_request' && matrix.qgis_version == 'master' }}
-        uses: marocchino/sticky-pull-request-comment@v2
+        uses: marocchino/sticky-pull-request-comment@v3
         with:
           header: docs-preview
           message: |
