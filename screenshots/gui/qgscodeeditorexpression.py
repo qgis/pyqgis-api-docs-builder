@@ -7,13 +7,11 @@ from screenshots.utils import ScreenshotUtils
 
 def __generate_screenshots(dest_path: Path):
     widget = QgsCodeEditorExpression()
-    widget.setText(
-        """aggregate(layer:='rail_stations',
+    widget.setText("""aggregate(layer:='rail_stations',
     aggregate:='collect', -- a comment
     expression:=centroid(@geometry), /* a comment */
     filter:="region_name" = attribute(@parent,'name') + 55
-)"""
-    )
+)""")
     widget.setCursorPosition(2, 4)
 
     im = ScreenshotUtils.capture_widget(widget, width=490, height=320)

@@ -7,8 +7,7 @@ from screenshots.utils import ScreenshotUtils
 
 def __generate_screenshots(dest_path: Path):
     widget = QgsCodeEditorHTML()
-    widget.setText(
-        """<html>
+    widget.setText("""<html>
   <head>
     <title>QGIS</title>
   </head>
@@ -19,8 +18,7 @@ def __generate_screenshots(dest_path: Path):
     <p>Sample paragraph</p>
     <!--A search result-->
   </body>
-</html>"""
-    )
+</html>""")
     widget.setCursorPosition(2, 4)
 
     im = ScreenshotUtils.capture_widget(widget, width=490, height=320)

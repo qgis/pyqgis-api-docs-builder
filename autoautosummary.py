@@ -211,7 +211,7 @@ class AutoAutoSummary(Autosummary):
         rubric_elems = None
         rubric_public_elems = None
         try:
-            (module_name, class_name) = clazz.rsplit(".", 1)
+            module_name, class_name = clazz.rsplit(".", 1)
             m = __import__(module_name, globals(), locals(), [class_name])
             c = getattr(m, class_name)
             if "abstract_methods" in self.options:
