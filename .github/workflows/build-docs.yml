@@ -72,7 +72,7 @@ jobs:
         run: zip -r pyqgis-docs-${{ env.QGIS_VERSION }}.zip ./build
 
       - name: Release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         if: ${{ github.event_name != 'pull_request' && matrix.qgis_version != 'master' }}
         with:
           tag_name: ${{ env.QGIS_VERSION }}
