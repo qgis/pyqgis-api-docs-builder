@@ -7,8 +7,7 @@ from screenshots.utils import ScreenshotUtils
 
 def __generate_screenshots(dest_path: Path):
     widget = QgsCodeEditorJson()
-    widget.setText(
-        """{
+    widget.setText("""{
   "user": {
     "id": 103,
     "name": "Sarah Jones",
@@ -18,8 +17,7 @@ def __generate_screenshots(dest_path: Path):
     }
   },
   "status": "active"
-}"""
-    )
+}""")
     widget.setCursorPosition(2, 4)
 
     im = ScreenshotUtils.capture_widget(widget, width=490, height=320)

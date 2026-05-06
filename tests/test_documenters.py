@@ -18,10 +18,8 @@ class TestConversionContext(unittest.TestCase):
         """
         # simple single signature
         self.assertEqual(
-            OverloadedPythonMethodDocumenter.parse_signature_blocks(
-                """instance() -> QgsProject
-Returns the QgsProject singleton instance"""
-            ),
+            OverloadedPythonMethodDocumenter.parse_signature_blocks("""instance() -> QgsProject
+Returns the QgsProject singleton instance"""),
             [("() -> QgsProject", "Returns the QgsProject singleton instance\n")],
         )
 
