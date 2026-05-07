@@ -35,6 +35,10 @@ qgs.setFont(font)
 Qgs3D.initialize()
 
 
+# Tracks classes whose screenshot generation failed during this run.
+FAILED_SCREENSHOTS: list[dict] = []
+
+
 with open("pyqgis_conf.yml") as f:
     cfg = yaml.safe_load(f)
 
@@ -390,21 +394,47 @@ def generate_screenshots(package, class_name: str, _class, version: str) -> str:
             flush=True,
         )
         stderr = result.stderr.strip()
+        tail = []
         if stderr:
-            for line in stderr.split("\n")[-5:]:
+            tail = stderr.split("\n")[-5:]
+            for line in tail:
                 print(f"    {line}", flush=True)
+        FAILED_SCREENSHOTS.append(
+            {
+                "module": module_name,
+                "class": class_name,
+                "exit_code": result.returncode,
+                "stderr_tail": tail,
+            }
+        )
         return ""
 
     # Parse the JSON output (last non-empty line of stdout)
     stdout_lines = [line for line in result.stdout.strip().split("\n") if line.strip()]
     if not stdout_lines:
         print(f"  WARNING: no output from screenshot generation for {class_name}", flush=True)
+        FAILED_SCREENSHOTS.append(
+            {
+                "module": module_name,
+                "class": class_name,
+                "exit_code": 0,
+                "stderr_tail": ["no output"],
+            }
+        )
         return ""
 
     try:
         images = json.loads(stdout_lines[-1])
     except json.JSONDecodeError:
         print(f"  WARNING: could not parse screenshot output for {class_name}", flush=True)
+        FAILED_SCREENSHOTS.append(
+            {
+                "module": module_name,
+                "class": class_name,
+                "exit_code": 0,
+                "stderr_tail": ["could not parse output"],
+            }
+        )
         return ""
 
     # format images as markdown:
@@ -894,6 +924,35 @@ def generate_docs():
     index.write("   faq\n")
     index.write(document_footer)
     index.close()
+
+    write_failed_screenshots_summary()
+
+
+def write_failed_screenshots_summary():
+    """Print a GitHub-Actions-friendly group with failing screenshots and
+    persist the list to ``failed_screenshots.json`` for downstream steps
+    (e.g. PR sticky comment).
+    """
+    print("##[group]Failed screenshots", flush=True)
+    if not FAILED_SCREENSHOTS:
+        print("All screenshots generated successfully.", flush=True)
+    else:
+        print(f"{len(FAILED_SCREENSHOTS)} screenshot(s) failed:", flush=True)
+        for entry in FAILED_SCREENSHOTS:
+            print(
+                f"  - {entry['module']}.{entry['class']} " f"(exit code {entry['exit_code']})",
+                flush=True,
+            )
+            for line in entry.get("stderr_tail") or []:
+                print(f"      {line}", flush=True)
+    print("##[endgroup]", flush=True)
+
+    out_file = Path(__file__).parent / ".." / "failed_screenshots.json"
+    try:
+        with open(out_file, "w") as f:
+            json.dump(FAILED_SCREENSHOTS, f, indent=2)
+    except OSError as exc:
+        print(f"  WARNING: could not write {out_file}: {exc}", flush=True)
 
 
 def extract_package_classes(package):
