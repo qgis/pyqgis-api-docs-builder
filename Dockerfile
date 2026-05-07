@@ -13,6 +13,9 @@ WORKDIR /app
 RUN apt-get update \
   && apt-get install -y graphviz
 
+# Remove GRASS plugins that can't load (libgrass_gis not available) to avoid noisy warnings
+RUN rm -f /usr/lib/qgis/plugins/libplugin_grass*.so /usr/lib/qgis/plugins/libprovider_grass*.so
+
 RUN pip install --break-system-packages --upgrade sphinx-rtd-theme numpydoc
 
 RUN mkdir /app/pyqgis
