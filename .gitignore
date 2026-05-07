@@ -27,3 +27,4 @@ source/static/
 sphinx_rtd_theme/
 .token*
 temp/
+failed_screenshots.json

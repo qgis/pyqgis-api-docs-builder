@@ -87,6 +87,35 @@ jobs:
             📘 **Docs build complete**
             [Download docs artifact](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts/${{ steps.upload-artifact.outputs.artifact-id }})
 
+      - id: failed-screenshots
+        name: Collect failed screenshots
+        if: ${{ always() && github.event_name == 'pull_request' && matrix.qgis_version == 'master' }}
+        run: |
+          if [[ -f failed_screenshots.json ]]; then
+            COUNT=$(jq 'length' failed_screenshots.json)
+          else
+            COUNT=0
+          fi
+          echo "count=${COUNT}" >> "$GITHUB_OUTPUT"
+          {
+            echo 'body<<__EOF__'
+            if [[ "${COUNT}" == "0" ]]; then
+              echo "✅ All screenshots generated successfully."
+            else
+              echo "⚠️ **${COUNT} screenshot(s) failed to generate:**"
+              echo ""
+              jq -r '.[] | "- `\(.module).\(.class)` (exit code \(.exit_code))"' failed_screenshots.json
+            fi
+            echo '__EOF__'
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Sticky PR comment - failed screenshots
+        if: ${{ always() && github.event_name == 'pull_request' && matrix.qgis_version == 'master' }}
+        uses: marocchino/sticky-pull-request-comment@v3
+        with:
+          header: failed-screenshots
+          message: ${{ steps.failed-screenshots.outputs.body }}
+
   deploy-docs:
     if: ${{ github.event_name != 'pull_request' }}
     name: Deploy to Github pages
