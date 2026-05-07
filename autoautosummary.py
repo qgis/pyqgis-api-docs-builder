@@ -61,6 +61,7 @@ class AutoAutoSummary(Autosummary):
 
     option_spec = {
         "methods": directives.unchanged,
+        "init": directives.unchanged,
         "static_methods": directives.unchanged,
         "signals": directives.unchanged,
         "virtual_methods": directives.unchanged,
@@ -214,7 +215,13 @@ class AutoAutoSummary(Autosummary):
             module_name, class_name = clazz.rsplit(".", 1)
             m = __import__(module_name, globals(), locals(), [class_name])
             c = getattr(m, class_name)
-            if "abstract_methods" in self.options:
+            if "init" in self.options:
+                rubric_title = "Init"
+                if "__init__" in c.__dict__:
+                    rubric_elems = ["__init__"]
+                else:
+                    rubric_elems = []
+            elif "abstract_methods" in self.options:
                 rubric_title = "Abstract Methods"
                 _, rubric_elems = self.get_members(
                     self.state.document, c, "method", self.options, ["__init__"], abstract=True
@@ -257,7 +264,12 @@ class AutoAutoSummary(Autosummary):
                 )
 
             if rubric_elems:
-                rubric_public_elems = list(filter(lambda e: not e.startswith("_"), rubric_elems))
+                if "init" in self.options:
+                    rubric_public_elems = rubric_elems
+                else:
+                    rubric_public_elems = list(
+                        filter(lambda e: not e.startswith("_"), rubric_elems)
+                    )
                 self.content = [f"~{clazz}.{elem}" for elem in rubric_public_elems]
         except BaseException as e:
             print(str(e))
