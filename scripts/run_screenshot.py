@@ -11,6 +11,7 @@ mapping as JSON to stdout.
 
 import importlib.util
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -43,4 +44,9 @@ mod = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(mod)
 
 images = mod.__generate_screenshots(output_path)
-print(json.dumps(images))
+print(json.dumps(images), flush=True)
+
+# Some widgets (e.g. those embedding QgsMapCanvas) leave Qt rendering threads
+# alive at exit, which causes SIGSEGV during Python interpreter shutdown.
+# Skip regular cleanup since we already have the result.
+os._exit(0)
