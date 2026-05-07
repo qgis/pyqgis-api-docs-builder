@@ -64,9 +64,13 @@ docker build \
 echo "##[endgroup]"
 
 echo "##[group] Docker run"
-docker run --rm -v ${DIR}:/app/pyqgis -u $(id -u):$(id -g) --name pyqgis \
+docker run --rm -v ${DIR}:/app/pyqgis -u $(id -u):$(id -g) \
+  -e HOME=/tmp \
+  -e XDG_RUNTIME_DIR=/tmp/runtime-user \
+  --name pyqgis \
   qgis/qgis-python-api-doc:${QGIS_DOCKER_TAG} \
   /bin/bash -c "\
+    mkdir -p /tmp/runtime-user && chmod 0700 /tmp/runtime-user && \
     QT_STYLE_OVERRIDE=Fusion \
     QT_AUTO_SCREEN_SCALE_FACTOR=0 \
     QT_SCALE_FACTOR=1 \
