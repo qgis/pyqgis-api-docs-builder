@@ -78,15 +78,6 @@ jobs:
           tag_name: ${{ env.QGIS_VERSION }}
           files: pyqgis-docs-${{ env.QGIS_VERSION }}.zip
 
-      - name: Comment artifact link on PR
-        if: ${{ github.event_name == 'pull_request' && matrix.qgis_version == 'master' }}
-        uses: marocchino/sticky-pull-request-comment@v3
-        with:
-          header: docs-preview
-          message: |
-            📘 **Docs build complete**
-            [Download docs artifact](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts/${{ steps.upload-artifact.outputs.artifact-id }})
-
       - id: failed-screenshots
         name: Collect failed screenshots
         if: ${{ always() && github.event_name == 'pull_request' && matrix.qgis_version == 'master' }}
@@ -96,7 +87,6 @@ jobs:
           else
             COUNT=0
           fi
-          echo "count=${COUNT}" >> "$GITHUB_OUTPUT"
           {
             echo 'body<<__EOF__'
             if [[ "${COUNT}" == "0" ]]; then
@@ -109,12 +99,18 @@ jobs:
             echo '__EOF__'
           } >> "$GITHUB_OUTPUT"
 
-      - name: Sticky PR comment - failed screenshots
+      - name: Sticky PR comment
         if: ${{ always() && github.event_name == 'pull_request' && matrix.qgis_version == 'master' }}
         uses: marocchino/sticky-pull-request-comment@v3
         with:
-          header: failed-screenshots
-          message: ${{ steps.failed-screenshots.outputs.body }}
+          header: docs-preview
+          message: |
+            📘 **Docs build complete**
+            [Download docs artifact](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts/${{ steps.upload-artifact.outputs.artifact-id }})
+
+            ---
+
+            ${{ steps.failed-screenshots.outputs.body }}
 
   deploy-docs:
     if: ${{ github.event_name != 'pull_request' }}
