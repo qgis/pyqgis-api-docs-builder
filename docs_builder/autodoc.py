@@ -140,6 +140,17 @@ class AutoDocAdditions:
 
     @staticmethod
     def process_docstring(app, what, name, obj, options, lines):
+        # autosummary may reference `__init__` on SIP-generated classes; the
+        # imported obj is then `object.__init__`'s wrapper_descriptor whose
+        # docstring is the generic "Initialize self." placeholder. There is
+        # no signature to parse, so skip processing.
+        if name.endswith(".__init__"):
+            obj_doc = getattr(obj, "__doc__", "") or ""
+            first_line = lines[0] if lines else obj_doc.split("\n", 1)[0]
+            if first_line.startswith("Initialize self."):
+                lines[:] = []
+                return
+
         if what == "class":
             # SIP docstrings use the qualified class name minus the package,
             # e.g. "QgsGeometry" for qgis.core.QgsGeometry,
@@ -192,7 +203,11 @@ class AutoDocAdditions:
                     current_constructor.append(
                         re.sub(rf"^{sip_class_name_escaped}\(", ".. py:method:: __init__(", line)
                     )
-                    current_constructor.append("    :noindex:")
+                    # Only mark subsequent overloads as :noindex: so the first
+                    # constructor remains cross-referenceable (e.g. by
+                    # autoautosummary's `:init:` rubric).
+                    if constructors:
+                        current_constructor.append("    :noindex:")
                     current_constructor.append("")
                 else:
                     current_constructor.append("    " + line)
