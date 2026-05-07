@@ -20,7 +20,7 @@ class DummyProviderNode(QgsHistoryEntryNode):
         self.text = text
 
     def data(self, role):
-        if role == Qt.DisplayRole:
+        if role == Qt.ItemDataRole.DisplayRole:
             return self.text
 
 
