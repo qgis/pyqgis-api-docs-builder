@@ -85,6 +85,17 @@ class AutoDocAdditions:
         return None
 
     @staticmethod
+    def _get_class_for_name(what: str, name: str):
+        """
+        Returns the class object that the docstring identified by ``name``
+        belongs to (i.e. the class whose member's docstring is being
+        processed, or the class itself when ``what == "class"``).
+        """
+        if what == "class":
+            return globals().get(name.split(".")[-1])
+        return AutoDocAdditions._get_parent_class(name)
+
+    @staticmethod
     def create_links(doc: str) -> str:
         # fix inheritance
         doc = re.sub(r"qgis\._(core|gui|analysis|processing)\.", r"", doc)
@@ -93,14 +104,79 @@ class AutoDocAdditions:
         return doc
 
     @staticmethod
-    def insert_links(lines: list[str]):
+    def _resolve_unqualified_ref(name: str, owner_class) -> str | None:
         """
-        Inserts link tags into a block of docstring lines
+        Given a bare attribute name referenced via :py:func:`Name` (typically
+        from a SIP-generated ``\\see`` / seealso), resolve it against the
+        ``owner_class``'s MRO and return a replacement reference target:
+
+        - If ``Name`` is a ``pyqtSignal`` attribute, return
+          ``:py:attr:`~OwnerClass.Name``` (signals are documented as
+          attributes, not functions).
+        - If ``Name`` is a method defined on a parent class (not on
+          ``owner_class`` itself), return
+          ``:py:func:`~ParentClass.Name``` so the cross-reference resolves.
+        - Otherwise (the method lives on ``owner_class`` itself, or is not
+          found at all) return ``None`` to leave the reference unchanged.
+        """
+        if owner_class is None:
+            return None
+
+        # Walk the MRO to find the class that actually defines ``name``.
+        # We need the defining class to produce a valid fully qualified
+        # cross-reference for inherited members.
+        defining_class = None
+        for klass in getattr(owner_class, "__mro__", (owner_class,)):
+            if name in getattr(klass, "__dict__", {}):
+                defining_class = klass
+                break
+
+        if defining_class is None:
+            return None
+
+        attr = defining_class.__dict__[name]
+        is_signal = getattr(attr, "__class__", type(None)).__name__ == "pyqtSignal"
+
+        if is_signal:
+            return f":py:attr:`~{defining_class.__name__}.{name}`"
+
+        if defining_class is not owner_class:
+            return f":py:func:`~{defining_class.__name__}.{name}`"
+
+        return None
+
+    @staticmethod
+    def fix_seealso_refs(line: str, owner_class) -> str:
+        """
+        Rewrites bare ``:py:func:`Name``` references (as emitted by SIP for
+        ``\\see foo()``) to use the correct role and fully qualified target
+        when ``Name`` is a signal or an inherited member of ``owner_class``.
+        """
+        if owner_class is None or ":py:func:`" not in line:
+            return line
+
+        def _replace(match: re.Match[str]) -> str:
+            ref_name = match.group(1)
+            replacement = AutoDocAdditions._resolve_unqualified_ref(ref_name, owner_class)
+            return replacement if replacement is not None else match.group(0)
+
+        # Match :py:func:`Name` where Name is a single identifier (no dot,
+        # no leading tilde). Qualified refs like :py:func:`~Class.method`
+        # are left alone — SIP already emits these correctly.
+        return re.sub(r":py:func:`([A-Za-z_]\w*)`", _replace, line)
+
+    @staticmethod
+    def insert_links(lines: list[str], owner_class=None):
+        """
+        Inserts link tags into a block of docstring lines.
+
+        ``owner_class`` is the class that the docstring belongs to (or whose
+        member the docstring belongs to). When provided, bare
+        ``:py:func:`Name``` references are rewritten so that inherited
+        members and signals resolve to valid cross-references.
         """
         in_code_block = False
         for i in range(len(lines)):
-            # fix seealso
-            # lines[i] = re.sub(r':py: func:`(\w+\(\))`', r':func:`.{}.\1()'.format(what), lines[i])
             if lines[i].startswith(".. code-block"):
                 in_code_block = True
             elif not lines[i] and i < len(lines) - 1 and not lines[i + 1]:
@@ -108,6 +184,7 @@ class AutoDocAdditions:
 
             if not in_code_block:
                 lines[i] = AutoDocAdditions.create_links(lines[i])
+                lines[i] = AutoDocAdditions.fix_seealso_refs(lines[i], owner_class)
 
     @staticmethod
     def inject_args(args: list[str], lines: list[str], indent: int = 0):
@@ -151,6 +228,8 @@ class AutoDocAdditions:
                 lines[:] = []
                 return
 
+        owner_class = AutoDocAdditions._get_class_for_name(what, name)
+
         if what == "class":
             # SIP docstrings use the qualified class name minus the package,
             # e.g. "QgsGeometry" for qgis.core.QgsGeometry,
@@ -176,12 +255,12 @@ class AutoDocAdditions:
 
                 if init_idx is None:
                     # No constructors found — keep docstring as-is with links
-                    AutoDocAdditions.insert_links(lines)
+                    AutoDocAdditions.insert_links(lines, owner_class)
                     return
 
                 # Keep the class description, process constructors below
                 description_part = lines[:init_idx]
-                AutoDocAdditions.insert_links(description_part)
+                AutoDocAdditions.insert_links(description_part, owner_class)
                 lines[:] = lines[init_idx:]
 
             # loop through remaining lines, which are the constructors. Format
@@ -226,7 +305,7 @@ class AutoDocAdditions:
                 lines.extend(constructor)
             return
 
-        AutoDocAdditions.insert_links(lines)
+        AutoDocAdditions.insert_links(lines, owner_class)
 
         if what == "attribute":
             is_signal = hasattr(obj, "__class__") and obj.__class__.__name__ == "pyqtSignal"
@@ -239,7 +318,7 @@ class AutoDocAdditions:
                     if attr_name in parent_class.__attribute_docs__:
                         docs = parent_class.__attribute_docs__[attr_name]
                         lines[:] = docs.split("\n")
-                        AutoDocAdditions.insert_links(lines)
+                        AutoDocAdditions.insert_links(lines, owner_class)
 
                 # Inject signal argument types
                 if parent_class and hasattr(parent_class, "__signal_arguments__"):
