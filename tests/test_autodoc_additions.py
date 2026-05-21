@@ -378,5 +378,130 @@ class TestProcessSignature(unittest.TestCase):
         self.assertEqual(result, ("(self, arg: str)", "bool"))
 
 
+class TestSeeAlsoRefRewriting(unittest.TestCase):
+    """
+    Tests for seealso-style :py:func:`Name` references being rewritten so
+    they resolve to inherited members and signal attributes.
+
+    Reproduces issues #262 (broken seealso to parent-class method) and
+    #263 (missing seealso to a signal).
+    """
+
+    def _process_method(self, name, lines):
+        def dummy():
+            """fooMethod(self) -> bool"""
+
+        AutoDocAdditions.process_docstring(
+            app=None, what="method", name=name, obj=dummy, options={}, lines=lines
+        )
+
+    def test_inherited_method_ref_is_qualified(self):
+        """seealso to a parent-class method gets the parent class qualified."""
+
+        class FakePyqtSignal:
+            pass
+
+        class ParentFake:
+            def setProgress(self):
+                pass
+
+        class ChildFake(ParentFake):
+            def setProgressText(self):
+                pass
+
+            progressTextChanged = FakePyqtSignal()
+            # mimic pyqtSignal class detection
+            progressTextChanged.__class__.__name__ = "pyqtSignal"
+
+        cleanup = _inject_class(ChildFake)
+        try:
+            lines = [
+                "setProgressText(self, text: str)",
+                "Sets a progress report text string.",
+                "",
+                ".. seealso:: :py:func:`setProgress`",
+                "",
+                ".. seealso:: :py:func:`progressTextChanged`",
+                "",
+            ]
+            self._process_method("qgis.core.ChildFake.setProgressText", lines)
+        finally:
+            cleanup()
+
+        # Parent-class method ref is fully qualified with the defining class
+        self.assertIn(".. seealso:: :py:func:`~ParentFake.setProgress`", lines)
+        # Signal ref switches role from :py:func: to :py:attr: and is
+        # qualified with the class that defines it
+        self.assertIn(".. seealso:: :py:attr:`~ChildFake.progressTextChanged`", lines)
+
+    def test_own_method_ref_left_unchanged(self):
+        """A bare :py:func: ref to a method defined on the current class is left alone."""
+
+        class SelfRefFake:
+            def foo(self):
+                pass
+
+            def bar(self):
+                pass
+
+        cleanup = _inject_class(SelfRefFake)
+        try:
+            lines = [
+                "foo(self)",
+                "Does foo.",
+                "",
+                ".. seealso:: :py:func:`bar`",
+                "",
+            ]
+            self._process_method("qgis.core.SelfRefFake.foo", lines)
+        finally:
+            cleanup()
+
+        self.assertIn(".. seealso:: :py:func:`bar`", lines)
+
+    def test_qualified_ref_left_unchanged(self):
+        """Already-qualified :py:func:`~Class.method` refs are not touched."""
+
+        class QualRefFake:
+            def foo(self):
+                pass
+
+        cleanup = _inject_class(QualRefFake)
+        try:
+            lines = [
+                "foo(self)",
+                "See :py:func:`~QualRefFake.foo` for details.",
+                "",
+            ]
+            self._process_method("qgis.core.QualRefFake.foo", lines)
+        finally:
+            cleanup()
+
+        self.assertTrue(
+            any(":py:func:`~QualRefFake.foo`" in line for line in lines),
+            lines,
+        )
+
+    def test_unknown_ref_left_unchanged(self):
+        """Refs that don't resolve on the MRO are not rewritten."""
+
+        class UnknownRefFake:
+            def foo(self):
+                pass
+
+        cleanup = _inject_class(UnknownRefFake)
+        try:
+            lines = [
+                "foo(self)",
+                ".. seealso:: :py:func:`somethingElse`",
+                "",
+            ]
+            self._process_method("qgis.core.UnknownRefFake.foo", lines)
+        finally:
+            cleanup()
+
+        self.assertIn(".. seealso:: :py:func:`somethingElse`", lines)
+
+
 if __name__ == "__main__":
     unittest.main()
