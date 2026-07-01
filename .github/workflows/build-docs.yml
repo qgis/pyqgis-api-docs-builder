@@ -34,7 +34,7 @@ jobs:
       QGIS_VERSIONS_LIST: ${{ steps.version.outputs.QGIS_VERSIONS_LIST }}
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
       - id: version
         name: determine version
