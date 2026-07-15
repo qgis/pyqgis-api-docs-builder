@@ -1,7 +1,7 @@
 
 pyqgis_url: https://qgis.org/pyqgis
 
-current_stable: '4.0'
+current_stable: '4.2'
 current_ltr: '3.44'
 
 qt_docs_url_base:
