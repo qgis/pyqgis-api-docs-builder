@@ -25,7 +25,7 @@ You can either:
 
 * export the PYTHONPATH yourself
 * export your QGIS build directory with ``export QGIS_BUILD_DIR=~/dev/QGIS/build``
-* or provide QGIS build directory as argument to the script: ``./build-docs.sh -qgis-build-dir ~/dev/QGIS/build``
+* or provide QGIS build directory as argument to the script: ``./scripts/build-docs.sh -qgis-build-dir ~/dev/QGIS/build``
 
 ### Testing & development
 
